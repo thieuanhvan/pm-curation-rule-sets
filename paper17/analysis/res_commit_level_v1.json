@@ -1,0 +1,67 @@
+{
+ "commits": 1522,
+ "monthly_snapshots": 90,
+ "control_signatures": 118,
+ "runs_missed_by_monthly_snapshots": [
+  {
+   "kind": "POLICY",
+   "stem": "suggested_change_policy",
+   "key": "apply? :: user.is_admin? || user.is_moderator?",
+   "stage": "decision",
+   "from": "2015-01-12",
+   "removed": "2015-01-12",
+   "days": 0,
+   "commits": 2
+  },
+  {
+   "kind": "POLICY",
+   "stem": "evidence_item_policy",
+   "key": "destroy? :: user.is_admin?",
+   "stage": "decision",
+   "from": "2015-06-02",
+   "removed": "2015-06-11",
+   "days": 9,
+   "commits": 24
+  },
+  {
+   "kind": "POLICY",
+   "stem": "suggested_change_policy",
+   "key": "accept? :: if suggested_change.user == user Role.user_is_at_least_a(user, :admin) else Role.user_is_",
+   "stage": "decision",
+   "from": "2016-02-24",
+   "removed": "2016-02-24",
+   "days": 0,
+   "commits": 2
+  },
+  {
+   "kind": "POLICY",
+   "stem": "evidence_item_policy",
+   "key": "accept? :: if evidence_item.submitter == user Role.user_is_at_least_a?(user, :admin) else Role.user_",
+   "stage": "decision",
+   "from": "2016-07-01",
+   "removed": "2016-07-20",
+   "days": 19,
+   "commits": 27
+  },
+  {
+   "kind": "POLICY",
+   "stem": "suggested_change_policy",
+   "key": "accept? :: if suggested_change.user == user Role.user_is_at_least_a?(user, :admin) else Role.user_is",
+   "stage": "decision",
+   "from": "2016-07-01",
+   "removed": "2016-07-20",
+   "days": 19,
+   "commits": 27
+  },
+  {
+   "kind": "POLICY",
+   "stem": "source_policy",
+   "key": "update_source_suggestion? :: Role.user_is_at_least_a?(user, :editor)",
+   "stage": "decision",
+   "from": "2016-10-06",
+   "removed": "2016-10-12",
+   "days": 6,
+   "commits": 13
+  }
+ ]
+}

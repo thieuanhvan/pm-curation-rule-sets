@@ -31,6 +31,27 @@ def main():
     ns = dict(vars(isad))
     exec(src, ns)
     ns["fig_bpmn_asis"]()
+    add_key()
+
+
+def add_key(src_png="fig2_bpmn_asis_v3.png", out_png="fig2.png"):
+    """15/10/2026: key strip under the figure stating the epistemic status of the annotations (review: provenance of each element)."""
+    from PIL import Image, ImageDraw, ImageFont
+    im = Image.open(src_png).convert("RGB")
+    w, h = im.size
+    strip = 190
+    canvas = Image.new("RGB", (w, h + strip), "white"); canvas.paste(im, (0, 0))
+    d = ImageDraw.Draw(canvas)
+    try: font = ImageFont.truetype("arial.ttf", 30)
+    except OSError: font = ImageFont.load_default()
+    lines = ["Key: 'Code guard' = server-side guard found by the code scan and coding.",
+             "'reason not coded until 2025' = documented rule, coded later.   'inferred norm, never in code' = followed in the log, stated nowhere.",
+             "'no timer or expiry' and the unruled selection step = absence records: no control found in the scanned layers.",
+             "Percentages and service position ū in the notes are measured in the log (Sections 5.3 and 5.5)."]
+    for i, t in enumerate(lines):
+        d.text((40, h + 18 + i * 40), t, fill="black", font=font)
+    canvas.save(out_png)
+    print("fig2.png written with key")
 
 
 if __name__ == "__main__":

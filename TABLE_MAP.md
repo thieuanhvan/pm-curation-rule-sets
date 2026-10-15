@@ -24,6 +24,7 @@ Printed values are the stored values cut off (not rounded) at the printed precis
 | Age hazard 0.64; frailty 0.74 / 0.73 | `D/R5/c_age.py`; `D/R5/c2_item_frailty.py` | `D/R5/res_c_age.json`; `D/R5/res_c2_item_frailty.json` |
 | Intensity 3.41-fold | `D/R5/d_intensity.py`; intervals `D/R7/t6_its_2025.py` | `D/R5/res_d_intensity.json`; `D/R7/res_t6_its.json` |
 | H2 (§6.1) | `P/analysis/h2_test.py` | `P/analysis/res_h2_test.json` |
+| Commit-level check of the monthly scan | `P/analysis/commit_level_v1.py` (frozen extractor on every first-parent commit of civic-server; needs a bare clone) | `P/analysis/res_commit_level_v1.json` |
 | Held-out seeded test | `P/analysis/seeded_v3/plant_and_score.py`, `posthoc_attribution.py` | `res_seeded_v3.json`, `res_seeded_v3_posthoc.json` |
 | Canto | blind coders (instructions in `P/analysis/blind_recoding_canto/`) | `coder_A.json`, `coder_B.json`, `summary.json` |
 
@@ -55,13 +56,14 @@ Printed values are the stored values cut off (not rounded) at the printed precis
 | Fig. S3 lifecycles | `P/figures/make_figures_p17.py` (`fig2`) | `D/A2/out/discovery.json` |
 | Fig. S4 flattening | `P/figures/make_figures_p17.py` (`fig5`) | `D/W3/res_t4_sop.json` |
 | Reordering bounds (S4) | `D/R5/sim/e_sim.mjs`; check `D/R3_civic/r3_t2_sim_checks.py`; observed share `D/R7/t7_numbers.py` | `D/R5/res_e_bounds.json`; `res_r3_t2.json`; `res_t7_numbers.json` |
-| S21 trackers: sample, inference, corroboration | `D/W2/analyze_w2.py`; `D/R3_trackers/r3_t1_t2.mjs`, `r3_t5_corrob.mjs`; frames `K/run_gh.mjs`; label timing `D/R5/g_period.py` | `D/W2/out/results_w2.json`; `D/R3_trackers/*.json`; `K/results_gh.json`; `D/R5/res_g_period.json` |
-| S22 comparison systems | assembled from `res_h_numbers.json`, `results_w2.json`, `res_g_period.json`, `res_t3.json`, `r3_t4_u_null.json`, `D/R5_wikidata/results*.json`, `res_t6_numbers.json`, `K/results_gh.json` | as listed |
-| S23 tracker regime measures | `D/W2/analyze_w2.py`; `D/R3_trackers/r3_t3_hpo_bursts.py`, `r3_t4_u_null.py`, `r3_t4b_self.py` | `results_w2.json`; `r3_t3_bursts.json`, `r3_t4_u_null.json`, `r3_t4b_self.json` |
-| S24 acceptance within 365 days | `D/R5/g_period.py` | `res_g_period.json` |
-| S25 discovery and conformance; S26 declarative constraints | `D/W2/analyze_w2.py` | `D/W2/out/results_w2.json` |
-| S27 Wikidata census | `D/R5_wikidata/s1`–`s7` (`.mjs`), `s6_u.py` | `D/R5_wikidata/results.json`, `results_u.json` |
-| S28 Canto controls | blind coders | `P/analysis/blind_recoding_canto/` |
-| S29 design principles; Figs. S5, S6 | design artefacts (`P/figures/make_figures_isad.py`) | none |
+| S21 cases: data, protocol steps and scope of inference | Section 4.1 of the article | none |
+| S22 trackers: sample, inference, corroboration | `D/W2/analyze_w2.py`; `D/R3_trackers/r3_t1_t2.mjs`, `r3_t5_corrob.mjs`; frames `K/run_gh.mjs`; label timing `D/R5/g_period.py` | `D/W2/out/results_w2.json`; `D/R3_trackers/*.json`; `K/results_gh.json`; `D/R5/res_g_period.json` |
+| S23 comparison systems | assembled from `res_h_numbers.json`, `results_w2.json`, `res_g_period.json`, `res_t3.json`, `r3_t4_u_null.json`, `D/R5_wikidata/results*.json`, `res_t6_numbers.json`, `K/results_gh.json` | as listed |
+| S24 tracker regime measures | `D/W2/analyze_w2.py`; `D/R3_trackers/r3_t3_hpo_bursts.py`, `r3_t4_u_null.py`, `r3_t4b_self.py` | `results_w2.json`; `r3_t3_bursts.json`, `r3_t4_u_null.json`, `r3_t4b_self.json` |
+| S25 acceptance within 365 days | `D/R5/g_period.py` | `res_g_period.json` |
+| S26 discovery and conformance; S27 declarative constraints | `D/W2/analyze_w2.py` | `D/W2/out/results_w2.json` |
+| S28 Wikidata census | `D/R5_wikidata/s1`–`s7` (`.mjs`), `s6_u.py` | `D/R5_wikidata/results.json`, `results_u.json` |
+| S29 Canto controls | blind coders | `P/analysis/blind_recoding_canto/` |
+| S30 design principles; Figs. S5, S6 | design artefacts (`P/figures/make_figures_isad.py`) | none |
 
 Values derived by hand from stored counts (no separate result field): the binomial p of change points, 87 % (65 of 74), Canto 28 of 45 and Cohen's κ, the scan's 18 of 30 controls, GO 75 of 75, tracker stocks 4.3 % and 2.8 %, the 22 smaller-batch deletions, the observed 29.2 % within 365 days in S4.

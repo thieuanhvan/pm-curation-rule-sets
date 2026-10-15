@@ -1,37 +1,37 @@
-id,stage,object,mode,predicate,in_C_doc,in_C_code,tau,rho
-C1,intake,evidence item,guard,submission requires a logged-in user,yes,yes,2015-02-20,
-C2,intake,revision,guard,comment of at least ten characters required when suggesting a revision,yes,yes,2022-04-09,
-C3,fit,evidence item,inferred norm,no acceptance while a revision is pending; the interface marks fields with pending changes,inferred (C_inf),no,never,
-C4,decision,evidence item,guard,acceptance only by the editor role,yes,yes,2015-01-27,
-C5,decision,evidence item,guard,no self-acceptance of one's own submission,yes,yes,2016-02-24 (non-administrators); 2016-07-20 (all users),
-C6,decision,revision,guard,acceptance of a suggested change or revision only by the editor role,yes,yes,2015-01-12,
-C7,decision,revision,guard,no self-acceptance of one's own revision (second version: except on one's own pending submission),yes,yes,2016-02-24 (non-administrators); 2016-07-20 (all users),
-C8,decision,all moderated objects (first version),guard,valid conflict-of-interest statement for moderation,yes,yes,2019-09-10,"2022-04-09 for evidence items and assertions on the server (client-side check only in the second version); approval of assertions regained a server check in v2.7.2, 2026-04-07"
-C9,decision,"revision, flag, source suggestion (second version)",guard,valid conflict-of-interest statement,yes,yes,2022-04-09,
-C10,decision,revision,guard,reason (comment of at least ten characters) required to reject a revision,yes,yes,2022-04-09,
-C11,decision,"evidence item, assertion",guard,reason required to reject or revert,yes,yes,2025-04-07,
-C12,decision,all moderated objects,guard,acting organisation must be one of the user's organisations,no,yes,2020-04-30,
-C13,flag raising,any entity,guard,comment of at least ten characters required to raise a flag,yes,yes,2022-04-09,
-C14,flag raising,variant,automatic,bot raises flags on duplicate allele-registry identifiers (scheduled weekly),no,yes,2023-11-08,
-C15,flag resolution,flag,guard,resolution only by the flagging user or an editor (first version); editor with conflict-of-interest statement and comment (second version),no,yes,2017-04-04,
-C16,exit (no judgement),revision,automatic,conflicting pending changes marked superseded after an accepted change (scheduled job),no,yes,2015-04-29,2016-02-24
-C17,exit (no judgement),revision,automatic,pending revisions of the same field superseded on acceptance,no,yes,2022-04-09,
-C18,exit (no judgement),evidence item,permission,submitter may withdraw (reject) own item,yes,yes,2019-01-29,
-C19,re-review,assertion approval,automatic,active organisational approvals set to requires-review when the assertion is flagged or a supporting evidence item is rejected,no,yes,2025-06-03,
-C20,fit,revision (first version),guard (overridable),"acceptance refused when the field's current value no longer matches the change's base value, unless the editor forces it",no,yes,2015-01-12,2022-04-09 (replaced by supersession)
-C21,re-review,evidence item (first version),automatic,rejected item set back to submitted when a revision is suggested or accepted,no,yes,2016-01-20,2022-04-09
-C22,fit,assertion approval,guard,endorsement and approval refused while the assertion is flagged or not accepted,no,yes,2025-06-03 (endorsement); 2025-11-12 (approval),
-C23,decision,assertion,guard,"acceptance by the editor role only, no self-acceptance",yes,yes,present at the June 2020 snapshot,
-C24,decision,assertion approval,guard,approval requires the approver role for the organisation and a conflict-of-interest statement,no,yes,"2025-11-12 (approver role, v2.5.24); 2026-04-07 (statement, v2.7.2)",
-C25,flag raising,any entity,guard,account required to raise a flag,yes,yes,present at the June 2020 snapshot,
-C26,decision,source suggestion (first version),automatic,suggestion set to curated when an evidence item is submitted from it,no,yes,2016-10,2022-04-09
-C27,exit (no judgement),evidence item (first version),guard,soft deletion of an evidence item only by the moderator or editor role (editor with a valid conflict-of-interest statement from 2019),no,yes,2015-06-02,2022-04-09 (no delete mutation in the second version)
-C28,fit,evidence item,guard,"acceptance refused while the item is linked to a deprecated molecular profile, disease, therapy or source; from v2.4.7 also while its source is listed as retracted",no,yes,"2023-01-09 (v2.2.0); 2024-07-25 (retraction, v2.4.7)",
-C29,flag raising,evidence item,automatic,"a daily job flags, as the bot account, every evidence item whose source Retraction Watch lists as retracted",no,yes,2024-07-25 (v2.4.7),
-C30,re-review,evidence item,automatic,"when a source is no longer listed as retracted, the job flags its rejected evidence items for re-evaluation",no,yes,2024-07-25 (v2.4.7),
-C31,intake,evidence item,guard,"submission refused if linked to deprecated entities (v2.2.0) or identical to an existing submitted or accepted item (v2.2.24, 2023-10-02)",no,yes,2023-01-09,
-N1,selection,evidence item,none,"no ordering rule, priority or worklist (search for assign, priority, due date and worklist in server code: none)",no,no,never,
-N2,allocation,evidence item,none,"no owner, assignment or due date",no,no,never,
-N3,exit (no judgement),evidence item,none,"no expiry, stale or timer exit; no scheduled job writes evidence-item status",no,no,never,
-N4,exit (no judgement),flag,none,no automatic flag closure; a bulk closure in January 2023 was a one-off data operation,no,no,never,
-N5,intake,revision,none,a daily task creating revisions that replace preprint sources was committed on 10 August 2026 and is in no release up to v2.7.6,no,no,never,
+id,stage,object,mode,predicate,in_C_doc,in_C_code,tau,rho,evaluable_from_log
+C1,intake,evidence item,guard,submission requires a logged-in user,yes,yes,2015-02-20,,no
+C2,intake,revision,guard,comment of at least ten characters required when suggesting a revision,yes,yes,2022-04-09,,no
+C3,fit,evidence item,inferred norm,no acceptance while a revision is pending; the interface marks fields with pending changes,inferred (C_inf),no,never,,yes (inferred norm)
+C4,decision,evidence item,guard,acceptance only by the editor role,yes,yes,2015-01-27,,no
+C5,decision,evidence item,guard,no self-acceptance of one's own submission,yes,yes,2016-02-24 (non-administrators); 2016-07-20 (all users),,yes
+C6,decision,revision,guard,acceptance of a suggested change or revision only by the editor role,yes,yes,2015-01-12,,no
+C7,decision,revision,guard,no self-acceptance of one's own revision (second version: except on one's own pending submission),yes,yes,2016-02-24 (non-administrators); 2016-07-20 (all users),,yes
+C8,decision,all moderated objects (first version),guard,valid conflict-of-interest statement for moderation,yes,yes,2019-09-10,"2022-04-09 for evidence items and assertions on the server (client-side check only in the second version); approval of assertions regained a server check in v2.7.2, 2026-04-07",no
+C9,decision,"revision, flag, source suggestion (second version)",guard,valid conflict-of-interest statement,yes,yes,2022-04-09,,no
+C10,decision,revision,guard,reason (comment of at least ten characters) required to reject a revision,yes,yes,2022-04-09,,yes
+C11,decision,"evidence item, assertion",guard,reason required to reject or revert,yes,yes,2025-04-07,,yes
+C12,decision,all moderated objects,guard,acting organisation must be one of the user's organisations,no,yes,2020-04-30,,no
+C13,flag raising,any entity,guard,comment of at least ten characters required to raise a flag,yes,yes,2022-04-09,,no
+C14,flag raising,variant,automatic,bot raises flags on duplicate allele-registry identifiers (scheduled weekly),no,yes,2023-11-08,,no
+C15,flag resolution,flag,guard,resolution only by the flagging user or an editor (first version); editor with conflict-of-interest statement and comment (second version),no,yes,2017-04-04,,no
+C16,exit (no judgement),revision,automatic,conflicting pending changes marked superseded after an accepted change (scheduled job),no,yes,2015-04-29,2016-02-24,no
+C17,exit (no judgement),revision,automatic,pending revisions of the same field superseded on acceptance,no,yes,2022-04-09,,no
+C18,exit (no judgement),evidence item,permission,submitter may withdraw (reject) own item,yes,yes,2019-01-29,,no
+C19,re-review,assertion approval,automatic,active organisational approvals set to requires-review when the assertion is flagged or a supporting evidence item is rejected,no,yes,2025-06-03,,no
+C20,fit,revision (first version),guard (overridable),"acceptance refused when the field's current value no longer matches the change's base value, unless the editor forces it",no,yes,2015-01-12,2022-04-09 (replaced by supersession),no
+C21,re-review,evidence item (first version),automatic,rejected item set back to submitted when a revision is suggested or accepted,no,yes,2016-01-20,2022-04-09,no
+C22,fit,assertion approval,guard,endorsement and approval refused while the assertion is flagged or not accepted,no,yes,2025-06-03 (endorsement); 2025-11-12 (approval),,no
+C23,decision,assertion,guard,"acceptance by the editor role only, no self-acceptance",yes,yes,present at the June 2020 snapshot,,no
+C24,decision,assertion approval,guard,approval requires the approver role for the organisation and a conflict-of-interest statement,no,yes,"2025-11-12 (approver role, v2.5.24); 2026-04-07 (statement, v2.7.2)",,no
+C25,flag raising,any entity,guard,account required to raise a flag,yes,yes,present at the June 2020 snapshot,,no
+C26,decision,source suggestion (first version),automatic,suggestion set to curated when an evidence item is submitted from it,no,yes,2016-10,2022-04-09,no
+C27,exit (no judgement),evidence item (first version),guard,soft deletion of an evidence item only by the moderator or editor role (editor with a valid conflict-of-interest statement from 2019),no,yes,2015-06-02,2022-04-09 (no delete mutation in the second version),no
+C28,fit,evidence item,guard,"acceptance refused while the item is linked to a deprecated molecular profile, disease, therapy or source; from v2.4.7 also while its source is listed as retracted",no,yes,"2023-01-09 (v2.2.0); 2024-07-25 (retraction, v2.4.7)",,no
+C29,flag raising,evidence item,automatic,"a daily job flags, as the bot account, every evidence item whose source Retraction Watch lists as retracted",no,yes,2024-07-25 (v2.4.7),,no
+C30,re-review,evidence item,automatic,"when a source is no longer listed as retracted, the job flags its rejected evidence items for re-evaluation",no,yes,2024-07-25 (v2.4.7),,no
+C31,intake,evidence item,guard,"submission refused if linked to deprecated entities (v2.2.0) or identical to an existing submitted or accepted item (v2.2.24, 2023-10-02)",no,yes,2023-01-09,,no
+N1,selection,evidence item,none,"no ordering rule, priority or worklist (search for assign, priority, due date and worklist in server code: none)",no,no,never,,–
+N2,allocation,evidence item,none,"no owner, assignment or due date",no,no,never,,–
+N3,exit (no judgement),evidence item,none,"no expiry, stale or timer exit; no scheduled job writes evidence-item status",no,no,never,,–
+N4,exit (no judgement),flag,none,no automatic flag closure; a bulk closure in January 2023 was a one-off data operation,no,no,never,,–
+N5,intake,revision,none,a daily task creating revisions that replace preprint sources was committed on 10 August 2026 and is in no release up to v2.7.6,no,no,never,,–

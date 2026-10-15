@@ -1,6 +1,6 @@
 # Curation rule sets: reproducibility package
 
-Code, rule catalogue, coder outputs and aggregate results for the article *Which Stages Does the Code Control? Conformance Against Time-Indexed Rule Sets in Expert-Gated Knowledge Curation* (Van Thieu and Nhan T. Cao).
+Code, rule catalogue, coder outputs and aggregate results for the article *Conformance Against the Code in Force: Time-Indexed Rule Sets and Control Coverage in Expert-Gated Knowledge Curation* (Van Thieu and Nhan T. Cao).
 
 The package lets a reader (1) rerun the code scan of Algorithm 1 on the public CIViC repositories, (2) rebuild the CIViC object-centric log and the measures from the public APIs, (3) check every table against the stored aggregate results, and (4) rerun the held-out seeded test of the extractors.
 
