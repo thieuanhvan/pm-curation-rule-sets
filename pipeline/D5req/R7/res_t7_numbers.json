@@ -1,0 +1,55 @@
+{
+ "ei_rejections_after_2025-04-07": {
+  "all": 85,
+  "by_submitter_withdrawal": 11,
+  "of_other_users_items": 74,
+  "with_note_or_comment_all": null
+ },
+ "ei_rejections_2025-04-01_to_06": {
+  "all": 0,
+  "of_other_users_items": 0
+ },
+ "arrivals_log_ratio_of_pooled_means": {
+  "estimate": 0.209,
+  "placebo_95": [
+   -0.026,
+   0.398
+  ],
+  "p": 0.654
+ },
+ "arrivals_mean_of_monthly_log_ratios": {
+  "estimate": 0.367,
+  "placebo_95": [
+   0.038,
+   0.573
+  ],
+  "p": 0.577
+ },
+ "wikidata_from2016_kinds": {
+  "done": 11229,
+  "notdone": 2186,
+  "withdrawn": 534,
+  "other:done": 16,
+  "pending": 45,
+  "other:rP11770": 1
+ },
+ "S14_within90": {
+  "observed": 0.2368,
+  "pred_mean_and_range_over_40_reps": [
+   0.2333,
+   0.1976,
+   0.2627
+  ],
+  "abs_error_of_mean_prediction": 0.0035,
+  "mean_abs_error_over_reps": [
+   0.0136,
+   0.0015,
+   0.0392
+  ],
+  "naive_persistence_abs_error": 0.1086
+ },
+ "v1_snapshots": {
+  "months_with_commit": 90,
+  "calendar_months_2014-08_to_2022-11": 100
+ }
+}

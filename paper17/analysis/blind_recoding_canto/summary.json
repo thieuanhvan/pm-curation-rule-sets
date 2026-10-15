@@ -1,0 +1,15 @@
+{
+ "repository": "github.com/pombase/canto (cloned 14/10/2026; 10,227 commits, 1,886 tags, 2010-07 to 2026-09)",
+ "snapshots": {"S1": "v243 2012-01-09", "S2": "v911 2016-01-06", "S3": "v1435 2020-01-02", "S4": "v1878 2026-08-17"},
+ "coders": {"A": 45, "B": 37},
+ "stage_coverage_agreement_cells": "36/36 (9 stages x 4 snapshots, guard or automatic present)",
+ "approval_queue": {
+   "selection": "no ordering, priority or assignment of sessions awaiting approval at any snapshot (both coders); paper triage is admin-only (2011-03-22) and ordered by PubMed ID (coder A)",
+   "allocation": "curation sessions are assigned to a curator (admin assignment, link e-mail admin-only 2013-08-12); no reviewer assignment, due dates or state-changing reminders (both coders)",
+   "decision": "approval start admin-only 2012-02-14; approval admin-only 2012-07-25; non-admins routed away during approval 2012-01-22",
+   "fit": "approval refused with open term requests 2012-07-16, unknown conditions 2012-07-21, obsolete terms 2013-12-09",
+   "exit": "session deletion admin-only 2013-04-12; no expiry, timer or scheduled state-writing job at any snapshot",
+   "re_review": "exported sessions terminal 2012-02-03 to 2020-01-11; un-export by admins from 2020-01-11; reactivation without role check from 2012-01-21"
+ },
+ "caveats": "no public event log, so no conformance or service-order measures; dates are author dates of the first commit found by git log -S; state-order guard enforced only 2012-02-03 to 2012-07-25"
+}

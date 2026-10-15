@@ -1,0 +1,159 @@
+{
+ "flags_total": {
+  "flags": 3541,
+  "bot": 3075,
+  "human": 466,
+  "bot_by_entity": {
+   "EvidenceItem": 2875,
+   "GeneVariant": 105,
+   "Assertion": 79,
+   "FusionVariant": 16
+  },
+  "bot_flags_top_months": {
+   "2021-08": 2279,
+   "2021-02": 109,
+   "2023-11": 109,
+   "2024-04": 41,
+   "2025-04": 40,
+   "2026-08": 27
+  }
+ },
+ "by_raiser": {
+  "bot": {
+   "n": 3075,
+   "resolved_logged": [
+    0.107,
+    0.097,
+    0.118,
+    3075
+   ],
+   "resolved_by_bot": 0,
+   "resolved_by_human": 329,
+   "median_days_to_resolution": 66.6,
+   "later_bot_flag_same_entity": 134,
+   "later_bot_revision_same_entity": 2273,
+   "later_bot_revreject_or_deprecation_same_entity": 1721,
+   "evidence": {
+    "n": 2875,
+    "status_now": {
+     "SUBMITTED": 1875,
+     "ACCEPTED": 917,
+     "REJECTED": 83
+    },
+    "flagged_now_true": 398,
+    "unresolved_but_entity_not_flagged_now(silent closure)": 2257,
+    "decision_after_flag": {
+     "null": 2658,
+     "ACCEPTED": 192,
+     "REJECTED": 25
+    }
+   }
+  },
+  "human": {
+   "n": 466,
+   "resolved_logged": [
+    0.614,
+    0.569,
+    0.657,
+    466
+   ],
+   "resolved_by_bot": 0,
+   "resolved_by_human": 286,
+   "median_days_to_resolution": 67.7,
+   "later_bot_flag_same_entity": 63,
+   "later_bot_revision_same_entity": 78,
+   "later_bot_revreject_or_deprecation_same_entity": 62,
+   "evidence": {
+    "n": 328,
+    "status_now": {
+     "ACCEPTED": 145,
+     "SUBMITTED": 145,
+     "REJECTED": 38
+    },
+    "flagged_now_true": 143,
+    "unresolved_but_entity_not_flagged_now(silent closure)": 4,
+    "decision_after_flag": {
+     "null": 273,
+     "REJECTED": 36,
+     "ACCEPTED": 19
+    }
+   }
+  }
+ },
+ "hidden_queue": {
+  "bot": {
+   "open_by_log": 2746,
+   "evidence_open_by_log": 2636,
+   "evidence_open_by_log_AND_flagged_now": 379,
+   "evidence_open_by_log_AND_flagged_now_AND_not_rejected": 360,
+   "  of which accepted items": 138,
+   "  of which submitted items": 222,
+   "distinct_evidence_items_open_flagged_now": 344,
+   "non_evidence_open_by_log": 110,
+   "open_flags_age_years_quartiles": [
+    5.11,
+    5.11,
+    5.11
+   ]
+  },
+  "human": {
+   "open_by_log": 180,
+   "evidence_open_by_log": 141,
+   "evidence_open_by_log_AND_flagged_now": 137,
+   "evidence_open_by_log_AND_flagged_now_AND_not_rejected": 129,
+   "  of which accepted items": 33,
+   "  of which submitted items": 96,
+   "distinct_evidence_items_open_flagged_now": 135,
+   "non_evidence_open_by_log": 39,
+   "open_flags_age_years_quartiles": [
+    0.85,
+    4.18,
+    4.77
+   ]
+  },
+  "all": {
+   "open_by_log": 2926,
+   "evidence_open_by_log": 2777,
+   "evidence_open_by_log_AND_flagged_now": 516,
+   "evidence_open_by_log_AND_flagged_now_AND_not_rejected": 489,
+   "  of which accepted items": 171,
+   "  of which submitted items": 318,
+   "distinct_evidence_items_open_flagged_now": 438,
+   "non_evidence_open_by_log": 149,
+   "open_flags_age_years_quartiles": [
+    5.11,
+    5.11,
+    5.11
+   ]
+  }
+ },
+ "meta_flagged_now_crosscheck": {
+  "evidence_flagged_now(meta)": 440,
+  "with_open_flag_in_log": 438,
+  "with_open_bot_flag": 344,
+  "flagged_now_without_open_flag_in_log": 2
+ },
+ "bot_batch_2021_08": {
+  "n": 2279,
+  "resolved_logged": [
+   0.001,
+   0.0,
+   0.003,
+   2279
+  ],
+  "status_now": {
+   "SUBMITTED": 1584,
+   "ACCEPTED": 630,
+   "REJECTED": 59
+  },
+  "flagged_now_true": 45,
+  "later_bot_revision_same_entity": 2245
+ },
+ "silent_closure_vs_later_bot_revision": {
+  "silent": 2257,
+  "silent_with_later_bot_revision(2023-01 v2 migration)": 2201,
+  "still_flagged_with_later_bot_revision": 53,
+  "still_flagged_without_later_bot_revision": 345,
+  "silent_without_later_bot_revision": 56
+ }
+}

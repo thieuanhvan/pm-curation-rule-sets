@@ -1,0 +1,211 @@
+{
+ "n": 2077,
+ "outcomes": {
+  "rej": 195,
+  "acc": 1840,
+  "wd": 35,
+  "pending": 7
+ },
+ "span": [
+  "2016-02-24",
+  "2026-10-07"
+ ],
+ "ttd_all": {
+  "n": 2070,
+  "med": 14,
+  "p90": 115.7,
+  "le1d": 0.014
+ },
+ "ttd_acc": {
+  "n": 1840,
+  "med": 12.9,
+  "p90": 73.8,
+  "le1d": 0.006
+ },
+ "ttd_rej": {
+  "n": 195,
+  "med": 92.8,
+  "p90": 377.9,
+  "le1d": 0.062
+ },
+ "backlog": {
+  "n": 7,
+  "share": 0.003,
+  "ageMed": 19.8,
+  "ageP90": 293.1,
+  "gt2y": 0.143
+ },
+ "hazard": {
+  "age30d": {
+   "n": 560,
+   "p": 0.941
+  },
+  "age365d": {
+   "n": 27,
+   "p": 0.63
+  },
+  "age1460d": {
+   "n": 5,
+   "p": 0.6
+  }
+ },
+ "by_year": {
+  "2016": {
+   "sub": 115,
+   "dec": 104,
+   "pendingEnd": 11,
+   "pendMedAgeD": 26.4
+  },
+  "2017": {
+   "sub": 211,
+   "dec": 200,
+   "pendingEnd": 22,
+   "pendMedAgeD": 57.2
+  },
+  "2018": {
+   "sub": 255,
+   "dec": 258,
+   "pendingEnd": 19,
+   "pendMedAgeD": 38.9
+  },
+  "2019": {
+   "sub": 248,
+   "dec": 241,
+   "pendingEnd": 26,
+   "pendMedAgeD": 34.4
+  },
+  "2020": {
+   "sub": 233,
+   "dec": 217,
+   "pendingEnd": 42,
+   "pendMedAgeD": 61.1
+  },
+  "2021": {
+   "sub": 213,
+   "dec": 219,
+   "pendingEnd": 36,
+   "pendMedAgeD": 75.5
+  },
+  "2022": {
+   "sub": 196,
+   "dec": 195,
+   "pendingEnd": 37,
+   "pendMedAgeD": 56.7
+  },
+  "2023": {
+   "sub": 144,
+   "dec": 141,
+   "pendingEnd": 40,
+   "pendMedAgeD": 180.7
+  },
+  "2024": {
+   "sub": 165,
+   "dec": 185,
+   "pendingEnd": 20,
+   "pendMedAgeD": 51.2
+  },
+  "2025": {
+   "sub": 162,
+   "dec": 154,
+   "pendingEnd": 28,
+   "pendMedAgeD": 50.1
+  },
+  "2026": {
+   "sub": 135,
+   "dec": 156,
+   "pendingEnd": 7,
+   "pendMedAgeD": 19.8
+  }
+ },
+ "flow_2023_25": {
+  "subPerY": 157,
+  "decPerY": 160
+ },
+ "little_impliedWaitY": 0.04,
+ "fourEyes": {
+  "n": 2069,
+  "other": 0.9541,
+  "self": 95
+ },
+ "deciders": {
+  "n": 134,
+  "gini": 0.808,
+  "top5share": 0.512,
+  "lt10": 103
+ },
+ "position": {
+  "all": {
+   "mean": 0.352,
+   "newest10": 0.1
+  },
+  "by_year": {
+   "2016": {
+    "n": 104,
+    "mean": 0.51,
+    "newest10": 0.04,
+    "Lmed": 13
+   },
+   "2017": {
+    "n": 200,
+    "mean": 0.32,
+    "newest10": 0.15,
+    "Lmed": 26
+   },
+   "2018": {
+    "n": 258,
+    "mean": 0.35,
+    "newest10": 0.08,
+    "Lmed": 19
+   },
+   "2019": {
+    "n": 241,
+    "mean": 0.33,
+    "newest10": 0.03,
+    "Lmed": 20
+   },
+   "2020": {
+    "n": 217,
+    "mean": 0.27,
+    "newest10": 0.14,
+    "Lmed": 33
+   },
+   "2021": {
+    "n": 219,
+    "mean": 0.29,
+    "newest10": 0.09,
+    "Lmed": 33
+   },
+   "2022": {
+    "n": 195,
+    "mean": 0.39,
+    "newest10": 0.06,
+    "Lmed": 39
+   },
+   "2023": {
+    "n": 141,
+    "mean": 0.3,
+    "newest10": 0.26,
+    "Lmed": 40
+   },
+   "2024": {
+    "n": 185,
+    "mean": 0.39,
+    "newest10": 0.09,
+    "Lmed": 18
+   },
+   "2025": {
+    "n": 154,
+    "mean": 0.39,
+    "newest10": 0.13,
+    "Lmed": 36
+   },
+   "2026": {
+    "n": 156,
+    "mean": 0.43,
+    "newest10": 0.06,
+    "Lmed": 16
+   }
+  }
+ },
+ "note": "sample: 2145 subpages from 44 alphabetical windows; 60 dropped (no decision ts / odd status); window 2016+"
+}

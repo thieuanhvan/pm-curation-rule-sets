@@ -1,0 +1,71 @@
+{
+ "effortByType": {
+  "DIAGNOSTIC": {
+   "n": 550,
+   "mean": 2.27,
+   "p90": 4
+  },
+  "PREDICTIVE": {
+   "n": 3153,
+   "mean": 2.37,
+   "p90": 5
+  },
+  "PROGNOSTIC": {
+   "n": 564,
+   "mean": 1.67,
+   "p90": 3
+  },
+  "PREDISPOSING": {
+   "n": 776,
+   "mean": 2.56,
+   "p90": 5
+  },
+  "ONCOGENIC": {
+   "n": 170,
+   "mean": 4.76,
+   "p90": 8
+  },
+  "FUNCTIONAL": {
+   "n": 185,
+   "mean": 1.7,
+   "p90": 4
+  }
+ },
+ "effortByLevel": {
+  "B": {
+   "n": 1787,
+   "mean": 1.97,
+   "p90": 4
+  },
+  "D": {
+   "n": 1438,
+   "mean": 2.2,
+   "p90": 5
+  },
+  "C": {
+   "n": 1894,
+   "mean": 2.88,
+   "p90": 6
+  },
+  "E": {
+   "n": 40,
+   "mean": 2.55,
+   "p90": 7
+  },
+  "A": {
+   "n": 239,
+   "mean": 2.15,
+   "p90": 4
+  }
+ },
+ "effortCV": 0.9423181918183926,
+ "effortMean": 2.3634679510929972,
+ "orgMatchShare_all": 0.46980363097443495,
+ "orgMatchShare_2023plus": 0.5361904761904762,
+ "windowPopulation": 7737,
+ "windowRealAccepted": 923,
+ "windowRealAcceptedAB": 469,
+ "decidersAll": 62,
+ "decidersWindow": 24,
+ "orgsSubmittingWindow": 18
+}

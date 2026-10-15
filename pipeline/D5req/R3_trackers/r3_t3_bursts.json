@@ -1,0 +1,252 @@
+{
+ "hpo": {
+  "bulk_rule": ">=20 closures of labelled term-request tickets on one UTC day",
+  "by_year": {
+   "2016": {
+    "closures": 130,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2017": {
+    "closures": 777,
+    "bulk_days": 14,
+    "closures_on_bulk_days": 507
+   },
+   "2018": {
+    "closures": 56,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2019": {
+    "closures": 192,
+    "bulk_days": 1,
+    "closures_on_bulk_days": 20
+   },
+   "2020": {
+    "closures": 370,
+    "bulk_days": 1,
+    "closures_on_bulk_days": 20
+   },
+   "2021": {
+    "closures": 530,
+    "bulk_days": 3,
+    "closures_on_bulk_days": 152
+   },
+   "2022": {
+    "closures": 312,
+    "bulk_days": 4,
+    "closures_on_bulk_days": 106
+   },
+   "2023": {
+    "closures": 220,
+    "bulk_days": 2,
+    "closures_on_bulk_days": 62
+   },
+   "2024": {
+    "closures": 468,
+    "bulk_days": 7,
+    "closures_on_bulk_days": 204
+   },
+   "2025": {
+    "closures": 308,
+    "bulk_days": 2,
+    "closures_on_bulk_days": 55
+   },
+   "2026": {
+    "closures": 131,
+    "bulk_days": 1,
+    "closures_on_bulk_days": 23
+   }
+  },
+  "population_rho_2023_25_frame2016": {
+   "arrivals_2023_25": 974,
+   "closures_2023_25": 996,
+   "rho_all": 1.023,
+   "rho_excl_bulk_closures": 0.693,
+   "bulk_closures_2023_25": 321
+  },
+  "stock_by_quarter_frame2016": {
+   "2022-01-01": 88,
+   "2022-04-01": 55,
+   "2022-07-01": 83,
+   "2022-10-01": 39,
+   "2023-01-01": 64,
+   "2023-04-01": 82,
+   "2023-07-01": 145,
+   "2023-10-01": 278,
+   "2024-01-01": 238,
+   "2024-04-01": 139,
+   "2024-07-01": 173,
+   "2024-10-01": 119,
+   "2025-01-01": 153,
+   "2025-04-01": 151,
+   "2025-07-01": 176
+  },
+  "sample": {
+   "all": [
+    1.0,
+    0.919,
+    1.089
+   ],
+   "excl_bulk_as_decision": [
+    0.589,
+    0.446,
+    0.74
+   ],
+   "drop_bulk_tickets": [
+    0.971,
+    0.844,
+    1.104
+   ],
+   "sample_bulk_closed": 74,
+   "sample_bulk_closed_2023_25": 23,
+   "cls_bulk": {
+    "ACC": 55,
+    "REJ": 8,
+    "UNCLEAR": 11
+   },
+   "cls_nonbulk": {
+    "UNCLEAR": 12,
+    "ACC": 102,
+    "REJ": 9
+   },
+   "corroborated_ACC_bulk": [
+    22,
+    55
+   ],
+   "corroborated_ACC_nonbulk": [
+    36,
+    102
+   ],
+   "median_age_at_close_d": {
+    "bulk": 91.8665,
+    "nonbulk": 19.614
+   },
+   "bulk_closers_ge5_rule": "fewer than five accounts"
+  }
+ },
+ "go": {
+  "bulk_rule": ">=20 closures of labelled term-request tickets on one UTC day",
+  "by_year": {
+   "2016": {
+    "closures": 132,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2017": {
+    "closures": 146,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2018": {
+    "closures": 139,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2019": {
+    "closures": 108,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2020": {
+    "closures": 178,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2021": {
+    "closures": 184,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2022": {
+    "closures": 206,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2023": {
+    "closures": 194,
+    "bulk_days": 1,
+    "closures_on_bulk_days": 21
+   },
+   "2024": {
+    "closures": 179,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2025": {
+    "closures": 176,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   },
+   "2026": {
+    "closures": 123,
+    "bulk_days": 0,
+    "closures_on_bulk_days": 0
+   }
+  },
+  "population_rho_2023_25_frame2016": {
+   "arrivals_2023_25": 545,
+   "closures_2023_25": 544,
+   "rho_all": 0.998,
+   "rho_excl_bulk_closures": 0.96,
+   "bulk_closures_2023_25": 21
+  },
+  "stock_by_quarter_frame2016": {
+   "2022-01-01": 97,
+   "2022-04-01": 108,
+   "2022-07-01": 109,
+   "2022-10-01": 96,
+   "2023-01-01": 83,
+   "2023-04-01": 80,
+   "2023-07-01": 74,
+   "2023-10-01": 78,
+   "2024-01-01": 74,
+   "2024-04-01": 86,
+   "2024-07-01": 102,
+   "2024-10-01": 92,
+   "2025-01-01": 98,
+   "2025-04-01": 87,
+   "2025-07-01": 78
+  },
+  "sample": {
+   "all": [
+    0.985,
+    0.908,
+    1.069
+   ],
+   "excl_bulk_as_decision": [
+    0.97,
+    0.892,
+    1.054
+   ],
+   "drop_bulk_tickets": [
+    0.985,
+    0.914,
+    1.071
+   ],
+   "sample_bulk_closed": 1,
+   "sample_bulk_closed_2023_25": 1,
+   "cls_bulk": {
+    "REJ": 1
+   },
+   "cls_nonbulk": {
+    "REJ": 11,
+    "UNCLEAR": 17,
+    "ACC": 165
+   },
+   "corroborated_ACC_bulk": [
+    0,
+    0
+   ],
+   "corroborated_ACC_nonbulk": [
+    133,
+    165
+   ],
+   "median_age_at_close_d": {
+    "bulk": 5.836,
+    "nonbulk": 6.485
+   },
+   "bulk_closers_ge5_rule": "fewer than five accounts"
+  }
+ }
+}

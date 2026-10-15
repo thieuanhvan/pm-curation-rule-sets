@@ -1,0 +1,350 @@
+{
+ "generated": "2026-10-07T15:15:15.181Z",
+ "old_frame": {
+  "source": "D5k4/wd_pull.mjs: 45 alphabetical windows x 50 pages (generator=allpages gapfrom=<letter>)",
+  "pages_pulled": 2250,
+  "cases_2016plus": 2077,
+  "share_of_census_pages": 0.151,
+  "described_in_manuscript_as": "2,077 proposals from 2016 onwards (reads as a census)"
+ },
+ "census": {
+  "allpages_ns4_prefix": 14913,
+  "redirects": 435,
+  "nonredirect": 14478,
+  "parse": {
+   "stat": {
+    "pages": 14478,
+    "noContent": 0,
+    "redirect": 0,
+    "noTemplate": 167,
+    "noSig": 61,
+    "archiveOrMeta": 219
+   },
+   "by": {
+    "pending": 46,
+    "done": 11238,
+    "notdone": 2195,
+    "withdrawn": 535,
+    "other:done": 16,
+    "other:rP11770": 1
+   },
+   "decidedWithoutTs": 506
+  },
+  "from2016": {
+   "n_parsed": 14011,
+   "done": 11245,
+   "notdone": 2186,
+   "withdrawn": 534,
+   "pending": 45,
+   "terminal": 13965,
+   "notdone_share_of_terminal": 0.157,
+   "withdrawn_share_of_terminal": 0.038,
+   "pending_share": 0.0032
+  },
+  "wikidata_status_categories_20261007": {
+   "Category:Properties ready for creation": 3,
+   "Category:Open property proposals": 42,
+   "Category:Not done proposals": 2768,
+   "Category:Done proposals": 11273,
+   "Category:On hold proposals": 10
+  },
+  "open_now_parsed": 46
+ },
+ "properties_created": {
+  "per_year_existing": {
+   "2013": 791,
+   "2014": 518,
+   "2015": 669,
+   "2016": 912,
+   "2017": 1240,
+   "2018": 1516,
+   "2019": 1366,
+   "2020": 1198,
+   "2021": 1206,
+   "2022": 1172,
+   "2023": 809,
+   "2024": 893,
+   "2025": 832,
+   "2026": 850
+  },
+  "first_pid_of_year": {
+   "2013": 6,
+   "2014": 1058,
+   "2015": 1686,
+   "2016": 2437,
+   "2017": 3424,
+   "2018": 4704,
+   "2019": 6325,
+   "2020": 7772,
+   "2021": 9003,
+   "2022": 10224,
+   "2023": 11420,
+   "2024": 12267,
+   "2025": 13199,
+   "2026": 14051
+  },
+  "n_existing": 13972,
+  "max_pid": 14957,
+  "created_since_2016": 11994,
+  "with_done_proposal_subpage": 11105,
+  "coverage_since_2016": 0.926,
+  "coverage_since_2017": 0.956,
+  "talk_sample_100": {
+   "matched_to_done_proposal": 93,
+   "unmatched_pids": [
+    2469,
+    2673,
+    2786,
+    2790,
+    5118,
+    12682,
+    13949
+   ]
+  }
+ },
+ "measures_from2016": {
+  "rho_by_year": {
+   "2016": 0.86,
+   "2017": 0.97,
+   "2018": 1.02,
+   "2019": 0.94,
+   "2020": 0.9,
+   "2021": 1.02,
+   "2022": 1.04,
+   "2023": 0.96,
+   "2024": 1.16,
+   "2025": 0.9,
+   "2026": 1.24
+  },
+  "by_year": {
+   "2016": {
+    "sub": 751,
+    "dec": 647,
+    "pendingEnd": 104,
+    "pendMedAgeD": 54.4
+   },
+   "2017": {
+    "sub": 1451,
+    "dec": 1401,
+    "pendingEnd": 154,
+    "pendMedAgeD": 62
+   },
+   "2018": {
+    "sub": 1733,
+    "dec": 1763,
+    "pendingEnd": 124,
+    "pendMedAgeD": 54.1
+   },
+   "2019": {
+    "sub": 1586,
+    "dec": 1498,
+    "pendingEnd": 212,
+    "pendMedAgeD": 43.6
+   },
+   "2020": {
+    "sub": 1486,
+    "dec": 1334,
+    "pendingEnd": 364,
+    "pendMedAgeD": 128
+   },
+   "2021": {
+    "sub": 1342,
+    "dec": 1368,
+    "pendingEnd": 338,
+    "pendMedAgeD": 123.5
+   },
+   "2022": {
+    "sub": 1294,
+    "dec": 1350,
+    "pendingEnd": 282,
+    "pendMedAgeD": 56.8
+   },
+   "2023": {
+    "sub": 879,
+    "dec": 844,
+    "pendingEnd": 317,
+    "pendMedAgeD": 196.7
+   },
+   "2024": {
+    "sub": 1033,
+    "dec": 1194,
+    "pendingEnd": 156,
+    "pendMedAgeD": 40
+   },
+   "2025": {
+    "sub": 1063,
+    "dec": 961,
+    "pendingEnd": 258,
+    "pendMedAgeD": 119
+   },
+   "2026": {
+    "sub": 870,
+    "dec": 1083,
+    "pendingEnd": 45,
+    "pendMedAgeD": 22.4
+   }
+  },
+  "throughput_2023_25_arrivals": {
+   "sub": 2975,
+   "dec": 2999,
+   "ratio": 1.01
+  },
+  "ttd_done_days": {
+   "n": 11149,
+   "med": 13.8,
+   "p90": 84.6,
+   "le1d": 0.005
+  },
+  "ttd_notdone_days": {
+   "n": 1982,
+   "med": 100.8,
+   "p90": 398.8,
+   "le1d": 0.026
+  },
+  "backlog": {
+   "n": 45,
+   "share": 0.003,
+   "ageMed": 22.4,
+   "ageP90": 1299.2,
+   "gt2y": 0.133
+  },
+  "notdone_rationale_indicative": {
+   "n": 2186,
+   "shares": {
+    "no_consensus_or_stale": 0.419,
+    "other_or_unstated": 0.387,
+    "duplicate_or_existing_property": 0.125,
+    "model_as_item_or_qualifier": 0.061,
+    "scope_or_notability": 0.005,
+    "source_defunct_or_unstable": 0.002
+   }
+  },
+  "u_all_pending": {
+   "n": 13443,
+   "share_decisions_on_live_items": 1,
+   "meanU": [
+    0.341,
+    0.333,
+    0.35
+   ],
+   "newest10": [
+    0.078,
+    0.072,
+    0.084
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.505
+   ],
+   "null_newest10_95": [
+    0.098,
+    0.107
+   ],
+   "median_queue_L": 210
+  },
+  "u_live_le365": {
+   "n": 13070,
+   "share_decisions_on_live_items": 0.972,
+   "meanU": [
+    0.376,
+    0.369,
+    0.385
+   ],
+   "newest10": [
+    0.053,
+    0.048,
+    0.058
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.505
+   ],
+   "null_newest10_95": [
+    0.097,
+    0.108
+   ],
+   "median_queue_L": 194
+  }
+ },
+ "measures_from2021": {
+  "u_all_pending": {
+   "n": 6800,
+   "share_decisions_on_live_items": 1,
+   "meanU": [
+    0.347,
+    0.333,
+    0.36
+   ],
+   "newest10": [
+    0.098,
+    0.089,
+    0.108
+   ],
+   "null_meanU_95": [
+    0.493,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.095,
+    0.109
+   ],
+   "median_queue_L": 274
+  },
+  "u_live_le365": {
+   "n": 6469,
+   "share_decisions_on_live_items": 0.951,
+   "meanU": [
+    0.398,
+    0.384,
+    0.411
+   ],
+   "newest10": [
+    0.062,
+    0.055,
+    0.07
+   ],
+   "null_meanU_95": [
+    0.492,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.096,
+    0.111
+   ],
+   "median_queue_L": 223
+  },
+  "acceptance_within_1y": {
+   "n": 5544,
+   "p": 0.785,
+   "accepted_ever": 0.802,
+   "note": "empirical, submissions 2021-01-01 to 2025-10-07; done without parseable decision ts counted as not within 1 y (lower bound)"
+  }
+ },
+ "measures_from2017": {
+  "rho_by_year": {
+   "2017": 0.9,
+   "2018": 1.02,
+   "2019": 0.94,
+   "2020": 0.9,
+   "2021": 1.02,
+   "2022": 1.04,
+   "2023": 0.96,
+   "2024": 1.15,
+   "2025": 0.9,
+   "2026": 1.24
+  },
+  "ttd_notdone_days": {
+   "n": 1828,
+   "med": 106.7,
+   "p90": 407.2,
+   "le1d": 0.027
+  },
+  "backlog": {
+   "n": 45,
+   "share": 0.004,
+   "ageMed": 22.4,
+   "ageP90": 1299.2,
+   "gt2y": 0.133
+  }
+ }
+}

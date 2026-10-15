@@ -1,0 +1,69 @@
+{
+ "missing": 1268,
+ "bulk": 797,
+ "scattered": 471,
+ "scattered_by_year": {
+  "2015": 59,
+  "2016": 8,
+  "2017": 383,
+  "2018": 9,
+  "2019": 2,
+  "2021": 2,
+  "2023": 8
+ },
+ "pending_share": {
+  "paper": 0.5531650806785271,
+  "all_deleted_pending": 0.5955964951696248,
+  "all_deleted_decided": 0.5006365610724182
+ },
+ "throughput_2023_25": {
+  "paper": 0.4662790697674419,
+  "deleted_in_window": 8,
+  "worst": 0.46412037037037035
+ },
+ "queues_since_2021": {
+  "deleted_dated_2021_or_later": 10,
+  "decisions_scored_h365": 955
+ },
+ "enactment_SA_ei": {
+  "paper": 0.991556091676719,
+  "scattered_deleted_in_window": 404,
+  "worst": 0.6666666666666666,
+  "worst_incl_bulk": 0.4234930448222566
+ },
+ "metadata_basis": {
+  "missing_metadata_basis": 1261,
+  "on_bulk_days_ge20": 1231,
+  "bulk_days": [
+   [
+    "2015-06-21",
+    54
+   ],
+   [
+    "2015-09-28",
+    89
+   ],
+   [
+    "2017-03-30",
+    314
+   ],
+   [
+    "2017-06-01",
+    636
+   ],
+   [
+    "2017-06-02",
+    138
+   ]
+  ],
+  "isolated_lt5_per_day": 8,
+  "isolated_by_year": {
+   "2015": 4,
+   "2016": 1,
+   "2019": 2,
+   "2021": 1
+  },
+  "enactment_SA_ei_worst_isolated": 0.9867947178871549,
+  "isolated_in_SA_ei_window": 4
+ }
+}

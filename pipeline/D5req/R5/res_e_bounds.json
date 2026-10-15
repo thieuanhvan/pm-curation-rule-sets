@@ -1,0 +1,25 @@
+{
+ "tokens_all": 1050,
+ "tokens_no_withdrawal": 1015,
+ "withdrawal_tokens": 35,
+ "EDF90_all": {
+  "eligible": 2014,
+  "matched": 1043,
+  "share": 0.5179
+ },
+ "EDF90_noW": {
+  "eligible": 2014,
+  "matched": 1008,
+  "share": 0.5005
+ },
+ "EDF365_all": {
+  "eligible": 1498,
+  "matched": 1006,
+  "share": 0.6716
+ },
+ "EDF365_noW": {
+  "eligible": 1498,
+  "matched": 975,
+  "share": 0.6509
+ }
+}

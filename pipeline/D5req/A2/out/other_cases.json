@@ -1,0 +1,792 @@
+{
+ "discovery_go": {
+  "cases": 100,
+  "events": 1224,
+  "activities": {
+   "COMMENT_OTHER": 339,
+   "COMMIT_REFERENCE": 188,
+   "COMMENT_SUBMITTER": 147,
+   "LABELED_LATER": 139,
+   "ASSIGNED": 106,
+   "OPENED": 100,
+   "CLOSED_ACC": 86,
+   "ISSUE_LINKED": 44,
+   "PR_LINKED": 26,
+   "RENAMED": 13,
+   "REOPENED": 11,
+   "CLOSED_INTERIM": 11,
+   "CLOSED_REJ": 9,
+   "CLOSED_UNCLEAR": 5
+  },
+  "top_edges": [
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    130
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    73
+   ],
+   [
+    "COMMIT_REFERENCE -> COMMIT_REFERENCE",
+    68
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    60
+   ],
+   [
+    "COMMIT_REFERENCE -> CLOSED_ACC",
+    51
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    45
+   ],
+   [
+    "LABELED_LATER -> LABELED_LATER",
+    41
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    41
+   ],
+   [
+    "COMMENT_OTHER -> COMMIT_REFERENCE",
+    38
+   ],
+   [
+    "LABELED_LATER -> COMMENT_OTHER",
+    33
+   ],
+   [
+    "OPENED -> LABELED_LATER",
+    33
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_ACC",
+    26
+   ]
+  ],
+  "start": {
+   "OPENED": 100
+  },
+  "end": {
+   "COMMENT_OTHER": 7,
+   "CLOSED_ACC": 43,
+   "ISSUE_LINKED": 10,
+   "LABELED_LATER": 5,
+   "COMMENT_SUBMITTER": 9,
+   "ASSIGNED": 2,
+   "COMMIT_REFERENCE": 14,
+   "CLOSED_UNCLEAR": 4,
+   "CLOSED_REJ": 6
+  },
+  "variants_distinct": 98,
+  "top1": [
+   0.02,
+   0.0055,
+   0.07,
+   100
+  ],
+  "variants_selfloops_collapsed": 94,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > COMMENT_OTHER > COMMIT_REFERENCE > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > COMMIT_REFERENCE > CLOSED_ACC > LABELED_LATER > COMMIT_REFERENCE",
+    2
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > COMMIT_REFERENCE > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > LABELED_LATER > COMMIT_REFERENCE > CLOSED_ACC > COMMIT_REFERENCE",
+    2
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > COMMENT_OTHER > RENAMED > COMMENT_OTHER > COMMENT_SUBMITTER > COMMENT_OTHER > CLOSED_ACC > COMMENT_OTHER",
+    1
+   ]
+  ],
+  "imf": {
+   "method": "alignments",
+   "transitions": 42,
+   "align_fitness": 0.8793,
+   "align_precision": 0.5286
+  },
+  "process_tree": "->( 'OPENED', X( tau, 'RENAMED', *( 'ISSUE_LINKED', tau ) ), +( *( 'ASSIGNED', tau ), X( tau, *( 'LABELED_LATER', tau ) ) ), X( tau, 'CLOSED_UNCLEAR', 'CLOSED_REJ' ), +( X( tau, *( 'COMMIT_REFERENCE', tau ) ), X( tau, *( 'PR_LINKED', tau ) ), X( tau, *( 'COMMENT_SUBMITTER', tau ) ), X( tau, *( 'COMMENT_OTHER', tau ) ), 'CLOSED_ACC' ) )"
+ },
+ "declare_go": {
+  "precedence(COMMENT_OTHER, CLOSED_ACC)": {
+   "event_confidence": [
+    0.6977,
+    0.5939,
+    0.7846,
+    86
+   ],
+   "activated_traces": 86,
+   "trace_confidence": [
+    0.6977,
+    0.5939,
+    0.7846,
+    86
+   ],
+   "vacuous_share": 0.14
+  },
+  "four-eyes: closer(CLOSED_ACC) != opener": {
+   "event_confidence": [
+    0.814,
+    0.7189,
+    0.8821,
+    86
+   ],
+   "activated_traces": 86,
+   "trace_confidence": [
+    0.814,
+    0.7189,
+    0.8821,
+    86
+   ],
+   "vacuous_share": 0.14
+  },
+  "precedence(COMMENT_OTHER, CLOSED_REJ)": {
+   "event_confidence": [
+    1.0,
+    0.7008,
+    1.0,
+    9
+   ],
+   "activated_traces": 9,
+   "trace_confidence": [
+    1.0,
+    0.7008,
+    1.0,
+    9
+   ],
+   "vacuous_share": 0.91
+  },
+  "four-eyes: closer(CLOSED_REJ) != opener": {
+   "event_confidence": [
+    0.5556,
+    0.2666,
+    0.8112,
+    9
+   ],
+   "activated_traces": 9,
+   "trace_confidence": [
+    0.5556,
+    0.2666,
+    0.8112,
+    9
+   ],
+   "vacuous_share": 0.91
+  },
+  "precedence(COMMIT_REFERENCE|PR_LINKED, CLOSED_ACC) [visible implementation trace]": {
+   "event_confidence": [
+    0.7209,
+    0.6183,
+    0.8047,
+    86
+   ],
+   "activated_traces": 86,
+   "trace_confidence": [
+    0.7209,
+    0.6183,
+    0.8047,
+    86
+   ],
+   "vacuous_share": 0.14,
+   "note": "commit-closure (closed event carrying a commit id) is folded into CLOSED_ACC and not counted here"
+  },
+  "response(REOPENED, CLOSED_final)": {
+   "event_confidence": [
+    1.0,
+    0.7412,
+    1.0,
+    11
+   ],
+   "activated_traces": 11,
+   "trace_confidence": [
+    1.0,
+    0.7412,
+    1.0,
+    11
+   ],
+   "vacuous_share": 0.89,
+   "note": "true by sample design (closed tickets only)"
+  },
+  "existence(ASSIGNED)": {
+   "event_confidence": [
+    0.93,
+    0.8625,
+    0.9657,
+    100
+   ],
+   "activated_traces": 100,
+   "trace_confidence": [
+    0.93,
+    0.8625,
+    0.9657,
+    100
+   ],
+   "vacuous_share": 0.0
+  },
+  "response(OPENED, CLOSED_*)": {
+   "event_confidence": [
+    1.0,
+    0.963,
+    1.0,
+    100
+   ],
+   "activated_traces": 100,
+   "trace_confidence": [
+    1.0,
+    0.963,
+    1.0,
+    100
+   ],
+   "vacuous_share": 0.0,
+   "note": "vacuous by design: sample drawn among closed tickets; pending tickets have no timeline"
+  },
+  "time_to_close_by_presence_descriptive": {
+   "COMMENT_OTHER": {
+    "n_with": 73,
+    "med_with": 14.1,
+    "n_without": 27,
+    "med_without": 1.8,
+    "diff_ci95": [
+     4.1,
+     35.0
+    ]
+   },
+   "ASSIGNED": {
+    "n_with": 91,
+    "med_with": 7.0,
+    "n_without": 9,
+    "med_without": 0.2,
+    "diff_ci95": [
+     -355.8,
+     12.0
+    ]
+   },
+   "PR_LINKED": {
+    "n_with": 22,
+    "med_with": 11.2,
+    "n_without": 78,
+    "med_without": 5.9,
+    "diff_ci95": [
+     -4.5,
+     123.9
+    ]
+   }
+  }
+ },
+ "discovery_hpo": {
+  "cases": 100,
+  "events": 638,
+  "activities": {
+   "ASSIGNED": 188,
+   "COMMENT_OTHER": 120,
+   "OPENED": 100,
+   "CLOSED_ACC": 78,
+   "COMMENT_SUBMITTER": 61,
+   "LABELED_LATER": 55,
+   "CLOSED_UNCLEAR": 13,
+   "CLOSED_REJ": 9,
+   "ISSUE_LINKED": 6,
+   "COMMIT_REFERENCE": 4,
+   "RENAMED": 1,
+   "PR_LINKED": 1,
+   "CLOSED_INTERIM": 1,
+   "REOPENED": 1
+  },
+  "top_edges": [
+   [
+    "ASSIGNED -> ASSIGNED",
+    110
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    70
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_ACC",
+    47
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    35
+   ],
+   [
+    "LABELED_LATER -> COMMENT_OTHER",
+    35
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    27
+   ],
+   [
+    "OPENED -> LABELED_LATER",
+    26
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    23
+   ],
+   [
+    "ASSIGNED -> LABELED_LATER",
+    20
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    19
+   ],
+   [
+    "COMMENT_SUBMITTER -> CLOSED_ACC",
+    18
+   ],
+   [
+    "ASSIGNED -> COMMENT_SUBMITTER",
+    15
+   ]
+  ],
+  "start": {
+   "OPENED": 100
+  },
+  "end": {
+   "CLOSED_ACC": 70,
+   "COMMENT_OTHER": 2,
+   "ISSUE_LINKED": 2,
+   "CLOSED_UNCLEAR": 11,
+   "COMMENT_SUBMITTER": 6,
+   "CLOSED_REJ": 9
+  },
+  "variants_distinct": 66,
+  "top1": [
+   0.09,
+   0.0481,
+   0.1623,
+   100
+  ],
+  "variants_selfloops_collapsed": 50,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    15
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > CLOSED_ACC",
+    10
+   ],
+   [
+    "ASSIGNED > LABELED_LATER > COMMENT_OTHER > CLOSED_ACC",
+    9
+   ],
+   [
+    "LABELED_LATER > COMMENT_OTHER > CLOSED_REJ",
+    4
+   ],
+   [
+    "LABELED_LATER > CLOSED_ACC",
+    4
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > COMMENT_SUBMITTER > COMMENT_OTHER > CLOSED_ACC",
+    3
+   ]
+  ],
+  "imf": {
+   "method": "alignments",
+   "transitions": 37,
+   "align_fitness": 0.937,
+   "align_precision": 0.4774
+  },
+  "process_tree": "->( 'OPENED', +( X( tau, *( 'ASSIGNED', tau ) ), ->( X( tau, ->( 'CLOSED_INTERIM', 'REOPENED' ) ), +( X( tau, 'CLOSED_ACC' ), ->( X( 'CLOSED_UNCLEAR', ->( X( tau, 'COMMIT_REFERENCE', ->( +( *( 'LABELED_LATER', tau ), X( tau, 'ISSUE_LINKED' ) ), X( tau, 'RENAMED' ) ) ), +( X( tau, *( 'COMMENT_SUBMITTER', tau ) ), *( 'COMMENT_OTHER', tau ) ) ) ), X( tau, 'PR_LINKED' ) ) ) ) ), X( tau, 'CLOSED_REJ' ) )"
+ },
+ "declare_hpo": {
+  "precedence(COMMENT_OTHER, CLOSED_ACC)": {
+   "event_confidence": [
+    0.7051,
+    0.5962,
+    0.7948,
+    78
+   ],
+   "activated_traces": 78,
+   "trace_confidence": [
+    0.7051,
+    0.5962,
+    0.7948,
+    78
+   ],
+   "vacuous_share": 0.22
+  },
+  "four-eyes: closer(CLOSED_ACC) != opener": {
+   "event_confidence": [
+    0.7436,
+    0.6369,
+    0.8274,
+    78
+   ],
+   "activated_traces": 78,
+   "trace_confidence": [
+    0.7436,
+    0.6369,
+    0.8274,
+    78
+   ],
+   "vacuous_share": 0.22
+  },
+  "precedence(COMMENT_OTHER, CLOSED_REJ)": {
+   "event_confidence": [
+    1.0,
+    0.7008,
+    1.0,
+    9
+   ],
+   "activated_traces": 9,
+   "trace_confidence": [
+    1.0,
+    0.7008,
+    1.0,
+    9
+   ],
+   "vacuous_share": 0.91
+  },
+  "four-eyes: closer(CLOSED_REJ) != opener": {
+   "event_confidence": [
+    0.8889,
+    0.565,
+    0.9801,
+    9
+   ],
+   "activated_traces": 9,
+   "trace_confidence": [
+    0.8889,
+    0.565,
+    0.9801,
+    9
+   ],
+   "vacuous_share": 0.91
+  },
+  "precedence(COMMIT_REFERENCE|PR_LINKED, CLOSED_ACC) [visible implementation trace]": {
+   "event_confidence": [
+    0.0385,
+    0.0132,
+    0.1071,
+    78
+   ],
+   "activated_traces": 78,
+   "trace_confidence": [
+    0.0385,
+    0.0132,
+    0.1071,
+    78
+   ],
+   "vacuous_share": 0.22,
+   "note": "commit-closure (closed event carrying a commit id) is folded into CLOSED_ACC and not counted here"
+  },
+  "response(REOPENED, CLOSED_final)": {
+   "event_confidence": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ],
+   "activated_traces": 1,
+   "trace_confidence": [
+    1.0,
+    0.2065,
+    1.0,
+    1
+   ],
+   "vacuous_share": 0.99,
+   "note": "true by sample design (closed tickets only)"
+  },
+  "existence(ASSIGNED)": {
+   "event_confidence": [
+    0.75,
+    0.657,
+    0.8245,
+    100
+   ],
+   "activated_traces": 100,
+   "trace_confidence": [
+    0.75,
+    0.657,
+    0.8245,
+    100
+   ],
+   "vacuous_share": 0.0
+  },
+  "response(OPENED, CLOSED_*)": {
+   "event_confidence": [
+    1.0,
+    0.963,
+    1.0,
+    100
+   ],
+   "activated_traces": 100,
+   "trace_confidence": [
+    1.0,
+    0.963,
+    1.0,
+    100
+   ],
+   "vacuous_share": 0.0,
+   "note": "vacuous by design: sample drawn among closed tickets; pending tickets have no timeline"
+  },
+  "time_to_close_by_presence_descriptive": {
+   "COMMENT_OTHER": {
+    "n_with": 75,
+    "med_with": 54.6,
+    "n_without": 25,
+    "med_without": 14.0,
+    "diff_ci95": [
+     1.8,
+     66.6
+    ]
+   },
+   "ASSIGNED": {
+    "n_with": 75,
+    "med_with": 29.8,
+    "n_without": 25,
+    "med_without": 54.7,
+    "diff_ci95": [
+     -52.6,
+     18.6
+    ]
+   },
+   "PR_LINKED": {
+    "n_with": 1,
+    "med_with": 27.1,
+    "n_without": 99,
+    "med_without": 47.0,
+    "diff_ci95": [
+     -30.7,
+     -1.0
+    ]
+   }
+  }
+ },
+ "wd_parse": {
+  "signed_lines_by_type": {
+   "COMMENT": 7643,
+   "VOTE_OPPOSE": 537,
+   "VOTE_SUPPORT": 5814
+  },
+  "cases": 2145,
+  "events": 15748
+ },
+ "discovery_wikidata": {
+  "cases": 2145,
+  "events": 15748,
+  "activities": {
+   "VOTE_SUPPORT": 5810,
+   "COMMENT": 5178,
+   "PROPOSED": 2145,
+   "CREATED": 1846,
+   "VOTE_OPPOSE": 537,
+   "NOT_DONE": 196,
+   "WITHDRAWN": 36
+  },
+  "top_edges": [
+   [
+    "COMMENT -> COMMENT",
+    3187
+   ],
+   [
+    "VOTE_SUPPORT -> VOTE_SUPPORT",
+    3080
+   ],
+   [
+    "PROPOSED -> VOTE_SUPPORT",
+    1561
+   ],
+   [
+    "VOTE_SUPPORT -> CREATED",
+    1446
+   ],
+   [
+    "VOTE_SUPPORT -> COMMENT",
+    1086
+   ],
+   [
+    "COMMENT -> VOTE_SUPPORT",
+    1055
+   ],
+   [
+    "PROPOSED -> COMMENT",
+    471
+   ],
+   [
+    "COMMENT -> CREATED",
+    375
+   ],
+   [
+    "VOTE_OPPOSE -> COMMENT",
+    285
+   ],
+   [
+    "COMMENT -> VOTE_OPPOSE",
+    248
+   ],
+   [
+    "VOTE_SUPPORT -> VOTE_OPPOSE",
+    131
+   ],
+   [
+    "VOTE_OPPOSE -> VOTE_OPPOSE",
+    125
+   ]
+  ],
+  "start": {
+   "PROPOSED": 2145
+  },
+  "end": {
+   "CREATED": 1685,
+   "NOT_DONE": 174,
+   "COMMENT": 189,
+   "VOTE_SUPPORT": 50,
+   "PROPOSED": 13,
+   "WITHDRAWN": 30,
+   "VOTE_OPPOSE": 4
+  },
+  "variants_distinct": 619,
+  "top1": [
+   0.1427,
+   0.1285,
+   0.1581,
+   2145
+  ],
+  "variants_selfloops_collapsed": 183,
+  "top_variants_collapsed": [
+   [
+    "VOTE_SUPPORT > CREATED",
+    977
+   ],
+   [
+    "VOTE_SUPPORT > COMMENT > CREATED",
+    159
+   ],
+   [
+    "COMMENT > VOTE_SUPPORT > CREATED",
+    158
+   ],
+   [
+    "VOTE_SUPPORT > COMMENT > VOTE_SUPPORT > CREATED",
+    128
+   ],
+   [
+    "COMMENT > VOTE_SUPPORT > COMMENT > CREATED",
+    57
+   ],
+   [
+    "NOT_DONE",
+    40
+   ]
+  ],
+  "imf": {
+   "method": "token_replay",
+   "transitions": 19,
+   "align_fitness": 0.9872,
+   "align_precision": 0.6876
+  },
+  "process_tree": "->( 'PROPOSED', +( *( 'VOTE_SUPPORT', tau ), X( tau, *( 'COMMENT', tau ) ), ->( +( X( tau, *( 'VOTE_OPPOSE', tau ) ), X( 'CREATED', 'NOT_DONE' ) ), X( tau, 'WITHDRAWN' ) ) ) )"
+ },
+ "declare_wikidata": {
+  "precedence(VOTE_SUPPORT, CREATED) [consensus trace]": {
+   "trace_confidence": [
+    0.9778,
+    0.97,
+    0.9836,
+    1846
+   ],
+   "vacuous_share": 0.139
+  },
+  "precedence(VOTE_OPPOSE|COMMENT, NOT_DONE) [reasoned rejection]": {
+   "trace_confidence": [
+    0.7602,
+    0.6958,
+    0.8146,
+    196
+   ],
+   "vacuous_share": 0.909
+  },
+  "responded: CREATED despite >=1 VOTE_OPPOSE before (descriptive)": {
+   "trace_confidence": [
+    0.033,
+    0.0258,
+    0.0422,
+    1846
+   ],
+   "vacuous_share": 0.139
+  },
+  "existence2(VOTE_SUPPORT) before CREATED": {
+   "trace_confidence": [
+    0.7037,
+    0.6824,
+    0.7241,
+    1846
+   ],
+   "vacuous_share": 0.139
+  },
+  "four-eyes: creator != proposer": {
+   "trace_confidence": [
+    0.9707,
+    0.9619,
+    0.9774,
+    1841
+   ],
+   "vacuous_share": 0.142
+  },
+  "min-duration: CREATED >= 7 days after PROPOSED": {
+   "trace_confidence": [
+    0.9464,
+    0.9351,
+    0.9558,
+    1846
+   ],
+   "vacuous_share": 0.139
+  },
+  "response(PROPOSED, CREATED|NOT_DONE|WITHDRAWN) [timestamp found]": {
+   "trace_confidence": [
+    0.9688,
+    0.9605,
+    0.9753,
+    2145
+   ],
+   "vacuous_share": 0.0,
+   "note": "decided proposals without parsable closing signature count as violations here"
+  },
+  "outcome_by_oppose_vote": {
+   "oppose=False": {
+    "n": 1918,
+    "created_share": [
+     0.9307,
+     0.9184,
+     0.9412,
+     1918
+    ],
+    "med_days": 13.2
+   },
+   "oppose=True": {
+    "n": 160,
+    "created_share": [
+     0.3812,
+     0.3096,
+     0.4585,
+     160
+    ],
+    "med_days": 69.8
+   }
+  }
+ }
+}

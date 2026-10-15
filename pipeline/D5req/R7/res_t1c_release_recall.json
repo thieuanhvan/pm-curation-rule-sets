@@ -1,0 +1,166 @@
+{
+ "release_notes": 110,
+ "lines_matching_keywords": 70,
+ "control_relevant_server_changes": 20,
+ "client_or_no_server_diff_excluded": [
+  "v2.0.8 show reject button for own submissions (UI)",
+  "v2.0.8 own revisions on genes/variants (no server diff in control files)",
+  "v2.7.5.2 approver/COI behaviour (no server/app diff)",
+  "v2.7.6 oncogenic assertion form validation (client)"
+ ],
+ "detected_all": [
+  9,
+  20
+ ],
+ "detected_core_moderated_objects": [
+  5,
+  8
+ ],
+ "detected_entity_level": [
+  3,
+  11
+ ],
+ "post_launch_code_controls_in_R6_table_with_release_note": "4 of 4 (F2 v2.2.29, D7 v2.5.13, RR1 v2.5.17, approval COI v2.7.2)",
+ "rows": [
+  {
+   "release": "v2.0.3",
+   "change": "RejectRevision ready? returns true (bug fix in guard control flow)",
+   "scope": "core",
+   "detected": false,
+   "note": "control-flow fix, no predicate change"
+  },
+  {
+   "release": "v2.1.1",
+   "change": "reject an evidence item without passing model validation",
+   "scope": "core",
+   "detected": false,
+   "note": "save(validate: false) not an extractor pattern"
+  },
+  {
+   "release": "v2.2.0",
+   "change": "deprecation of variants and molecular profiles (editor guard, linked-EID guard)",
+   "scope": "entity",
+   "detected": true,
+   "note": "detected, stage mapped other"
+  },
+  {
+   "release": "v2.2.1",
+   "change": "citation ID format validation",
+   "scope": "entity",
+   "detected": false,
+   "note": "source model outside file set"
+  },
+  {
+   "release": "v2.2.10",
+   "change": "duplicate-name validations on variants and molecular profiles",
+   "scope": "entity",
+   "detected": false,
+   "note": "models outside file set"
+  },
+  {
+   "release": "v2.2.12",
+   "change": "flag subject no longer validated when a flag is created",
+   "scope": "core",
+   "detected": false,
+   "note": "association option, not an extractor pattern"
+  },
+  {
+   "release": "v2.2.16",
+   "change": "some form fields no longer required",
+   "scope": "entity",
+   "detected": false,
+   "note": "revision field requirements in validators/actions"
+  },
+  {
+   "release": "v2.2.22",
+   "change": "name uniqueness validated in revision context",
+   "scope": "entity",
+   "detected": false,
+   "note": "models outside file set"
+  },
+  {
+   "release": "v2.2.29",
+   "change": "bot flags on duplicate allele-registry ids",
+   "scope": "core",
+   "detected": true,
+   "note": "detected"
+  },
+  {
+   "release": "v2.2.29",
+   "change": "deprecation of diseases and therapies",
+   "scope": "entity",
+   "detected": false,
+   "note": "admin layer / models outside file set"
+  },
+  {
+   "release": "v2.3.0",
+   "change": "deprecation of complex molecular profiles",
+   "scope": "entity",
+   "detected": true,
+   "note": "detected, stage mapped other"
+  },
+  {
+   "release": "v2.4.7",
+   "change": "open-revision check before deprecating a therapy or disease",
+   "scope": "entity",
+   "detected": false,
+   "note": "validators outside file set"
+  },
+  {
+   "release": "v2.5.13",
+   "change": "comment required to reject an evidence item or assertion",
+   "scope": "core",
+   "detected": true,
+   "note": "detected"
+  },
+  {
+   "release": "v2.5.15",
+   "change": "feature uniqueness validation in revision context",
+   "scope": "entity",
+   "detected": false,
+   "note": "feature model outside file set"
+  },
+  {
+   "release": "v2.5.17",
+   "change": "organisational endorsements (approval) with re-review trigger",
+   "scope": "core",
+   "detected": true,
+   "note": "detected"
+  },
+  {
+   "release": "v2.5.17",
+   "change": "no deprecation of variants/MPs in an open revision",
+   "scope": "entity",
+   "detected": true,
+   "note": "detected, stage mapped other"
+  },
+  {
+   "release": "v2.5.24",
+   "change": "endorsements renamed approvals",
+   "scope": "core",
+   "detected": true,
+   "note": "detected as new keys; continuity needs manual linking"
+  },
+  {
+   "release": "v2.7.0",
+   "change": "deprecation of sources",
+   "scope": "entity",
+   "detected": false,
+   "note": "admin console layer not scanned"
+  },
+  {
+   "release": "v2.7.0",
+   "change": "automated ClinVar submission of approved assertions",
+   "scope": "downstream",
+   "detected": true,
+   "note": "detected (jobs), stage mapped intake"
+  },
+  {
+   "release": "v2.7.2",
+   "change": "approval requires a valid COI statement",
+   "scope": "core",
+   "detected": true,
+   "note": "detected"
+  }
+ ]
+}

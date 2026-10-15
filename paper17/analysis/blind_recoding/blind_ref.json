@@ -1,0 +1,32 @@
+{
+  "note": "First coding (Table S3), presence at S1 2016-06-29, S2 2020-06-30, S3 v2.0.0, S4 v2.7.6, derived from tau/rho. C16+C17 harmonised as one unit U16 (supersession). C3 (inferred norm) not coded.",
+  "units": {
+    "C1":  {"obj": "evidence_item", "stage": "intake", "mode": "G", "rule": "submission requires a logged-in user", "p": [1,1,1,1]},
+    "C2":  {"obj": "revision", "stage": "intake", "mode": "G", "rule": "comment >=10 chars to suggest a revision", "p": [0,0,1,1]},
+    "C4":  {"obj": "evidence_item", "stage": "decision", "mode": "G", "rule": "acceptance only by editor role", "p": [1,1,1,1]},
+    "C5":  {"obj": "evidence_item", "stage": "decision", "mode": "G", "rule": "no self-acceptance of own submission", "p": [1,1,1,1]},
+    "C6":  {"obj": "revision", "stage": "decision", "mode": "G", "rule": "acceptance of revision only by editor role", "p": [1,1,1,1]},
+    "C7":  {"obj": "revision", "stage": "decision", "mode": "G", "rule": "no self-acceptance of own revision", "p": [1,1,1,1]},
+    "C8":  {"obj": "cross_cutting", "stage": "decision", "mode": "G", "rule": "valid COI statement for moderation (v1 server; v2 evidence/assertion client only)", "p": [0,1,0,0]},
+    "C9":  {"obj": "revision", "stage": "decision", "mode": "G", "rule": "valid COI statement for revisions, flags, source suggestions (v2 server)", "p": [0,0,1,1]},
+    "C10": {"obj": "revision", "stage": "decision", "mode": "G", "rule": "reason >=10 chars to reject a revision", "p": [0,0,1,1]},
+    "C11": {"obj": "evidence_item", "stage": "decision", "mode": "G", "rule": "reason required to reject evidence item or assertion", "p": [0,0,0,1]},
+    "C12": {"obj": "cross_cutting", "stage": "decision", "mode": "G", "rule": "acting organisation must be one of the user's", "p": [0,1,1,1]},
+    "C13": {"obj": "flag", "stage": "flag raising", "mode": "G", "rule": "comment >=10 chars to raise a flag", "p": [0,0,1,1]},
+    "C14": {"obj": "flag", "stage": "flag raising", "mode": "A", "rule": "bot flags duplicate allele registry ids", "p": [0,0,0,1]},
+    "C15": {"obj": "flag", "stage": "flag resolution", "mode": "G", "rule": "only flagger or editor may resolve", "p": [0,1,1,1]},
+    "U16": {"obj": "revision", "stage": "exit", "mode": "A", "rule": "pending revisions superseded on conflicting acceptance", "p": [0,0,1,1]},
+    "C18": {"obj": "evidence_item", "stage": "exit", "mode": "P", "rule": "submitter may withdraw own item", "p": [0,1,1,1]},
+    "C19": {"obj": "assertion", "stage": "re-review", "mode": "A", "rule": "approvals reset when assertion flagged or evidence rejected", "p": [0,0,0,1]},
+    "C20": {"obj": "revision", "stage": "fit", "mode": "G", "rule": "stale base value refused unless forced", "p": [1,1,0,0]},
+    "C21": {"obj": "evidence_item", "stage": "re-review", "mode": "A", "rule": "rejected item back to submitted on new revision", "p": [1,1,0,0]},
+    "C22": {"obj": "assertion", "stage": "fit", "mode": "G", "rule": "approval refused while assertion flagged or not accepted", "p": [0,0,0,1]},
+    "C23": {"obj": "assertion", "stage": "decision", "mode": "G", "rule": "assertion acceptance by editor only, no self-acceptance", "p": [0,1,1,1]},
+    "C24": {"obj": "assertion", "stage": "decision", "mode": "G", "rule": "approval requires approver role (+COI from v2.7.2)", "p": [0,0,0,1]},
+    "C25": {"obj": "flag", "stage": "flag raising", "mode": "G", "rule": "account required to raise a flag", "p": [0,1,1,1]},
+    "C26": {"obj": "source_suggestion", "stage": "decision", "mode": "A", "rule": "suggestion set to curated when evidence submitted from it", "p": [0,1,0,0]},
+    "N1": {"obj": "evidence_item", "stage": "selection", "mode": "absence", "rule": "no selection control", "p": [0,0,0,0]},
+    "N2": {"obj": "evidence_item", "stage": "allocation", "mode": "absence", "rule": "no allocation control", "p": [0,0,0,0]},
+    "N3": {"obj": "evidence_item", "stage": "exit", "mode": "absence", "rule": "no timer/expiry exit", "p": [0,0,0,0]}
+  }
+}

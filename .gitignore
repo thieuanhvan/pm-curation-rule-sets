@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+cache/
+gh_cache/
+raw/
+internal/
+*_hmac.*
+*.pkl
+*.sqlite
+*.jsonocel
+*.xes
+*.log
+work/

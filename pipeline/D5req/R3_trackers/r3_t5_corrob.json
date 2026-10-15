@@ -1,0 +1,248 @@
+{
+ "go": {
+  "terms_by_creation_year": {
+   "2010": {
+    "n": 1953,
+    "tracker_link": 156,
+    "share_link": 0.08
+   },
+   "2011": {
+    "n": 1798,
+    "tracker_link": 166,
+    "share_link": 0.092
+   },
+   "2012": {
+    "n": 2209,
+    "tracker_link": 280,
+    "share_link": 0.127
+   },
+   "2013": {
+    "n": 1246,
+    "tracker_link": 154,
+    "share_link": 0.124
+   },
+   "2014": {
+    "n": 1416,
+    "tracker_link": 143,
+    "share_link": 0.101
+   },
+   "2015": {
+    "n": 1244,
+    "tracker_link": 90,
+    "share_link": 0.072
+   },
+   "2016": {
+    "n": 869,
+    "tracker_link": 62,
+    "share_link": 0.071
+   },
+   "2017": {
+    "n": 624,
+    "tracker_link": 173,
+    "share_link": 0.277
+   },
+   "2018": {
+    "n": 407,
+    "tracker_link": 106,
+    "share_link": 0.26
+   },
+   "2019": {
+    "n": 276,
+    "tracker_link": 114,
+    "share_link": 0.413
+   },
+   "2020": {
+    "n": 308,
+    "tracker_link": 223,
+    "share_link": 0.724
+   },
+   "2021": {
+    "n": 256,
+    "tracker_link": 230,
+    "share_link": 0.898
+   },
+   "2022": {
+    "n": 291,
+    "tracker_link": 252,
+    "share_link": 0.866
+   },
+   "2023": {
+    "n": 271,
+    "tracker_link": 254,
+    "share_link": 0.937
+   },
+   "2024": {
+    "n": 259,
+    "tracker_link": 257,
+    "share_link": 0.992
+   },
+   "2025": {
+    "n": 251,
+    "tracker_link": 250,
+    "share_link": 0.996
+   },
+   "2026": {
+    "n": 84,
+    "tracker_link": 84,
+    "share_link": 1
+   },
+   "no_date": {
+    "n": 22490,
+    "tracker_link": 6471,
+    "share_link": 0.288
+   }
+  },
+  "acc_by_open_period": {
+   "2016-18": {
+    "n": 28,
+    "corroborated": 16,
+    "cited_by_any_term": 13,
+    "any_id_mentioned": 17,
+    "only_preexisting_ids": 0,
+    "mentioned_id_no_date": 5,
+    "no_id_no_citation": 7
+   },
+   "2019-21": {
+    "n": 53,
+    "corroborated": 40,
+    "cited_by_any_term": 39,
+    "any_id_mentioned": 33,
+    "only_preexisting_ids": 0,
+    "mentioned_id_no_date": 4,
+    "no_id_no_citation": 9
+   },
+   "2022-26": {
+    "n": 84,
+    "corroborated": 77,
+    "cited_by_any_term": 75,
+    "any_id_mentioned": 73,
+    "only_preexisting_ids": 1,
+    "mentioned_id_no_date": 5,
+    "no_id_no_citation": 1
+   }
+  }
+ },
+ "hpo": {
+  "terms_by_creation_year": {
+   "2010": {
+    "n": 826,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2011": {
+    "n": 539,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2012": {
+    "n": 862,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2013": {
+    "n": 432,
+    "tracker_link": 2,
+    "share_link": 0.005
+   },
+   "2014": {
+    "n": 357,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2015": {
+    "n": 186,
+    "tracker_link": 1,
+    "share_link": 0.005
+   },
+   "2016": {
+    "n": 593,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2017": {
+    "n": 1072,
+    "tracker_link": 2,
+    "share_link": 0.002
+   },
+   "2018": {
+    "n": 741,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2019": {
+    "n": 771,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2020": {
+    "n": 917,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2021": {
+    "n": 891,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2022": {
+    "n": 452,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "2023": {
+    "n": 1020,
+    "tracker_link": 100,
+    "share_link": 0.098
+   },
+   "2024": {
+    "n": 1240,
+    "tracker_link": 1042,
+    "share_link": 0.84
+   },
+   "2025": {
+    "n": 452,
+    "tracker_link": 291,
+    "share_link": 0.644
+   },
+   "2026": {
+    "n": 83,
+    "tracker_link": 0,
+    "share_link": 0
+   },
+   "no_date": {
+    "n": 6704,
+    "tracker_link": 60,
+    "share_link": 0.009
+   }
+  },
+  "acc_by_open_period": {
+   "2016-18": {
+    "n": 30,
+    "corroborated": 6,
+    "cited_by_any_term": 0,
+    "any_id_mentioned": 12,
+    "only_preexisting_ids": 2,
+    "mentioned_id_no_date": 4,
+    "no_id_no_citation": 18
+   },
+   "2019-21": {
+    "n": 60,
+    "corroborated": 9,
+    "cited_by_any_term": 0,
+    "any_id_mentioned": 20,
+    "only_preexisting_ids": 6,
+    "mentioned_id_no_date": 5,
+    "no_id_no_citation": 40
+   },
+   "2022-26": {
+    "n": 67,
+    "corroborated": 43,
+    "cited_by_any_term": 43,
+    "any_id_mentioned": 58,
+    "only_preexisting_ids": 6,
+    "mentioned_id_no_date": 9,
+    "no_id_no_citation": 9
+   }
+  }
+ }
+}

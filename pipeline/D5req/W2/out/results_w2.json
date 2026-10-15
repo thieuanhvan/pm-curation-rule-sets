@@ -1,0 +1,4616 @@
+{
+ "sample": {
+  "go": {
+   "n": 200,
+   "open": 6,
+   "closed_by_class": {
+    "ACC": 165,
+    "UNCLEAR": 17,
+    "REJ": 12,
+    "PENDING": 6
+   },
+   "insider_submitter_share": [
+    0.1,
+    0.0657,
+    0.1494,
+    200
+   ],
+   "source": {
+    "W2": 193,
+    "D5k4b": 7
+   },
+   "classifier_coverage_closed": [
+    0.9124,
+    0.8642,
+    0.9446,
+    194
+   ],
+   "accept_share_classified": [
+    0.9322,
+    0.8852,
+    0.9608,
+    177
+   ],
+   "OBO_corroborated_ACC": [
+    0.8061,
+    0.7391,
+    0.8591,
+    165
+   ],
+   "OBO_corroborated_REJ": [
+    0.1667,
+    0.047,
+    0.448,
+    12
+   ],
+   "OBO_corroborated_UNCLEAR": [
+    0.1176,
+    0.0329,
+    0.3434,
+    17
+   ],
+   "tier_counts": {
+    "ACC_T2.0": 132,
+    "ACC_T3.0": 18,
+    "ACC_T4.0": 15,
+    "UNCLEAR_T0.0": 12,
+    "REJ_T3.0": 6,
+    "UNCLEAR_T3.0": 5,
+    "REJ_T1.0": 4,
+    "REJ_T3.7": 2
+   },
+   "state_reason_final_close": {
+    "completed": 191,
+    "not_planned": 3
+   }
+  },
+  "hpo": {
+   "n": 200,
+   "open": 3,
+   "closed_by_class": {
+    "ACC": 157,
+    "UNCLEAR": 23,
+    "REJ": 17,
+    "PENDING": 3
+   },
+   "insider_submitter_share": [
+    0.065,
+    0.0384,
+    0.108,
+    200
+   ],
+   "source": {
+    "W2": 196,
+    "D5k4b": 4
+   },
+   "classifier_coverage_closed": [
+    0.8832,
+    0.8309,
+    0.9209,
+    197
+   ],
+   "accept_share_classified": [
+    0.9023,
+    0.8491,
+    0.9381,
+    174
+   ],
+   "OBO_corroborated_ACC": [
+    0.3694,
+    0.2979,
+    0.4472,
+    157
+   ],
+   "OBO_corroborated_REJ": [
+    0.0,
+    0.0,
+    0.1843,
+    17
+   ],
+   "OBO_corroborated_UNCLEAR": [
+    0.0435,
+    0.0077,
+    0.2099,
+    23
+   ],
+   "tier_counts": {
+    "ACC_T3.0": 109,
+    "ACC_T2.0": 37,
+    "UNCLEAR_T0.0": 21,
+    "ACC_T4.0": 11,
+    "REJ_T3.7": 9,
+    "REJ_T3.0": 8,
+    "UNCLEAR_T3.0": 2
+   },
+   "state_reason_final_close": {
+    "completed": 197
+   }
+  }
+ },
+ "discovery_go": {
+  "cases": 200,
+  "events": 2718,
+  "activities": {
+   "COMMENT_OTHER": 729,
+   "COMMIT_REF": 507,
+   "COMMENT_SUBMITTER": 366,
+   "ASSIGNED": 225,
+   "LABELED": 213,
+   "OPENED": 200,
+   "CLOSED_ACC": 165,
+   "CROSS_REF": 69,
+   "PR_LINKED": 54,
+   "PR_MERGED": 42,
+   "CLOSED_INTERIM": 39,
+   "REOPENED": 38,
+   "RENAMED": 34,
+   "CLOSED_UNCLEAR": 17,
+   "CLOSED_REJ": 12,
+   "COMMENT_BOT": 8
+  },
+  "top_edges": [
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    280
+   ],
+   [
+    "COMMIT_REF -> COMMIT_REF",
+    184
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    171
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    130
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    117
+   ],
+   [
+    "COMMIT_REF -> CLOSED_ACC",
+    112
+   ],
+   [
+    "COMMENT_OTHER -> COMMIT_REF",
+    111
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    78
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_SUBMITTER",
+    66
+   ],
+   [
+    "LABELED -> COMMENT_OTHER",
+    66
+   ],
+   [
+    "COMMIT_REF -> COMMENT_OTHER",
+    63
+   ],
+   [
+    "ASSIGNED -> LABELED",
+    60
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMIT_REF",
+    56
+   ],
+   [
+    "LABELED -> LABELED",
+    54
+   ],
+   [
+    "LABELED -> COMMIT_REF",
+    36
+   ]
+  ],
+  "start": {
+   "OPENED": 200
+  },
+  "end": {
+   "CLOSED_ACC": 74,
+   "COMMENT_OTHER": 22,
+   "CROSS_REF": 11,
+   "COMMENT_SUBMITTER": 18,
+   "COMMIT_REF": 33,
+   "CLOSED_UNCLEAR": 13,
+   "LABELED": 11,
+   "PR_MERGED": 3,
+   "CLOSED_REJ": 9,
+   "REOPENED": 1,
+   "ASSIGNED": 3,
+   "PR_LINKED": 2
+  },
+  "variants_distinct": 191,
+  "top1_variant_share": [
+   0.015,
+   0.0051,
+   0.0432,
+   200
+  ],
+  "variants_selfloops_collapsed": 186,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > LABELED > COMMIT_REF > CLOSED_ACC",
+    5
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > COMMIT_REF > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > COMMIT_REF > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > COMMIT_REF > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > COMMIT_REF > PR_LINKED > PR_MERGED > CLOSED_ACC > COMMIT_REF",
+    2
+   ],
+   [
+    "ASSIGNED > LABELED > COMMIT_REF > COMMENT_OTHER > COMMIT_REF > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > COMMIT_REF > CLOSED_ACC > COMMIT_REF",
+    2
+   ]
+  ],
+  "process_tree": "->( 'OPENED', X( 'CLOSED_UNCLEAR', 'CLOSED_REJ', +( *( 'COMMENT_OTHER', tau ), *( 'COMMIT_REF', tau ), ->( X( tau, *( 'COMMENT_BOT', tau ), ->( X( tau, ->( X( tau, *( 'CROSS_REF', tau ) ), X( tau, *( 'RENAMED', tau ) ) ) ), X( tau, *( X( 'PR_LINKED', ->( 'CLOSED_INTERIM', 'REOPENED' ), 'PR_MERGED' ), tau ) ) ) ), +( X( tau, *( 'COMMENT_SUBMITTER', tau ) ), X( tau, *( 'LABELED', tau ) ), 'CLOSED_ACC', *( 'ASSIGNED', tau ) ) ) ) ) )",
+  "token_replay": {
+   "log_fitness": 0.9446,
+   "perc_fit_traces": 31.5,
+   "precision_etc": 0.4057
+  },
+  "alignments_sample": {
+   "n_cases": 150,
+   "avg_trace_fitness": 0.8761,
+   "ci95": [
+    0.856,
+    0.8942
+   ],
+   "perc_fit_traces": 30.67,
+   "precision_align": 0.3993
+  }
+ },
+ "discovery_go_closed_only": {
+  "cases": 194,
+  "events": 2653,
+  "activities": {
+   "COMMENT_OTHER": 711,
+   "COMMIT_REF": 504,
+   "COMMENT_SUBMITTER": 351,
+   "ASSIGNED": 218,
+   "LABELED": 206,
+   "OPENED": 194,
+   "CLOSED_ACC": 165,
+   "CROSS_REF": 69,
+   "PR_LINKED": 51,
+   "PR_MERGED": 41,
+   "CLOSED_INTERIM": 37,
+   "REOPENED": 36,
+   "RENAMED": 33,
+   "CLOSED_UNCLEAR": 17,
+   "CLOSED_REJ": 12,
+   "COMMENT_BOT": 8
+  },
+  "top_edges": [
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    274
+   ],
+   [
+    "COMMIT_REF -> COMMIT_REF",
+    184
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    164
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    126
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    116
+   ],
+   [
+    "COMMIT_REF -> CLOSED_ACC",
+    112
+   ],
+   [
+    "COMMENT_OTHER -> COMMIT_REF",
+    111
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    78
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_SUBMITTER",
+    63
+   ],
+   [
+    "COMMIT_REF -> COMMENT_OTHER",
+    63
+   ],
+   [
+    "LABELED -> COMMENT_OTHER",
+    61
+   ],
+   [
+    "ASSIGNED -> LABELED",
+    58
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMIT_REF",
+    56
+   ],
+   [
+    "LABELED -> LABELED",
+    53
+   ],
+   [
+    "LABELED -> COMMIT_REF",
+    36
+   ]
+  ],
+  "start": {
+   "OPENED": 194
+  },
+  "end": {
+   "CLOSED_ACC": 74,
+   "COMMENT_OTHER": 21,
+   "CROSS_REF": 11,
+   "COMMENT_SUBMITTER": 17,
+   "COMMIT_REF": 33,
+   "CLOSED_UNCLEAR": 13,
+   "LABELED": 11,
+   "PR_MERGED": 3,
+   "CLOSED_REJ": 9,
+   "PR_LINKED": 2
+  },
+  "variants_distinct": 185,
+  "top1_variant_share": [
+   0.0155,
+   0.0053,
+   0.0445,
+   194
+  ],
+  "variants_selfloops_collapsed": 180,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > LABELED > COMMIT_REF > CLOSED_ACC",
+    5
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > COMMIT_REF > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > COMMIT_REF > CLOSED_ACC",
+    3
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > COMMIT_REF > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > COMMIT_REF > PR_LINKED > PR_MERGED > CLOSED_ACC > COMMIT_REF",
+    2
+   ],
+   [
+    "ASSIGNED > LABELED > COMMIT_REF > COMMENT_OTHER > COMMIT_REF > CLOSED_ACC",
+    2
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > COMMIT_REF > CLOSED_ACC > COMMIT_REF",
+    2
+   ]
+  ],
+  "process_tree": "->( 'OPENED', X( 'CLOSED_UNCLEAR', 'CLOSED_REJ', +( *( 'COMMENT_OTHER', tau ), *( 'COMMIT_REF', tau ), ->( X( tau, *( 'COMMENT_BOT', tau ), ->( X( tau, ->( X( tau, *( 'CROSS_REF', tau ) ), X( tau, *( 'RENAMED', tau ) ) ) ), X( tau, *( X( 'PR_LINKED', ->( 'CLOSED_INTERIM', 'REOPENED' ), 'PR_MERGED' ), tau ) ) ) ), +( X( tau, *( 'COMMENT_SUBMITTER', tau ) ), X( tau, *( 'LABELED', tau ) ), 'CLOSED_ACC', *( 'ASSIGNED', tau ) ) ) ) ) )",
+  "token_replay": {
+   "log_fitness": 0.9469,
+   "perc_fit_traces": 32.47,
+   "precision_etc": 0.4059
+  },
+  "alignments_sample": {
+   "n_cases": 150,
+   "avg_trace_fitness": 0.8913,
+   "ci95": [
+    0.8741,
+    0.9081
+   ],
+   "perc_fit_traces": 34.0,
+   "precision_align": 0.3861
+  }
+ },
+ "discovery_hpo": {
+  "cases": 200,
+  "events": 1219,
+  "activities": {
+   "ASSIGNED": 408,
+   "COMMENT_OTHER": 216,
+   "OPENED": 200,
+   "CLOSED_ACC": 157,
+   "COMMENT_SUBMITTER": 106,
+   "LABELED": 68,
+   "CLOSED_UNCLEAR": 23,
+   "CLOSED_REJ": 17,
+   "RENAMED": 7,
+   "COMMIT_REF": 6,
+   "CROSS_REF": 5,
+   "CLOSED_INTERIM": 2,
+   "REOPENED": 2,
+   "PR_LINKED": 1,
+   "PR_MERGED": 1
+  },
+  "top_edges": [
+   [
+    "ASSIGNED -> ASSIGNED",
+    241
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    160
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_ACC",
+    106
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    83
+   ],
+   [
+    "LABELED -> COMMENT_OTHER",
+    51
+   ],
+   [
+    "ASSIGNED -> COMMENT_SUBMITTER",
+    41
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    41
+   ],
+   [
+    "OPENED -> LABELED",
+    36
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    34
+   ],
+   [
+    "COMMENT_SUBMITTER -> CLOSED_ACC",
+    30
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    29
+   ],
+   [
+    "ASSIGNED -> LABELED",
+    24
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_UNCLEAR",
+    20
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_SUBMITTER",
+    14
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_REJ",
+    12
+   ]
+  ],
+  "start": {
+   "OPENED": 200
+  },
+  "end": {
+   "CLOSED_ACC": 147,
+   "COMMENT_SUBMITTER": 11,
+   "CLOSED_REJ": 14,
+   "CLOSED_UNCLEAR": 19,
+   "LABELED": 3,
+   "CROSS_REF": 2,
+   "COMMIT_REF": 1,
+   "ASSIGNED": 1,
+   "COMMENT_OTHER": 2
+  },
+  "variants_distinct": 101,
+  "top1_variant_share": [
+   0.165,
+   0.12,
+   0.2227,
+   200
+  ],
+  "variants_selfloops_collapsed": 71,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    48
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > CLOSED_ACC",
+    22
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > CLOSED_ACC",
+    12
+   ],
+   [
+    "LABELED > COMMENT_OTHER > CLOSED_ACC",
+    10
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > COMMENT_SUBMITTER > COMMENT_OTHER > CLOSED_ACC",
+    6
+   ],
+   [
+    "LABELED > CLOSED_ACC",
+    6
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_UNCLEAR",
+    6
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_REJ",
+    4
+   ]
+  ],
+  "process_tree": "->( 'OPENED', X( tau, ->( X( 'LABELED', *( 'ASSIGNED', tau ), 'RENAMED' ), X( tau, 'CROSS_REF' ), +( X( tau, *( 'COMMENT_SUBMITTER', tau ) ), *( 'COMMENT_OTHER', tau ) ), X( tau, ->( 'PR_LINKED', 'PR_MERGED' ) ), X( tau, 'CLOSED_ACC' ) ) ) )",
+  "token_replay": {
+   "log_fitness": 0.9557,
+   "perc_fit_traces": 54.0,
+   "precision_etc": 0.6862
+  },
+  "alignments_sample": {
+   "n_cases": 150,
+   "avg_trace_fitness": 0.8913,
+   "ci95": [
+    0.871,
+    0.9092
+   ],
+   "perc_fit_traces": 40.67,
+   "precision_align": 0.6954
+  }
+ },
+ "discovery_hpo_closed_only": {
+  "cases": 197,
+  "events": 1211,
+  "activities": {
+   "ASSIGNED": 405,
+   "COMMENT_OTHER": 216,
+   "OPENED": 197,
+   "CLOSED_ACC": 157,
+   "COMMENT_SUBMITTER": 105,
+   "LABELED": 67,
+   "CLOSED_UNCLEAR": 23,
+   "CLOSED_REJ": 17,
+   "RENAMED": 7,
+   "COMMIT_REF": 6,
+   "CROSS_REF": 5,
+   "CLOSED_INTERIM": 2,
+   "REOPENED": 2,
+   "PR_LINKED": 1,
+   "PR_MERGED": 1
+  },
+  "top_edges": [
+   [
+    "ASSIGNED -> ASSIGNED",
+    241
+   ],
+   [
+    "OPENED -> ASSIGNED",
+    157
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_ACC",
+    106
+   ],
+   [
+    "ASSIGNED -> COMMENT_OTHER",
+    83
+   ],
+   [
+    "LABELED -> COMMENT_OTHER",
+    51
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_OTHER",
+    41
+   ],
+   [
+    "ASSIGNED -> COMMENT_SUBMITTER",
+    40
+   ],
+   [
+    "OPENED -> LABELED",
+    36
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_SUBMITTER",
+    34
+   ],
+   [
+    "COMMENT_SUBMITTER -> CLOSED_ACC",
+    30
+   ],
+   [
+    "COMMENT_OTHER -> COMMENT_OTHER",
+    29
+   ],
+   [
+    "ASSIGNED -> LABELED",
+    23
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_UNCLEAR",
+    20
+   ],
+   [
+    "COMMENT_SUBMITTER -> COMMENT_SUBMITTER",
+    14
+   ],
+   [
+    "COMMENT_OTHER -> CLOSED_REJ",
+    12
+   ]
+  ],
+  "start": {
+   "OPENED": 197
+  },
+  "end": {
+   "CLOSED_ACC": 147,
+   "COMMENT_SUBMITTER": 10,
+   "CLOSED_REJ": 14,
+   "CLOSED_UNCLEAR": 19,
+   "LABELED": 2,
+   "CROSS_REF": 2,
+   "COMMIT_REF": 1,
+   "COMMENT_OTHER": 2
+  },
+  "variants_distinct": 98,
+  "top1_variant_share": [
+   0.1675,
+   0.1218,
+   0.2259,
+   197
+  ],
+  "variants_selfloops_collapsed": 68,
+  "top_variants_collapsed": [
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_ACC",
+    48
+   ],
+   [
+    "ASSIGNED > COMMENT_SUBMITTER > CLOSED_ACC",
+    22
+   ],
+   [
+    "ASSIGNED > LABELED > COMMENT_OTHER > CLOSED_ACC",
+    12
+   ],
+   [
+    "LABELED > COMMENT_OTHER > CLOSED_ACC",
+    10
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > COMMENT_SUBMITTER > COMMENT_OTHER > CLOSED_ACC",
+    6
+   ],
+   [
+    "LABELED > CLOSED_ACC",
+    6
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_UNCLEAR",
+    6
+   ],
+   [
+    "ASSIGNED > COMMENT_OTHER > CLOSED_REJ",
+    4
+   ]
+  ],
+  "process_tree": "->( 'OPENED', X( tau, ->( X( 'LABELED', *( 'ASSIGNED', tau ), 'RENAMED' ), X( tau, 'CROSS_REF' ), +( X( tau, *( 'COMMENT_SUBMITTER', tau ) ), *( 'COMMENT_OTHER', tau ) ), X( tau, ->( 'PR_LINKED', 'PR_MERGED' ) ), X( tau, 'CLOSED_ACC' ) ) ) )",
+  "token_replay": {
+   "log_fitness": 0.9571,
+   "perc_fit_traces": 54.82,
+   "precision_etc": 0.6853
+  },
+  "alignments_sample": {
+   "n_cases": 150,
+   "avg_trace_fitness": 0.9035,
+   "ci95": [
+    0.8852,
+    0.9191
+   ],
+   "perc_fit_traces": 45.33,
+   "precision_align": 0.7033
+  }
+ },
+ "ocdfg": {
+  "object_types": [
+   "ticket",
+   "user",
+   "label",
+   "commit",
+   "pr"
+  ],
+  "top_edges_per_type": {
+   "ticket": [
+    [
+     "OPENED -> LABELED",
+     321
+    ],
+    [
+     "COMMENT_OTHER -> COMMENT_OTHER",
+     306
+    ],
+    [
+     "ASSIGNED -> ASSIGNED",
+     247
+    ],
+    [
+     "LABELED -> ASSIGNED",
+     235
+    ],
+    [
+     "COMMENT_OTHER -> COMMENT_SUBMITTER",
+     205
+    ],
+    [
+     "COMMENT_OTHER -> CLOSED",
+     204
+    ],
+    [
+     "LABELED -> LABELED",
+     176
+    ],
+    [
+     "COMMENT_SUBMITTER -> COMMENT_OTHER",
+     171
+    ],
+    [
+     "LABELED -> COMMENT_OTHER",
+     149
+    ],
+    [
+     "ASSIGNED -> COMMENT_OTHER",
+     143
+    ],
+    [
+     "COMMIT_REF -> COMMIT_REF",
+     131
+    ],
+    [
+     "CLOSED -> COMMIT_REF",
+     123
+    ]
+   ],
+   "user": [
+    [
+     "ASSIGNED -> ASSIGNED",
+     675
+    ],
+    [
+     "COMMENT_OTHER -> COMMENT_OTHER",
+     417
+    ],
+    [
+     "OPENED -> LABELED",
+     286
+    ],
+    [
+     "COMMENT_OTHER -> CLOSED",
+     203
+    ],
+    [
+     "LABELED -> LABELED",
+     202
+    ],
+    [
+     "ASSIGNED -> COMMENT_OTHER",
+     202
+    ],
+    [
+     "COMMENT_SUBMITTER -> COMMENT_SUBMITTER",
+     202
+    ],
+    [
+     "LABELED -> ASSIGNED",
+     200
+    ],
+    [
+     "COMMIT_REF -> COMMIT_REF",
+     161
+    ],
+    [
+     "CLOSED -> ASSIGNED",
+     145
+    ],
+    [
+     "COMMIT_REF -> CLOSED",
+     131
+    ],
+    [
+     "CLOSED -> COMMIT_REF",
+     124
+    ]
+   ],
+   "label": [
+    [
+     "LABELED -> LABELED",
+     610
+    ],
+    [
+     "LABELED -> UNLABELED",
+     26
+    ],
+    [
+     "UNLABELED -> LABELED",
+     20
+    ],
+    [
+     "UNLABELED -> UNLABELED",
+     2
+    ]
+   ],
+   "commit": [
+    [
+     "COMMIT_REF -> CLOSED",
+     147
+    ],
+    [
+     "COMMIT_REF -> COMMIT_REF",
+     26
+    ],
+    [
+     "CLOSED -> COMMIT_REF",
+     3
+    ]
+   ],
+   "pr": [
+    [
+     "PR_LINKED -> PR_MERGED",
+     43
+    ],
+    [
+     "PR_MERGED -> PR_LINKED",
+     1
+    ]
+   ]
+  },
+  "activity_counts_per_type": {
+   "comment": {
+    "COMMENT_BOT": 8,
+    "COMMENT_OTHER": 945,
+    "COMMENT_SUBMITTER": 472
+   },
+   "commit": {
+    "CLOSED": 184,
+    "COMMIT_REF": 513
+   },
+   "label": {
+    "LABELED": 710,
+    "UNLABELED": 29
+   },
+   "pr": {
+    "PR_LINKED": 55,
+    "PR_MERGED": 43
+   },
+   "ticket": {
+    "ASSIGNED": 633,
+    "CLOSED": 432,
+    "COMMENT_BOT": 8,
+    "COMMENT_OTHER": 945,
+    "COMMENT_SUBMITTER": 472,
+    "COMMIT_REF": 513,
+    "CROSS_REF": 74,
+    "LABELED": 710,
+    "OPENED": 400,
+    "PR_LINKED": 55,
+    "PR_MERGED": 43,
+    "RENAMED": 41,
+    "REOPENED": 40,
+    "UNASSIGNED": 47,
+    "UNLABELED": 29
+   },
+   "user": {
+    "ASSIGNED": 633,
+    "CLOSED": 432,
+    "COMMENT_BOT": 8,
+    "COMMENT_OTHER": 945,
+    "COMMENT_SUBMITTER": 472,
+    "COMMIT_REF": 513,
+    "CROSS_REF": 74,
+    "LABELED": 710,
+    "OPENED": 400,
+    "PR_LINKED": 55,
+    "RENAMED": 41,
+    "REOPENED": 40,
+    "UNASSIGNED": 47,
+    "UNLABELED": 29
+   }
+  },
+  "objects_per_type": {
+   "comment": 1425,
+   "commit": 521,
+   "ticket": 400,
+   "user": 146,
+   "label": 81,
+   "pr": 54
+  },
+  "events": 4442
+ },
+ "ocel_convergence": {
+  "ticket": {
+   "events_with_>1_obj_of_type(convergence)": 0,
+   "mean_events_per_object": 11.11
+  },
+  "user": {
+   "events_with_>1_obj_of_type(convergence)": 451,
+   "mean_events_per_object": 38.8
+  },
+  "comment": {
+   "events_with_>1_obj_of_type(convergence)": 0,
+   "mean_events_per_object": 1.0
+  },
+  "label": {
+   "events_with_>1_obj_of_type(convergence)": 0,
+   "mean_events_per_object": 9.12
+  },
+  "commit": {
+   "events_with_>1_obj_of_type(convergence)": 0,
+   "mean_events_per_object": 1.34
+  },
+  "pr": {
+   "events_with_>1_obj_of_type(convergence)": 0,
+   "mean_events_per_object": 1.81
+  }
+ },
+ "declare": {
+  "go": {
+   "all": {
+    "n_traces": 200,
+    "response(OPENED,CLOSE)": [
+     0.97,
+     0.9361,
+     0.9862,
+     200
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     0.8984,
+     0.8468,
+     0.934,
+     187
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.7394,
+     0.6675,
+     0.8004,
+     165
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     0.75,
+     0.4677,
+     0.9111,
+     12
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     0.7059,
+     0.4687,
+     0.8672,
+     17
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.7371,
+     0.671,
+     0.794,
+     194
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.7758,
+     0.7063,
+     0.8327,
+     165
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.4848,
+     0.4098,
+     0.5606,
+     165
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     0.9167,
+     0.6461,
+     0.9851,
+     12
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     0.75,
+     0.4677,
+     0.9111,
+     12
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     0.9412,
+     0.7302,
+     0.9895,
+     17
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.7059,
+     0.4687,
+     0.8672,
+     17
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.9333,
+     0.8846,
+     0.9624,
+     165
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.9333,
+     0.8846,
+     0.9624,
+     165
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     0.9639,
+     0.9274,
+     0.9824,
+     194
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.96,
+     0.9231,
+     0.9796,
+     200
+    ],
+    "self_closure_share": [
+     0.2629,
+     0.206,
+     0.329,
+     194
+    ]
+   },
+   "insider_submitter": {
+    "n_traces": 20,
+    "response(OPENED,CLOSE)": [
+     0.95,
+     0.7639,
+     0.9911,
+     20
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     0.9474,
+     0.7536,
+     0.9906,
+     19
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.625,
+     0.3864,
+     0.8152,
+     16
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     null,
+     null,
+     null,
+     0
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     0.6667,
+     0.2077,
+     0.9385,
+     3
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.6316,
+     0.4104,
+     0.8085,
+     19
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.625,
+     0.3864,
+     0.8152,
+     16
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.4375,
+     0.231,
+     0.6682,
+     16
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     null,
+     null,
+     null,
+     0
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     null,
+     null,
+     null,
+     0
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.6667,
+     0.2077,
+     0.9385,
+     3
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.875,
+     0.6398,
+     0.965,
+     16
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.875,
+     0.6398,
+     0.965,
+     16
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     1.0,
+     0.8318,
+     1.0,
+     19
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.95,
+     0.7639,
+     0.9911,
+     20
+    ],
+    "self_closure_share": [
+     0.3684,
+     0.1915,
+     0.5896,
+     19
+    ]
+   },
+   "outsider_submitter": {
+    "n_traces": 180,
+    "response(OPENED,CLOSE)": [
+     0.9722,
+     0.9366,
+     0.9881,
+     180
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     0.8929,
+     0.837,
+     0.9311,
+     168
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.7517,
+     0.6766,
+     0.8141,
+     149
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     0.75,
+     0.4677,
+     0.9111,
+     12
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     0.7143,
+     0.4535,
+     0.8828,
+     14
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.7486,
+     0.6794,
+     0.807,
+     175
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.7919,
+     0.7198,
+     0.8494,
+     149
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.4899,
+     0.4109,
+     0.5694,
+     149
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     0.9167,
+     0.6461,
+     0.9851,
+     12
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     0.75,
+     0.4677,
+     0.9111,
+     12
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     0.9286,
+     0.6853,
+     0.9873,
+     14
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.7143,
+     0.4535,
+     0.8828,
+     14
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.9396,
+     0.8892,
+     0.9679,
+     149
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.9396,
+     0.8892,
+     0.9679,
+     149
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     0.96,
+     0.9197,
+     0.9805,
+     175
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.9611,
+     0.9219,
+     0.981,
+     180
+    ],
+    "self_closure_share": [
+     0.2514,
+     0.193,
+     0.3206,
+     175
+    ]
+   },
+   "activation_counts": {
+    "CLOSED_ACC": 165,
+    "CLOSED_REJ": 12,
+    "CLOSED_UNCLEAR": 17,
+    "COMMENT_OTHER": 170,
+    "ASSIGNED": 193,
+    "COMMIT_REF": 161,
+    "PR_LINKED": 35,
+    "REOPENED": 34
+   },
+   "reopen_share": [
+    0.17,
+    0.1243,
+    0.2282,
+    200
+   ]
+  },
+  "hpo": {
+   "all": {
+    "n_traces": 200,
+    "response(OPENED,CLOSE)": [
+     0.985,
+     0.9568,
+     0.9949,
+     200
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     0.9355,
+     0.8906,
+     0.9627,
+     186
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.7962,
+     0.7264,
+     0.8518,
+     157
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     0.7059,
+     0.4687,
+     0.8672,
+     17
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     0.8696,
+     0.6787,
+     0.9546,
+     23
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.797,
+     0.7354,
+     0.8472,
+     197
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.7389,
+     0.665,
+     0.8013,
+     157
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.0637,
+     0.035,
+     0.1133,
+     157
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     0.8235,
+     0.5897,
+     0.9381,
+     17
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     0.1765,
+     0.0619,
+     0.4103,
+     17
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     0.913,
+     0.732,
+     0.9758,
+     23
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.0435,
+     0.0077,
+     0.2099,
+     23
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.0382,
+     0.0176,
+     0.0809,
+     157
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.2484,
+     0.1874,
+     0.3215,
+     157
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     0.8122,
+     0.7519,
+     0.8606,
+     197
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.855,
+     0.7995,
+     0.8971,
+     200
+    ],
+    "self_closure_share": [
+     0.203,
+     0.1528,
+     0.2646,
+     197
+    ]
+   },
+   "insider_submitter": {
+    "n_traces": 13,
+    "response(OPENED,CLOSE)": [
+     1.0,
+     0.7719,
+     1.0,
+     13
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     1.0,
+     0.7719,
+     1.0,
+     13
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.7778,
+     0.4526,
+     0.9368,
+     9
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     0.0,
+     0.0,
+     0.7935,
+     1
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.7692,
+     0.4974,
+     0.9182,
+     13
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.7778,
+     0.4526,
+     0.9368,
+     9
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.1111,
+     0.0199,
+     0.435,
+     9
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     1.0,
+     0.2065,
+     1.0,
+     1
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     1.0,
+     0.4385,
+     1.0,
+     3
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.0,
+     0.0,
+     0.5615,
+     3
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.0,
+     0.0,
+     0.2992,
+     9
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.7778,
+     0.4526,
+     0.9368,
+     9
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     0.8462,
+     0.5776,
+     0.9567,
+     13
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.9231,
+     0.6669,
+     0.9863,
+     13
+    ],
+    "self_closure_share": [
+     0.2308,
+     0.0818,
+     0.5026,
+     13
+    ]
+   },
+   "outsider_submitter": {
+    "n_traces": 187,
+    "response(OPENED,CLOSE)": [
+     0.984,
+     0.9539,
+     0.9945,
+     187
+    ],
+    "response_within_365d(OPENED,CLOSE) [aged>=365d]": [
+     0.9306,
+     0.8827,
+     0.9599,
+     173
+    ],
+    "four_eyes closer!=opener [CLOSED_ACC]": [
+     0.7973,
+     0.7254,
+     0.8542,
+     148
+    ],
+    "four_eyes closer!=opener [CLOSED_REJ]": [
+     0.75,
+     0.505,
+     0.8982,
+     16
+    ],
+    "four_eyes closer!=opener [CLOSED_UNCLEAR]": [
+     0.85,
+     0.6396,
+     0.9476,
+     20
+    ],
+    "four_eyes closer!=opener [ANY]": [
+     0.7989,
+     0.7352,
+     0.8504,
+     184
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_ACC)": [
+     0.7365,
+     0.6602,
+     0.8008,
+     148
+    ],
+    "precedence(COMMENT_third_person,CLOSED_ACC)": [
+     0.0608,
+     0.0323,
+     0.1115,
+     148
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_REJ)": [
+     0.8125,
+     0.5699,
+     0.9341,
+     16
+    ],
+    "precedence(COMMENT_third_person,CLOSED_REJ)": [
+     0.125,
+     0.035,
+     0.3602,
+     16
+    ],
+    "precedence(COMMENT_OTHER,CLOSED_UNCLEAR)": [
+     0.9,
+     0.699,
+     0.9721,
+     20
+    ],
+    "precedence(COMMENT_third_person,CLOSED_UNCLEAR)": [
+     0.05,
+     0.0089,
+     0.2361,
+     20
+    ],
+    "precedence(COMMIT|PR,CLOSED_ACC)": [
+     0.0405,
+     0.0187,
+     0.0856,
+     148
+    ],
+    "precedence(COMMIT|PR or closing commit,CLOSED_ACC)": [
+     0.2162,
+     0.1575,
+     0.2893,
+     148
+    ],
+    "precedence(ASSIGNED,CLOSE)": [
+     0.8098,
+     0.747,
+     0.8599,
+     184
+    ],
+    "response_30d(OPENED, COMMENT_OTHER|ASSIGNED|CLOSE)": [
+     0.8503,
+     0.7921,
+     0.8943,
+     187
+    ],
+    "self_closure_share": [
+     0.2011,
+     0.1496,
+     0.2648,
+     184
+    ]
+   },
+   "activation_counts": {
+    "CLOSED_ACC": 157,
+    "CLOSED_REJ": 17,
+    "CLOSED_UNCLEAR": 23,
+    "COMMENT_OTHER": 151,
+    "ASSIGNED": 163,
+    "COMMIT_REF": 6,
+    "PR_LINKED": 1,
+    "REOPENED": 2
+   },
+   "reopen_share": [
+    0.01,
+    0.0027,
+    0.0357,
+    200
+   ]
+  }
+ },
+ "pm4py_discover_declare_go_minsupp0.3_conf0.8": {
+  "responded_existence": [
+   "('COMMENT_OTHER', 'OPENED')",
+   "('ASSIGNED', 'OPENED')",
+   "('OPENED', 'ASSIGNED')",
+   "('CLOSED_ACC', 'COMMENT_OTHER')",
+   "('COMMIT_REF', 'ASSIGNED')",
+   "('ASSIGNED', 'COMMIT_REF')",
+   "('COMMIT_REF', 'COMMENT_OTHER')",
+   "('LABELED', 'COMMENT_OTHER')",
+   "('COMMENT_SUBMITTER', 'OPENED')",
+   "('COMMENT_OTHER', 'CLOSED_ACC')",
+   "('ASSIGNED', 'COMMENT_OTHER')",
+   "('COMMIT_REF', 'CLOSED_ACC')",
+   "('COMMENT_SUBMITTER', 'COMMIT_REF')",
+   "('OPENED', 'COMMENT_OTHER')",
+   "('CLOSED_ACC', 'COMMIT_REF')"
+  ],
+  "init": [
+   "OPENED"
+  ],
+  "existence": [
+   "COMMENT_OTHER",
+   "COMMIT_REF",
+   "ASSIGNED",
+   "OPENED",
+   "CLOSED_ACC"
+  ],
+  "precedence": [
+   "('OPENED', 'COMMIT_REF')",
+   "('COMMENT_SUBMITTER', 'CLOSED_ACC')",
+   "('ASSIGNED', 'LABELED')",
+   "('OPENED', 'ASSIGNED')",
+   "('OPENED', 'COMMENT_SUBMITTER')",
+   "('OPENED', 'LABELED')",
+   "('COMMENT_OTHER', 'CLOSED_ACC')",
+   "('COMMIT_REF', 'CLOSED_ACC')",
+   "('OPENED', 'COMMENT_OTHER')",
+   "('ASSIGNED', 'CLOSED_ACC')",
+   "('LABELED', 'CLOSED_ACC')",
+   "('COMMENT_OTHER', 'COMMIT_REF')",
+   "('ASSIGNED', 'COMMIT_REF')",
+   "('OPENED', 'CLOSED_ACC')"
+  ],
+  "altprecedence": [
+   "('OPENED', 'ASSIGNED')",
+   "('ASSIGNED', 'CLOSED_ACC')",
+   "('OPENED', 'CLOSED_ACC')"
+  ],
+  "exactly_one": [
+   "ASSIGNED",
+   "CLOSED_ACC",
+   "OPENED"
+  ],
+  "response": [
+   "('OPENED', 'COMMIT_REF')",
+   "('OPENED', 'ASSIGNED')",
+   "('OPENED', 'COMMENT_OTHER')",
+   "('ASSIGNED', 'CLOSED_ACC')",
+   "('OPENED', 'CLOSED_ACC')"
+  ],
+  "altresponse": [
+   "('OPENED', 'ASSIGNED')",
+   "('OPENED', 'CLOSED_ACC')"
+  ],
+  "absence": [
+   "COMMENT_BOT",
+   "CLOSED_REJ",
+   "REOPENED",
+   "PR_MERGED",
+   "CLOSED_INTERIM",
+   "CLOSED_UNCLEAR",
+   "PR_LINKED",
+   "RENAMED"
+  ],
+  "succession": [
+   "('OPENED', 'COMMENT_OTHER')",
+   "('OPENED', 'CLOSED_ACC')",
+   "('OPENED', 'COMMIT_REF')",
+   "('OPENED', 'ASSIGNED')",
+   "('ASSIGNED', 'CLOSED_ACC')"
+  ],
+  "altsuccession": [
+   "('OPENED', 'CLOSED_ACC')",
+   "('OPENED', 'ASSIGNED')"
+  ],
+  "coexistence": [
+   "('COMMENT_OTHER', 'OPENED')",
+   "('COMMENT_OTHER', 'ASSIGNED')",
+   "('CLOSED_ACC', 'OPENED')",
+   "('CLOSED_ACC', 'COMMIT_REF')",
+   "('CLOSED_ACC', 'ASSIGNED')",
+   "('OPENED', 'COMMENT_OTHER')",
+   "('OPENED', 'CLOSED_ACC')",
+   "('OPENED', 'COMMIT_REF')",
+   "('OPENED', 'ASSIGNED')",
+   "('COMMIT_REF', 'CLOSED_ACC')",
+   "('COMMIT_REF', 'OPENED')",
+   "('COMMIT_REF', 'ASSIGNED')",
+   "('ASSIGNED', 'COMMENT_OTHER')",
+   "('ASSIGNED', 'CLOSED_ACC')",
+   "('ASSIGNED', 'OPENED')"
+  ]
+ },
+ "surv_cohort": {
+  "go": {
+   "n": 200,
+   "events": {
+    "ACC": 165,
+    "UNCLEAR": 17,
+    "REJ": 12,
+    "censored": 6
+   },
+   "exposed_before_end": {
+    "comment_other": 0.765,
+    "comment_sub": 0.545,
+    "pr_commit": 0.785,
+    "assigned": 0.96
+   },
+   "exposed_at_t<=1h": {
+    "comment_other": 16,
+    "comment_sub": 29,
+    "pr_commit": 19,
+    "assigned": 64
+   }
+  },
+  "hpo": {
+   "n": 200,
+   "events": {
+    "ACC": 157,
+    "UNCLEAR": 23,
+    "REJ": 17,
+    "censored": 3
+   },
+   "exposed_before_end": {
+    "comment_other": 0.335,
+    "comment_sub": 0.265,
+    "pr_commit": 0.03,
+    "assigned": 0.815
+   },
+   "exposed_at_t<=1h": {
+    "comment_other": 2,
+    "comment_sub": 12,
+    "pr_commit": 0,
+    "assigned": 161
+   }
+  }
+ },
+ "cox_time_varying": {
+  "go_lag0": {
+   "any": {
+    "comment_other": {
+     "HR": 1.954,
+     "ci95": [
+      1.257,
+      3.037
+     ],
+     "p": 0.0029
+    },
+    "comment_sub": {
+     "HR": 0.937,
+     "ci95": [
+      0.67,
+      1.311
+     ],
+     "p": 0.7
+    },
+    "pr_commit": {
+     "HR": 20.885,
+     "ci95": [
+      13.671,
+      31.906
+     ],
+     "p": 7e-45
+    },
+    "assigned": {
+     "HR": 3.984,
+     "ci95": [
+      1.711,
+      9.278
+     ],
+     "p": 0.0014
+    },
+    "insider": {
+     "HR": 1.014,
+     "ci95": [
+      0.601,
+      1.712
+     ],
+     "p": 0.96
+    },
+    "events": 194
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 1.655,
+     "ci95": [
+      1.015,
+      2.699
+     ],
+     "p": 0.043
+    },
+    "comment_sub": {
+     "HR": 0.709,
+     "ci95": [
+      0.491,
+      1.023
+     ],
+     "p": 0.066
+    },
+    "pr_commit": {
+     "HR": 58.644,
+     "ci95": [
+      31.107,
+      110.556
+     ],
+     "p": 2.5e-36
+    },
+    "assigned": {
+     "HR": 5.741,
+     "ci95": [
+      1.694,
+      19.462
+     ],
+     "p": 0.005
+    },
+    "insider": {
+     "HR": 0.891,
+     "ci95": [
+      0.497,
+      1.597
+     ],
+     "p": 0.7
+    },
+    "events": 165
+   },
+   "rej": {
+    "comment_other": {
+     "HR": 3.708,
+     "ci95": [
+      0.358,
+      38.385
+     ],
+     "p": 0.27
+    },
+    "comment_sub": {
+     "HR": 2.638,
+     "ci95": [
+      0.627,
+      11.097
+     ],
+     "p": 0.19
+    },
+    "pr_commit": {
+     "HR": 0.554,
+     "ci95": [
+      0.097,
+      3.175
+     ],
+     "p": 0.51
+    },
+    "assigned": {
+     "HR": 2.12,
+     "ci95": [
+      0.218,
+      20.623
+     ],
+     "p": 0.52
+    },
+    "insider": {
+     "HR": 0.0,
+     "ci95": [
+      0.0,
+      Infinity
+     ],
+     "p": 1.0
+    },
+    "events": 12
+   }
+  },
+  "hpo_lag0": {
+   "any": {
+    "comment_other": {
+     "HR": 1.866,
+     "ci95": [
+      1.244,
+      2.8
+     ],
+     "p": 0.0026
+    },
+    "comment_sub": {
+     "HR": 1.674,
+     "ci95": [
+      1.116,
+      2.51
+     ],
+     "p": 0.013
+    },
+    "pr_commit": {
+     "HR": 60965174024019.516,
+     "ci95": [
+      0.0,
+      Infinity
+     ],
+     "p": 1.0
+    },
+    "assigned": {
+     "HR": 12.213,
+     "ci95": [
+      3.072,
+      48.557
+     ],
+     "p": 0.00038
+    },
+    "insider": {
+     "HR": 1.303,
+     "ci95": [
+      0.664,
+      2.557
+     ],
+     "p": 0.44
+    },
+    "events": 197
+   },
+   "acc": {
+    "comment_other": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "comment_sub": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "pr_commit": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "assigned": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "events": 157
+   },
+   "rej": "ERR Singular matrix"
+  },
+  "pooled_lag0": {
+   "any": {
+    "comment_other": {
+     "HR": 2.082,
+     "ci95": [
+      1.557,
+      2.784
+     ],
+     "p": 7.4e-07
+    },
+    "comment_sub": {
+     "HR": 1.173,
+     "ci95": [
+      0.902,
+      1.525
+     ],
+     "p": 0.23
+    },
+    "pr_commit": {
+     "HR": 22.761,
+     "ci95": [
+      14.98,
+      34.582
+     ],
+     "p": 1.5e-48
+    },
+    "assigned": {
+     "HR": 5.3,
+     "ci95": [
+      2.419,
+      11.613
+     ],
+     "p": 3.1e-05
+    },
+    "insider": {
+     "HR": 1.211,
+     "ci95": [
+      0.809,
+      1.811
+     ],
+     "p": 0.35
+    },
+    "events": 391
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 2.176,
+     "ci95": [
+      1.573,
+      3.009
+     ],
+     "p": 2.6e-06
+    },
+    "comment_sub": {
+     "HR": 0.978,
+     "ci95": [
+      0.728,
+      1.312
+     ],
+     "p": 0.88
+    },
+    "pr_commit": {
+     "HR": 62.425,
+     "ci95": [
+      33.401,
+      116.669
+     ],
+     "p": 2.2e-38
+    },
+    "assigned": {
+     "HR": 7.386,
+     "ci95": [
+      2.504,
+      21.782
+     ],
+     "p": 0.00029
+    },
+    "insider": {
+     "HR": 1.079,
+     "ci95": [
+      0.679,
+      1.716
+     ],
+     "p": 0.75
+    },
+    "events": 322
+   },
+   "rej": {
+    "comment_other": {
+     "HR": 2.133,
+     "ci95": [
+      0.655,
+      6.95
+     ],
+     "p": 0.21
+    },
+    "comment_sub": {
+     "HR": 2.847,
+     "ci95": [
+      1.095,
+      7.406
+     ],
+     "p": 0.032
+    },
+    "pr_commit": {
+     "HR": 0.611,
+     "ci95": [
+      0.106,
+      3.519
+     ],
+     "p": 0.58
+    },
+    "assigned": {
+     "HR": 1.887,
+     "ci95": [
+      0.259,
+      13.765
+     ],
+     "p": 0.53
+    },
+    "insider": {
+     "HR": 0.428,
+     "ci95": [
+      0.054,
+      3.417
+     ],
+     "p": 0.42
+    },
+    "events": 29
+   }
+  },
+  "go_lag7": {
+   "any": {
+    "comment_other": {
+     "HR": 0.549,
+     "ci95": [
+      0.301,
+      1.003
+     ],
+     "p": 0.051
+    },
+    "comment_sub": {
+     "HR": 1.284,
+     "ci95": [
+      0.756,
+      2.183
+     ],
+     "p": 0.35
+    },
+    "pr_commit": {
+     "HR": 1.065,
+     "ci95": [
+      0.605,
+      1.872
+     ],
+     "p": 0.83
+    },
+    "assigned": {
+     "HR": 1.016,
+     "ci95": [
+      0.506,
+      2.042
+     ],
+     "p": 0.96
+    },
+    "insider": {
+     "HR": 0.791,
+     "ci95": [
+      0.481,
+      1.303
+     ],
+     "p": 0.36
+    },
+    "events": 194
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 0.466,
+     "ci95": [
+      0.235,
+      0.921
+     ],
+     "p": 0.028
+    },
+    "comment_sub": {
+     "HR": 1.036,
+     "ci95": [
+      0.555,
+      1.931
+     ],
+     "p": 0.91
+    },
+    "pr_commit": {
+     "HR": 1.278,
+     "ci95": [
+      0.696,
+      2.349
+     ],
+     "p": 0.43
+    },
+    "assigned": {
+     "HR": 1.309,
+     "ci95": [
+      0.616,
+      2.782
+     ],
+     "p": 0.48
+    },
+    "insider": {
+     "HR": 0.782,
+     "ci95": [
+      0.454,
+      1.346
+     ],
+     "p": 0.38
+    },
+    "events": 165
+   },
+   "rej": {
+    "comment_other": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "comment_sub": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "pr_commit": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "assigned": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "events": 12
+   }
+  },
+  "hpo_lag7": {
+   "any": {
+    "comment_other": {
+     "HR": 0.687,
+     "ci95": [
+      0.402,
+      1.177
+     ],
+     "p": 0.17
+    },
+    "comment_sub": {
+     "HR": 1.794,
+     "ci95": [
+      1.067,
+      3.015
+     ],
+     "p": 0.027
+    },
+    "assigned": {
+     "HR": 50912059.171,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": 1.51,
+     "ci95": [
+      0.796,
+      2.864
+     ],
+     "p": 0.21
+    },
+    "events": 197
+   },
+   "acc": {
+    "comment_other": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "comment_sub": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "assigned": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "events": 157
+   },
+   "rej": {
+    "comment_other": {
+     "HR": 1.023,
+     "ci95": [
+      0.181,
+      5.785
+     ],
+     "p": 0.98
+    },
+    "comment_sub": {
+     "HR": 2.092,
+     "ci95": [
+      0.396,
+      11.049
+     ],
+     "p": 0.38
+    },
+    "assigned": {
+     "HR": 1.0,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": 1.645,
+     "ci95": [
+      0.202,
+      13.384
+     ],
+     "p": 0.64
+    },
+    "events": 17
+   }
+  },
+  "pooled_lag7": {
+   "any": {
+    "comment_other": {
+     "HR": 0.622,
+     "ci95": [
+      0.411,
+      0.942
+     ],
+     "p": 0.025
+    },
+    "comment_sub": {
+     "HR": 1.503,
+     "ci95": [
+      1.026,
+      2.201
+     ],
+     "p": 0.036
+    },
+    "pr_commit": {
+     "HR": 0.974,
+     "ci95": [
+      0.56,
+      1.695
+     ],
+     "p": 0.93
+    },
+    "assigned": {
+     "HR": 1.292,
+     "ci95": [
+      0.633,
+      2.64
+     ],
+     "p": 0.48
+    },
+    "insider": {
+     "HR": 1.059,
+     "ci95": [
+      0.722,
+      1.553
+     ],
+     "p": 0.77
+    },
+    "events": 391
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 0.617,
+     "ci95": [
+      0.383,
+      0.993
+     ],
+     "p": 0.047
+    },
+    "comment_sub": {
+     "HR": 1.447,
+     "ci95": [
+      0.929,
+      2.253
+     ],
+     "p": 0.1
+    },
+    "pr_commit": {
+     "HR": 1.049,
+     "ci95": [
+      0.585,
+      1.881
+     ],
+     "p": 0.87
+    },
+    "assigned": {
+     "HR": 1.645,
+     "ci95": [
+      0.747,
+      3.622
+     ],
+     "p": 0.22
+    },
+    "insider": {
+     "HR": 0.993,
+     "ci95": [
+      0.644,
+      1.531
+     ],
+     "p": 0.98
+    },
+    "events": 322
+   },
+   "rej": {
+    "comment_other": {
+     "HR": 0.921,
+     "ci95": [
+      0.209,
+      4.058
+     ],
+     "p": 0.91
+    },
+    "comment_sub": {
+     "HR": 3.064,
+     "ci95": [
+      0.888,
+      10.574
+     ],
+     "p": 0.076
+    },
+    "pr_commit": {
+     "HR": 0.588,
+     "ci95": [
+      0.045,
+      7.719
+     ],
+     "p": 0.69
+    },
+    "assigned": {
+     "HR": 0.183,
+     "ci95": [
+      0.008,
+      4.386
+     ],
+     "p": 0.29
+    },
+    "insider": {
+     "HR": 0.439,
+     "ci95": [
+      0.056,
+      3.448
+     ],
+     "p": 0.43
+    },
+    "events": 29
+   }
+  },
+  "go_lag30": {
+   "any": {
+    "comment_other": {
+     "HR": 0.456,
+     "ci95": [
+      0.225,
+      0.921
+     ],
+     "p": 0.029
+    },
+    "comment_sub": {
+     "HR": 1.51,
+     "ci95": [
+      0.814,
+      2.803
+     ],
+     "p": 0.19
+    },
+    "pr_commit": {
+     "HR": 1.094,
+     "ci95": [
+      0.575,
+      2.081
+     ],
+     "p": 0.78
+    },
+    "assigned": {
+     "HR": 1.023,
+     "ci95": [
+      0.427,
+      2.451
+     ],
+     "p": 0.96
+    },
+    "insider": {
+     "HR": 0.787,
+     "ci95": [
+      0.477,
+      1.297
+     ],
+     "p": 0.35
+    },
+    "events": 194
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 0.458,
+     "ci95": [
+      0.204,
+      1.029
+     ],
+     "p": 0.059
+    },
+    "comment_sub": {
+     "HR": 1.121,
+     "ci95": [
+      0.543,
+      2.317
+     ],
+     "p": 0.76
+    },
+    "pr_commit": {
+     "HR": 1.314,
+     "ci95": [
+      0.653,
+      2.644
+     ],
+     "p": 0.44
+    },
+    "assigned": {
+     "HR": 1.107,
+     "ci95": [
+      0.435,
+      2.819
+     ],
+     "p": 0.83
+    },
+    "insider": {
+     "HR": 0.78,
+     "ci95": [
+      0.453,
+      1.344
+     ],
+     "p": 0.37
+    },
+    "events": 165
+   },
+   "rej": {
+    "comment_other": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "comment_sub": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "pr_commit": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "assigned": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "events": 12
+   }
+  },
+  "hpo_lag30": {
+   "any": {
+    "comment_other": {
+     "HR": 0.467,
+     "ci95": [
+      0.236,
+      0.924
+     ],
+     "p": 0.029
+    },
+    "comment_sub": {
+     "HR": 2.602,
+     "ci95": [
+      1.321,
+      5.125
+     ],
+     "p": 0.0057
+    },
+    "assigned": {
+     "HR": 1.0,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": 1.958,
+     "ci95": [
+      1.094,
+      3.506
+     ],
+     "p": 0.024
+    },
+    "events": 197
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 0.424,
+     "ci95": [
+      0.195,
+      0.919
+     ],
+     "p": 0.03
+    },
+    "comment_sub": {
+     "HR": 3.393,
+     "ci95": [
+      1.617,
+      7.116
+     ],
+     "p": 0.0012
+    },
+    "assigned": {
+     "HR": 1.0,
+     "ci95": [
+      0.0,
+      Infinity
+     ],
+     "p": 1.0
+    },
+    "insider": {
+     "HR": 1.765,
+     "ci95": [
+      0.882,
+      3.532
+     ],
+     "p": 0.11
+    },
+    "events": 157
+   },
+   "rej": {
+    "comment_other": {
+     "HR": 1.389,
+     "ci95": [
+      0.256,
+      7.547
+     ],
+     "p": 0.7
+    },
+    "comment_sub": {
+     "HR": 0.651,
+     "ci95": [
+      0.058,
+      7.302
+     ],
+     "p": 0.73
+    },
+    "assigned": {
+     "HR": 1.0,
+     "ci95": [
+      0.0,
+      Infinity
+     ],
+     "p": 1.0
+    },
+    "insider": {
+     "HR": 1.68,
+     "ci95": [
+      0.208,
+      13.55
+     ],
+     "p": 0.63
+    },
+    "events": 17
+   }
+  },
+  "pooled_lag30": {
+   "any": {
+    "comment_other": {
+     "HR": 0.495,
+     "ci95": [
+      0.302,
+      0.813
+     ],
+     "p": 0.0055
+    },
+    "comment_sub": {
+     "HR": 1.911,
+     "ci95": [
+      1.195,
+      3.057
+     ],
+     "p": 0.0069
+    },
+    "pr_commit": {
+     "HR": 1.093,
+     "ci95": [
+      0.577,
+      2.07
+     ],
+     "p": 0.78
+    },
+    "assigned": {
+     "HR": 0.887,
+     "ci95": [
+      0.376,
+      2.092
+     ],
+     "p": 0.78
+    },
+    "insider": {
+     "HR": 1.07,
+     "ci95": [
+      0.73,
+      1.571
+     ],
+     "p": 0.73
+    },
+    "events": 391
+   },
+   "acc": {
+    "comment_other": {
+     "HR": 0.498,
+     "ci95": [
+      0.281,
+      0.882
+     ],
+     "p": 0.017
+    },
+    "comment_sub": {
+     "HR": 1.947,
+     "ci95": [
+      1.123,
+      3.374
+     ],
+     "p": 0.018
+    },
+    "pr_commit": {
+     "HR": 1.189,
+     "ci95": [
+      0.601,
+      2.351
+     ],
+     "p": 0.62
+    },
+    "assigned": {
+     "HR": 0.885,
+     "ci95": [
+      0.352,
+      2.228
+     ],
+     "p": 0.8
+    },
+    "insider": {
+     "HR": 1.011,
+     "ci95": [
+      0.656,
+      1.559
+     ],
+     "p": 0.96
+    },
+    "events": 322
+   },
+   "rej": {
+    "comment_other": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "comment_sub": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "pr_commit": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "assigned": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "insider": {
+     "HR": NaN,
+     "ci95": [
+      NaN,
+      NaN
+     ],
+     "p": NaN
+    },
+    "events": 29
+   }
+  }
+ },
+ "aalen_johansen": {
+  "go_all": {
+   "n": 200,
+   "censored": 6,
+   "CIF_ACC_30d": [
+    0.57,
+    0.5074,
+    0.64
+   ],
+   "CIF_ACC_90d": [
+    0.655,
+    0.595,
+    0.725
+   ],
+   "CIF_ACC_365d": [
+    0.781,
+    0.719,
+    0.8363
+   ],
+   "CIF_ACC_730d": [
+    0.822,
+    0.7645,
+    0.8727
+   ],
+   "CIF_ACC_1825d": [
+    0.842,
+    0.792,
+    0.8953
+   ],
+   "CIF_REJ_30d": [
+    0.03,
+    0.01,
+    0.055
+   ],
+   "CIF_REJ_90d": [
+    0.035,
+    0.015,
+    0.06
+   ],
+   "CIF_REJ_365d": [
+    0.045,
+    0.02,
+    0.0751
+   ],
+   "CIF_REJ_730d": [
+    0.051,
+    0.02,
+    0.0835
+   ],
+   "CIF_REJ_1825d": [
+    0.066,
+    0.0315,
+    0.1
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.025,
+    0.005,
+    0.05
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.055,
+    0.025,
+    0.0876
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.065,
+    0.035,
+    0.1002
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.071,
+    0.0354,
+    0.1104
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.092,
+    0.0515,
+    0.1363
+   ]
+  },
+  "go_era_2016-18": {
+   "n": 47,
+   "censored": 0,
+   "CIF_ACC_30d": [
+    0.383,
+    0.2441,
+    0.5106
+   ],
+   "CIF_ACC_90d": [
+    0.426,
+    0.2979,
+    0.5532
+   ],
+   "CIF_ACC_365d": [
+    0.553,
+    0.4043,
+    0.6809
+   ],
+   "CIF_ACC_730d": [
+    0.553,
+    0.4043,
+    0.6809
+   ],
+   "CIF_ACC_1825d": [
+    0.596,
+    0.4681,
+    0.7234
+   ],
+   "CIF_REJ_30d": [
+    0.021,
+    0.0,
+    0.0638
+   ],
+   "CIF_REJ_90d": [
+    0.043,
+    0.0,
+    0.1064
+   ],
+   "CIF_REJ_365d": [
+    0.064,
+    0.0,
+    0.1388
+   ],
+   "CIF_REJ_730d": [
+    0.064,
+    0.0,
+    0.1388
+   ],
+   "CIF_REJ_1825d": [
+    0.106,
+    0.0426,
+    0.2128
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.064,
+    0.0,
+    0.1277
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.191,
+    0.1064,
+    0.2979
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.213,
+    0.1064,
+    0.3191
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.234,
+    0.1277,
+    0.3404
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.298,
+    0.1915,
+    0.4255
+   ]
+  },
+  "go_era_2019-21": {
+   "n": 58,
+   "censored": 0,
+   "CIF_ACC_30d": [
+    0.672,
+    0.5517,
+    0.7931
+   ],
+   "CIF_ACC_90d": [
+    0.724,
+    0.6207,
+    0.8448
+   ],
+   "CIF_ACC_365d": [
+    0.845,
+    0.7586,
+    0.931
+   ],
+   "CIF_ACC_730d": [
+    0.914,
+    0.8448,
+    0.9828
+   ],
+   "CIF_ACC_1825d": [
+    0.914,
+    0.8448,
+    0.9828
+   ],
+   "CIF_REJ_30d": [
+    0.034,
+    0.0,
+    0.0862
+   ],
+   "CIF_REJ_90d": [
+    0.034,
+    0.0,
+    0.0862
+   ],
+   "CIF_REJ_365d": [
+    0.052,
+    0.0,
+    0.1034
+   ],
+   "CIF_REJ_730d": [
+    0.052,
+    0.0,
+    0.1034
+   ],
+   "CIF_REJ_1825d": [
+    0.052,
+    0.0,
+    0.1034
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.017,
+    0.0,
+    0.0517
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.017,
+    0.0,
+    0.0517
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.034,
+    0.0,
+    0.0862
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.034,
+    0.0,
+    0.0862
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.034,
+    0.0,
+    0.0862
+   ]
+  },
+  "go_era_2022-26": {
+   "n": 95,
+   "censored": 6,
+   "CIF_ACC_30d": [
+    0.6,
+    0.4947,
+    0.6842
+   ],
+   "CIF_ACC_90d": [
+    0.726,
+    0.6316,
+    0.8105
+   ],
+   "CIF_ACC_365d": [
+    0.855,
+    0.7785,
+    0.9193
+   ],
+   "CIF_ACC_730d": [
+    0.903,
+    0.8348,
+    0.9654
+   ],
+   "CIF_ACC_1825d": [
+    0.939,
+    0.87,
+    0.9789
+   ],
+   "CIF_REJ_30d": [
+    0.032,
+    0.0,
+    0.0737
+   ],
+   "CIF_REJ_90d": [
+    0.032,
+    0.0,
+    0.0737
+   ],
+   "CIF_REJ_365d": [
+    0.032,
+    0.0,
+    0.0737
+   ],
+   "CIF_REJ_730d": [
+    0.05,
+    0.0105,
+    0.1058
+   ],
+   "CIF_REJ_1825d": [
+    0.05,
+    0.0105,
+    0.1058
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.011,
+    0.0,
+    0.0421
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.011,
+    0.0,
+    0.0421
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.011,
+    0.0,
+    0.0421
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.011,
+    0.0,
+    0.0421
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.011,
+    0.0,
+    0.0421
+   ]
+  },
+  "go_insider": {
+   "n": 20,
+   "censored": 1,
+   "CIF_ACC_30d": [
+    0.5,
+    0.2738,
+    0.75
+   ],
+   "CIF_ACC_90d": [
+    0.6,
+    0.4,
+    0.8
+   ],
+   "CIF_ACC_365d": [
+    0.75,
+    0.6,
+    0.9
+   ],
+   "CIF_ACC_730d": [
+    0.85,
+    0.65,
+    0.95
+   ],
+   "CIF_ACC_1825d": [
+    0.85,
+    0.65,
+    0.95
+   ],
+   "CIF_REJ_30d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_REJ_90d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_REJ_365d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_REJ_730d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_REJ_1825d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.15,
+    0.0238,
+    0.3
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.15,
+    0.0238,
+    0.3
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.15,
+    0.0238,
+    0.3
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.15,
+    0.0238,
+    0.3
+   ]
+  },
+  "go_outsider": {
+   "n": 180,
+   "censored": 5,
+   "CIF_ACC_30d": [
+    0.578,
+    0.5056,
+    0.6611
+   ],
+   "CIF_ACC_90d": [
+    0.661,
+    0.5889,
+    0.7278
+   ],
+   "CIF_ACC_365d": [
+    0.783,
+    0.7263,
+    0.8385
+   ],
+   "CIF_ACC_730d": [
+    0.821,
+    0.7662,
+    0.8737
+   ],
+   "CIF_ACC_1825d": [
+    0.843,
+    0.7898,
+    0.8916
+   ],
+   "CIF_REJ_30d": [
+    0.033,
+    0.0111,
+    0.0611
+   ],
+   "CIF_REJ_90d": [
+    0.039,
+    0.0138,
+    0.0667
+   ],
+   "CIF_REJ_365d": [
+    0.05,
+    0.0222,
+    0.0793
+   ],
+   "CIF_REJ_730d": [
+    0.057,
+    0.0278,
+    0.0911
+   ],
+   "CIF_REJ_1825d": [
+    0.072,
+    0.0355,
+    0.1094
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.028,
+    0.0056,
+    0.0556
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.044,
+    0.0167,
+    0.0778
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.056,
+    0.0278,
+    0.0946
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.062,
+    0.0281,
+    0.1014
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.085,
+    0.0456,
+    0.1264
+   ]
+  },
+  "hpo_all": {
+   "n": 200,
+   "censored": 3,
+   "CIF_ACC_30d": [
+    0.335,
+    0.275,
+    0.4
+   ],
+   "CIF_ACC_90d": [
+    0.5,
+    0.4274,
+    0.565
+   ],
+   "CIF_ACC_365d": [
+    0.746,
+    0.6818,
+    0.8054
+   ],
+   "CIF_ACC_730d": [
+    0.798,
+    0.7404,
+    0.8495
+   ],
+   "CIF_ACC_1825d": [
+    0.798,
+    0.7404,
+    0.8495
+   ],
+   "CIF_REJ_30d": [
+    0.04,
+    0.015,
+    0.07
+   ],
+   "CIF_REJ_90d": [
+    0.06,
+    0.025,
+    0.0976
+   ],
+   "CIF_REJ_365d": [
+    0.08,
+    0.045,
+    0.1254
+   ],
+   "CIF_REJ_730d": [
+    0.085,
+    0.045,
+    0.1305
+   ],
+   "CIF_REJ_1825d": [
+    0.085,
+    0.045,
+    0.1305
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.04,
+    0.0174,
+    0.0676
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.07,
+    0.04,
+    0.105
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.111,
+    0.0714,
+    0.1557
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.116,
+    0.0754,
+    0.1653
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.116,
+    0.0754,
+    0.1653
+   ]
+  },
+  "hpo_era_2016-18": {
+   "n": 44,
+   "censored": 0,
+   "CIF_ACC_30d": [
+    0.182,
+    0.0682,
+    0.2955
+   ],
+   "CIF_ACC_90d": [
+    0.455,
+    0.3182,
+    0.5909
+   ],
+   "CIF_ACC_365d": [
+    0.682,
+    0.5455,
+    0.8074
+   ],
+   "CIF_ACC_730d": [
+    0.682,
+    0.5455,
+    0.8074
+   ],
+   "CIF_ACC_1825d": [
+    0.682,
+    0.5455,
+    0.8074
+   ],
+   "CIF_REJ_30d": [
+    0.023,
+    0.0,
+    0.0682
+   ],
+   "CIF_REJ_90d": [
+    0.114,
+    0.0227,
+    0.2273
+   ],
+   "CIF_REJ_365d": [
+    0.182,
+    0.0682,
+    0.2955
+   ],
+   "CIF_REJ_730d": [
+    0.182,
+    0.0682,
+    0.2955
+   ],
+   "CIF_REJ_1825d": [
+    0.182,
+    0.0682,
+    0.2955
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.045,
+    0.0,
+    0.1136
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.091,
+    0.0227,
+    0.1818
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.136,
+    0.0227,
+    0.2392
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.136,
+    0.0227,
+    0.2392
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.136,
+    0.0227,
+    0.2392
+   ]
+  },
+  "hpo_era_2019-21": {
+   "n": 73,
+   "censored": 0,
+   "CIF_ACC_30d": [
+    0.479,
+    0.3699,
+    0.6027
+   ],
+   "CIF_ACC_90d": [
+    0.644,
+    0.5342,
+    0.7534
+   ],
+   "CIF_ACC_365d": [
+    0.795,
+    0.6986,
+    0.8904
+   ],
+   "CIF_ACC_730d": [
+    0.822,
+    0.726,
+    0.9041
+   ],
+   "CIF_ACC_1825d": [
+    0.822,
+    0.726,
+    0.9041
+   ],
+   "CIF_REJ_30d": [
+    0.055,
+    0.0137,
+    0.1096
+   ],
+   "CIF_REJ_90d": [
+    0.055,
+    0.0137,
+    0.1096
+   ],
+   "CIF_REJ_365d": [
+    0.055,
+    0.0137,
+    0.1096
+   ],
+   "CIF_REJ_730d": [
+    0.055,
+    0.0137,
+    0.1096
+   ],
+   "CIF_REJ_1825d": [
+    0.055,
+    0.0137,
+    0.1096
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.041,
+    0.0,
+    0.0959
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.096,
+    0.0411,
+    0.1644
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.123,
+    0.0548,
+    0.2055
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.123,
+    0.0548,
+    0.2055
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.123,
+    0.0548,
+    0.2055
+   ]
+  },
+  "hpo_era_2022-26": {
+   "n": 83,
+   "censored": 3,
+   "CIF_ACC_30d": [
+    0.289,
+    0.1928,
+    0.3855
+   ],
+   "CIF_ACC_90d": [
+    0.398,
+    0.2892,
+    0.494
+   ],
+   "CIF_ACC_365d": [
+    0.735,
+    0.6339,
+    0.8182
+   ],
+   "CIF_ACC_730d": [
+    0.839,
+    0.747,
+    0.9147
+   ],
+   "CIF_ACC_1825d": [
+    0.839,
+    0.747,
+    0.9147
+   ],
+   "CIF_REJ_30d": [
+    0.036,
+    0.0,
+    0.0843
+   ],
+   "CIF_REJ_90d": [
+    0.036,
+    0.0,
+    0.0843
+   ],
+   "CIF_REJ_365d": [
+    0.048,
+    0.012,
+    0.0964
+   ],
+   "CIF_REJ_730d": [
+    0.061,
+    0.013,
+    0.1227
+   ],
+   "CIF_REJ_1825d": [
+    0.061,
+    0.013,
+    0.1227
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.036,
+    0.0,
+    0.0843
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.036,
+    0.0,
+    0.0843
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.087,
+    0.0361,
+    0.1581
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.1,
+    0.0384,
+    0.1738
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.1,
+    0.0384,
+    0.1738
+   ]
+  },
+  "hpo_insider": {
+   "n": 13,
+   "censored": 0,
+   "CIF_ACC_30d": [
+    0.462,
+    0.1538,
+    0.6923
+   ],
+   "CIF_ACC_90d": [
+    0.615,
+    0.3846,
+    0.8462
+   ],
+   "CIF_ACC_365d": [
+    0.692,
+    0.4615,
+    0.9231
+   ],
+   "CIF_ACC_730d": [
+    0.692,
+    0.4615,
+    0.9231
+   ],
+   "CIF_ACC_1825d": [
+    0.692,
+    0.4615,
+    0.9231
+   ],
+   "CIF_REJ_30d": [
+    0.077,
+    0.0,
+    0.2308
+   ],
+   "CIF_REJ_90d": [
+    0.077,
+    0.0,
+    0.2308
+   ],
+   "CIF_REJ_365d": [
+    0.077,
+    0.0,
+    0.2308
+   ],
+   "CIF_REJ_730d": [
+    0.077,
+    0.0,
+    0.2308
+   ],
+   "CIF_REJ_1825d": [
+    0.077,
+    0.0,
+    0.2308
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.154,
+    0.0,
+    0.3846
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.154,
+    0.0,
+    0.3846
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.231,
+    0.0,
+    0.4615
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.231,
+    0.0,
+    0.4615
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.231,
+    0.0,
+    0.4615
+   ]
+  },
+  "hpo_outsider": {
+   "n": 187,
+   "censored": 3,
+   "CIF_ACC_30d": [
+    0.326,
+    0.2592,
+    0.4011
+   ],
+   "CIF_ACC_90d": [
+    0.492,
+    0.4225,
+    0.5697
+   ],
+   "CIF_ACC_365d": [
+    0.749,
+    0.6882,
+    0.8146
+   ],
+   "CIF_ACC_730d": [
+    0.806,
+    0.7524,
+    0.8636
+   ],
+   "CIF_ACC_1825d": [
+    0.806,
+    0.7524,
+    0.8636
+   ],
+   "CIF_REJ_30d": [
+    0.037,
+    0.016,
+    0.0642
+   ],
+   "CIF_REJ_90d": [
+    0.059,
+    0.0321,
+    0.0963
+   ],
+   "CIF_REJ_365d": [
+    0.08,
+    0.0428,
+    0.118
+   ],
+   "CIF_REJ_730d": [
+    0.086,
+    0.0481,
+    0.1251
+   ],
+   "CIF_REJ_1825d": [
+    0.086,
+    0.0481,
+    0.1251
+   ],
+   "CIF_UNCLEAR_30d": [
+    0.032,
+    0.0107,
+    0.0588
+   ],
+   "CIF_UNCLEAR_90d": [
+    0.064,
+    0.0321,
+    0.1016
+   ],
+   "CIF_UNCLEAR_365d": [
+    0.102,
+    0.0543,
+    0.1457
+   ],
+   "CIF_UNCLEAR_730d": [
+    0.108,
+    0.0595,
+    0.1513
+   ],
+   "CIF_UNCLEAR_1825d": [
+    0.108,
+    0.0595,
+    0.1513
+   ]
+  }
+ },
+ "landmark_AJ_L30_1y": {
+  "go_L30_comment_other": {
+   "exposed": {
+    "n": 55,
+    "CIF_ACC_1y": [
+     0.52,
+     0.3876,
+     0.6458
+    ],
+    "CIF_REJ_1y": [
+     0.055,
+     0.0,
+     0.1273
+    ]
+   },
+   "unexposed": {
+    "n": 20,
+    "CIF_ACC_1y": [
+     0.747,
+     0.5217,
+     0.9175
+    ],
+    "CIF_REJ_1y": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "go_L30_comment_sub": {
+   "exposed": {
+    "n": 40,
+    "CIF_ACC_1y": [
+     0.59,
+     0.4351,
+     0.7403
+    ],
+    "CIF_REJ_1y": [
+     0.05,
+     0.0,
+     0.125
+    ]
+   },
+   "unexposed": {
+    "n": 35,
+    "CIF_ACC_1y": [
+     0.563,
+     0.3799,
+     0.7385
+    ],
+    "CIF_REJ_1y": [
+     0.029,
+     0.0,
+     0.0857
+    ]
+   }
+  },
+  "go_L30_pr_commit": {
+   "exposed": {
+    "n": 20,
+    "CIF_ACC_1y": [
+     0.6,
+     0.3738,
+     0.8
+    ],
+    "CIF_REJ_1y": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "unexposed": {
+    "n": 55,
+    "CIF_ACC_1y": [
+     0.567,
+     0.4418,
+     0.7
+    ],
+    "CIF_REJ_1y": [
+     0.056,
+     0.0,
+     0.1285
+    ]
+   }
+  },
+  "go_L30_assigned": {
+   "exposed": {
+    "n": 63,
+    "CIF_ACC_1y": [
+     0.541,
+     0.4156,
+     0.6806
+    ],
+    "CIF_REJ_1y": [
+     0.048,
+     0.0,
+     0.0972
+    ]
+   },
+   "unexposed": {
+    "n": 12,
+    "CIF_ACC_1y": [
+     0.792,
+     0.5,
+     1.0
+    ],
+    "CIF_REJ_1y": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   }
+  },
+  "hpo_L30_comment_other": {
+   "exposed": {
+    "n": 11,
+    "CIF_ACC_1y": [
+     0.727,
+     0.4545,
+     0.9091
+    ],
+    "CIF_REJ_1y": [
+     0.091,
+     0.0,
+     0.2727
+    ]
+   },
+   "unexposed": {
+    "n": 106,
+    "CIF_ACC_1y": [
+     0.699,
+     0.6126,
+     0.7862
+    ],
+    "CIF_REJ_1y": [
+     0.067,
+     0.0283,
+     0.1226
+    ]
+   }
+  },
+  "hpo_L30_comment_sub": {
+   "exposed": {
+    "n": 13,
+    "CIF_ACC_1y": [
+     0.885,
+     0.6923,
+     1.0
+    ],
+    "CIF_REJ_1y": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "unexposed": {
+    "n": 104,
+    "CIF_ACC_1y": [
+     0.679,
+     0.5808,
+     0.7596
+    ],
+    "CIF_REJ_1y": [
+     0.077,
+     0.0288,
+     0.125
+    ]
+   }
+  },
+  "hpo_L30_pr_commit": {
+   "exposed": {
+    "n": 0
+   },
+   "unexposed": {
+    "n": 117,
+    "CIF_ACC_1y": [
+     0.702,
+     0.6207,
+     0.7748
+    ],
+    "CIF_REJ_1y": [
+     0.069,
+     0.0342,
+     0.1197
+    ]
+   }
+  },
+  "hpo_L30_assigned": {
+   "exposed": {
+    "n": 84,
+    "CIF_ACC_1y": [
+     0.716,
+     0.6146,
+     0.8006
+    ],
+    "CIF_REJ_1y": [
+     0.012,
+     0.0,
+     0.0357
+    ]
+   },
+   "unexposed": {
+    "n": 33,
+    "CIF_ACC_1y": [
+     0.667,
+     0.4848,
+     0.8182
+    ],
+    "CIF_REJ_1y": [
+     0.212,
+     0.0909,
+     0.3636
+    ]
+   }
+  }
+ },
+ "regime_triple": {
+  "go_closure": {
+   "rho_2023_25": {
+    "est": 0.9851,
+    "ci95": [
+     0.9091,
+     1.0702
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.1679,
+    "ci95": [
+     0.1323,
+     0.2084
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.171,
+    "ci95": [
+     0.127,
+     0.221
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.1215,
+    "ci95": [
+     0.0929,
+     0.1496
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.5515,
+    "ci95": [
+     0.4764,
+     0.6173
+    ]
+   },
+   "top5_closer_share": {
+    "est": 0.7887,
+    "ci95": [
+     0.7551,
+     0.8534
+    ]
+   },
+   "n_closers": {
+    "est": 19.0,
+    "ci95": [
+     14.0,
+     19.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 67.0,
+    "ci95": [
+     54.0,
+     81.0
+    ]
+   },
+   "decisions_W": {
+    "est": 66.0,
+    "ci95": [
+     52.975,
+     79.0
+    ]
+   }
+  },
+  "go_classified": {
+   "rho_2023_25": {
+    "est": 0.9701,
+    "ci95": [
+     0.8875,
+     1.05
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.1657,
+    "ci95": [
+     0.1286,
+     0.2052
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.1709,
+    "ci95": [
+     0.127,
+     0.2176
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.1088,
+    "ci95": [
+     0.0828,
+     0.1368
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.5876,
+    "ci95": [
+     0.5118,
+     0.6608
+    ]
+   },
+   "top5_closer_share": {
+    "est": 0.8249,
+    "ci95": [
+     0.7869,
+     0.8857
+    ]
+   },
+   "n_closers": {
+    "est": 17.0,
+    "ci95": [
+     12.0,
+     17.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 67.0,
+    "ci95": [
+     54.0,
+     81.0
+    ]
+   },
+   "decisions_W": {
+    "est": 65.0,
+    "ci95": [
+     51.975,
+     79.0
+    ]
+   }
+  },
+  "go_accepted": {
+   "rho_2023_25": {
+    "est": 0.9403,
+    "ci95": [
+     0.8636,
+     1.0275
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.1638,
+    "ci95": [
+     0.1257,
+     0.2064
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.1753,
+    "ci95": [
+     0.1309,
+     0.2266
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.0986,
+    "ci95": [
+     0.075,
+     0.1254
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.6061,
+    "ci95": [
+     0.5321,
+     0.6767
+    ]
+   },
+   "top5_closer_share": {
+    "est": 0.8364,
+    "ci95": [
+     0.796,
+     0.8988
+    ]
+   },
+   "n_closers": {
+    "est": 15.0,
+    "ci95": [
+     11.0,
+     15.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 67.0,
+    "ci95": [
+     54.0,
+     79.0
+    ]
+   },
+   "decisions_W": {
+    "est": 63.0,
+    "ci95": [
+     50.0,
+     76.0
+    ]
+   }
+  },
+  "go_corroborated_lb": {
+   "rho_2023_25": {
+    "est": 0.9403,
+    "ci95": [
+     0.8571,
+     1.0333
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.1605,
+    "ci95": [
+     0.1206,
+     0.2025
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.1648,
+    "ci95": [
+     0.1176,
+     0.2128
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.1095,
+    "ci95": [
+     0.082,
+     0.1406
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.5693,
+    "ci95": [
+     0.4838,
+     0.6466
+    ]
+   },
+   "top5_closer_share": {
+    "est": 0.9124,
+    "ci95": [
+     0.8778,
+     0.9624
+    ]
+   },
+   "n_closers": {
+    "est": 12.0,
+    "ci95": [
+     8.0,
+     12.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 67.0,
+    "ci95": [
+     55.975,
+     80.025
+    ]
+   },
+   "decisions_W": {
+    "est": 63.0,
+    "ci95": [
+     52.0,
+     77.0
+    ]
+   }
+  },
+  "go_proxy_first_assignee_is_closer": [
+   0.8759,
+   0.8103,
+   0.9211,
+   137
+  ],
+  "go_bot_closer_share": [
+   0.0,
+   0.0,
+   0.0194,
+   194
+  ],
+  "go_n_distinct_human_closers": 19,
+  "hpo_closure": {
+   "rho_2023_25": {
+    "est": 1.0,
+    "ci95": [
+     0.92,
+     1.0931
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.3542,
+    "ci95": [
+     0.3165,
+     0.3964
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.3543,
+    "ci95": [
+     0.3013,
+     0.4137
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.3551,
+    "ci95": [
+     0.3181,
+     0.3972
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.2437,
+    "ci95": [
+     0.1827,
+     0.2995
+    ]
+   },
+   "top5_closer_share": {
+    "est": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "n_closers": {
+    "est": 5.0,
+    "ci95": [
+     3.0,
+     5.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 56.0,
+    "ci95": [
+     43.0,
+     69.0
+    ]
+   },
+   "decisions_W": {
+    "est": 56.0,
+    "ci95": [
+     43.0,
+     69.0
+    ]
+   }
+  },
+  "hpo_classified": {
+   "rho_2023_25": {
+    "est": 0.8929,
+    "ci95": [
+     0.7759,
+     1.0185
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.3475,
+    "ci95": [
+     0.3033,
+     0.3915
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.3469,
+    "ci95": [
+     0.2852,
+     0.4044
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.3484,
+    "ci95": [
+     0.3055,
+     0.3899
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.2644,
+    "ci95": [
+     0.2023,
+     0.3297
+    ]
+   },
+   "top5_closer_share": {
+    "est": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "n_closers": {
+    "est": 5.0,
+    "ci95": [
+     3.0,
+     5.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 56.0,
+    "ci95": [
+     43.0,
+     69.0
+    ]
+   },
+   "decisions_W": {
+    "est": 50.0,
+    "ci95": [
+     38.0,
+     62.0
+    ]
+   }
+  },
+  "hpo_accepted": {
+   "rho_2023_25": {
+    "est": 0.8393,
+    "ci95": [
+     0.7142,
+     0.9694
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.351,
+    "ci95": [
+     0.306,
+     0.3979
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.3557,
+    "ci95": [
+     0.2981,
+     0.414
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.351,
+    "ci95": [
+     0.3095,
+     0.3998
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.2611,
+    "ci95": [
+     0.1959,
+     0.3333
+    ]
+   },
+   "top5_closer_share": {
+    "est": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "n_closers": {
+    "est": 4.0,
+    "ci95": [
+     3.0,
+     4.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 56.0,
+    "ci95": [
+     44.0,
+     68.0
+    ]
+   },
+   "decisions_W": {
+    "est": 47.0,
+    "ci95": [
+     36.0,
+     59.0
+    ]
+   }
+  },
+  "hpo_corroborated_lb": {
+   "rho_2023_25": {
+    "est": 0.7143,
+    "ci95": [
+     0.5909,
+     0.8364
+    ]
+   },
+   "u_alive365_2016plus": {
+    "est": 0.3536,
+    "ci95": [
+     0.2768,
+     0.4337
+    ]
+   },
+   "u_alive365_2021plus": {
+    "est": 0.3711,
+    "ci95": [
+     0.2731,
+     0.4667
+    ]
+   },
+   "u_allqueue_2016plus": {
+    "est": 0.3551,
+    "ci95": [
+     0.2832,
+     0.4304
+    ]
+   },
+   "newest10_alive365": {
+    "est": 0.2414,
+    "ci95": [
+     0.1379,
+     0.347
+    ]
+   },
+   "top5_closer_share": {
+    "est": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "n_closers": {
+    "est": 1.0,
+    "ci95": [
+     1.0,
+     1.0
+    ]
+   },
+   "arrivals_W": {
+    "est": 56.0,
+    "ci95": [
+     44.0,
+     68.0
+    ]
+   },
+   "decisions_W": {
+    "est": 40.0,
+    "ci95": [
+     29.0,
+     51.0
+    ]
+   }
+  },
+  "hpo_proxy_first_assignee_is_closer": [
+   0.9675,
+   0.9194,
+   0.9873,
+   123
+  ],
+  "hpo_bot_closer_share": [
+   0.0,
+   0.0,
+   0.0191,
+   197
+  ],
+  "hpo_n_distinct_human_closers": 5
+ }
+}

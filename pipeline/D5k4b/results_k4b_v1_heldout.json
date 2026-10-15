@@ -1,0 +1,246 @@
+{
+ "go": {
+  "n": 39,
+  "classified": 35,
+  "coverage": 0.897,
+  "coverageCI": [
+   0.764,
+   0.959
+  ],
+  "acc": 34,
+  "rej": 1,
+  "unclear": 4,
+  "acceptRate": 0.971,
+  "acceptRateCI": [
+   0.855,
+   0.995
+  ],
+  "tiers": {
+   "ACC_T3": 5,
+   "ACC_T4": 7,
+   "ACC_T2": 22,
+   "UNCLEAR_T0": 3,
+   "UNCLEAR_T3": 1,
+   "REJ_T1": 1
+  },
+  "agree_V1_tracker_new": {
+   "ACC_pos": 19,
+   "ACC_neg": 15,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.571,
+   "kappa": 0.067,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 3
+  },
+  "agree_V1_tracker_any": {
+   "ACC_pos": 20,
+   "ACC_neg": 14,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.6,
+   "kappa": 0.075,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 3
+  },
+  "agree_V2_newID": {
+   "ACC_pos": 22,
+   "ACC_neg": 12,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.657,
+   "kappa": 0.095,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 3
+  },
+  "agree_V1orV2": {
+   "ACC_pos": 24,
+   "ACC_neg": 10,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.714,
+   "kappa": 0.121,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 3
+  },
+  "ttd": {
+   "ACC": {
+    "n": 34,
+    "med": 2.1,
+    "p90": 35.1,
+    "le1d": 0.382
+   },
+   "REJ": {
+    "n": 1,
+    "med": 5.8,
+    "p90": 5.8,
+    "le1d": 0
+   },
+   "UNCLEAR": {
+    "n": 4,
+    "med": 83.2,
+    "p90": 152.2,
+    "le1d": 0
+   },
+   "all": {
+    "n": 39,
+    "med": 4.3,
+    "p90": 131.3,
+    "le1d": 0.333
+   }
+  },
+  "position": {
+   "ACC": {
+    "n": 34,
+    "mean": 0.06,
+    "newest10": 0.882
+   },
+   "REJ": {
+    "n": 1,
+    "mean": 0.024,
+    "newest10": 1
+   },
+   "all": {
+    "n": 39,
+    "mean": 0.075,
+    "newest10": 0.821
+   }
+  },
+  "population_tracker": {
+   "nClosed2016": 1685,
+   "citedNew": 879,
+   "share": 0.522,
+   "ttd_cited": {
+    "med": 6.8,
+    "p90": 253.9
+   },
+   "ttd_notcited": {
+    "med": 9.3,
+    "p90": 594.9
+   },
+   "oboVersion": "releases/2026-07-26"
+  }
+ },
+ "hpo": {
+  "n": 50,
+  "classified": 41,
+  "coverage": 0.82,
+  "coverageCI": [
+   0.692,
+   0.902
+  ],
+  "acc": 40,
+  "rej": 1,
+  "unclear": 9,
+  "acceptRate": 0.976,
+  "acceptRateCI": [
+   0.874,
+   0.996
+  ],
+  "tiers": {
+   "ACC_T2": 9,
+   "ACC_T3": 30,
+   "UNCLEAR_T0": 7,
+   "REJ_T3": 1,
+   "UNCLEAR_T3": 2,
+   "ACC_T4": 1
+  },
+  "agree_V1_tracker_new": {
+   "ACC_pos": 12,
+   "ACC_neg": 28,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.317,
+   "kappa": 0.02,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 9
+  },
+  "agree_V1_tracker_any": {
+   "ACC_pos": 13,
+   "ACC_neg": 27,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.341,
+   "kappa": 0.023,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 9
+  },
+  "agree_V2_newID": {
+   "ACC_pos": 16,
+   "ACC_neg": 24,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.415,
+   "kappa": 0.031,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 9
+  },
+  "agree_V1orV2": {
+   "ACC_pos": 16,
+   "ACC_neg": 24,
+   "REJ_pos": 0,
+   "REJ_neg": 1,
+   "agreement": 0.415,
+   "kappa": 0.031,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 9
+  },
+  "ttd": {
+   "ACC": {
+    "n": 40,
+    "med": 25.1,
+    "p90": 221.6,
+    "le1d": 0.05
+   },
+   "REJ": {
+    "n": 1,
+    "med": 33.1,
+    "p90": 33.1,
+    "le1d": 0
+   },
+   "UNCLEAR": {
+    "n": 9,
+    "med": 128.8,
+    "p90": 159.1,
+    "le1d": 0
+   },
+   "all": {
+    "n": 50,
+    "med": 33.1,
+    "p90": 221.6,
+    "le1d": 0.04
+   }
+  },
+  "position": {
+   "ACC": {
+    "n": 40,
+    "mean": 0.284,
+    "newest10": 0.35
+   },
+   "REJ": {
+    "n": 1,
+    "mean": 0.012,
+    "newest10": 1
+   },
+   "all": {
+    "n": 50,
+    "mean": 0.312,
+    "newest10": 0.34
+   }
+  },
+  "population_tracker": {
+   "nClosed2016": 3471,
+   "citedNew": 638,
+   "share": 0.184,
+   "ttd_cited": {
+    "med": 102.6,
+    "p90": 367
+   },
+   "ttd_notcited": {
+    "med": 36,
+    "p90": 184.4
+   },
+   "oboVersion": "hp/releases/2026-09-01"
+  }
+ }
+}

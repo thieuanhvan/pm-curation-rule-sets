@@ -1,0 +1,249 @@
+{
+ "go": {
+  "n": 100,
+  "classified": 95,
+  "coverage": 0.95,
+  "coverageCI": [
+   0.888,
+   0.978
+  ],
+  "acc": 86,
+  "rej": 9,
+  "unclear": 5,
+  "acceptRate": 0.905,
+  "acceptRateCI": [
+   0.83,
+   0.949
+  ],
+  "tiers": {
+   "ACC_T4": 10,
+   "ACC_T3": 18,
+   "ACC_T2": 58,
+   "REJ_T1": 4,
+   "REJ_T3": 2,
+   "UNCLEAR_T0": 4,
+   "REJ_T3.7": 3,
+   "UNCLEAR_T3": 1
+  },
+  "agree_V1_tracker_new": {
+   "ACC_pos": 45,
+   "ACC_neg": 41,
+   "REJ_pos": 1,
+   "REJ_neg": 8,
+   "agreement": 0.558,
+   "kappa": 0.138,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 4
+  },
+  "agree_V1_tracker_any": {
+   "ACC_pos": 49,
+   "ACC_neg": 37,
+   "REJ_pos": 1,
+   "REJ_neg": 8,
+   "agreement": 0.6,
+   "kappa": 0.164,
+   "UNCLEAR_pos": 1,
+   "UNCLEAR_neg": 4
+  },
+  "agree_V2_newID": {
+   "ACC_pos": 54,
+   "ACC_neg": 32,
+   "REJ_pos": 2,
+   "REJ_neg": 7,
+   "agreement": 0.642,
+   "kappa": 0.163,
+   "UNCLEAR_pos": 2,
+   "UNCLEAR_neg": 3
+  },
+  "agree_V1orV2": {
+   "ACC_pos": 63,
+   "ACC_neg": 23,
+   "REJ_pos": 2,
+   "REJ_neg": 7,
+   "agreement": 0.737,
+   "kappa": 0.25,
+   "UNCLEAR_pos": 2,
+   "UNCLEAR_neg": 3
+  },
+  "ttd": {
+   "ACC": {
+    "n": 86,
+    "med": 4.7,
+    "p90": 257.9,
+    "le1d": 0.302
+   },
+   "REJ": {
+    "n": 9,
+    "med": 187,
+    "p90": 812.9,
+    "le1d": 0.111
+   },
+   "UNCLEAR": {
+    "n": 5,
+    "med": 152.2,
+    "p90": 363.8,
+    "le1d": 0
+   },
+   "all": {
+    "n": 100,
+    "med": 6.3,
+    "p90": 441,
+    "le1d": 0.27
+   }
+  },
+  "position": {
+   "ACC": {
+    "n": 86,
+    "mean": 0.118,
+    "newest10": 0.733
+   },
+   "REJ": {
+    "n": 9,
+    "mean": 0.352,
+    "newest10": 0.333
+   },
+   "all": {
+    "n": 100,
+    "mean": 0.149,
+    "newest10": 0.67
+   }
+  },
+  "population_tracker": {
+   "nClosed2016": 1685,
+   "citedNew": 879,
+   "share": 0.522,
+   "ttd_cited": {
+    "med": 6.8,
+    "p90": 253.9
+   },
+   "ttd_notcited": {
+    "med": 9.3,
+    "p90": 594.9
+   },
+   "oboVersion": "releases/2026-07-26"
+  }
+ },
+ "hpo": {
+  "n": 100,
+  "classified": 87,
+  "coverage": 0.87,
+  "coverageCI": [
+   0.79,
+   0.922
+  ],
+  "acc": 78,
+  "rej": 9,
+  "unclear": 13,
+  "acceptRate": 0.897,
+  "acceptRateCI": [
+   0.815,
+   0.945
+  ],
+  "tiers": {
+   "ACC_T2": 22,
+   "ACC_T3": 51,
+   "UNCLEAR_T0": 11,
+   "REJ_T3.7": 6,
+   "REJ_T3": 3,
+   "ACC_T4": 5,
+   "UNCLEAR_T3": 2
+  },
+  "agree_V1_tracker_new": {
+   "ACC_pos": 17,
+   "ACC_neg": 61,
+   "REJ_pos": 0,
+   "REJ_neg": 9,
+   "agreement": 0.299,
+   "kappa": 0.055,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 13
+  },
+  "agree_V1_tracker_any": {
+   "ACC_pos": 18,
+   "ACC_neg": 60,
+   "REJ_pos": 0,
+   "REJ_neg": 9,
+   "agreement": 0.31,
+   "kappa": 0.058,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 13
+  },
+  "agree_V2_newID": {
+   "ACC_pos": 27,
+   "ACC_neg": 51,
+   "REJ_pos": 0,
+   "REJ_neg": 9,
+   "agreement": 0.414,
+   "kappa": 0.099,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 13
+  },
+  "agree_V1orV2": {
+   "ACC_pos": 27,
+   "ACC_neg": 51,
+   "REJ_pos": 0,
+   "REJ_neg": 9,
+   "agreement": 0.414,
+   "kappa": 0.099,
+   "UNCLEAR_pos": 0,
+   "UNCLEAR_neg": 13
+  },
+  "ttd": {
+   "ACC": {
+    "n": 78,
+    "med": 46.9,
+    "p90": 180.5,
+    "le1d": 0.09
+   },
+   "REJ": {
+    "n": 9,
+    "med": 33.5,
+    "p90": 151,
+    "le1d": 0
+   },
+   "UNCLEAR": {
+    "n": 13,
+    "med": 54,
+    "p90": 154.5,
+    "le1d": 0.154
+   },
+   "all": {
+    "n": 100,
+    "med": 46.9,
+    "p90": 180.5,
+    "le1d": 0.09
+   }
+  },
+  "position": {
+   "ACC": {
+    "n": 78,
+    "mean": 0.313,
+    "newest10": 0.346
+   },
+   "REJ": {
+    "n": 9,
+    "mean": 0.408,
+    "newest10": 0.222
+   },
+   "all": {
+    "n": 100,
+    "mean": 0.329,
+    "newest10": 0.33
+   }
+  },
+  "population_tracker": {
+   "nClosed2016": 3471,
+   "citedNew": 638,
+   "share": 0.184,
+   "ttd_cited": {
+    "med": 102.6,
+    "p90": 367
+   },
+   "ttd_notcited": {
+    "med": 36,
+    "p90": 184.4
+   },
+   "oboVersion": "hp/releases/2026-09-01"
+  }
+ }
+}

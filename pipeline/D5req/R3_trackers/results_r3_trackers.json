@@ -1,0 +1,1053 @@
+{
+ "generated": "2026-10-07",
+ "inputs": "../W2 sample timelines/outcomes, ../../D5k4/issues_*.json, ../../D5k4b/obo_*.json + classify_v2.mjs (unchanged), ../W3/res_t3_abandon.json (CIViC u), ../../D5k4/results_wd.json, ../W7/res_w7_t3_wd_u.json",
+ "t1_t2_state_reason_and_acceptance": {
+  "go": {
+   "population_state_reason_by_close_year": {
+    "2015": {
+     "completed": 3540
+    },
+    "2016": {
+     "completed": 132
+    },
+    "2017": {
+     "completed": 146
+    },
+    "2018": {
+     "completed": 139
+    },
+    "2019": {
+     "completed": 108
+    },
+    "2020": {
+     "completed": 178
+    },
+    "2021": {
+     "completed": 184
+    },
+    "2022": {
+     "completed": 206
+    },
+    "2023": {
+     "completed": 171,
+     "not_planned": 23
+    },
+    "2024": {
+     "completed": 167,
+     "not_planned": 12
+    },
+    "2025": {
+     "completed": 166,
+     "not_planned": 10
+    },
+    "2026": {
+     "not_planned": 9,
+     "completed": 114
+    }
+   },
+   "population_first_not_planned": "2023-02-23T19:17:08Z",
+   "population_not_planned_share_2023plus": [
+    54,
+    672
+   ],
+   "sample_closed": 194,
+   "sample_closed_2022plus": 98,
+   "event_level_sr_2022plus": {
+    "null": 95,
+    "not_planned": 3
+   },
+   "pre2022_issue_sr": {
+    "completed": 96
+   },
+   "confusion_v2": {
+    "completed|REJ": 2,
+    "completed|ACC": 89,
+    "completed|UNCLEAR": 4,
+    "not_planned|REJ": 3
+   },
+   "confusion_cascade_without_SR_tier": {
+    "completed|REJ": 2,
+    "completed|ACC": 89,
+    "completed|UNCLEAR": 4,
+    "not_planned|REJ": 1,
+    "not_planned|UNCLEAR": 2
+   },
+   "metrics_v2": {
+    "REJ_precision": 0.6,
+    "REJ_recall": 1,
+    "ACC_precision_vs_completed": 1,
+    "ACC_recall_vs_completed": 0.937
+   },
+   "metrics_without_SR_tier": {
+    "REJ_precision": 0.333,
+    "REJ_recall": 0.333,
+    "ACC_precision_vs_completed": 1,
+    "ACC_recall_vs_completed": 0.937
+   },
+   "not_planned_cases_without_SR_tier": [
+    {
+     "noSR": "REJ",
+     "tier": 3
+    },
+    {
+     "noSR": "UNCLEAR",
+     "tier": 0
+    },
+    {
+     "noSR": "UNCLEAR",
+     "tier": 0
+    }
+   ],
+   "unclear_2022plus": 4,
+   "unclear_resolved_by_not_planned": 0,
+   "bugfix_changes": [],
+   "bugfix_n_changed": 0,
+   "bugfix_counts": {
+    "ACC": [
+     165,
+     165
+    ],
+    "REJ": [
+     12,
+     12
+    ],
+    "UNCLEAR": [
+     17,
+     17
+    ]
+   },
+   "unclear_to_rej": {
+    "acc_share_classified": 0.932,
+    "acc_share_unclear_as_rej": 0.851
+   },
+   "task2_acceptance_mechanism": {
+    "comment_wording": {
+     "n": 18,
+     "obo_corroborated": 12,
+     "new_id_or_term_stanza": 9,
+     "any_addition_evidence": 12,
+     "obsoletion_or_merge_words": 2,
+     "only_edit_words_no_addition": 3
+    },
+    "closed_by_commit": {
+     "n": 100,
+     "obo_corroborated": 77,
+     "new_id_or_term_stanza": 47,
+     "any_addition_evidence": 77,
+     "obsoletion_or_merge_words": 2,
+     "only_edit_words_no_addition": 6
+    },
+    "id_in_last_comment": {
+     "n": 5,
+     "obo_corroborated": 3,
+     "new_id_or_term_stanza": 3,
+     "any_addition_evidence": 3,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 2
+    },
+    "referencing_commit_before_close": {
+     "n": 10,
+     "obo_corroborated": 10,
+     "new_id_or_term_stanza": 8,
+     "any_addition_evidence": 10,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 0
+    },
+    "merged_PR": {
+     "n": 32,
+     "obo_corroborated": 31,
+     "new_id_or_term_stanza": 28,
+     "any_addition_evidence": 31,
+     "obsoletion_or_merge_words": 2,
+     "only_edit_words_no_addition": 1
+    }
+   },
+   "task2_n_ACC": 165
+  },
+  "hpo": {
+   "population_state_reason_by_close_year": {
+    "2015": {
+     "completed": 22
+    },
+    "2016": {
+     "completed": 130
+    },
+    "2017": {
+     "completed": 777
+    },
+    "2018": {
+     "completed": 56
+    },
+    "2019": {
+     "completed": 192
+    },
+    "2020": {
+     "completed": 370
+    },
+    "2021": {
+     "completed": 530
+    },
+    "2022": {
+     "completed": 312
+    },
+    "2023": {
+     "completed": 220
+    },
+    "2024": {
+     "completed": 468
+    },
+    "2025": {
+     "completed": 307,
+     "not_planned": 1
+    },
+    "2026": {
+     "completed": 131
+    }
+   },
+   "population_first_not_planned": "2025-02-06T17:19:32Z",
+   "population_not_planned_share_2023plus": [
+    1,
+    1127
+   ],
+   "sample_closed": 197,
+   "sample_closed_2022plus": 85,
+   "event_level_sr_2022plus": {
+    "null": 85
+   },
+   "pre2022_issue_sr": {
+    "completed": 112
+   },
+   "confusion_v2": {
+    "completed|ACC": 72,
+    "completed|UNCLEAR": 8,
+    "completed|REJ": 5
+   },
+   "confusion_cascade_without_SR_tier": {
+    "completed|ACC": 72,
+    "completed|UNCLEAR": 8,
+    "completed|REJ": 5
+   },
+   "metrics_v2": {
+    "REJ_precision": 0,
+    "REJ_recall": 0,
+    "ACC_precision_vs_completed": 1,
+    "ACC_recall_vs_completed": 0.847
+   },
+   "metrics_without_SR_tier": {
+    "REJ_precision": 0,
+    "REJ_recall": 0,
+    "ACC_precision_vs_completed": 1,
+    "ACC_recall_vs_completed": 0.847
+   },
+   "not_planned_cases_without_SR_tier": [],
+   "unclear_2022plus": 8,
+   "unclear_resolved_by_not_planned": 0,
+   "bugfix_changes": [],
+   "bugfix_n_changed": 0,
+   "bugfix_counts": {
+    "ACC": [
+     157,
+     157
+    ],
+    "REJ": [
+     17,
+     17
+    ],
+    "UNCLEAR": [
+     23,
+     23
+    ]
+   },
+   "unclear_to_rej": {
+    "acc_share_classified": 0.902,
+    "acc_share_unclear_as_rej": 0.797
+   },
+   "task2_acceptance_mechanism": {
+    "closed_by_commit": {
+     "n": 36,
+     "obo_corroborated": 8,
+     "new_id_or_term_stanza": 8,
+     "any_addition_evidence": 8,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 5
+    },
+    "comment_wording": {
+     "n": 109,
+     "obo_corroborated": 48,
+     "new_id_or_term_stanza": 48,
+     "any_addition_evidence": 48,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 20
+    },
+    "id_in_last_comment": {
+     "n": 10,
+     "obo_corroborated": 2,
+     "new_id_or_term_stanza": 2,
+     "any_addition_evidence": 2,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 1
+    },
+    "referencing_commit_before_close": {
+     "n": 1,
+     "obo_corroborated": 0,
+     "new_id_or_term_stanza": 0,
+     "any_addition_evidence": 0,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 0
+    },
+    "merged_PR": {
+     "n": 1,
+     "obo_corroborated": 0,
+     "new_id_or_term_stanza": 1,
+     "any_addition_evidence": 1,
+     "obsoletion_or_merge_words": 0,
+     "only_edit_words_no_addition": 0
+    }
+   },
+   "task2_n_ACC": 157
+  }
+ },
+ "t1_pilot_timelines": {
+  "go": {
+   "n_extra_closed": 93,
+   "post2022": 44,
+   "confusion_v2": {
+    "completed|REJ": 2,
+    "completed|ACC": 38,
+    "completed|UNCLEAR": 2,
+    "not_planned|REJ": 2
+   },
+   "confusion_noSR": {
+    "completed|REJ": 2,
+    "completed|ACC": 38,
+    "completed|UNCLEAR": 2,
+    "not_planned|ACC": 1,
+    "not_planned|REJ": 1
+   },
+   "bugfix_changed": []
+  },
+  "hpo": {
+   "n_extra_closed": 96,
+   "post2022": 35,
+   "confusion_v2": {
+    "completed|ACC": 31,
+    "completed|UNCLEAR": 3,
+    "completed|REJ": 1
+   },
+   "confusion_noSR": {
+    "completed|ACC": 31,
+    "completed|UNCLEAR": 3,
+    "completed|REJ": 1
+   },
+   "bugfix_changed": []
+  }
+ },
+ "t3_hpo_bulk_closures": {
+  "hpo": {
+   "bulk_rule": ">=20 closures of labelled term-request tickets on one UTC day",
+   "by_year": {
+    "2016": {
+     "closures": 130,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2017": {
+     "closures": 777,
+     "bulk_days": 14,
+     "closures_on_bulk_days": 507
+    },
+    "2018": {
+     "closures": 56,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2019": {
+     "closures": 192,
+     "bulk_days": 1,
+     "closures_on_bulk_days": 20
+    },
+    "2020": {
+     "closures": 370,
+     "bulk_days": 1,
+     "closures_on_bulk_days": 20
+    },
+    "2021": {
+     "closures": 530,
+     "bulk_days": 3,
+     "closures_on_bulk_days": 152
+    },
+    "2022": {
+     "closures": 312,
+     "bulk_days": 4,
+     "closures_on_bulk_days": 106
+    },
+    "2023": {
+     "closures": 220,
+     "bulk_days": 2,
+     "closures_on_bulk_days": 62
+    },
+    "2024": {
+     "closures": 468,
+     "bulk_days": 7,
+     "closures_on_bulk_days": 204
+    },
+    "2025": {
+     "closures": 308,
+     "bulk_days": 2,
+     "closures_on_bulk_days": 55
+    },
+    "2026": {
+     "closures": 131,
+     "bulk_days": 1,
+     "closures_on_bulk_days": 23
+    }
+   },
+   "population_rho_2023_25_frame2016": {
+    "arrivals_2023_25": 974,
+    "closures_2023_25": 996,
+    "rho_all": 1.023,
+    "rho_excl_bulk_closures": 0.693,
+    "bulk_closures_2023_25": 321
+   },
+   "stock_by_quarter_frame2016": {
+    "2022-01-01": 88,
+    "2022-04-01": 55,
+    "2022-07-01": 83,
+    "2022-10-01": 39,
+    "2023-01-01": 64,
+    "2023-04-01": 82,
+    "2023-07-01": 145,
+    "2023-10-01": 278,
+    "2024-01-01": 238,
+    "2024-04-01": 139,
+    "2024-07-01": 173,
+    "2024-10-01": 119,
+    "2025-01-01": 153,
+    "2025-04-01": 151,
+    "2025-07-01": 176
+   },
+   "sample": {
+    "all": [
+     1.0,
+     0.919,
+     1.089
+    ],
+    "excl_bulk_as_decision": [
+     0.589,
+     0.446,
+     0.74
+    ],
+    "drop_bulk_tickets": [
+     0.971,
+     0.844,
+     1.104
+    ],
+    "sample_bulk_closed": 74,
+    "sample_bulk_closed_2023_25": 23,
+    "cls_bulk": {
+     "ACC": 55,
+     "REJ": 8,
+     "UNCLEAR": 11
+    },
+    "cls_nonbulk": {
+     "UNCLEAR": 12,
+     "ACC": 102,
+     "REJ": 9
+    },
+    "corroborated_ACC_bulk": [
+     22,
+     55
+    ],
+    "corroborated_ACC_nonbulk": [
+     36,
+     102
+    ],
+    "median_age_at_close_d": {
+     "bulk": 91.8665,
+     "nonbulk": 19.614
+    },
+    "bulk_closers_ge5_rule": "fewer than five accounts"
+   }
+  },
+  "go": {
+   "bulk_rule": ">=20 closures of labelled term-request tickets on one UTC day",
+   "by_year": {
+    "2016": {
+     "closures": 132,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2017": {
+     "closures": 146,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2018": {
+     "closures": 139,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2019": {
+     "closures": 108,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2020": {
+     "closures": 178,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2021": {
+     "closures": 184,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2022": {
+     "closures": 206,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2023": {
+     "closures": 194,
+     "bulk_days": 1,
+     "closures_on_bulk_days": 21
+    },
+    "2024": {
+     "closures": 179,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2025": {
+     "closures": 176,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    },
+    "2026": {
+     "closures": 123,
+     "bulk_days": 0,
+     "closures_on_bulk_days": 0
+    }
+   },
+   "population_rho_2023_25_frame2016": {
+    "arrivals_2023_25": 545,
+    "closures_2023_25": 544,
+    "rho_all": 0.998,
+    "rho_excl_bulk_closures": 0.96,
+    "bulk_closures_2023_25": 21
+   },
+   "stock_by_quarter_frame2016": {
+    "2022-01-01": 97,
+    "2022-04-01": 108,
+    "2022-07-01": 109,
+    "2022-10-01": 96,
+    "2023-01-01": 83,
+    "2023-04-01": 80,
+    "2023-07-01": 74,
+    "2023-10-01": 78,
+    "2024-01-01": 74,
+    "2024-04-01": 86,
+    "2024-07-01": 102,
+    "2024-10-01": 92,
+    "2025-01-01": 98,
+    "2025-04-01": 87,
+    "2025-07-01": 78
+   },
+   "sample": {
+    "all": [
+     0.985,
+     0.908,
+     1.069
+    ],
+    "excl_bulk_as_decision": [
+     0.97,
+     0.892,
+     1.054
+    ],
+    "drop_bulk_tickets": [
+     0.985,
+     0.914,
+     1.071
+    ],
+    "sample_bulk_closed": 1,
+    "sample_bulk_closed_2023_25": 1,
+    "cls_bulk": {
+     "REJ": 1
+    },
+    "cls_nonbulk": {
+     "REJ": 11,
+     "UNCLEAR": 17,
+     "ACC": 165
+    },
+    "corroborated_ACC_bulk": [
+     0,
+     0
+    ],
+    "corroborated_ACC_nonbulk": [
+     133,
+     165
+    ],
+    "median_age_at_close_d": {
+     "bulk": 5.836,
+     "nonbulk": 6.485
+    },
+    "bulk_closers_ge5_rule": "fewer than five accounts"
+   }
+  }
+ },
+ "t4_u_permutation_null": {
+  "go_2016plus": {
+   "n": 177,
+   "meanU": [
+    0.168,
+    0.134,
+    0.205
+   ],
+   "newest10": [
+    0.605,
+    0.531,
+    0.672
+   ],
+   "null_meanU_95": [
+    0.456,
+    0.543
+   ],
+   "null_newest10_95": [
+    0.068,
+    0.158
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 40
+  },
+  "go_2021plus": {
+   "n": 111,
+   "meanU": [
+    0.171,
+    0.128,
+    0.218
+   ],
+   "newest10": [
+    0.613,
+    0.523,
+    0.703
+   ],
+   "null_meanU_95": [
+    0.445,
+    0.555
+   ],
+   "null_newest10_95": [
+    0.054,
+    0.171
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 37
+  },
+  "go_minus_civic_2021plus_meanU": [
+   0.019,
+   -0.032,
+   0.075
+  ],
+  "go_minus_civic_note": "GO ticket bootstrap minus normal approximation of the CIViC cluster-bootstrap interval; positive = GO less newest-first",
+  "hpo_2016plus": {
+   "n": 186,
+   "meanU": [
+    0.354,
+    0.313,
+    0.395
+   ],
+   "newest10": [
+    0.258,
+    0.199,
+    0.323
+   ],
+   "null_meanU_95": [
+    0.458,
+    0.543
+   ],
+   "null_newest10_95": [
+    0.065,
+    0.151
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 100
+  },
+  "hpo_2021plus": {
+   "n": 109,
+   "meanU": [
+    0.354,
+    0.3,
+    0.41
+   ],
+   "newest10": [
+    0.266,
+    0.183,
+    0.349
+   ],
+   "null_meanU_95": [
+    0.447,
+    0.556
+   ],
+   "null_newest10_95": [
+    0.055,
+    0.165
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 79
+  },
+  "civic_2021plus_age365": {
+   "meanU": [
+    0.152,
+    0.122,
+    0.182
+   ],
+   "newest10": [
+    0.659,
+    0.601,
+    0.715
+   ],
+   "n": 955,
+   "null_meanU_95": [
+    0.48,
+    0.517
+   ],
+   "median_L": 557,
+   "src": "../W3/res_t3_abandon.json P2_service_position_2021plus/age<=365/all"
+  }
+ },
+ "t4_u_self_closure": {
+  "go_2021plus_all": {
+   "n": 111,
+   "meanU": [
+    0.171,
+    0.127,
+    0.218
+   ],
+   "newest10": 0.613
+  },
+  "go_2021plus_self_closed": {
+   "n": 33,
+   "meanU": [
+    0.197,
+    0.1,
+    0.31
+   ],
+   "newest10": 0.636
+  },
+  "go_2021plus_other_closed": {
+   "n": 78,
+   "meanU": [
+    0.16,
+    0.115,
+    0.209
+   ],
+   "newest10": 0.603
+  },
+  "hpo_2021plus_all": {
+   "n": 109,
+   "meanU": [
+    0.354,
+    0.299,
+    0.409
+   ],
+   "newest10": 0.266
+  },
+  "hpo_2021plus_self_closed": {
+   "n": 24,
+   "meanU": [
+    0.254,
+    0.188,
+    0.327
+   ],
+   "newest10": 0.25
+  },
+  "hpo_2021plus_other_closed": {
+   "n": 85,
+   "meanU": [
+    0.383,
+    0.318,
+    0.451
+   ],
+   "newest10": 0.271
+  }
+ },
+ "t5_corroboration_provenance": {
+  "go": {
+   "terms_by_creation_year": {
+    "2010": {
+     "n": 1953,
+     "tracker_link": 156,
+     "share_link": 0.08
+    },
+    "2011": {
+     "n": 1798,
+     "tracker_link": 166,
+     "share_link": 0.092
+    },
+    "2012": {
+     "n": 2209,
+     "tracker_link": 280,
+     "share_link": 0.127
+    },
+    "2013": {
+     "n": 1246,
+     "tracker_link": 154,
+     "share_link": 0.124
+    },
+    "2014": {
+     "n": 1416,
+     "tracker_link": 143,
+     "share_link": 0.101
+    },
+    "2015": {
+     "n": 1244,
+     "tracker_link": 90,
+     "share_link": 0.072
+    },
+    "2016": {
+     "n": 869,
+     "tracker_link": 62,
+     "share_link": 0.071
+    },
+    "2017": {
+     "n": 624,
+     "tracker_link": 173,
+     "share_link": 0.277
+    },
+    "2018": {
+     "n": 407,
+     "tracker_link": 106,
+     "share_link": 0.26
+    },
+    "2019": {
+     "n": 276,
+     "tracker_link": 114,
+     "share_link": 0.413
+    },
+    "2020": {
+     "n": 308,
+     "tracker_link": 223,
+     "share_link": 0.724
+    },
+    "2021": {
+     "n": 256,
+     "tracker_link": 230,
+     "share_link": 0.898
+    },
+    "2022": {
+     "n": 291,
+     "tracker_link": 252,
+     "share_link": 0.866
+    },
+    "2023": {
+     "n": 271,
+     "tracker_link": 254,
+     "share_link": 0.937
+    },
+    "2024": {
+     "n": 259,
+     "tracker_link": 257,
+     "share_link": 0.992
+    },
+    "2025": {
+     "n": 251,
+     "tracker_link": 250,
+     "share_link": 0.996
+    },
+    "2026": {
+     "n": 84,
+     "tracker_link": 84,
+     "share_link": 1
+    },
+    "no_date": {
+     "n": 22490,
+     "tracker_link": 6471,
+     "share_link": 0.288
+    }
+   },
+   "acc_by_open_period": {
+    "2016-18": {
+     "n": 28,
+     "corroborated": 16,
+     "cited_by_any_term": 13,
+     "any_id_mentioned": 17,
+     "only_preexisting_ids": 0,
+     "mentioned_id_no_date": 5,
+     "no_id_no_citation": 7
+    },
+    "2019-21": {
+     "n": 53,
+     "corroborated": 40,
+     "cited_by_any_term": 39,
+     "any_id_mentioned": 33,
+     "only_preexisting_ids": 0,
+     "mentioned_id_no_date": 4,
+     "no_id_no_citation": 9
+    },
+    "2022-26": {
+     "n": 84,
+     "corroborated": 77,
+     "cited_by_any_term": 75,
+     "any_id_mentioned": 73,
+     "only_preexisting_ids": 1,
+     "mentioned_id_no_date": 5,
+     "no_id_no_citation": 1
+    }
+   }
+  },
+  "hpo": {
+   "terms_by_creation_year": {
+    "2010": {
+     "n": 826,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2011": {
+     "n": 539,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2012": {
+     "n": 862,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2013": {
+     "n": 432,
+     "tracker_link": 2,
+     "share_link": 0.005
+    },
+    "2014": {
+     "n": 357,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2015": {
+     "n": 186,
+     "tracker_link": 1,
+     "share_link": 0.005
+    },
+    "2016": {
+     "n": 593,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2017": {
+     "n": 1072,
+     "tracker_link": 2,
+     "share_link": 0.002
+    },
+    "2018": {
+     "n": 741,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2019": {
+     "n": 771,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2020": {
+     "n": 917,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2021": {
+     "n": 891,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2022": {
+     "n": 452,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "2023": {
+     "n": 1020,
+     "tracker_link": 100,
+     "share_link": 0.098
+    },
+    "2024": {
+     "n": 1240,
+     "tracker_link": 1042,
+     "share_link": 0.84
+    },
+    "2025": {
+     "n": 452,
+     "tracker_link": 291,
+     "share_link": 0.644
+    },
+    "2026": {
+     "n": 83,
+     "tracker_link": 0,
+     "share_link": 0
+    },
+    "no_date": {
+     "n": 6704,
+     "tracker_link": 60,
+     "share_link": 0.009
+    }
+   },
+   "acc_by_open_period": {
+    "2016-18": {
+     "n": 30,
+     "corroborated": 6,
+     "cited_by_any_term": 0,
+     "any_id_mentioned": 12,
+     "only_preexisting_ids": 2,
+     "mentioned_id_no_date": 4,
+     "no_id_no_citation": 18
+    },
+    "2019-21": {
+     "n": 60,
+     "corroborated": 9,
+     "cited_by_any_term": 0,
+     "any_id_mentioned": 20,
+     "only_preexisting_ids": 6,
+     "mentioned_id_no_date": 5,
+     "no_id_no_citation": 40
+    },
+    "2022-26": {
+     "n": 67,
+     "corroborated": 43,
+     "cited_by_any_term": 43,
+     "any_id_mentioned": 58,
+     "only_preexisting_ids": 6,
+     "mentioned_id_no_date": 9,
+     "no_id_no_citation": 9
+    }
+   }
+  }
+ },
+ "t6_wikidata": {
+  "status_values": "blank=discussion; ready; on hold (approved, cannot yet be created); withdrawn (by proposer); not done (no consensus over time, then archived); property ID = done (Template:Property proposal)",
+  "gate": "creating a property requires the propertycreator right or admin (Special:NewProperty), software-enforced (Wikidata:Property creators)",
+  "min_discussion": "proposal made over a week ago + consensus (Wikidata:Property creation)",
+  "numbers": {
+   "rho_by_year": "0.90-1.16",
+   "pending": "7/2077 (0.3 %)",
+   "u_all_pending_2016plus": [
+    0.353,
+    0.342,
+    0.363
+   ],
+   "u_null": [
+    0.487,
+    0.513
+   ],
+   "u_live365_2016plus": 0.395,
+   "notdone_ttd_median_d": 92.8,
+   "outcomes": {
+    "done": 1840,
+    "notdone": 195,
+    "withdrawn": 35,
+    "pending": 7
+   }
+  },
+  "cell": "software gate + cheap exit (not done needs no content judgement, only absence of consensus)"
+ },
+ "t7_funding": {
+  "GO": "NHGRI U24 HG012212 (GO Consortium) and others; Genetics 2023 doi:10.1093/genetics/iyad031",
+  "HPO": "NHGRI 5U24HG011449-03 and others; NAR 2024 doi:10.1093/nar/gkad1005",
+  "CIViC": "NCI U24CA237719 and others; NAR 2023 doi:10.1093/nar/gkac979",
+  "Wikidata": "property creators are volunteer community members; software development by Wikimedia Deutschland (donation/membership funded)"
+ }
+}

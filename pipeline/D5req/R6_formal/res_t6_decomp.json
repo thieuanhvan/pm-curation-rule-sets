@@ -1,0 +1,44 @@
+{
+ "A_star_main": {
+  "intensity_2016_18": 2.06,
+  "intensity_2023_26": 0.604,
+  "fold": 3.411,
+  "delta": [
+   -1.46,
+   -2.62,
+   -0.45
+  ],
+  "stayers": [
+   -1.37,
+   -1.75,
+   -0.43
+  ],
+  "turnover": [
+   -0.09,
+   -1.32,
+   0.54
+  ],
+  "stayers_band": ">=5"
+ },
+ "all_activities_previous": {
+  "intensity_2016_18": 2.06,
+  "intensity_2023_26": 0.596,
+  "fold": 3.455,
+  "delta": [
+   -1.46,
+   -2.57,
+   -0.49
+  ],
+  "stayers": [
+   -1.37,
+   -1.75,
+   -0.49
+  ],
+  "turnover": [
+   -0.09,
+   -1.41,
+   0.56
+  ],
+  "stayers_band": ">=5"
+ }
+}

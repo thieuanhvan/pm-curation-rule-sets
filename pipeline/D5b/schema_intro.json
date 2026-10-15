@@ -1,0 +1,6556 @@
+{
+ "data": {
+  "q": {
+   "fields": [
+    {
+     "name": "acmgCode",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "acmgCodesTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "activities",
+     "args": [
+      {
+       "name": "userId",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "organization",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "activityType",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "ActivityTypeInput"
+         }
+        }
+       }
+      },
+      {
+       "name": "subjectType",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "ActivitySubjectInput"
+         }
+        }
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subject",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "SubscribableQueryInput"
+         }
+        }
+       }
+      },
+      {
+       "name": "linkedApprovalId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "occurredBefore",
+       "type": {
+        "name": "ISO8601DateTime",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "occurredAfter",
+       "type": {
+        "name": "ISO8601DateTime",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mode",
+       "type": {
+        "name": "EventFeedMode",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "includeAutomatedEvents",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "activity",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "approvals",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "approvingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "approvingOrganizationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "approvingOrganizationIsApprovedVcep",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "approvedAssertionId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "ApprovalStatus",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "assertion",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "assertions",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "variantId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "evidenceId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organization",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "userId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "summary",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "assertionType",
+       "type": {
+        "name": "EvidenceType",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "assertionDirection",
+       "type": {
+        "name": "EvidenceDirection",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "significance",
+       "type": {
+        "name": "AssertionSignificance",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ampLevel",
+       "type": {
+        "name": "AmpLevel",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "phenotypeId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "EvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "approvingOrganizations",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "AssertionSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseDiseases",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "doid",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DiseasesSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseFeatures",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "featureName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureFullName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureType",
+       "type": {
+        "name": "FeatureInstanceTypes",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "FeaturesSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseMolecularProfiles",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "molecularProfileName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "MolecularProfilesSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseOrganizations",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "OrganizationSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browsePhenotypes",
+     "args": [
+      {
+       "name": "hpoId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "PhenotypeSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseSources",
+     "args": [
+      {
+       "name": "sourceType",
+       "type": {
+        "name": "SourceSource",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "citationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "author",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "year",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "journal",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "clinicalTrialId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "openAccess",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "SourcesSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseTherapies",
+     "args": [
+      {
+       "name": "ncitId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "TherapySort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseUsers",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "organization",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "username",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "role",
+       "type": {
+        "name": "UserRole",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "UsersSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseVariantGroups",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureNames",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantNames",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "VariantGroupsSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "browseVariants",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "variantName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantTypeId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantGroupId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantTypeName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "hasNoVariantType",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "category",
+       "type": {
+        "name": "VariantCategories",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "VariantsSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "clingenCode",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "clingenCodesTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "clinicalTrial",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "clinicalTrials",
+     "args": [
+      {
+       "name": "nctId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "ClinicalTrialSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "comment",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "comments",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "originatingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subject",
+       "type": {
+        "name": "CommentableInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mentionedUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mentionedRole",
+       "type": {
+        "name": "UserRole",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mentionedEntity",
+       "type": {
+        "name": "TaggableEntityInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "contributors",
+     "args": [
+      {
+       "name": "subscribable",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "SubscribableInput",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "countries",
+     "args": []
+    },
+    {
+     "name": "cytogeneticRegion",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "cytogeneticRegionTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "dataReleases",
+     "args": []
+    },
+    {
+     "name": "disease",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "diseasePopover",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "diseaseTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "diseases",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "doid",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "entityTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "events",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "eventType",
+       "type": {
+        "name": "EventAction",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "originatingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organizationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subject",
+       "type": {
+        "name": "SubscribableQueryInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "includeAutomatedEvents",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "mode",
+       "type": {
+        "name": "EventFeedMode",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "evidenceItem",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "evidenceItems",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "variantId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "assertionId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organization",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "userId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "description",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "evidenceLevel",
+       "type": {
+        "name": "EvidenceLevel",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "evidenceType",
+       "type": {
+        "name": "EvidenceType",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "evidenceDirection",
+       "type": {
+        "name": "EvidenceDirection",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "significance",
+       "type": {
+        "name": "EvidenceSignificance",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantOrigin",
+       "type": {
+        "name": "VariantOrigin",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "evidenceRating",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "EvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "phenotypeId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sourceId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "clinicalTrialId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "EvidenceSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "factor",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ncitId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "factors",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "evidenceStatusFilter",
+       "type": {
+        "name": "AssociatedEvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ncitIt",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "feature",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "featureTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "featureType",
+       "type": {
+        "name": "FeatureInstanceTypes",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "flag",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "flags",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "flaggable",
+       "type": {
+        "name": "FlaggableInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "flaggingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "resolvingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "state",
+       "type": {
+        "name": "FlagState",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "fusion",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "fusions",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "evidenceStatusFilter",
+       "type": {
+        "name": "AssociatedEvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "genePartnerId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "gene",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "entrezSymbol",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "genes",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "evidenceStatusFilter",
+       "type": {
+        "name": "AssociatedEvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "entrezSymbols",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "entrezIds",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "molecularProfile",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "molecularProfiles",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "evidenceStatusFilter",
+       "type": {
+        "name": "AssociatedEvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "geneId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "alleleRegistryId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "nccnGuideline",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "nccnGuidelinesTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "newsItems",
+     "args": [
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "notifications",
+     "args": [
+      {
+       "name": "notificationReason",
+       "type": {
+        "name": "NotificationReason",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subscriptionId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "originatingObject",
+       "type": {
+        "name": "SubscribableInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "eventType",
+       "type": {
+        "name": "EventAction",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "originatingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organizationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "includeRead",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "organization",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "organizationLeaderboards",
+     "args": []
+    },
+    {
+     "name": "organizations",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "phenotype",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "phenotypePopover",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "phenotypeTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "phenotypes",
+     "args": [
+      {
+       "name": "hpoId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "previewCommentText",
+     "args": [
+      {
+       "name": "commentText",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "previewMolecularProfileName",
+     "args": [
+      {
+       "name": "structure",
+       "type": {
+        "name": "MolecularProfileComponentInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "region",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "regionVariantNamesForFeatureId",
+     "args": [
+      {
+       "name": "featureId",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "regions",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "evidenceStatusFilter",
+       "type": {
+        "name": "AssociatedEvidenceStatusFilter",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "iscnName",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "remoteCitation",
+     "args": [
+      {
+       "name": "citationId",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "sourceType",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "SourceSource",
+         "kind": "ENUM",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "revision",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "revisionSets",
+     "args": [
+      {
+       "name": "originatingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "originatingUserName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "RevisionStatus",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "fieldName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subject",
+       "type": {
+        "name": "ModeratedInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subjectType",
+       "type": {
+        "name": "ActivitySubjectInput",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "excludeRevisionsFromUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organizationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "organizationName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "revisions",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "originatingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "resolvingUserId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "RevisionStatus",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "DateSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "fieldName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "revisionSetId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "subject",
+       "type": {
+        "name": "ModeratedInput",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "search",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "types",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "SearchableEntities"
+         }
+        }
+       }
+      },
+      {
+       "name": "highlightMatches",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchActivities",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "ActivitySearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchAssertions",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "AssertionSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchByPermalink",
+     "args": [
+      {
+       "name": "permalinkId",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchComments",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "CommentSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchDiseases",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "DiseaseSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchEvidenceItems",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "EvidenceItemSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchFeatures",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "FeatureSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchMolecularProfiles",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "MolecularProfileSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchOrganizations",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "OrganizationSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchPhenotypes",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "PhenotypeSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchRevisions",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "RevisionSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchSources",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "SourceSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchTherapies",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "TherapySearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchUsers",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "UserSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchVariantTypes",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "VariantTypeSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "searchVariants",
+     "args": [
+      {
+       "name": "query",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "VariantSearchFilter",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "createPermalink",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "source",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "sourcePopover",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "sourceSuggestionValues",
+     "args": [
+      {
+       "name": "molecularProfileId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sourceId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "sourceSuggestions",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "sourceType",
+       "type": {
+        "name": "SourceSource",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "citationId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sourceId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "molecularProfileName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "diseaseName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyName",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "comment",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "submitter",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "submitterId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "citation",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "status",
+       "type": {
+        "name": "SourceSuggestionStatus",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "SourceSuggestionsSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "sourceTypeahead",
+     "args": [
+      {
+       "name": "citationId",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "sourceType",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "SourceSource",
+         "kind": "ENUM",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "sources",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "citationId",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "String"
+         }
+        }
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "subscriptionForEntity",
+     "args": [
+      {
+       "name": "subscribable",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "SubscribableInput",
+         "kind": "INPUT_OBJECT",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "therapies",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "ncitId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "hasLinkedEvidence",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "therapyAlias",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "therapy",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "therapyPopover",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "therapyTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "timepointStats",
+     "args": []
+    },
+    {
+     "name": "user",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "userLeaderboards",
+     "args": []
+    },
+    {
+     "name": "userTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "users",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "organization",
+       "type": {
+        "name": "OrganizationFilter",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "username",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "role",
+       "type": {
+        "name": "UserRole",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "validateRevisionsForAcceptance",
+     "args": [
+      {
+       "name": "revisionIds",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": null,
+         "kind": "LIST",
+         "ofType": {
+          "name": null
+         }
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variant",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantGroup",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantGroups",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantType",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantTypePopover",
+     "args": [
+      {
+       "name": "id",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "Int",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantTypeTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantTypes",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "soid",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "id",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "geneId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "VariantTypeSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "variants",
+     "args": [
+      {
+       "name": "ids",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "name",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "featureId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "geneId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "factorId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "fusionId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "regionId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "variantTypeIds",
+       "type": {
+        "name": null,
+        "kind": "LIST",
+        "ofType": {
+         "name": null,
+         "kind": "NON_NULL",
+         "ofType": {
+          "name": "Int"
+         }
+        }
+       }
+      },
+      {
+       "name": "alleleRegistryId",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "hasNoVariantType",
+       "type": {
+        "name": "Boolean",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "sortBy",
+       "type": {
+        "name": "VariantMenuSort",
+        "kind": "INPUT_OBJECT",
+        "ofType": null
+       }
+      },
+      {
+       "name": "category",
+       "type": {
+        "name": "VariantCategories",
+        "kind": "ENUM",
+        "ofType": null
+       }
+      },
+      {
+       "name": "after",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "before",
+       "type": {
+        "name": "String",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "first",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      },
+      {
+       "name": "last",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "variantsTypeahead",
+     "args": [
+      {
+       "name": "queryTerm",
+       "type": {
+        "name": null,
+        "kind": "NON_NULL",
+        "ofType": {
+         "name": "String",
+         "kind": "SCALAR",
+         "ofType": null
+        }
+       }
+      },
+      {
+       "name": "featureId",
+       "type": {
+        "name": "Int",
+        "kind": "SCALAR",
+        "ofType": null
+       }
+      }
+     ]
+    },
+    {
+     "name": "viewer",
+     "args": []
+    }
+   ]
+  },
+  "e": {
+   "fields": [
+    {
+     "name": "action",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EventAction"
+      }
+     }
+    },
+    {
+     "name": "createdAt",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "ISO8601DateTime"
+      }
+     }
+    },
+    {
+     "name": "id",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "organization",
+     "type": {
+      "name": "Organization",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "originatingObject",
+     "type": {
+      "name": "EventOriginObject",
+      "kind": "INTERFACE",
+      "ofType": null
+     }
+    },
+    {
+     "name": "originatingUser",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "User"
+      }
+     }
+    },
+    {
+     "name": "subject",
+     "type": {
+      "name": "EventSubject",
+      "kind": "INTERFACE",
+      "ofType": null
+     }
+    }
+   ]
+  },
+  "a": {
+   "enumValues": [
+    {
+     "name": "COMMENTED"
+    },
+    {
+     "name": "REVISION_SUGGESTED"
+    },
+    {
+     "name": "REVISION_REJECTED"
+    },
+    {
+     "name": "REVISION_ACCEPTED"
+    },
+    {
+     "name": "REVISION_SUPERSEDED"
+    },
+    {
+     "name": "SUBMITTED"
+    },
+    {
+     "name": "ACCEPTED"
+    },
+    {
+     "name": "REJECTED"
+    },
+    {
+     "name": "PUBLICATION_SUGGESTED"
+    },
+    {
+     "name": "FLAG_RESOLVED"
+    },
+    {
+     "name": "FLAGGED"
+    },
+    {
+     "name": "ASSERTION_SUBMITTED"
+    },
+    {
+     "name": "ASSERTION_ACCEPTED"
+    },
+    {
+     "name": "ASSERTION_REJECTED"
+    },
+    {
+     "name": "ASSERTION_REVERTED"
+    },
+    {
+     "name": "REVERTED"
+    },
+    {
+     "name": "REQUEUED_SOURCE_SUGGESTION"
+    },
+    {
+     "name": "CURATED_SOURCE_SUGGESTION"
+    },
+    {
+     "name": "REJECTED_SOURCE_SUGGESTION"
+    },
+    {
+     "name": "DEPRECATED_VARIANT"
+    },
+    {
+     "name": "DEPRECATED_MOLECULAR_PROFILE"
+    },
+    {
+     "name": "VARIANT_CREATED"
+    },
+    {
+     "name": "COMPLEX_MOLECULAR_PROFILE_CREATED"
+    },
+    {
+     "name": "DEPRECATED_FEATURE"
+    },
+    {
+     "name": "FEATURE_CREATED"
+    },
+    {
+     "name": "COMMENT_DELETED"
+    },
+    {
+     "name": "ASSERTION_APPROVED"
+    },
+    {
+     "name": "ASSERTION_APPROVAL_REVOKED"
+    }
+   ]
+  },
+  "u": {
+   "fields": [
+    {
+     "name": "apiKeys",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "areaOfExpertise",
+     "type": {
+      "name": "AreaOfExpertise",
+      "kind": "ENUM",
+      "ofType": null
+     }
+    },
+    {
+     "name": "bio",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "country",
+     "type": {
+      "name": "Country",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "displayName",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "email",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "events",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EventConnection"
+      }
+     }
+    },
+    {
+     "name": "facebookProfile",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "id",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "joinDate",
+     "type": {
+      "name": "ISO8601DateTime",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "linkedinProfile",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "mostRecentActivityTimestamp",
+     "type": {
+      "name": "ISO8601DateTime",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "mostRecentConflictOfInterestStatement",
+     "type": {
+      "name": "Coi",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "mostRecentEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "mostRecentOrganizationId",
+     "type": {
+      "name": "Int",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "name",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "notifications",
+     "type": {
+      "name": "NotificationConnection",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "orcid",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "organizations",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "organizationsWithApprovalPrivileges",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "profileImagePath",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "ranks",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Ranks"
+      }
+     }
+    },
+    {
+     "name": "role",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "UserRole"
+      }
+     }
+    },
+    {
+     "name": "statsHash",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Stats"
+      }
+     }
+    },
+    {
+     "name": "twitterHandle",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "url",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "username",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    }
+   ]
+  },
+  "o": {
+   "fields": [
+    {
+     "name": "canApprove",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "description",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "eventCount",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "events",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EventConnection"
+      }
+     }
+    },
+    {
+     "name": "hasApprovingSubgroups",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "id",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "isApprovedVcep",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "isClinvarSubmitter",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "memberCount",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "members",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "UserConnection"
+      }
+     }
+    },
+    {
+     "name": "mostRecentActivityTimestamp",
+     "type": {
+      "name": "ISO8601DateTime",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "name",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "orgAndSuborgsStatsHash",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Stats"
+      }
+     }
+    },
+    {
+     "name": "orgStatsHash",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Stats"
+      }
+     }
+    },
+    {
+     "name": "profileImagePath",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "ranks",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Ranks"
+      }
+     }
+    },
+    {
+     "name": "subGroups",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "url",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    }
+   ]
+  },
+  "ev": {
+   "fields": [
+    {
+     "name": "acceptanceEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "assertions",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "comments",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "CommentConnection"
+      }
+     }
+    },
+    {
+     "name": "description",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithNames",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithNamesReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithTags",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "descriptionWithTagsReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "disease",
+     "type": {
+      "name": "Disease",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "events",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EventConnection"
+      }
+     }
+    },
+    {
+     "name": "evidenceDirection",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceDirection"
+      }
+     }
+    },
+    {
+     "name": "evidenceLevel",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceLevel"
+      }
+     }
+    },
+    {
+     "name": "evidenceRating",
+     "type": {
+      "name": "Int",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "evidenceType",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceType"
+      }
+     }
+    },
+    {
+     "name": "flagged",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "flags",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "FlagConnection"
+      }
+     }
+    },
+    {
+     "name": "id",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "lastAcceptedRevisionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "lastCommentEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "lastSubmittedRevisionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "link",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "molecularProfile",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "MolecularProfile"
+      }
+     }
+    },
+    {
+     "name": "name",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "openRevisionCount",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "phenotypes",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "rejectionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "revisions",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "RevisionConnection"
+      }
+     }
+    },
+    {
+     "name": "significance",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceSignificance"
+      }
+     }
+    },
+    {
+     "name": "source",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Source"
+      }
+     }
+    },
+    {
+     "name": "status",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceStatus"
+      }
+     }
+    },
+    {
+     "name": "submissionActivity",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "SubmitEvidenceItemActivity"
+      }
+     }
+    },
+    {
+     "name": "submissionEvent",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Event"
+      }
+     }
+    },
+    {
+     "name": "therapies",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "therapyInteractionType",
+     "type": {
+      "name": "TherapyInteraction",
+      "kind": "ENUM",
+      "ofType": null
+     }
+    },
+    {
+     "name": "variantHgvs",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "variantOrigin",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "VariantOrigin"
+      }
+     }
+    }
+   ]
+  },
+  "as": {
+   "fields": [
+    {
+     "name": "acceptanceEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "acmgCodes",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "ampLevel",
+     "type": {
+      "name": "AmpLevel",
+      "kind": "ENUM",
+      "ofType": null
+     }
+    },
+    {
+     "name": "approvals",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "ApprovalConnection"
+      }
+     }
+    },
+    {
+     "name": "assertionDirection",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "AssertionDirection"
+      }
+     }
+    },
+    {
+     "name": "assertionType",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "AssertionType"
+      }
+     }
+    },
+    {
+     "name": "clingenCodes",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "comments",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "CommentConnection"
+      }
+     }
+    },
+    {
+     "name": "description",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithNames",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithNamesReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "descriptionWithTags",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "descriptionWithTagsReplaceEidWithSource",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "disease",
+     "type": {
+      "name": "Disease",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "events",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EventConnection"
+      }
+     }
+    },
+    {
+     "name": "evidenceItems",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "evidenceItemsCount",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "fdaCompanionTest",
+     "type": {
+      "name": "Boolean",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "fdaCompanionTestLastUpdated",
+     "type": {
+      "name": "ISO8601DateTime",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "flagged",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Boolean"
+      }
+     }
+    },
+    {
+     "name": "flags",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "FlagConnection"
+      }
+     }
+    },
+    {
+     "name": "id",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "lastAcceptedRevisionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "lastCommentEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "lastSubmittedRevisionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "link",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "molecularProfile",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "MolecularProfile"
+      }
+     }
+    },
+    {
+     "name": "name",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "nccnGuideline",
+     "type": {
+      "name": "NccnGuideline",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "nccnGuidelineVersion",
+     "type": {
+      "name": "String",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "openRevisionCount",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "Int"
+      }
+     }
+    },
+    {
+     "name": "phenotypes",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "regulatoryApproval",
+     "type": {
+      "name": "Boolean",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "regulatoryApprovalLastUpdated",
+     "type": {
+      "name": "ISO8601DateTime",
+      "kind": "SCALAR",
+      "ofType": null
+     }
+    },
+    {
+     "name": "rejectionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "revisions",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "RevisionConnection"
+      }
+     }
+    },
+    {
+     "name": "significance",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "AssertionSignificance"
+      }
+     }
+    },
+    {
+     "name": "status",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "EvidenceStatus"
+      }
+     }
+    },
+    {
+     "name": "submissionActivity",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "SubmitAssertionActivity"
+      }
+     }
+    },
+    {
+     "name": "submissionEvent",
+     "type": {
+      "name": "Event",
+      "kind": "OBJECT",
+      "ofType": null
+     }
+    },
+    {
+     "name": "summary",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "String"
+      }
+     }
+    },
+    {
+     "name": "therapies",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": null
+      }
+     }
+    },
+    {
+     "name": "therapyInteractionType",
+     "type": {
+      "name": "TherapyInteraction",
+      "kind": "ENUM",
+      "ofType": null
+     }
+    },
+    {
+     "name": "variantOrigin",
+     "type": {
+      "name": null,
+      "kind": "NON_NULL",
+      "ofType": {
+       "name": "VariantOrigin"
+      }
+     }
+    }
+   ]
+  }
+ }
+}

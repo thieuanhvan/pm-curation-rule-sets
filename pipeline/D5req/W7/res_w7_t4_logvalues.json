@@ -1,0 +1,68 @@
+{
+ "observed_log": {
+  "new_arrivals": 2328,
+  "KM_decided_by90": 0.23285064829509527,
+  "KM_by90_CI": [
+   0.2331857651777131,
+   0.2163660821204414,
+   0.25181880937967216
+  ],
+  "KM_decided_by365": 0.2961953317651512,
+  "KM_by365_CI": [
+   0.2960661086993309,
+   0.2764536136888949,
+   0.3156835039469078
+  ],
+  "share_by90_full_followup": {
+   "n": 2014,
+   "share": 0.23684210526315788
+  },
+  "share_by365_full_followup": {
+   "n": 1498,
+   "share": 0.2923898531375167
+  }
+ },
+ "asis_model": {
+  "KM_by90": [
+   0.22937728862644677,
+   0.1913738513483203,
+   0.2575607597197067
+  ],
+  "KM_by365": [
+   0.3241636945798653,
+   0.29342878633380076,
+   0.35113624060196
+  ],
+  "share_by90_full_followup": [
+   0.233738828202582,
+   0.19662363455809334,
+   0.26216484607745777
+  ],
+  "share_by365_full_followup": [
+   0.3043724966622162,
+   0.27903871829105475,
+   0.3364485981308411
+  ]
+ },
+ "legacy": {
+  "pending_at_holdout_start": 5409,
+  "observed_accepted_later": 237,
+  "observed_rejected_later": 78,
+  "still_pending_now": 5094,
+  "eventually_accepted_imputed_by_draw": [
+   4881,
+   4930,
+   4916,
+   4890,
+   4891
+  ],
+  "observed_share_of_EAimp_decided_in_holdout_by_draw": [
+   0.04855562384757222,
+   0.048073022312373224,
+   0.04820992676973149,
+   0.048466257668711654,
+   0.04845634839501124
+  ],
+  "note": "eventually accepted (imputed) = observed later acceptances + Bernoulli(p = overall acceptance share) for never-decided items; bound 18.8 % = all tokens to legacy oldest-first (frontier s = 1), 21.4 % = all tokens to legacy items known to be eventually accepted (oracle, LEGACY_first)"
+ }
+}

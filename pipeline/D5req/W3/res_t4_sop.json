@@ -1,0 +1,304 @@
+{
+ "petri_fitness_precision_excl_bot": {
+  "decided_cases": 5404,
+  "variants": 2049,
+  "TEXT_strict": {
+   "align_fitness_case_weighted": 0.8642,
+   "ci95_case_boot": [
+    0.8601,
+    0.8678
+   ],
+   "perfectly_fitting_case_share": 0.4615,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_ACCEPTED": 0.4624,
+    "REVISION_SUGGESTED": 0.1941,
+    "ACCEPTED": 0.1382,
+    "REVISION_REJECTED": 0.1282,
+    "REVISION_SUPERSEDED": 0.0511,
+    "COMMENTED": 0.0442,
+    "FLAG_RESOLVED": 0.0328,
+    "REVISION_COMMENTED": 0.0165,
+    "REJECTED": 0.0104,
+    "REVERTED": 0.0083,
+    "FLAGGED": 0.0015
+   },
+   "sec_align": 188,
+   "align_etc_precision(all variants)": 0.6503,
+   "sec_prec": 75
+  },
+  "TEXT_interleaved": {
+   "align_fitness_case_weighted": 0.9941,
+   "ci95_case_boot": [
+    0.9934,
+    0.9947
+   ],
+   "perfectly_fitting_case_share": 0.9308,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_SUPERSEDED": 0.0511,
+    "REJECTED": 0.0093,
+    "REVERTED": 0.0083,
+    "ACCEPTED": 0.0068
+   },
+   "sec_align": 57,
+   "align_etc_precision(all variants)": 0.415,
+   "sec_prec": 118
+  },
+  "CODE_strict": {
+   "align_fitness_case_weighted": 0.9017,
+   "ci95_case_boot": [
+    0.8987,
+    0.9047
+   ],
+   "perfectly_fitting_case_share": 0.4769,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_ACCEPTED": 0.4647,
+    "REVISION_REJECTED": 0.1297,
+    "REVISION_SUPERSEDED": 0.0496,
+    "COMMENTED": 0.0405,
+    "FLAG_RESOLVED": 0.0335,
+    "REVISION_COMMENTED": 0.0155,
+    "REJECTED": 0.007,
+    "ACCEPTED": 0.0031,
+    "FLAGGED": 0.0011,
+    "REVISION_SUGGESTED": 0.0002,
+    "REVERTED": 0.0002
+   },
+   "sec_align": 545,
+   "align_etc_precision(all variants)": 0.5805,
+   "sec_prec": 106
+  },
+  "CODE_interleaved": {
+   "align_fitness_case_weighted": 0.999,
+   "ci95_case_boot": [
+    0.9987,
+    0.9993
+   ],
+   "perfectly_fitting_case_share": 0.9893,
+   "cases_with_log_move_by_activity(share)": {
+    "REJECTED": 0.007,
+    "ACCEPTED": 0.0031
+   },
+   "sec_align": 53,
+   "align_etc_precision(all variants)": 0.3585,
+   "sec_prec": 129
+  }
+ },
+ "petri_fitness_precision_incl_bot": {
+  "decided_cases": 5404,
+  "variants": 2162,
+  "TEXT_strict": {
+   "align_fitness_case_weighted": 0.8713,
+   "ci95_case_boot": [
+    0.8673,
+    0.8746
+   ],
+   "perfectly_fitting_case_share": 0.4693,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_ACCEPTED": 0.4515,
+    "REVISION_SUGGESTED": 0.1962,
+    "REVISION_REJECTED": 0.1573,
+    "ACCEPTED": 0.1405,
+    "REVISION_SUPERSEDED": 0.0511,
+    "COMMENTED": 0.0424,
+    "FLAG_RESOLVED": 0.027,
+    "REVISION_COMMENTED": 0.0159,
+    "REJECTED": 0.0105,
+    "REVERTED": 0.0083,
+    "FLAGGED": 0.0028
+   },
+   "sec_align": 129,
+   "align_etc_precision(all variants)": 0.6318,
+   "sec_prec": 54
+  },
+  "TEXT_interleaved": {
+   "align_fitness_case_weighted": 0.9946,
+   "ci95_case_boot": [
+    0.9939,
+    0.9952
+   ],
+   "perfectly_fitting_case_share": 0.9308,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_SUPERSEDED": 0.0511,
+    "REJECTED": 0.0087,
+    "REVERTED": 0.0083,
+    "ACCEPTED": 0.0074
+   },
+   "sec_align": 25,
+   "align_etc_precision(all variants)": 0.3553,
+   "sec_prec": 57
+  },
+  "CODE_strict": {
+   "align_fitness_case_weighted": 0.9084,
+   "ci95_case_boot": [
+    0.9056,
+    0.9113
+   ],
+   "perfectly_fitting_case_share": 0.4852,
+   "cases_with_log_move_by_activity(share)": {
+    "REVISION_ACCEPTED": 0.4543,
+    "REVISION_REJECTED": 0.1597,
+    "REVISION_SUPERSEDED": 0.0496,
+    "COMMENTED": 0.039,
+    "FLAG_RESOLVED": 0.0278,
+    "REVISION_COMMENTED": 0.015,
+    "REJECTED": 0.0068,
+    "ACCEPTED": 0.0033,
+    "FLAGGED": 0.0022,
+    "REVISION_SUGGESTED": 0.0007,
+    "REVERTED": 0.0002
+   },
+   "sec_align": 256,
+   "align_etc_precision(all variants)": 0.5664,
+   "sec_prec": 74
+  },
+  "CODE_interleaved": {
+   "align_fitness_case_weighted": 0.999,
+   "ci95_case_boot": [
+    0.9987,
+    0.9993
+   ],
+   "perfectly_fitting_case_share": 0.9893,
+   "cases_with_log_move_by_activity(share)": {
+    "REJECTED": 0.0068,
+    "ACCEPTED": 0.0033
+   },
+   "sec_align": 36,
+   "align_etc_precision(all variants)": 0.3049,
+   "sec_prec": 99
+  }
+ },
+ "oc_lifecycle_alignment_incl_bot": {
+  "revision": {
+   "objects": 16871,
+   "variants": 44,
+   "fitness_object_weighted": 0.9991,
+   "perfectly_fitting_object_share": 0.9976
+  },
+  "comment": {
+   "objects": 2945,
+   "variants": 3,
+   "fitness_object_weighted": 1.0,
+   "perfectly_fitting_object_share": 1.0
+  },
+  "flag": {
+   "objects": 1202,
+   "variants": 4,
+   "fitness_object_weighted": 0.9994,
+   "perfectly_fitting_object_share": 0.9975
+  }
+ },
+ "oc_vs_flattened_event_level": {
+  "CODE_strict": {
+   "revision": {
+    "events": 32741,
+    "converge_ok": 24931,
+    "converge_dev": 19,
+    "diverge_flat_only(flattening artefact)": 7788,
+    "diverge_oc_only(masked by flattening)": 3,
+    "share_of_flat_deviations_that_are_artefacts": 0.998
+   },
+   "comment": {
+    "events": 2950,
+    "converge_ok": 2648,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 302,
+    "diverge_oc_only(masked by flattening)": 0,
+    "share_of_flat_deviations_that_are_artefacts": 1.0
+   },
+   "flag": {
+    "events": 1507,
+    "converge_ok": 1337,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 167,
+    "diverge_oc_only(masked by flattening)": 3,
+    "share_of_flat_deviations_that_are_artefacts": 1.0
+   }
+  },
+  "TEXT_strict": {
+   "revision": {
+    "events": 32741,
+    "converge_ok": 23865,
+    "converge_dev": 16,
+    "diverge_flat_only(flattening artefact)": 8854,
+    "diverge_oc_only(masked by flattening)": 6,
+    "share_of_flat_deviations_that_are_artefacts": 0.998
+   },
+   "comment": {
+    "events": 2950,
+    "converge_ok": 2615,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 335,
+    "diverge_oc_only(masked by flattening)": 0,
+    "share_of_flat_deviations_that_are_artefacts": 1.0
+   },
+   "flag": {
+    "events": 1507,
+    "converge_ok": 1338,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 166,
+    "diverge_oc_only(masked by flattening)": 3,
+    "share_of_flat_deviations_that_are_artefacts": 1.0
+   }
+  },
+  "CODE_interleaved": {
+   "revision": {
+    "events": 32741,
+    "converge_ok": 32719,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 0,
+    "diverge_oc_only(masked by flattening)": 22,
+    "share_of_flat_deviations_that_are_artefacts": null
+   },
+   "comment": {
+    "events": 2950,
+    "converge_ok": 2950,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 0,
+    "diverge_oc_only(masked by flattening)": 0,
+    "share_of_flat_deviations_that_are_artefacts": null
+   },
+   "flag": {
+    "events": 1507,
+    "converge_ok": 1504,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 0,
+    "diverge_oc_only(masked by flattening)": 3,
+    "share_of_flat_deviations_that_are_artefacts": null
+   }
+  },
+  "TEXT_interleaved": {
+   "revision": {
+    "events": 32741,
+    "converge_ok": 32378,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 341,
+    "diverge_oc_only(masked by flattening)": 22,
+    "share_of_flat_deviations_that_are_artefacts": 1.0
+   },
+   "comment": {
+    "events": 2950,
+    "converge_ok": 2950,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 0,
+    "diverge_oc_only(masked by flattening)": 0,
+    "share_of_flat_deviations_that_are_artefacts": null
+   },
+   "flag": {
+    "events": 1507,
+    "converge_ok": 1504,
+    "converge_dev": 0,
+    "diverge_flat_only(flattening artefact)": 0,
+    "diverge_oc_only(masked by flattening)": 3,
+    "share_of_flat_deviations_that_are_artefacts": null
+   }
+  }
+ },
+ "evidence_revision_no_pending_at_acceptance": {
+  "acceptances": 4996,
+  "violations_OC(by revision id)": 888,
+  "violations_flattened(count-based)": 887,
+  "both": 887,
+  "OC_violation_rate": 0.1777,
+  "flat_violation_rate": 0.1775
+ }
+}

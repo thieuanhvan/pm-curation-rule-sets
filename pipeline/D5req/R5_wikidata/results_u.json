@@ -1,0 +1,240 @@
+{
+ "n_cases": 13488,
+ "n_decisions": 13443,
+ "n_pending_now": 45,
+ "note": "Census of proposal subpages (R5_wikidata), u relative to all parsed pending proposals.",
+ "from2016": {
+  "all_pending": {
+   "n": 13443,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.341,
+    0.333,
+    0.35
+   ],
+   "newest10": [
+    0.078,
+    0.072,
+    0.084
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.505
+   ],
+   "null_newest10_95": [
+    0.098,
+    0.107
+   ],
+   "median_queue_L": 210
+  },
+  "all_pending_excl_withdrawn": {
+   "n": 13131,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.342,
+    0.334,
+    0.35
+   ],
+   "newest10": [
+    0.072,
+    0.066,
+    0.078
+   ],
+   "null_meanU_95": [
+    0.496,
+    0.505
+   ],
+   "null_newest10_95": [
+    0.097,
+    0.108
+   ],
+   "median_queue_L": 210
+  },
+  "live_age<=180": {
+   "n": 12301,
+   "share_decisions_on_live_items": 0.915,
+   "meanU": [
+    0.402,
+    0.395,
+    0.41
+   ],
+   "newest10": [
+    0.032,
+    0.028,
+    0.036
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.506
+   ],
+   "null_newest10_95": [
+    0.098,
+    0.109
+   ],
+   "median_queue_L": 155
+  },
+  "live_age<=365": {
+   "n": 13070,
+   "share_decisions_on_live_items": 0.972,
+   "meanU": [
+    0.376,
+    0.369,
+    0.385
+   ],
+   "newest10": [
+    0.053,
+    0.048,
+    0.058
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.505
+   ],
+   "null_newest10_95": [
+    0.097,
+    0.108
+   ],
+   "median_queue_L": 194
+  },
+  "live_age<=730": {
+   "n": 13378,
+   "share_decisions_on_live_items": 0.995,
+   "meanU": [
+    0.36,
+    0.351,
+    0.368
+   ],
+   "newest10": [
+    0.068,
+    0.063,
+    0.074
+   ],
+   "null_meanU_95": [
+    0.495,
+    0.504
+   ],
+   "null_newest10_95": [
+    0.098,
+    0.108
+   ],
+   "median_queue_L": 204
+  }
+ },
+ "from2021": {
+  "all_pending": {
+   "n": 6800,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.347,
+    0.333,
+    0.36
+   ],
+   "newest10": [
+    0.098,
+    0.089,
+    0.108
+   ],
+   "null_meanU_95": [
+    0.493,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.095,
+    0.109
+   ],
+   "median_queue_L": 274
+  },
+  "all_pending_excl_withdrawn": {
+   "n": 6655,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.347,
+    0.333,
+    0.36
+   ],
+   "newest10": [
+    0.093,
+    0.084,
+    0.102
+   ],
+   "null_meanU_95": [
+    0.493,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.096,
+    0.109
+   ],
+   "median_queue_L": 274
+  },
+  "live_age<=180": {
+   "n": 5946,
+   "share_decisions_on_live_items": 0.874,
+   "meanU": [
+    0.43,
+    0.419,
+    0.441
+   ],
+   "newest10": [
+    0.035,
+    0.029,
+    0.041
+   ],
+   "null_meanU_95": [
+    0.492,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.095,
+    0.112
+   ],
+   "median_queue_L": 167
+  },
+  "live_age<=365": {
+   "n": 6469,
+   "share_decisions_on_live_items": 0.951,
+   "meanU": [
+    0.398,
+    0.384,
+    0.411
+   ],
+   "newest10": [
+    0.062,
+    0.055,
+    0.07
+   ],
+   "null_meanU_95": [
+    0.492,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.096,
+    0.111
+   ],
+   "median_queue_L": 223
+  },
+  "live_age<=730": {
+   "n": 6742,
+   "share_decisions_on_live_items": 0.991,
+   "meanU": [
+    0.376,
+    0.362,
+    0.389
+   ],
+   "newest10": [
+    0.083,
+    0.075,
+    0.093
+   ],
+   "null_meanU_95": [
+    0.493,
+    0.507
+   ],
+   "null_newest10_95": [
+    0.095,
+    0.111
+   ],
+   "median_queue_L": 258
+  }
+ }
+}

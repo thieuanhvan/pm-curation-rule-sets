@@ -1,0 +1,102 @@
+{
+ "alignment_log": {
+  "decided_cases": 5404,
+  "variants": 2162,
+  "trace_len_p50_p90_max": [
+   6,
+   18,
+   62
+  ]
+ },
+ "alignment_sample": {
+  "multi_variants": 330,
+  "cases_in_multi": 3572,
+  "singleton_variants": 1832,
+  "singletons_sampled": 400,
+  "singleton_weight": 4.58
+ },
+ "petri_SOP_strict_revision_cycles": {
+  "places": 28,
+  "transitions": 67,
+  "align_fitness_case_weighted": 0.9076,
+  "ci95_boot": [
+   0.9043,
+   0.9107
+  ],
+  "perfectly_fitting_case_share": 0.4877,
+  "align_etc_precision_on_variant_sample": 0.5137,
+  "sec_align": 186,
+  "sec_prec": 62
+ },
+ "petri_SOP_revision_flower": {
+  "places": 20,
+  "transitions": 59,
+  "align_fitness_case_weighted": 0.9992,
+  "ci95_boot": [
+   0.9987,
+   0.9996
+  ],
+  "perfectly_fitting_case_share": 0.9886,
+  "align_etc_precision_on_variant_sample": 0.281,
+  "sec_align": 31,
+  "sec_prec": 77
+ },
+ "deviation_types_case_share": {
+  "SOP_strict_revision_cycles": [
+   [
+    "log_move(unexpected):REVISION_ACCEPTED",
+    0.4501
+   ],
+   [
+    "log_move(unexpected):REVISION_REJECTED",
+    0.1576
+   ],
+   [
+    "log_move(unexpected):REVISION_SUPERSEDED",
+    0.0512
+   ],
+   [
+    "log_move(unexpected):COMMENTED",
+    0.0394
+   ],
+   [
+    "log_move(unexpected):FLAG_RESOLVED",
+    0.024
+   ],
+   [
+    "log_move(unexpected):REVISION_COMMENTED",
+    0.0129
+   ],
+   [
+    "log_move(unexpected):REJECTED",
+    0.008
+   ],
+   [
+    "model_move(skip):SUBMITTED",
+    0.0025
+   ],
+   [
+    "log_move(unexpected):FLAGGED",
+    0.0025
+   ],
+   [
+    "log_move(unexpected):ACCEPTED",
+    0.0017
+   ]
+  ],
+  "SOP_revision_flower": [
+   [
+    "log_move(unexpected):REJECTED",
+    0.008
+   ],
+   [
+    "model_move(skip):SUBMITTED",
+    0.0025
+   ],
+   [
+    "log_move(unexpected):ACCEPTED",
+    0.0017
+   ]
+  ]
+ }
+}

@@ -1,0 +1,359 @@
+{
+ "panel": {
+  "moderator_days": 4838,
+  "moderators": 31,
+  "by_period": {
+   "2016-18": 11,
+   "2019-22": 22,
+   "2023-26": 20
+  }
+ },
+ "ev_decision": {
+  "per_active_day_2016_18": 2.06,
+  "per_active_day_2023_26": 0.596,
+  "fold_decline": 3.45,
+  "FE_ratio_2023_26_vs_2016_18": [
+   0.265,
+   0.147,
+   0.478
+  ],
+  "noFE_ratio_2023_26_vs_2016_18": [
+   0.289,
+   0.165,
+   0.508
+  ],
+  "decomp": {
+   "R0": 2.06,
+   "R1": 0.596,
+   "delta": -1.464,
+   "n_stay": 6,
+   "n_entry": 14,
+   "n_exit": 5,
+   "fhk_within": -1.061,
+   "fhk_between": 0.21,
+   "fhk_cross": 0.427,
+   "fhk_entry": -0.762,
+   "fhk_exit": -0.278,
+   "mp_stayers": -1.373,
+   "mp_entry": 0.259,
+   "mp_exit": -0.35,
+   "mp_stayers_meanrate": -1.185,
+   "stayer_rate_ratio": 0.197,
+   "delta_CI": [
+    -2.563,
+    -0.509
+   ],
+   "mp_stayers_CI": [
+    -1.754,
+    -0.673
+   ],
+   "mp_entry_CI": [
+    0.03,
+    0.564
+   ],
+   "mp_exit_CI": [
+    -1.609,
+    0.161
+   ],
+   "fhk_within_CI": [
+    -1.44,
+    -0.351
+   ],
+   "fhk_entry_CI": [
+    -1.796,
+    -0.18
+   ],
+   "stayer_rate_ratio_CI": [
+    0.132,
+    0.335
+   ],
+   "mp_entry_plus_exit": -0.091,
+   "mp_entry_plus_exit_CI": [
+    -1.308,
+    0.536
+   ],
+   "mp_stayer_share_of_delta": 0.938
+  }
+ },
+ "moderation_all": {
+  "per_active_day_2016_18": 18.453,
+  "per_active_day_2023_26": 7.254,
+  "fold_decline": 2.54,
+  "FE_ratio_2023_26_vs_2016_18": [
+   0.603,
+   0.366,
+   0.992
+  ],
+  "noFE_ratio_2023_26_vs_2016_18": [
+   0.393,
+   0.219,
+   0.706
+  ],
+  "decomp": {
+   "R0": 18.453,
+   "R1": 7.254,
+   "delta": -11.199,
+   "n_stay": 6,
+   "n_entry": 14,
+   "n_exit": 5,
+   "fhk_within": -7.592,
+   "fhk_between": -2.532,
+   "fhk_cross": 5.921,
+   "fhk_entry": -8.271,
+   "fhk_exit": 1.275,
+   "mp_stayers": -8.786,
+   "mp_entry": -4.016,
+   "mp_exit": 1.604,
+   "mp_stayers_meanrate": -5.634,
+   "stayer_rate_ratio": 0.562,
+   "delta_CI": [
+    -19.205,
+    -1.716
+   ],
+   "mp_stayers_CI": [
+    -17.568,
+    3.332
+   ],
+   "mp_entry_CI": [
+    -7.244,
+    -1.834
+   ],
+   "mp_exit_CI": [
+    -2.86,
+    5.177
+   ],
+   "fhk_within_CI": [
+    -14.706,
+    -0.018
+   ],
+   "fhk_entry_CI": [
+    -16.059,
+    -2.19
+   ],
+   "stayer_rate_ratio_CI": [
+    0.389,
+    1.44
+   ],
+   "mp_entry_plus_exit": -2.413,
+   "mp_entry_plus_exit_CI": [
+    -7.564,
+    0.633
+   ],
+   "mp_stayer_share_of_delta": 0.785
+  }
+ },
+ "nonev_moderation": {
+  "per_active_day_2016_18": 16.392,
+  "per_active_day_2023_26": 6.658,
+  "fold_decline": 2.46,
+  "FE_ratio_2023_26_vs_2016_18": [
+   0.64,
+   0.372,
+   1.102
+  ],
+  "noFE_ratio_2023_26_vs_2016_18": [
+   0.406,
+   0.209,
+   0.791
+  ],
+  "decomp": {
+   "R0": 16.392,
+   "R1": 6.658,
+   "delta": -9.735,
+   "n_stay": 6,
+   "n_entry": 14,
+   "n_exit": 5,
+   "fhk_within": -6.531,
+   "fhk_between": -2.742,
+   "fhk_cross": 5.494,
+   "fhk_entry": -7.509,
+   "fhk_exit": 1.553,
+   "mp_stayers": -7.413,
+   "mp_entry": -4.276,
+   "mp_exit": 1.954,
+   "mp_stayers_meanrate": -4.449,
+   "stayer_rate_ratio": 0.596,
+   "delta_CI": [
+    -18.173,
+    -0.342
+   ],
+   "mp_stayers_CI": [
+    -16.193,
+    4.52
+   ],
+   "mp_entry_CI": [
+    -7.58,
+    -2.12
+   ],
+   "mp_exit_CI": [
+    -2.111,
+    4.773
+   ],
+   "fhk_within_CI": [
+    -13.524,
+    0.698
+   ],
+   "fhk_entry_CI": [
+    -14.25,
+    -1.523
+   ],
+   "stayer_rate_ratio_CI": [
+    0.397,
+    1.838
+   ],
+   "mp_entry_plus_exit": -2.322,
+   "mp_entry_plus_exit_CI": [
+    -7.254,
+    0.581
+   ],
+   "mp_stayer_share_of_delta": 0.762
+  }
+ },
+ "moderation_plus_maintenance": {
+  "per_active_day_2016_18": 18.617,
+  "per_active_day_2023_26": 8.166,
+  "fold_decline": 2.28,
+  "FE_ratio_2023_26_vs_2016_18": [
+   0.665,
+   0.408,
+   1.082
+  ],
+  "noFE_ratio_2023_26_vs_2016_18": [
+   0.439,
+   0.247,
+   0.778
+  ],
+  "decomp": {
+   "R0": 18.617,
+   "R1": 8.166,
+   "delta": -10.451,
+   "n_stay": 6,
+   "n_entry": 14,
+   "n_exit": 5,
+   "fhk_within": -6.731,
+   "fhk_between": -2.549,
+   "fhk_cross": 5.553,
+   "fhk_entry": -7.979,
+   "fhk_exit": 1.255,
+   "mp_stayers": -7.643,
+   "mp_entry": -4.386,
+   "mp_exit": 1.578,
+   "mp_stayers_meanrate": -4.971,
+   "stayer_rate_ratio": 0.622,
+   "delta_CI": [
+    -18.606,
+    -1.265
+   ],
+   "mp_stayers_CI": [
+    -15.64,
+    4.277
+   ],
+   "mp_entry_CI": [
+    -8.072,
+    -1.789
+   ],
+   "mp_exit_CI": [
+    -2.797,
+    4.576
+   ],
+   "fhk_within_CI": [
+    -13.426,
+    0.609
+   ],
+   "fhk_entry_CI": [
+    -15.444,
+    -2.236
+   ],
+   "stayer_rate_ratio_CI": [
+    0.426,
+    1.571
+   ],
+   "mp_entry_plus_exit": -2.808,
+   "mp_entry_plus_exit_CI": [
+    -7.591,
+    0.323
+   ],
+   "mp_stayer_share_of_delta": 0.731
+  }
+ },
+ "cells_main_comparison": {
+  "stay": 6,
+  "entry": 14,
+  "exit": 5
+ },
+ "cells_other": {
+  "2016-18_to_2019-22": {
+   "n_stay": 10,
+   "n_entry": 12,
+   "n_exit": 1
+  },
+  "2019-22_to_2023-26": {
+   "n_stay": 12,
+   "n_entry": 8,
+   "n_exit": 10
+  },
+  "annual_steps_[from,stay,entry,exit]": [
+   [
+    2016,
+    7,
+    3,
+    0
+   ],
+   [
+    2017,
+    9,
+    1,
+    1
+   ],
+   [
+    2018,
+    10,
+    5,
+    0
+   ],
+   [
+    2019,
+    10,
+    4,
+    5
+   ],
+   [
+    2020,
+    12,
+    3,
+    2
+   ],
+   [
+    2021,
+    11,
+    2,
+    4
+   ],
+   [
+    2022,
+    10,
+    2,
+    3
+   ],
+   [
+    2023,
+    10,
+    3,
+    2
+   ],
+   [
+    2024,
+    11,
+    3,
+    2
+   ],
+   [
+    2025,
+    14,
+    2,
+    0
+   ]
+  ],
+  "annual_steps_with_any_cell_lt5": 10
+ }
+}

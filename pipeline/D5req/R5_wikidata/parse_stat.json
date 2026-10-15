@@ -1,0 +1,19 @@
+{
+ "stat": {
+  "pages": 14478,
+  "noContent": 0,
+  "redirect": 0,
+  "noTemplate": 167,
+  "noSig": 61,
+  "archiveOrMeta": 219
+ },
+ "by": {
+  "pending": 46,
+  "done": 11238,
+  "notdone": 2195,
+  "withdrawn": 535,
+  "other:done": 16,
+  "other:rP11770": 1
+ },
+ "decidedWithoutTs": 506
+}

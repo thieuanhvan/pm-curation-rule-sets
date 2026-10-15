@@ -1,0 +1,240 @@
+{
+ "n_cases": 2077,
+ "n_decisions": 2070,
+ "n_pending_now": 7,
+ "note": "Sample of proposals (D5k4 alphabetical archive windows), so u is relative to sampled pending proposals; A5 reported only the all-pending u for Wikidata (0.352 [0.335, 0.368]); its live-queue code path (age filter keeping an old chosen item) was used for CIViC only.",
+ "from2016": {
+  "all_pending": {
+   "n": 2070,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.353,
+    0.342,
+    0.363
+   ],
+   "newest10": [
+    0.1,
+    0.086,
+    0.114
+   ],
+   "null_meanU_95": [
+    0.487,
+    0.513
+   ],
+   "null_newest10_95": [
+    0.106,
+    0.134
+   ],
+   "median_queue_L": 26
+  },
+  "all_pending_excl_withdrawn": {
+   "n": 2035,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.353,
+    0.342,
+    0.364
+   ],
+   "newest10": [
+    0.097,
+    0.083,
+    0.111
+   ],
+   "null_meanU_95": [
+    0.487,
+    0.512
+   ],
+   "null_newest10_95": [
+    0.106,
+    0.132
+   ],
+   "median_queue_L": 26
+  },
+  "live_age<=180": {
+   "n": 1951,
+   "share_decisions_on_live_items": 0.943,
+   "meanU": [
+    0.426,
+    0.414,
+    0.437
+   ],
+   "newest10": [
+    0.064,
+    0.052,
+    0.075
+   ],
+   "null_meanU_95": [
+    0.487,
+    0.514
+   ],
+   "null_newest10_95": [
+    0.112,
+    0.14
+   ],
+   "median_queue_L": 20
+  },
+  "live_age<=365": {
+   "n": 2035,
+   "share_decisions_on_live_items": 0.983,
+   "meanU": [
+    0.395,
+    0.383,
+    0.406
+   ],
+   "newest10": [
+    0.082,
+    0.069,
+    0.096
+   ],
+   "null_meanU_95": [
+    0.488,
+    0.514
+   ],
+   "null_newest10_95": [
+    0.109,
+    0.137
+   ],
+   "median_queue_L": 23
+  },
+  "live_age<=730": {
+   "n": 2061,
+   "share_decisions_on_live_items": 0.996,
+   "meanU": [
+    0.375,
+    0.363,
+    0.387
+   ],
+   "newest10": [
+    0.091,
+    0.077,
+    0.105
+   ],
+   "null_meanU_95": [
+    0.488,
+    0.513
+   ],
+   "null_newest10_95": [
+    0.107,
+    0.134
+   ],
+   "median_queue_L": 25
+  }
+ },
+ "from2021": {
+  "all_pending": {
+   "n": 1050,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.363,
+    0.347,
+    0.379
+   ],
+   "newest10": [
+    0.106,
+    0.087,
+    0.124
+   ],
+   "null_meanU_95": [
+    0.482,
+    0.519
+   ],
+   "null_newest10_95": [
+    0.1,
+    0.135
+   ],
+   "median_queue_L": 34
+  },
+  "all_pending_excl_withdrawn": {
+   "n": 1036,
+   "share_decisions_on_live_items": 1.0,
+   "meanU": [
+    0.364,
+    0.349,
+    0.38
+   ],
+   "newest10": [
+    0.104,
+    0.085,
+    0.124
+   ],
+   "null_meanU_95": [
+    0.483,
+    0.52
+   ],
+   "null_newest10_95": [
+    0.099,
+    0.137
+   ],
+   "median_queue_L": 34
+  },
+  "live_age<=180": {
+   "n": 963,
+   "share_decisions_on_live_items": 0.917,
+   "meanU": [
+    0.447,
+    0.429,
+    0.465
+   ],
+   "newest10": [
+    0.063,
+    0.048,
+    0.081
+   ],
+   "null_meanU_95": [
+    0.481,
+    0.519
+   ],
+   "null_newest10_95": [
+    0.105,
+    0.144
+   ],
+   "median_queue_L": 24
+  },
+  "live_age<=365": {
+   "n": 1021,
+   "share_decisions_on_live_items": 0.972,
+   "meanU": [
+    0.417,
+    0.399,
+    0.434
+   ],
+   "newest10": [
+    0.084,
+    0.067,
+    0.102
+   ],
+   "null_meanU_95": [
+    0.482,
+    0.516
+   ],
+   "null_newest10_95": [
+    0.101,
+    0.142
+   ],
+   "median_queue_L": 28
+  },
+  "live_age<=730": {
+   "n": 1043,
+   "share_decisions_on_live_items": 0.993,
+   "meanU": [
+    0.401,
+    0.384,
+    0.418
+   ],
+   "newest10": [
+    0.091,
+    0.073,
+    0.11
+   ],
+   "null_meanU_95": [
+    0.481,
+    0.52
+   ],
+   "null_newest10_95": [
+    0.098,
+    0.138
+   ],
+   "median_queue_L": 31
+  }
+ }
+}

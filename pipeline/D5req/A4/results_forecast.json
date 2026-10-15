@@ -1,0 +1,189 @@
+{
+ "B0_2023_01_01": 5409,
+ "obsEnd_2026_09": 6675,
+ "horizonMonths": 45,
+ "models": {
+  "QUEUE_rates2021_22": {
+   "RMSE": 1003.9937780947179,
+   "MAE": 841.2446111111111,
+   "MAPE": 0.13454675623449008,
+   "endErr": 1674.3790000000008,
+   "endPred": 8349.379,
+   "PI90_coverage": 0.08888888888888889,
+   "PI90_end": [
+    7944,
+    8752
+   ],
+   "meanNetPerMonth": 65.45833333333333
+  },
+  "QUEUE_rates2017_22": {
+   "RMSE": 1214.9379017826957,
+   "MAE": 1022.0867222222224,
+   "MAPE": 0.16351344920300445,
+   "endErr": 2045.5390000000007,
+   "endPred": 8720.539,
+   "PI90_coverage": 0.5333333333333333,
+   "PI90_end": [
+    7112,
+    10847
+   ],
+   "meanNetPerMonth": 73.45833333333333
+  },
+  "NAIVE_noChange": {
+   "RMSE": 731.7186314120719,
+   "MAE": 660.7777777777778,
+   "MAPE": 0.10641060400341198,
+   "endErr": -1266,
+   "endPred": 5409
+  },
+  "NAIVE_linearTrend2017_22": {
+   "RMSE": 738.500757480383,
+   "MAE": 587.0369701040672,
+   "MAPE": 0.09342800964630305,
+   "endErr": 1253.8688232898148,
+   "endPred": 7928.868823289815,
+   "slopePerMonth": 58.006479516367605
+  },
+  "NAIVE_drift2022": {
+   "RMSE": 991.1201379135515,
+   "MAE": 830.3888888888887,
+   "MAPE": 0.13281049790002594,
+   "endErr": 1651.5,
+   "endPred": 8326.5,
+   "driftPerMonth": 64.83333333333333
+  }
+ },
+ "bursts": {
+  "monthlyTokensMedian": 24,
+  "MAD": 13,
+  "threshold": 63,
+  "nBurstMonths": 19,
+  "perYear": 1.7674418604651163,
+  "excessMedian": 60,
+  "excessTotal": 1742,
+  "list": [
+   {
+    "ym": "2016-02",
+    "tokens": 322,
+    "excess": 298
+   },
+   {
+    "ym": "2016-05",
+    "tokens": 78,
+    "excess": 54
+   },
+   {
+    "ym": "2016-06",
+    "tokens": 140,
+    "excess": 116
+   },
+   {
+    "ym": "2016-07",
+    "tokens": 146,
+    "excess": 122
+   },
+   {
+    "ym": "2016-09",
+    "tokens": 65,
+    "excess": 41
+   },
+   {
+    "ym": "2016-11",
+    "tokens": 89,
+    "excess": 65
+   },
+   {
+    "ym": "2017-02",
+    "tokens": 77,
+    "excess": 53
+   },
+   {
+    "ym": "2017-03",
+    "tokens": 83,
+    "excess": 59
+   },
+   {
+    "ym": "2017-05",
+    "tokens": 99,
+    "excess": 75
+   },
+   {
+    "ym": "2017-06",
+    "tokens": 80,
+    "excess": 56
+   },
+   {
+    "ym": "2017-07",
+    "tokens": 96,
+    "excess": 72
+   },
+   {
+    "ym": "2017-08",
+    "tokens": 117,
+    "excess": 93
+   },
+   {
+    "ym": "2017-09",
+    "tokens": 84,
+    "excess": 60
+   },
+   {
+    "ym": "2017-10",
+    "tokens": 77,
+    "excess": 53
+   },
+   {
+    "ym": "2018-02",
+    "tokens": 132,
+    "excess": 108
+   },
+   {
+    "ym": "2018-07",
+    "tokens": 310,
+    "excess": 286
+   },
+   {
+    "ym": "2018-12",
+    "tokens": 66,
+    "excess": 42
+   },
+   {
+    "ym": "2019-02",
+    "tokens": 67,
+    "excess": 43
+   },
+   {
+    "ym": "2020-03",
+    "tokens": 70,
+    "excess": 46
+   }
+  ],
+  "meanMonthlyTokens2023_26": 23.266666666666666,
+  "meanMonthlyArrivals2023_26": 51.4
+ },
+ "decomposition": {
+  "meanMonthlyArrivals2021_22": 84.95833333333333,
+  "meanMonthlyTokens2021_22": 19.5,
+  "oracleArrivals_calTokens": {
+   "RMSE": 66.12979661241972,
+   "MAE": 42.27777777777778,
+   "MAPE": 0.006699407364625042,
+   "endErr": 169.5,
+   "endPred": 6844.5
+  },
+  "calArrivals_oracleTokens": {
+   "RMSE": 951.533174196889,
+   "MAE": 802.797222222215,
+   "MAPE": 0.12846923064656784,
+   "endErr": 1510.1249999999873,
+   "endPred": 8185.124999999987
+  },
+  "oracleBoth": {
+   "RMSE": 0,
+   "MAE": 0,
+   "MAPE": 0,
+   "endErr": 0,
+   "endPred": 6675
+  }
+ }
+}

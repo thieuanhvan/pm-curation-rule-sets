@@ -1,0 +1,110 @@
+{
+ "revision_counts": {
+  "all_revision_objects_full_log": 67957,
+  "by_target_type": {
+   "GeneVariant": 33169,
+   "EvidenceItem": 30038,
+   "FusionVariant": 3231,
+   "Assertion": 1072,
+   "Feature": 265,
+   "MolecularProfile": 120,
+   "VariantGroup": 37,
+   "FactorVariant": 25
+  },
+  "on_evidence_items": 30038,
+  "on_evidence_items_with_any_nonbot_event(Fig2b scope)": 25380,
+  "on_evidence_items_suggested_by_bot": 6967,
+  "ocel_ei_excl_bot_revision_objects": 25380
+ },
+ "convergence": {
+  "events_with_evidence_item": 65079,
+  "events_linked_to_>1_evidence_item": 0,
+  "max_items_per_event": 1
+ },
+ "divergence_flattened_evidence_item_DFG": {
+  "df_pairs": 52987,
+  "within_same_sub_object": 5249,
+  "between_different_sub_objects(divergent)": 32749,
+  "involving_status_event": 14989,
+  "share_divergent": 0.618,
+  "top_divergent_pairs": [
+   [
+    "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+    11148
+   ],
+   [
+    "REVISION_ACCEPTED -> REVISION_ACCEPTED",
+    6675
+   ],
+   [
+    "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+    3211
+   ],
+   [
+    "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+    2275
+   ],
+   [
+    "COMMENTED -> COMMENTED",
+    1242
+   ],
+   [
+    "REVISION_REJECTED -> REVISION_REJECTED",
+    1165
+   ],
+   [
+    "COMMENTED -> REVISION_SUGGESTED",
+    780
+   ],
+   [
+    "REVISION_SUGGESTED -> COMMENTED",
+    762
+   ]
+  ]
+ },
+ "flattened_vs_ocdfg_edges": {
+  "flat_edges": 104,
+  "flat_edges_absent_from_ocdfg": 0,
+  "share_of_flat_df_frequency_on_absent_edges": 0.0,
+  "top_absent": [],
+  "ocdfg_edges_by_type": {
+   "user": 118,
+   "organisation": 118,
+   "evidence_item": 104,
+   "revision": 14,
+   "flag": 3,
+   "comment": 1
+  }
+ },
+ "flattened_lifecycle_edges_vs_object_lifecycle_dfgs": {
+  "flat_edges_among_lifecycle_activities": 51,
+  "absent_from_object_dfgs": 33,
+  "share_of_their_df_frequency": 0.456,
+  "top_absent": [
+   [
+    "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+    11148
+   ],
+   [
+    "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+    3211
+   ],
+   [
+    "COMMENTED -> REVISION_SUGGESTED",
+    780
+   ],
+   [
+    "REVISION_REJECTED -> REVISION_SUGGESTED",
+    708
+   ],
+   [
+    "REVISION_SUPERSEDED -> REVISION_ACCEPTED",
+    493
+   ],
+   [
+    "REVISION_ACCEPTED -> FLAG_RESOLVED",
+    191
+   ]
+  ]
+ }
+}

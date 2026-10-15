@@ -1,0 +1,119 @@
+{
+ "go_2016plus": {
+  "n": 177,
+  "meanU": [
+   0.168,
+   0.134,
+   0.205
+  ],
+  "newest10": [
+   0.605,
+   0.531,
+   0.672
+  ],
+  "null_meanU_95": [
+   0.456,
+   0.543
+  ],
+  "null_newest10_95": [
+   0.068,
+   0.158
+  ],
+  "perm_p_meanU_le_obs": 0.0,
+  "median_L": 40
+ },
+ "go_2021plus": {
+  "n": 111,
+  "meanU": [
+   0.171,
+   0.128,
+   0.218
+  ],
+  "newest10": [
+   0.613,
+   0.523,
+   0.703
+  ],
+  "null_meanU_95": [
+   0.445,
+   0.555
+  ],
+  "null_newest10_95": [
+   0.054,
+   0.171
+  ],
+  "perm_p_meanU_le_obs": 0.0,
+  "median_L": 37
+ },
+ "go_minus_civic_2021plus_meanU": [
+  0.019,
+  -0.032,
+  0.075
+ ],
+ "go_minus_civic_note": "GO ticket bootstrap minus normal approximation of the CIViC cluster-bootstrap interval; positive = GO less newest-first",
+ "hpo_2016plus": {
+  "n": 186,
+  "meanU": [
+   0.354,
+   0.313,
+   0.395
+  ],
+  "newest10": [
+   0.258,
+   0.199,
+   0.323
+  ],
+  "null_meanU_95": [
+   0.458,
+   0.543
+  ],
+  "null_newest10_95": [
+   0.065,
+   0.151
+  ],
+  "perm_p_meanU_le_obs": 0.0,
+  "median_L": 100
+ },
+ "hpo_2021plus": {
+  "n": 109,
+  "meanU": [
+   0.354,
+   0.3,
+   0.41
+  ],
+  "newest10": [
+   0.266,
+   0.183,
+   0.349
+  ],
+  "null_meanU_95": [
+   0.447,
+   0.556
+  ],
+  "null_newest10_95": [
+   0.055,
+   0.165
+  ],
+  "perm_p_meanU_le_obs": 0.0,
+  "median_L": 79
+ },
+ "civic_2021plus_age365": {
+  "meanU": [
+   0.152,
+   0.122,
+   0.182
+  ],
+  "newest10": [
+   0.659,
+   0.601,
+   0.715
+  ],
+  "n": 955,
+  "null_meanU_95": [
+   0.48,
+   0.517
+  ],
+  "median_L": 557,
+  "src": "../W3/res_t3_abandon.json P2_service_position_2021plus/age<=365/all"
+ }
+}

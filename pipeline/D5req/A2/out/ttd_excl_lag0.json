@@ -1,0 +1,379 @@
+{
+ "cohort": {
+  "mode": "excl",
+  "n": 12085,
+  "accepted": 4950,
+  "rejected": 448,
+  "pending": 6687,
+  "exposed_before_decision_or_censoring": {
+   "flag": 0.0146,
+   "comment": 0.1066,
+   "revision": 0.4045
+  },
+  "exposed_at_time0": {
+   "flag": 0,
+   "comment": 0,
+   "revision": 0
+  }
+ },
+ "naive_decided_only_median_ttd": {
+  "flag": {
+   "n_exposed": 41,
+   "med_exposed": 864.2,
+   "n_unexposed": 5357,
+   "med_unexposed": 34.4,
+   "diff_med_days": 829.8,
+   "ci95": [
+    326.0,
+    1141.9
+   ]
+  },
+  "comment": {
+   "n_exposed": 720,
+   "med_exposed": 156.8,
+   "n_unexposed": 4678,
+   "med_unexposed": 27.5,
+   "diff_med_days": 129.3,
+   "ci95": [
+    83.7,
+    154.0
+   ]
+  },
+  "revision": {
+   "n_exposed": 2289,
+   "med_exposed": 108.6,
+   "n_unexposed": 3109,
+   "med_unexposed": 12.2,
+   "diff_med_days": 96.4,
+   "ci95": [
+    85.6,
+    101.7
+   ]
+  }
+ },
+ "lag_days": 0.0,
+ "cox_time_varying_strata_era_adj_level_type": {
+  "any": {
+   "flag": {
+    "HR": 1.41,
+    "ci95": [
+     1.032,
+     1.927
+    ],
+    "p": 0.031
+   },
+   "comment": {
+    "HR": 2.057,
+    "ci95": [
+     1.887,
+     2.243
+    ],
+    "p": 2.5e-60
+   },
+   "revision": {
+    "HR": 5.804,
+    "ci95": [
+     5.454,
+     6.176
+    ],
+    "p": 0.0
+   },
+   "events": 5398
+  },
+  "acc": {
+   "flag": {
+    "HR": 0.635,
+    "ci95": [
+     0.387,
+     1.041
+    ],
+    "p": 0.072
+   },
+   "comment": {
+    "HR": 1.793,
+    "ci95": [
+     1.634,
+     1.967
+    ],
+    "p": 4.5e-35
+   },
+   "revision": {
+    "HR": 6.857,
+    "ci95": [
+     6.433,
+     7.31
+    ],
+    "p": 0.0
+   },
+   "events": 4950
+  },
+  "rej": {
+   "flag": {
+    "HR": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "p": NaN
+   },
+   "comment": {
+    "HR": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "p": NaN
+   },
+   "revision": {
+    "HR": NaN,
+    "ci95": [
+     NaN,
+     NaN
+    ],
+    "p": NaN
+   },
+   "events": 448
+  }
+ },
+ "cox_rej_strata_era_no_level_type": {
+  "flag": {
+   "HR": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ]
+  },
+  "comment": {
+   "HR": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ]
+  },
+  "revision": {
+   "HR": NaN,
+   "ci95": [
+    NaN,
+    NaN
+   ]
+  }
+ },
+ "cox_any_unadjusted": {
+  "flag": {
+   "HR": 1.39,
+   "ci95": [
+    1.019,
+    1.895
+   ]
+  },
+  "comment": {
+   "HR": 2.554,
+   "ci95": [
+    2.348,
+    2.777
+   ]
+  },
+  "revision": {
+   "HR": 5.38,
+   "ci95": [
+    5.059,
+    5.721
+   ]
+  }
+ },
+ "cox_any_2020plus": {
+  "flag": {
+   "HR": 2.56,
+   "ci95": [
+    1.594,
+    4.111
+   ]
+  },
+  "comment": {
+   "HR": 2.133,
+   "ci95": [
+    1.827,
+    2.49
+   ]
+  },
+  "revision": {
+   "HR": 4.803,
+   "ci95": [
+    4.288,
+    5.381
+   ]
+  },
+  "n_items": 5556,
+  "events": 1461
+ },
+ "landmark_AJ_CIF_1y": {
+  "L30_flag": {
+   "exposed": {
+    "n": 11,
+    "CIF_acc_1y": [
+     0.3,
+     0.091,
+     0.6
+    ],
+    "CIF_rej_1y": [
+     0.0,
+     0.0,
+     0.0
+    ]
+   },
+   "unexposed": {
+    "n": 9353,
+    "CIF_acc_1y": [
+     0.181,
+     0.173,
+     0.19
+    ],
+    "CIF_rej_1y": [
+     0.014,
+     0.012,
+     0.017
+    ]
+   }
+  },
+  "L30_comment": {
+   "exposed": {
+    "n": 236,
+    "CIF_acc_1y": [
+     0.241,
+     0.19,
+     0.298
+    ],
+    "CIF_rej_1y": [
+     0.022,
+     0.004,
+     0.043
+    ]
+   },
+   "unexposed": {
+    "n": 9128,
+    "CIF_acc_1y": [
+     0.179,
+     0.172,
+     0.187
+    ],
+    "CIF_rej_1y": [
+     0.014,
+     0.012,
+     0.017
+    ]
+   }
+  },
+  "L30_revision": {
+   "exposed": {
+    "n": 1041,
+    "CIF_acc_1y": [
+     0.274,
+     0.247,
+     0.304
+    ],
+    "CIF_rej_1y": [
+     0.013,
+     0.007,
+     0.019
+    ]
+   },
+   "unexposed": {
+    "n": 8323,
+    "CIF_acc_1y": [
+     0.17,
+     0.163,
+     0.178
+    ],
+    "CIF_rej_1y": [
+     0.015,
+     0.012,
+     0.017
+    ]
+   }
+  },
+  "L180_flag": {
+   "exposed": {
+    "n": 31,
+    "CIF_acc_1y": [
+     0.103,
+     0.0,
+     0.214
+    ],
+    "CIF_rej_1y": [
+     0.069,
+     0.0,
+     0.2
+    ]
+   },
+   "unexposed": {
+    "n": 7755,
+    "CIF_acc_1y": [
+     0.077,
+     0.072,
+     0.084
+    ],
+    "CIF_rej_1y": [
+     0.006,
+     0.004,
+     0.008
+    ]
+   }
+  },
+  "L180_comment": {
+   "exposed": {
+    "n": 309,
+    "CIF_acc_1y": [
+     0.125,
+     0.087,
+     0.164
+    ],
+    "CIF_rej_1y": [
+     0.013,
+     0.003,
+     0.027
+    ]
+   },
+   "unexposed": {
+    "n": 7477,
+    "CIF_acc_1y": [
+     0.076,
+     0.069,
+     0.081
+    ],
+    "CIF_rej_1y": [
+     0.006,
+     0.004,
+     0.008
+    ]
+   }
+  },
+  "L180_revision": {
+   "exposed": {
+    "n": 1169,
+    "CIF_acc_1y": [
+     0.148,
+     0.128,
+     0.168
+    ],
+    "CIF_rej_1y": [
+     0.004,
+     0.001,
+     0.008
+    ]
+   },
+   "unexposed": {
+    "n": 6617,
+    "CIF_acc_1y": [
+     0.065,
+     0.059,
+     0.071
+    ],
+    "CIF_rej_1y": [
+     0.007,
+     0.005,
+     0.009
+    ]
+   }
+  }
+ }
+}

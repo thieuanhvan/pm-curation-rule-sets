@@ -1,0 +1,94 @@
+{
+ "bulk27_n_submitters": 27,
+ "bulk27_span_years_quartiles": [
+  0.9,
+  2.7,
+  4.96
+ ],
+ "bulk27_active_months_quartiles": [
+  6.0,
+  14.0,
+  20.5
+ ],
+ "bulk27_share_items_by_role_now": {
+  "CURATOR": 0.538,
+  "EDITOR": 0.293,
+  "ADMIN": 0.168
+ },
+ "bulk27_submitters_by_role_now": {
+  "CURATOR": 14,
+  "EDITOR": 7,
+  "ADMIN": 6
+ },
+ "bulk27_items_home_org_CIViC_or_WashU(1,12)": 0.253,
+ "bulk27_span_ge_2y_submitters": 15,
+ "bulk27_items_level_C_or_E": 0.503,
+ "nonbulk_items_level_C_or_E": 0.32,
+ "decisions_2023_25_total": 802,
+ "share_of_2023_25_decisions_on_campaign_items": {
+  "bulk27": 0.556,
+  "C1": 0.192,
+  "C3": 0.097,
+  "U_approx(C1|C3)": 0.192
+ },
+ "share_of_2023_25_decisions_on_campaign_items_arrived_before_2023": {
+  "bulk27": 0.219,
+  "C1": 0.123,
+  "C3": 0.097,
+  "U_approx(C1|C3)": 0.123
+ },
+ "submitter_months_ge40": 51,
+ "submitter_days_ge20": 72,
+ "first_time_cohort_months": {
+  "2020-03": {
+   "new_submitters": 25,
+   "items": 28,
+   "median_items_per_submitter": 1.0,
+   "share_span_le120d": 1.0,
+   "top_org_share": 1.0,
+   "pending_share": 0.857,
+   "acc_share": 0.107
+  },
+  "2019-03": {
+   "new_submitters": 18,
+   "items": 33,
+   "median_items_per_submitter": 1.0,
+   "share_span_le120d": 0.944,
+   "top_org_share": 0.944,
+   "pending_share": 0.545,
+   "acc_share": 0.333
+  },
+  "2018-04": {
+   "new_submitters": 15,
+   "items": 19,
+   "median_items_per_submitter": 1.0,
+   "share_span_le120d": 1.0,
+   "top_org_share": 0.933,
+   "pending_share": 0.526,
+   "acc_share": 0.105
+  },
+  "2021-04": {
+   "new_submitters": 10,
+   "items": 120,
+   "median_items_per_submitter": 1.0,
+   "share_span_le120d": 0.7,
+   "top_org_share": 0.7,
+   "pending_share": 0.458,
+   "acc_share": 0.458
+  },
+  "2016-12": {
+   "new_submitters": 10,
+   "items": 59,
+   "median_items_per_submitter": 2.5,
+   "share_span_le120d": 0.8,
+   "top_org_share": 0.8,
+   "pending_share": 0.203,
+   "acc_share": 0.746
+  }
+ },
+ "short_small_submitters(<=20 items, <=120 d)": {
+  "submitters": 215,
+  "items": 474,
+  "share_of_intake": 0.039
+ }
+}

@@ -1,0 +1,116 @@
+{
+ "window": [
+  "2022-05",
+  "2026-09"
+ ],
+ "T0": "2025-04",
+ "months_treated": 52,
+ "outcome": "rejection share of decisions on other users items (monthly, binomial GLM, logit link)",
+ "ITS_treated": {
+  "intercept": {
+   "coef_logit": -2.3598,
+   "ci95": [
+    -3.5194,
+    -1.2003
+   ],
+   "p_HAC": 0.0001
+  },
+  "pre_trend_per_month": {
+   "coef_logit": -0.0266,
+   "ci95": [
+    -0.078,
+    0.0249
+   ],
+   "p_HAC": 0.3114
+  },
+  "level_change": {
+   "coef_logit": 1.3722,
+   "ci95": [
+    -0.6827,
+    3.4271
+   ],
+   "p_HAC": 0.1906
+  },
+  "slope_change_per_month": {
+   "coef_logit": 0.0416,
+   "ci95": [
+    -0.1166,
+    0.1998
+   ],
+   "p_HAC": 0.6063
+  }
+ },
+ "comparative_ITS": {
+  "treated_intercept": {
+   "coef_logit": 0.0045,
+   "ci95": [
+    -1.3335,
+    1.3426
+   ],
+   "p_HAC": 0.9947
+  },
+  "treated_pre_trend_per_month": {
+   "coef_logit": -0.0299,
+   "ci95": [
+    -0.0973,
+    0.0374
+   ],
+   "p_HAC": 0.3833
+  },
+  "treated_level_change": {
+   "coef_logit": 0.9738,
+   "ci95": [
+    -1.3668,
+    3.3143
+   ],
+   "p_HAC": 0.4148
+  },
+  "treated_slope_change_per_month": {
+   "coef_logit": 0.0813,
+   "ci95": [
+    -0.0914,
+    0.2539
+   ],
+   "p_HAC": 0.3562
+  }
+ },
+ "pre_treatment_placebos_level_change": {
+  "treated_ITS": {
+   "observed": 1.3722,
+   "n_placebos": 23,
+   "placebo_range": [
+    -2.963,
+    1.1886
+   ],
+   "p_placebo_two_sided": 0.304
+  },
+  "comparative_ITS": {
+   "observed": 0.9738,
+   "n_placebos": 23,
+   "placebo_range": [
+    -3.3474,
+    3.3121
+   ],
+   "p_placebo_two_sided": 0.435
+  }
+ },
+ "treated_post_mean_observed_vs_counterfactual": [
+  0.1431,
+  0.0291
+ ],
+ "intensity_ratio": {
+  "intensity_2016_18": 2.06,
+  "intensity_2023_26": 0.604,
+  "fold": 3.411,
+  "wild_cluster_bootstrap_webb_95": [
+   1.99,
+   5.82
+  ],
+  "pairs_cluster_bootstrap_95": [
+   1.7,
+   6.19
+  ],
+  "clusters_band": "20-49",
+  "share_of_both_periods_days_from_top_cluster_band": "not reported (individual)"
+ }
+}

@@ -1,0 +1,306 @@
+{
+ "go": {
+  "population_state_reason_by_close_year": {
+   "2015": {
+    "completed": 3540
+   },
+   "2016": {
+    "completed": 132
+   },
+   "2017": {
+    "completed": 146
+   },
+   "2018": {
+    "completed": 139
+   },
+   "2019": {
+    "completed": 108
+   },
+   "2020": {
+    "completed": 178
+   },
+   "2021": {
+    "completed": 184
+   },
+   "2022": {
+    "completed": 206
+   },
+   "2023": {
+    "completed": 171,
+    "not_planned": 23
+   },
+   "2024": {
+    "completed": 167,
+    "not_planned": 12
+   },
+   "2025": {
+    "completed": 166,
+    "not_planned": 10
+   },
+   "2026": {
+    "not_planned": 9,
+    "completed": 114
+   }
+  },
+  "population_first_not_planned": "2023-02-23T19:17:08Z",
+  "population_not_planned_share_2023plus": [
+   54,
+   672
+  ],
+  "sample_closed": 194,
+  "sample_closed_2022plus": 98,
+  "event_level_sr_2022plus": {
+   "null": 95,
+   "not_planned": 3
+  },
+  "pre2022_issue_sr": {
+   "completed": 96
+  },
+  "confusion_v2": {
+   "completed|REJ": 2,
+   "completed|ACC": 89,
+   "completed|UNCLEAR": 4,
+   "not_planned|REJ": 3
+  },
+  "confusion_cascade_without_SR_tier": {
+   "completed|REJ": 2,
+   "completed|ACC": 89,
+   "completed|UNCLEAR": 4,
+   "not_planned|REJ": 1,
+   "not_planned|UNCLEAR": 2
+  },
+  "metrics_v2": {
+   "REJ_precision": 0.6,
+   "REJ_recall": 1,
+   "ACC_precision_vs_completed": 1,
+   "ACC_recall_vs_completed": 0.937
+  },
+  "metrics_without_SR_tier": {
+   "REJ_precision": 0.333,
+   "REJ_recall": 0.333,
+   "ACC_precision_vs_completed": 1,
+   "ACC_recall_vs_completed": 0.937
+  },
+  "not_planned_cases_without_SR_tier": [
+   {
+    "noSR": "REJ",
+    "tier": 3
+   },
+   {
+    "noSR": "UNCLEAR",
+    "tier": 0
+   },
+   {
+    "noSR": "UNCLEAR",
+    "tier": 0
+   }
+  ],
+  "unclear_2022plus": 4,
+  "unclear_resolved_by_not_planned": 0,
+  "bugfix_changes": [],
+  "bugfix_n_changed": 0,
+  "bugfix_counts": {
+   "ACC": [
+    165,
+    165
+   ],
+   "REJ": [
+    12,
+    12
+   ],
+   "UNCLEAR": [
+    17,
+    17
+   ]
+  },
+  "unclear_to_rej": {
+   "acc_share_classified": 0.932,
+   "acc_share_unclear_as_rej": 0.851
+  },
+  "task2_acceptance_mechanism": {
+   "comment_wording": {
+    "n": 18,
+    "obo_corroborated": 12,
+    "new_id_or_term_stanza": 9,
+    "any_addition_evidence": 12,
+    "obsoletion_or_merge_words": 2,
+    "only_edit_words_no_addition": 3
+   },
+   "closed_by_commit": {
+    "n": 100,
+    "obo_corroborated": 77,
+    "new_id_or_term_stanza": 47,
+    "any_addition_evidence": 77,
+    "obsoletion_or_merge_words": 2,
+    "only_edit_words_no_addition": 6
+   },
+   "id_in_last_comment": {
+    "n": 5,
+    "obo_corroborated": 3,
+    "new_id_or_term_stanza": 3,
+    "any_addition_evidence": 3,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 2
+   },
+   "referencing_commit_before_close": {
+    "n": 10,
+    "obo_corroborated": 10,
+    "new_id_or_term_stanza": 8,
+    "any_addition_evidence": 10,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 0
+   },
+   "merged_PR": {
+    "n": 32,
+    "obo_corroborated": 31,
+    "new_id_or_term_stanza": 28,
+    "any_addition_evidence": 31,
+    "obsoletion_or_merge_words": 2,
+    "only_edit_words_no_addition": 1
+   }
+  },
+  "task2_n_ACC": 165
+ },
+ "hpo": {
+  "population_state_reason_by_close_year": {
+   "2015": {
+    "completed": 22
+   },
+   "2016": {
+    "completed": 130
+   },
+   "2017": {
+    "completed": 777
+   },
+   "2018": {
+    "completed": 56
+   },
+   "2019": {
+    "completed": 192
+   },
+   "2020": {
+    "completed": 370
+   },
+   "2021": {
+    "completed": 530
+   },
+   "2022": {
+    "completed": 312
+   },
+   "2023": {
+    "completed": 220
+   },
+   "2024": {
+    "completed": 468
+   },
+   "2025": {
+    "completed": 307,
+    "not_planned": 1
+   },
+   "2026": {
+    "completed": 131
+   }
+  },
+  "population_first_not_planned": "2025-02-06T17:19:32Z",
+  "population_not_planned_share_2023plus": [
+   1,
+   1127
+  ],
+  "sample_closed": 197,
+  "sample_closed_2022plus": 85,
+  "event_level_sr_2022plus": {
+   "null": 85
+  },
+  "pre2022_issue_sr": {
+   "completed": 112
+  },
+  "confusion_v2": {
+   "completed|ACC": 72,
+   "completed|UNCLEAR": 8,
+   "completed|REJ": 5
+  },
+  "confusion_cascade_without_SR_tier": {
+   "completed|ACC": 72,
+   "completed|UNCLEAR": 8,
+   "completed|REJ": 5
+  },
+  "metrics_v2": {
+   "REJ_precision": 0,
+   "REJ_recall": 0,
+   "ACC_precision_vs_completed": 1,
+   "ACC_recall_vs_completed": 0.847
+  },
+  "metrics_without_SR_tier": {
+   "REJ_precision": 0,
+   "REJ_recall": 0,
+   "ACC_precision_vs_completed": 1,
+   "ACC_recall_vs_completed": 0.847
+  },
+  "not_planned_cases_without_SR_tier": [],
+  "unclear_2022plus": 8,
+  "unclear_resolved_by_not_planned": 0,
+  "bugfix_changes": [],
+  "bugfix_n_changed": 0,
+  "bugfix_counts": {
+   "ACC": [
+    157,
+    157
+   ],
+   "REJ": [
+    17,
+    17
+   ],
+   "UNCLEAR": [
+    23,
+    23
+   ]
+  },
+  "unclear_to_rej": {
+   "acc_share_classified": 0.902,
+   "acc_share_unclear_as_rej": 0.797
+  },
+  "task2_acceptance_mechanism": {
+   "closed_by_commit": {
+    "n": 36,
+    "obo_corroborated": 8,
+    "new_id_or_term_stanza": 8,
+    "any_addition_evidence": 8,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 5
+   },
+   "comment_wording": {
+    "n": 109,
+    "obo_corroborated": 48,
+    "new_id_or_term_stanza": 48,
+    "any_addition_evidence": 48,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 20
+   },
+   "id_in_last_comment": {
+    "n": 10,
+    "obo_corroborated": 2,
+    "new_id_or_term_stanza": 2,
+    "any_addition_evidence": 2,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 1
+   },
+   "referencing_commit_before_close": {
+    "n": 1,
+    "obo_corroborated": 0,
+    "new_id_or_term_stanza": 0,
+    "any_addition_evidence": 0,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 0
+   },
+   "merged_PR": {
+    "n": 1,
+    "obo_corroborated": 0,
+    "new_id_or_term_stanza": 1,
+    "any_addition_evidence": 1,
+    "obsoletion_or_merge_words": 0,
+    "only_edit_words_no_addition": 0
+   }
+  },
+  "task2_n_ACC": 157
+ }
+}

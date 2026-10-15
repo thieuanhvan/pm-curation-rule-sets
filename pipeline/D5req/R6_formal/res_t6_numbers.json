@@ -1,0 +1,147 @@
+{
+ "pending": {
+  "all_items": [
+   6687,
+   12085,
+   55.3
+  ],
+  "submitted_since_2016": [
+   6685,
+   11472,
+   58.3
+  ]
+ },
+ "holdout_tokens": {
+  "all": 1050,
+  "by_outcome": {
+   "ACC": 923,
+   "REJ": 92,
+   "WDR": 35
+  },
+  "non_withdrawal": 1015
+ },
+ "intensity_unrounded": {
+  "common_types": {
+   "ev_per_day_2016_18": 2.0605,
+   "ev_per_day_2023_26": 0.6041,
+   "fold": 3.411,
+   "fold_CI": [
+    1.71,
+    5.95
+   ]
+  },
+  "all_types": {
+   "ev_per_day_2016_18": 2.0605,
+   "ev_per_day_2023_26": 0.5964,
+   "fold": 3.455,
+   "fold_CI": [
+    1.66,
+    6.2
+   ]
+  },
+  "strict_common": {
+   "ev_per_day_2016_18": 2.1017,
+   "ev_per_day_2023_26": 0.6041,
+   "fold": 3.479,
+   "fold_CI": [
+    1.72,
+    6.5
+   ]
+  }
+ },
+ "decomposition_A_star": {
+  "A_star_main": {
+   "intensity_2016_18": 2.06,
+   "intensity_2023_26": 0.604,
+   "fold": 3.411,
+   "delta": [
+    -1.46,
+    -2.62,
+    -0.45
+   ],
+   "stayers": [
+    -1.37,
+    -1.75,
+    -0.43
+   ],
+   "turnover": [
+    -0.09,
+    -1.32,
+    0.54
+   ],
+   "stayers_band": ">=5"
+  },
+  "all_activities_previous": {
+   "intensity_2016_18": 2.06,
+   "intensity_2023_26": 0.596,
+   "fold": 3.455,
+   "delta": [
+    -1.46,
+    -2.57,
+    -0.49
+   ],
+   "stayers": [
+    -1.37,
+    -1.75,
+    -0.49
+   ],
+   "turnover": [
+    -0.09,
+    -1.41,
+    0.56
+   ],
+   "stayers_band": ">=5"
+  }
+ },
+ "app_flags": {
+  "flag_objects": 7661,
+  "with_clear_event": 1584,
+  "open_at_end": 6106,
+  "closed_at_end": 1555,
+  "cleared_then_reraised_open_at_end": 29
+ },
+ "revision_rejection_note_share_pre_v2": {
+  "2019_other_users_revisions": {
+   "n": 103,
+   "note10": 0.612,
+   "note10_or_comment_before": 0.835
+  },
+  "2019_own_revisions_withdrawn": {
+   "n": 121,
+   "note10": 0.041,
+   "note10_or_comment_before": 0.041
+  },
+  "2019_all_revision_rejections": {
+   "n": 224,
+   "note10": 0.304
+  },
+  "2020_other_users_revisions": {
+   "n": 195,
+   "note10": 0.641,
+   "note10_or_comment_before": 0.713
+  },
+  "2020_own_revisions_withdrawn": {
+   "n": 386,
+   "note10": 0.062,
+   "note10_or_comment_before": 0.073
+  },
+  "2020_all_revision_rejections": {
+   "n": 581,
+   "note10": 0.256
+  },
+  "2021_other_users_revisions": {
+   "n": 115,
+   "note10": 0.53,
+   "note10_or_comment_before": 0.748
+  },
+  "2021_own_revisions_withdrawn": {
+   "n": 356,
+   "note10": 0.188,
+   "note10_or_comment_before": 0.239
+  },
+  "2021_all_revision_rejections": {
+   "n": 471,
+   "note10": 0.272
+  }
+ }
+}

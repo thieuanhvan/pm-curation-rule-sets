@@ -1,0 +1,68 @@
+{
+ "go_merged_prs_since_2025-06": 1307,
+ "with_check_runs_fetched": 515,
+ "fetched_window": [
+  "2026-04-02",
+  "2026-10-07"
+ ],
+ "qc_outcome_counts": {
+  "success": 515
+ },
+ "by_month": {
+  "2026-04": {
+   "n": 110,
+   "success": 110,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-05": {
+   "n": 84,
+   "success": 84,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-06": {
+   "n": 76,
+   "success": 76,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-07": {
+   "n": 58,
+   "success": 58,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-08": {
+   "n": 104,
+   "success": 104,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-09": {
+   "n": 67,
+   "success": 67,
+   "missing": 0,
+   "failure_or_pending": 0
+  },
+  "2026-10": {
+   "n": 16,
+   "success": 16,
+   "missing": 0,
+   "failure_or_pending": 0
+  }
+ },
+ "last_merge_without_passing_qc": null,
+ "first_fetched_merge_with_check_runs_present": "2026-04-02",
+ "merges_without_any_check_run_record": 0,
+ "bad_by_author_association": {},
+ "hpo": {
+  "commits_touching_hp-edit.owl_since_2025-08": 211,
+  "sample": 35,
+  "patch_available": 30,
+  "with_added_class_declaration": 17,
+  "with_added_term_tracker_item": 7,
+  "class_adding_with_tracker_issue_ref": 7,
+  "commit_message_has_issue_ref": 1
+ }
+}

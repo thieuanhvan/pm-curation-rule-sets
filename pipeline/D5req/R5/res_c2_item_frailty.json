@@ -1,0 +1,15 @@
+{
+ "pem_item_gamma_frailty": {
+  "converged": true,
+  "HR_per_year_of_age": [
+   0.742,
+   0.696,
+   0.791
+  ],
+  "theta": 0.158,
+  "loglik": -8488.7,
+  "loglik_poisson_same_X": -5395.7,
+  "poisson_no_frailty_HR": 0.737,
+  "note": "frailty group = item (not submitter)"
+ }
+}

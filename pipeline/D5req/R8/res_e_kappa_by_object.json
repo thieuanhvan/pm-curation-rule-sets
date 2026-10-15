@@ -1,0 +1,67 @@
+{
+ "evidence item": {
+  "units": 7,
+  "cells": 28,
+  "agreement": 0.893,
+  "kappa": 0.77,
+  "unit_names": [
+   "account to submit",
+   "editor accepts EI",
+   "no self-acceptance EI",
+   "COI for EI/assertion moderation",
+   "reason to reject EI/assertion",
+   "rejected EI re-opened on revision suggestion/acceptance (v1)",
+   "withdrawal permission"
+  ]
+ },
+ "revision": {
+  "units": 7,
+  "cells": 28,
+  "agreement": 0.893,
+  "kappa": 0.79,
+  "unit_names": [
+   "revision comment>=10",
+   "editor accepts revision",
+   "no self-acceptance revision",
+   "reason>=10 to reject revision",
+   "fit: stale base value refuses revision acceptance (v1, force override)",
+   "revision superseded on acceptance",
+   "bot preprint revisions (unreleased)"
+  ]
+ },
+ "cross-cutting or other": {
+  "units": 3,
+  "cells": 12,
+  "agreement": 0.917,
+  "kappa": 0.83,
+  "unit_names": [
+   "acting organisation",
+   "COI for revision/flag/source-suggestion moderation",
+   "source suggestion auto-curated on EI submission (v1)"
+  ]
+ },
+ "assertion": {
+  "units": 4,
+  "cells": 16,
+  "agreement": 0.688,
+  "kappa": 0.2,
+  "unit_names": [
+   "assertion accept: editor, not submitter",
+   "assertion approval: org approver + COI",
+   "fit: approval refused if assertion flagged/not accepted",
+   "assertion approvals reset to requires_review"
+  ]
+ },
+ "flag": {
+  "units": 4,
+  "cells": 16,
+  "agreement": 0.812,
+  "kappa": 0.64,
+  "unit_names": [
+   "account to raise flag",
+   "flag comment>=10",
+   "bot duplicate flags",
+   "flag resolution permission (+comment v2)"
+  ]
+ }
+}

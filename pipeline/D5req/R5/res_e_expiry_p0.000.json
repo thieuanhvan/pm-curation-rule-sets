@@ -1,0 +1,162 @@
+{
+ "pimp": 0,
+ "reps": 10,
+ "scen": {
+  "r=0": {
+   "ASIS_logit": {
+    "value_levelXrating": 2303.641,
+    "value_uniform": 571.446,
+    "lostEA": 0,
+    "lostEA_observedAccepted": 0,
+    "lostEA_wshare": 0,
+    "lostFinal": 0,
+    "resub": 0,
+    "endPending": 6687
+   },
+   "EXP365_grandf": {
+    "value_levelXrating": 2285.264,
+    "value_uniform": 578.603,
+    "lostEA": 288.8,
+    "lostEA_observedAccepted": 288.8,
+    "lostEA_wshare": 0.347,
+    "lostFinal": 1004.5,
+    "resub": 0,
+    "endPending": 5682.5,
+    "rel_value_levelXrating_vs_ASIS": [
+     -0.0076,
+     -0.0788,
+     0.0382
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     0.0127,
+     -0.0631,
+     0.0784
+    ]
+   },
+   "EXP365_purge": {
+    "value_levelXrating": 2778.51,
+    "value_uniform": 680.829,
+    "lostEA": 468.5,
+    "lostEA_observedAccepted": 468.5,
+    "lostEA_wshare": 0.48,
+    "lostFinal": 6212.1,
+    "resub": 0,
+    "endPending": 474.9,
+    "rel_value_levelXrating_vs_ASIS": [
+     0.207,
+     0.0735,
+     0.2922
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     0.1936,
+     0.0501,
+     0.2722
+    ]
+   }
+  },
+  "r=0.25": {
+   "ASIS_logit": {
+    "value_levelXrating": 2303.641,
+    "value_uniform": 571.446,
+    "lostEA": 0,
+    "lostEA_observedAccepted": 0,
+    "lostEA_wshare": 0,
+    "lostFinal": 0,
+    "resub": 0,
+    "endPending": 6687
+   },
+   "EXP365_grandf": {
+    "value_levelXrating": 2261.989,
+    "value_uniform": 569.112,
+    "lostEA": 262.8,
+    "lostEA_observedAccepted": 262.8,
+    "lostEA_wshare": 0.313,
+    "lostFinal": 893.2,
+    "resub": 278.1,
+    "endPending": 5788.3,
+    "rel_value_levelXrating_vs_ASIS": [
+     -0.0193,
+     -0.0885,
+     0.0461
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     -0.0044,
+     -0.0478,
+     0.0543
+    ]
+   },
+   "EXP365_purge": {
+    "value_levelXrating": 2537.745,
+    "value_uniform": 631.292,
+    "lostEA": 459.7,
+    "lostEA_observedAccepted": 459.7,
+    "lostEA_wshare": 0.473,
+    "lostFinal": 6125.1,
+    "resub": 2003,
+    "endPending": 559.2,
+    "rel_value_levelXrating_vs_ASIS": [
+     0.1017,
+     -0.0085,
+     0.2229
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     0.1068,
+     0.0092,
+     0.2177
+    ]
+   }
+  },
+  "r=0.75": {
+   "ASIS_logit": {
+    "value_levelXrating": 2303.641,
+    "value_uniform": 571.446,
+    "lostEA": 0,
+    "lostEA_observedAccepted": 0,
+    "lostEA_wshare": 0,
+    "lostFinal": 0,
+    "resub": 0,
+    "endPending": 6687
+   },
+   "EXP365_grandf": {
+    "value_levelXrating": 2342.469,
+    "value_uniform": 587.891,
+    "lostEA": 120.7,
+    "lostEA_observedAccepted": 120.7,
+    "lostEA_wshare": 0.146,
+    "lostFinal": 426.9,
+    "resub": 1229.7,
+    "endPending": 6228.3,
+    "rel_value_levelXrating_vs_ASIS": [
+     0.0186,
+     -0.0579,
+     0.1266
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     0.0302,
+     -0.0499,
+     0.1131
+    ]
+   },
+   "EXP365_purge": {
+    "value_levelXrating": 2041.357,
+    "value_uniform": 517.209,
+    "lostEA": 342.1,
+    "lostEA_observedAccepted": 342.1,
+    "lostEA_wshare": 0.34,
+    "lostFinal": 5446.9,
+    "resub": 10539.8,
+    "endPending": 1207.6,
+    "rel_value_levelXrating_vs_ASIS": [
+     -0.1138,
+     -0.1719,
+     -0.0785
+    ],
+    "rel_value_uniform_vs_ASIS": [
+     -0.0938,
+     -0.181,
+     -0.051
+    ]
+   }
+  }
+ }
+}

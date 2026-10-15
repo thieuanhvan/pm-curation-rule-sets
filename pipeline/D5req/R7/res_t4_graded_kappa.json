@@ -1,0 +1,1318 @@
+{
+ "ei_queue_R6": [
+  {
+   "from": "2015Q1",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2016Q3",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q1",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q3",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.6,
+    "weighted": 0.6,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2020Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2022Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.6,
+    "weighted": 0.6,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2025Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   }
+  }
+ ],
+ "all_objects_R6": [
+  {
+   "from": "2015Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.222,
+    "weighted": 0.222,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2015Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.222,
+    "weighted": 0.222,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2016Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.222,
+    "weighted": 0.222,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2016Q3",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.444,
+    "weighted": 0.444,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2017Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.444,
+    "weighted": 0.444,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.444,
+    "weighted": 0.444,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.167,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q3",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.556,
+    "weighted": 0.556,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.167,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2020Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.667,
+    "weighted": 0.667,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.167,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2022Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.778,
+    "weighted": 0.778,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.333,
+    "weighted": 0.5,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2023Q4",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.778,
+    "weighted": 0.778,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.333,
+    "weighted": 0.5,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2025Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.889,
+    "weighted": 0.889,
+    "n_controls": 9
+   },
+   "flag raising": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.333,
+    "weighted": 0.5,
+    "n_controls": 3
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  }
+ ],
+ "ei_queue_R6_plus_coder2": [
+  {
+   "from": "2015Q1",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2016Q1",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2016Q3",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q1",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2019Q3",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.6,
+    "weighted": 0.6,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2020Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2022Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.6,
+    "weighted": 0.6,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  },
+  {
+   "from": "2025Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 5
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.5,
+    "n_controls": 1
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   }
+  }
+ ],
+ "all_objects_R6_plus_coder2": [
+  {
+   "from": "2015Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2015Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.25,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2016Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.2,
+    "weighted": 0.2,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2016Q3",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2016Q4",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.25,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2017Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.4,
+    "weighted": 0.4,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.25,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2017Q4",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.25,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2019Q1",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2019Q3",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.6,
+    "weighted": 0.6,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2020Q2",
+   "intake": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.7,
+    "weighted": 0.7,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2022Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 0.667,
+    "weighted": 0.667,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2023Q4",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.8,
+    "weighted": 0.8,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.0,
+    "weighted": 0.0,
+    "n_controls": 2
+   }
+  },
+  {
+   "from": "2025Q2",
+   "intake": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 2
+   },
+   "fit": {
+    "share": 0.333,
+    "weighted": 0.333,
+    "n_controls": 3
+   },
+   "decision": {
+    "share": 0.9,
+    "weighted": 0.9,
+    "n_controls": 10
+   },
+   "flag raising": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 3
+   },
+   "flag resolution": {
+    "share": 1.0,
+    "weighted": 1.0,
+    "n_controls": 1
+   },
+   "exit": {
+    "share": 0.25,
+    "weighted": 0.375,
+    "n_controls": 4
+   },
+   "re-review": {
+    "share": 0.5,
+    "weighted": 0.5,
+    "n_controls": 2
+   }
+  }
+ ],
+ "coi_removal_ei_decision": {
+  "2022Q1": [
+   0.8,
+   0.8
+  ],
+  "2022Q2": [
+   0.6,
+   0.6
+  ],
+  "n_controls": 5
+ }
+}

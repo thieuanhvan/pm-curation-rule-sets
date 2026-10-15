@@ -1,0 +1,72 @@
+{
+ "note": "V40: bot share in Wikidata property-proposal sample, from page text signatures only (no revision history was retrieved, so archival/unsigned bot edits are not observable). Strict = name ends with or has a separate token \"bot\"; loose = \"bot\" anywhere in the name.",
+ "sample_n": 2077,
+ "decided_n": 2070,
+ "proposer_bot_strict": {
+  "n": 2077,
+  "k": 0,
+  "p": 0
+ },
+ "proposer_bot_loose": {
+  "n": 2077,
+  "k": 5,
+  "p": 0.0024
+ },
+ "decider_bot_strict": {
+  "n": 2070,
+  "k": 0,
+  "p": 0
+ },
+ "decider_bot_loose": {
+  "n": 2070,
+  "k": 0,
+  "p": 0
+ },
+ "decider_unidentified": {
+  "n": 2070,
+  "k": 1,
+  "p": 0.0005
+ },
+ "signatures_n": 13640,
+ "signatures_bot_strict": {
+  "n": 13640,
+  "k": 1,
+  "p": 0.0001
+ },
+ "signatures_bot_loose": {
+  "n": 13640,
+  "k": 13,
+  "p": 0.001
+ },
+ "proposals_with_any_bot_signature_strict": {
+  "n": 2077,
+  "k": 1,
+  "p": 0.0005
+ },
+ "bot_name_counts_loose": [
+  [
+   "loose_only",
+   12
+  ],
+  [
+   "strict",
+   1
+  ]
+ ],
+ "decisions_in_same_decider_day_ge5": {
+  "n": 2070,
+  "k": 192,
+  "p": 0.0928
+ },
+ "decisions_in_same_decider_day_ge10": {
+  "n": 2070,
+  "k": 20,
+  "p": 0.0097
+ },
+ "decisions_in_same_decider_day_ge20": {
+  "n": 2070,
+  "k": 0,
+  "p": 0
+ },
+ "max_decisions_one_decider_one_day": 10
+}

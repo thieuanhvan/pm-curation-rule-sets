@@ -1,0 +1,2227 @@
+{
+ "t1_controls": {
+  "controls": [
+   {
+    "id": "D1",
+    "stage": "decision",
+    "object": "evidence item",
+    "mode": "guard",
+    "predicate": "acceptance only by editor role (admin/moderator/editor ladder in v1)",
+    "doc": "yes",
+    "tau_commit": "2015-01-27",
+    "first_commit": "f13b7252 (v1)",
+    "tau_release": "2015-01-27",
+    "release": "v1 continuous",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D2",
+    "stage": "decision",
+    "object": "evidence item",
+    "mode": "guard",
+    "predicate": "no self-acceptance of own submission",
+    "doc": "yes",
+    "tau_commit": "2016-07-20",
+    "first_commit": "313586fa (v1)",
+    "tau_release": "2016-07-20",
+    "release": "v1 continuous; v2.0.0 keeps it",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D3",
+    "stage": "decision",
+    "object": "revision",
+    "mode": "guard",
+    "predicate": "acceptance of suggested change/revision only by editor role",
+    "doc": "yes",
+    "tau_commit": "2015-01-12",
+    "first_commit": "a491b3bc (v1)",
+    "tau_release": "2015-01-12",
+    "release": "v1 continuous",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D4",
+    "stage": "decision",
+    "object": "revision",
+    "mode": "guard",
+    "predicate": "no self-acceptance of own revision (v2: except own pending submission)",
+    "doc": "yes",
+    "tau_commit": "2016-07-20",
+    "first_commit": "313586fa (v1)",
+    "tau_release": "2016-07-20",
+    "release": "v1 continuous; v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D5",
+    "stage": "decision",
+    "object": "all moderated objects (v1)",
+    "mode": "guard",
+    "predicate": "valid conflict-of-interest statement for moderation (editor_without_coi)",
+    "doc": "yes",
+    "tau_commit": "2019-09-10",
+    "first_commit": "ca3bb805 (v1)",
+    "tau_release": "2019-09-10",
+    "release": "v1 continuous",
+    "removed": "2022-04-09",
+    "removed_note": "v2.0.0 keeps COI for revisions, flags, source suggestions, NOT for evidence-item or assertion moderation (approve_assertion only from v2.7.2, 2026-04-07)",
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D5b",
+    "stage": "decision",
+    "object": "revision, flag, source suggestion (v2)",
+    "mode": "guard",
+    "predicate": "valid COI statement (has_valid_coi_statement)",
+    "doc": "yes",
+    "tau_commit": "2021-10-18",
+    "first_commit": "civic-v2 dev history",
+    "tau_release": "2022-04-09",
+    "release": "v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D6",
+    "stage": "decision",
+    "object": "revision",
+    "mode": "guard",
+    "predicate": "reason (comment, >= 10 characters) required to reject a revision",
+    "doc": "yes",
+    "tau_commit": "2021-10-18",
+    "first_commit": "46029db58a (v2 dev)",
+    "tau_release": "2022-04-09",
+    "release": "v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D7",
+    "stage": "decision",
+    "object": "evidence item, assertion",
+    "mode": "guard",
+    "predicate": "reason required to reject or revert; no comment on acceptance",
+    "doc": "yes",
+    "tau_commit": "2025-03-20",
+    "first_commit": "ff10f7e00",
+    "tau_release": "2025-04-07",
+    "release": "v2.5.13",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "D8",
+    "stage": "decision",
+    "object": "all moderated objects",
+    "mode": "guard",
+    "predicate": "acting organisation must be one of the user's organisations",
+    "doc": "no",
+    "tau_commit": "2020-04-30",
+    "first_commit": "aba69766 (v1)",
+    "tau_release": "2020-04-30",
+    "release": "v1 continuous; v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "I1",
+    "stage": "intake",
+    "object": "revision",
+    "mode": "guard",
+    "predicate": "comment (>= 10 characters) required when suggesting a revision",
+    "doc": "yes (SOP: \"should always include a comment\")",
+    "tau_commit": "2021-10-18",
+    "first_commit": "civic-v2 dev history",
+    "tau_release": "2022-04-09",
+    "release": "v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "I2",
+    "stage": "intake",
+    "object": "evidence item",
+    "mode": "guard",
+    "predicate": "submission requires a logged-in user (any role); optional comment >= 10 chars if given",
+    "doc": "yes",
+    "tau_commit": "2015-02-20",
+    "first_commit": "f11d973e (v1)",
+    "tau_release": "2015-02-20",
+    "release": "v1 continuous",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "I3",
+    "stage": "intake",
+    "object": "revision",
+    "mode": "automatic",
+    "predicate": "bot creates revisions replacing preprint sources (UpdatePreprints, scheduled daily)",
+    "doc": "no",
+    "tau_commit": "2026-08-10",
+    "first_commit": "41fad47b2",
+    "tau_release": null,
+    "release": "not in any release tag up to v2.7.6",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": false
+   },
+   {
+    "id": "F1",
+    "stage": "flag raising",
+    "object": "any entity",
+    "mode": "guard",
+    "predicate": "comment (>= 10 characters) required to raise a flag",
+    "doc": "yes (SOP: curators \"should flag\")",
+    "tau_commit": "2021-03-06",
+    "first_commit": "civic-v2 dev history",
+    "tau_release": "2022-04-09",
+    "release": "v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "F2",
+    "stage": "flag raising",
+    "object": "variant",
+    "mode": "automatic",
+    "predicate": "bot raises flags on duplicate allele-registry ids (scheduled weekly)",
+    "doc": "no",
+    "tau_commit": "2023-10-04",
+    "first_commit": "21b6fcbbe",
+    "tau_release": "2023-11-08",
+    "release": "v2.2.29",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "R1",
+    "stage": "flag resolution",
+    "object": "flag",
+    "mode": "guard",
+    "predicate": "resolution only by flagging user or editor (v1), editor + COI + comment >= 10 chars (v2)",
+    "doc": "no",
+    "tau_commit": "2017-03-31",
+    "first_commit": "85a48178 (v1)",
+    "tau_release": "2017-04-04",
+    "release": "v1 continuous; v2.0.0 adds COI and comment",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "X1",
+    "stage": "exit (no judgement)",
+    "object": "revision (suggested change)",
+    "mode": "automatic",
+    "predicate": "conflicting pending changes marked superseded after an accepted change (job FindSupersededChanges)",
+    "doc": "n/a",
+    "tau_commit": "2015-04-29",
+    "first_commit": "86b02248 (v1)",
+    "tau_release": "2015-04-29",
+    "release": "v1 continuous",
+    "removed": "2016-02-24",
+    "removed_note": "3335e4e9 \"remove unneeded background task\"; status value superseded kept but never set until v2",
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "X2",
+    "stage": "exit (no judgement)",
+    "object": "revision",
+    "mode": "automatic",
+    "predicate": "pending revisions of the same field superseded on acceptance (AcceptRevisions)",
+    "doc": "n/a",
+    "tau_commit": "2021-10-18",
+    "first_commit": "civic-v2 dev history",
+    "tau_release": "2022-04-09",
+    "release": "v2.0.0",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "X3",
+    "stage": "exit (no judgement)",
+    "object": "evidence item",
+    "mode": "permission",
+    "predicate": "submitter may withdraw (reject) own item (enabling, not refusing)",
+    "doc": "yes",
+    "tau_commit": "2019-01-29",
+    "first_commit": "ebfee72417 (v1)",
+    "tau_release": "2019-01-29",
+    "release": "v1 continuous",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": true
+   },
+   {
+    "id": "RR1",
+    "stage": "re-review",
+    "object": "assertion approval",
+    "mode": "automatic",
+    "predicate": "active organisational approvals set to requires_review when the assertion is flagged or a supporting evidence item rejected",
+    "doc": "no",
+    "tau_commit": "2025-03-19",
+    "first_commit": "ef697a340",
+    "tau_release": "2025-06-03",
+    "release": "v2.5.17",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": true
+   },
+   {
+    "id": "Fit1",
+    "stage": "fit",
+    "object": "evidence item",
+    "mode": "documented only",
+    "predicate": "no acceptance while a revision is pending (UI shows fields with pending changes; not enforced)",
+    "doc": "yes",
+    "tau_commit": null,
+    "first_commit": null,
+    "tau_release": null,
+    "release": "never configured",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": true,
+    "in_C_code": false
+   },
+   {
+    "id": "S1",
+    "stage": "selection",
+    "object": "evidence item",
+    "mode": "none",
+    "predicate": "no ordering rule, priority or worklist (search: assign/priority/due_date/worklist in server code: none)",
+    "doc": "no rule",
+    "tau_commit": null,
+    "first_commit": null,
+    "tau_release": null,
+    "release": "never configured",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": false
+   },
+   {
+    "id": "A1",
+    "stage": "allocation",
+    "object": "evidence item",
+    "mode": "none",
+    "predicate": "no owner, assignment or due date",
+    "doc": "no rule",
+    "tau_commit": null,
+    "first_commit": null,
+    "tau_release": null,
+    "release": "never configured",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": false
+   },
+   {
+    "id": "X4",
+    "stage": "exit (no judgement)",
+    "object": "evidence item",
+    "mode": "none",
+    "predicate": "no expiry, stale or timer exit; no scheduled job writes evidence-item status (21 v1 and 23 v2 scheduled tasks inspected)",
+    "doc": "no rule",
+    "tau_commit": null,
+    "first_commit": null,
+    "tau_release": null,
+    "release": "never configured",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": false
+   },
+   {
+    "id": "X5",
+    "stage": "exit (no judgement)",
+    "object": "flag",
+    "mode": "none",
+    "predicate": "no automatic flag closure; bulk closure Jan 2023 was a one-off data operation (no job in any release)",
+    "doc": "no rule",
+    "tau_commit": null,
+    "first_commit": null,
+    "tau_release": null,
+    "release": "never configured",
+    "removed": null,
+    "removed_note": null,
+    "in_C_doc": false,
+    "in_C_code": false
+   }
+  ],
+  "kappa_change_points": {
+   "any": [
+    {
+     "from": "2014Q4",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2015Q1",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2015Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 1,
+     "re-review": 0
+    },
+    {
+     "from": "2016Q1",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2017Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 1,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2022Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 1,
+     "flag resolution": 1,
+     "exit (no judgement)": 1,
+     "re-review": 0
+    },
+    {
+     "from": "2025Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 1,
+     "flag resolution": 1,
+     "exit (no judgement)": 1,
+     "re-review": 1
+    }
+   ],
+   "guard_only": [
+    {
+     "from": "2014Q4",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2015Q1",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2017Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 1,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2022Q2",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 1,
+     "flag resolution": 1,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    }
+   ],
+   "automatic_only": [
+    {
+     "from": "2014Q4",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2015Q2",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 1,
+     "re-review": 0
+    },
+    {
+     "from": "2016Q1",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2022Q2",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 1,
+     "re-review": 0
+    },
+    {
+     "from": "2023Q4",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 1,
+     "flag resolution": 0,
+     "exit (no judgement)": 1,
+     "re-review": 0
+    },
+    {
+     "from": "2025Q2",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 1,
+     "flag resolution": 0,
+     "exit (no judgement)": 1,
+     "re-review": 1
+    }
+   ],
+   "evidence_item_queue_only": [
+    {
+     "from": "2014Q4",
+     "intake": 0,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 0,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    },
+    {
+     "from": "2015Q1",
+     "intake": 1,
+     "fit": 0,
+     "selection": 0,
+     "allocation": 0,
+     "decision": 1,
+     "flag raising": 0,
+     "flag resolution": 0,
+     "exit (no judgement)": 0,
+     "re-review": 0
+    }
+   ]
+  },
+  "counts": {
+   "C_doc": 13,
+   "C_code": 18,
+   "C_doc_and_code": 12,
+   "code_only": 6,
+   "doc_only_never_configured": 1
+  },
+  "v1_superseded_status": "yes: status \"superseded\" added to SuggestedChange.valid_statuses on 2015-04-29 (86b02248) with job FindSupersededChanges; job removed 2016-02-24 (3335e4e9); the status value remained valid in v1 but no code set it afterwards; REVISION_SUPERSEDED events in the public log occur only from 2022 (v2)."
+ },
+ "t2_nonconforming": {
+  "rev_reject_by_quarter_2022_2024": {
+   "2021Q4": {
+    "n": 91,
+    "note10_all": 0.187,
+    "linked_share": 1.0,
+    "note10_linked": 0.187,
+    "self_share": 0.901
+   },
+   "2022Q1": {
+    "n": 141,
+    "note10_all": 0.461,
+    "linked_share": 1.0,
+    "note10_linked": 0.461,
+    "self_share": 0.355
+   },
+   "2022Q2": {
+    "n": 67,
+    "note10_all": 0.836,
+    "linked_share": 1.0,
+    "note10_linked": 0.836,
+    "self_share": 0.358
+   },
+   "2022Q3": {
+    "n": 82,
+    "note10_all": 0.915,
+    "linked_share": 1.0,
+    "note10_linked": 0.915,
+    "self_share": 0.366
+   },
+   "2022Q4": {
+    "n": 15,
+    "note10_all": 1.0,
+    "linked_share": 1.0,
+    "note10_linked": 1.0,
+    "self_share": 0.133
+   },
+   "2023Q1": {
+    "n": 327,
+    "note10_all": 0.997,
+    "linked_share": 1.0,
+    "note10_linked": 0.997,
+    "self_share": 0.052
+   },
+   "2023Q2": {
+    "n": 33,
+    "note10_all": 0.939,
+    "linked_share": 1.0,
+    "note10_linked": 0.939,
+    "self_share": 0.212
+   },
+   "2023Q3": {
+    "n": 77,
+    "note10_all": 0.987,
+    "linked_share": 1.0,
+    "note10_linked": 0.987,
+    "self_share": 0.169
+   },
+   "2023Q4": {
+    "n": 48,
+    "note10_all": 0.979,
+    "linked_share": 1.0,
+    "note10_linked": 0.979,
+    "self_share": 0.125
+   },
+   "2024Q1": {
+    "n": 33,
+    "note10_all": 1.0,
+    "linked_share": 1.0,
+    "note10_linked": 1.0,
+    "self_share": 0.212
+   },
+   "2024Q2": {
+    "n": 28,
+    "note10_all": 1.0,
+    "linked_share": 1.0,
+    "note10_linked": 1.0,
+    "self_share": 0.536
+   }
+  },
+  "rev_reject_post_launch": {
+   "n": 1662,
+   "without_note10": 21,
+   "without_note10_unlinked_to_activity": 0,
+   "without_note10_linked_empty_note": 13,
+   "without_note10_linked_short_note": 8,
+   "without_note10_self_withdrawal": 13,
+   "by_quarter": {
+    "2022Q2": 5,
+    "2022Q3": 7,
+    "2023Q1": 1,
+    "2023Q2": 2,
+    "2023Q3": 1,
+    "2023Q4": 1,
+    "2025Q2": 2,
+    "2025Q4": 2
+   },
+   "subject_types": {
+    "EvidenceItem": 14,
+    "GeneVariant": 2,
+    "Assertion": 2,
+    "MolecularProfile": 2,
+    "FusionVariant": 1
+   },
+   "last": "2025-12-17"
+  },
+  "rev_reject_2022Q2": {
+   "n": 57,
+   "without_note10": 5,
+   "unlinked": 0,
+   "first_week_after_launch_share_of_unnoted": 0.2,
+   "in_multi_event_activities": 0,
+   "distinct_rejectors_band": "<5"
+  },
+  "reject_revisions_activities_first": "2015-06-29",
+  "rev_reject_linked_share_pre_launch": 1.0,
+  "rev_self_accept_nonconforming": {
+   "n": 10,
+   "of_revision_acceptances": 44762,
+   "rate": 0.000223,
+   "by_platform": {
+    "v2": 8,
+    "v1": 2
+   },
+   "by_year": {
+    "2016": 2,
+    "2023": 1,
+    "2024": 4,
+    "2025": 3
+   },
+   "by_subject_type": {
+    "EvidenceItem": 6,
+    "VariantCoordinate": 2,
+    "VariantGroup": 1,
+    "GeneVariant": 1
+   },
+   "by_subject_status": {
+    "accepted": 4,
+    "no status (non-submittable entity)": 4,
+    "submitted": 2
+   },
+   "by_current_role": {
+    "ADMIN": 6,
+    "EDITOR": 4
+   },
+   "accepted_within_60s_of_suggestion": 2,
+   "distinct_users_band": ">=5"
+  },
+  "eid": {
+   "self_accept_total": 14,
+   "self_accept_after_2016-07-20": 0,
+   "rejections_after_2025-04-07": 85,
+   "without_note10": 0,
+   "unlinked": 0
+  },
+  "revision_superseded_events_by_year": {
+   "2022": 34,
+   "2023": 376,
+   "2024": 56,
+   "2025": 122,
+   "2026": 75
+  },
+  "revision_superseded_actor": {
+   "bot_or_null": 0,
+   "human_account": 663
+  },
+  "revision_superseded_same_second_as_acceptance_by_same_account": 0.998,
+  "addendum": {
+   "rev_reject_2022Q2_pre_launch_days": {
+    "n": 10,
+    "note10": 4
+   },
+   "post_launch_by_quarter_raw_length": {
+    "2022Q2": {
+     "n": 57,
+     "note_raw10": 0.912,
+     "note_null": 5
+    },
+    "2022Q3": {
+     "n": 82,
+     "note_raw10": 0.951,
+     "note_null": 4
+    },
+    "2022Q4": {
+     "n": 15,
+     "note_raw10": 1.0,
+     "note_null": 0
+    },
+    "2023Q1": {
+     "n": 327,
+     "note_raw10": 0.997,
+     "note_null": 1
+    },
+    "2023Q2": {
+     "n": 33,
+     "note_raw10": 0.97,
+     "note_null": 1
+    },
+    "2023Q3": {
+     "n": 77,
+     "note_raw10": 0.987,
+     "note_null": 1
+    },
+    "2023Q4": {
+     "n": 48,
+     "note_raw10": 0.979,
+     "note_null": 1
+    }
+   },
+   "post_launch_raw_length_ge10": 1649,
+   "post_launch_n": 1662,
+   "null_note_n": 13,
+   "null_note_before_v2.3.0": 13,
+   "null_note_with_comment_by_rejector_within_2min": 13,
+   "null_note_self_withdrawal": 9,
+   "whitespace_padded_10char_notes": 8
+  }
+ },
+ "t3_service_position": {
+  "civic_2021plus_h365": {
+   "n_scored": 955,
+   "n_excluded_age_gt_h": 563,
+   "meanU": [
+    0.152,
+    0.123,
+    0.182
+   ],
+   "newest10": [
+    0.659,
+    0.602,
+    0.715
+   ],
+   "null_meanU_95": [
+    0.482,
+    0.518
+   ],
+   "null_newest10_95": [
+    0.083,
+    0.12
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 557,
+   "share_decided_items_with_tied_arrival": 0.034
+  },
+  "civic_2021plus_hinf": {
+   "n_scored": 1518,
+   "n_excluded_age_gt_h": 0,
+   "meanU": [
+    0.182,
+    0.148,
+    0.22
+   ],
+   "newest10": [
+    0.628,
+    0.574,
+    0.68
+   ],
+   "null_meanU_95": [
+    0.485,
+    0.514
+   ],
+   "null_newest10_95": [
+    0.086,
+    0.115
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 5849,
+   "share_decided_items_with_tied_arrival": 0.034
+  },
+  "civic_previous_definition": {
+   "age<=365": {
+    "n": 955,
+    "meanU": [
+     0.152,
+     0.122,
+     0.182
+    ],
+    "newest10": [
+     0.659,
+     0.601,
+     0.715
+    ],
+    "null_meanU_95": [
+     0.48,
+     0.517
+    ],
+    "median_queue_L": 557
+   },
+   "all_pending": {
+    "n": 1518,
+    "meanU": [
+     0.182,
+     0.149,
+     0.219
+    ],
+    "newest10": [
+     0.628,
+     0.571,
+     0.679
+    ],
+    "null_meanU_95": [
+     0.486,
+     0.514
+    ],
+    "median_queue_L": 5849
+   }
+  },
+  "go_2021plus_h365": {
+   "n_scored": 111,
+   "n_excluded_age_gt_h": 14,
+   "meanU": [
+    0.17,
+    0.126,
+    0.216
+   ],
+   "newest10": [
+    0.613,
+    0.523,
+    0.703
+   ],
+   "null_meanU_95": [
+    0.444,
+    0.557
+   ],
+   "null_newest10_95": [
+    0.063,
+    0.171
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 37
+  },
+  "go_2021plus_hinf": {
+   "n_scored": 125,
+   "n_excluded_age_gt_h": 0,
+   "meanU": [
+    0.134,
+    0.097,
+    0.172
+   ],
+   "newest10": [
+    0.664,
+    0.584,
+    0.744
+   ],
+   "null_meanU_95": [
+    0.449,
+    0.549
+   ],
+   "null_newest10_95": [
+    0.056,
+    0.16
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 93
+  },
+  "go_previous": {
+   "n": 111,
+   "meanU": [
+    0.171,
+    0.128,
+    0.218
+   ],
+   "newest10": [
+    0.613,
+    0.523,
+    0.703
+   ],
+   "null_meanU_95": [
+    0.445,
+    0.555
+   ],
+   "null_newest10_95": [
+    0.054,
+    0.171
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 37
+  },
+  "hpo_2021plus_h365": {
+   "n_scored": 109,
+   "n_excluded_age_gt_h": 11,
+   "meanU": [
+    0.353,
+    0.302,
+    0.41
+   ],
+   "newest10": [
+    0.266,
+    0.183,
+    0.349
+   ],
+   "null_meanU_95": [
+    0.447,
+    0.558
+   ],
+   "null_newest10_95": [
+    0.055,
+    0.165
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 79
+  },
+  "hpo_2021plus_hinf": {
+   "n_scored": 120,
+   "n_excluded_age_gt_h": 0,
+   "meanU": [
+    0.358,
+    0.309,
+    0.41
+   ],
+   "newest10": [
+    0.292,
+    0.208,
+    0.375
+   ],
+   "null_meanU_95": [
+    0.45,
+    0.553
+   ],
+   "null_newest10_95": [
+    0.05,
+    0.167
+   ],
+   "perm_p_one_sided": 0.0,
+   "median_queue_size": 89
+  },
+  "hpo_previous": {
+   "n": 109,
+   "meanU": [
+    0.354,
+    0.3,
+    0.41
+   ],
+   "newest10": [
+    0.266,
+    0.183,
+    0.349
+   ],
+   "null_meanU_95": [
+    0.447,
+    0.556
+   ],
+   "null_newest10_95": [
+    0.055,
+    0.165
+   ],
+   "perm_p_meanU_le_obs": 0.0,
+   "median_L": 79
+  }
+ },
+ "t4_content_gates": {
+  "go": {
+   "branch_protection_current": {
+    "protected": true,
+    "required_checks": {
+     "enforcement_level": "non_admins",
+     "contexts": [
+      "ontology_qc"
+     ],
+     "checks": [
+      {
+       "context": "ontology_qc",
+       "app_id": null
+      }
+     ]
+    },
+    "protection_history_visible": false,
+    "protection_endpoint_status": 403,
+    "rulesets": 0
+   },
+   "travis_yml": {
+    "first_commit": "2017-01-06",
+    "deleted": "2021-04-13",
+    "n_commits": 28
+   },
+   "qc_workflow_first": "2020-12-01",
+   "workflow_commits": 141,
+   "workflow_files_now": [
+    "ai-agent.yml",
+    "asserted_owl_diff.yml",
+    "claude-code-review.yml",
+    "copilot-setup-steps.yml",
+    "deploy-gh-site.yml",
+    "design-patterns.yml",
+    "new_pr.yml",
+    "qc.yml",
+    "refresh-gorel.yml",
+    "refresh-reactome-xrefs.yml",
+    "refresh-rhea-rdf.yml",
+    "refresh-rhea-relationships.yml",
+    "refresh_obsolete_ec_file.yml",
+    "relation-diff.yml",
+    "update-diff-status.yml",
+    "update_ph_7_3.yml",
+    "update_reaction_participants.yml",
+    "update_taxon_constraints.yml",
+    "yaml-schema-checks.yml"
+   ],
+   "workflow_files_added": {
+    "qc.yml": "2020-12-01",
+    "inference_diff.yml": "2020-12-18",
+    "update_ph_7_3.yml": "2022-07-13",
+    "makefile.yml": "2022-07-15",
+    "update_taxon_constraints.yml": "2022-07-15",
+    "design-patterns.yml": "2022-07-19",
+    "new_pr.yml": "2023-01-10",
+    "update_reaction_participants.yml": "2023-06-26",
+    "relation-diff.yml": "2023-10-26",
+    "refresh_obsolete_ec_file.yml": "2024-05-01",
+    "yaml-schema-checks.yml": "2024-06-18",
+    "ai-agent.yml": "2025-05-03",
+    "copilot-setup-steps.yml": "2025-07-11",
+    "deploy-gh-site.yml": "2025-12-02",
+    "update-diff-status.yml": "2025-12-03",
+    "refresh-rhea-rdf.yml": "2026-01-28",
+    "refresh-reactome-xrefs.yml": "2026-02-11",
+    "refresh-rhea-relationships.yml": "2026-04-13",
+    "refresh-gorel.yml": "2026-05-07",
+    "claude-code-review.yml": "2026-07-27",
+    "asserted_owl_diff.yml": "2026-08-25"
+   },
+   "codeowners_commits": 0,
+   "w2_linked_units": {
+    "n": 172,
+    "with_pr": 171,
+    "direct_push": 1,
+    "merge_year_range": [
+     "2017",
+     "2026"
+    ],
+    "with_any_retained_check_data": 14,
+    "earliest_merge_with_retained_runs": "2025-08-22T00:55:18Z",
+    "qc_success_among_retained": [
+     13,
+     14
+    ]
+   },
+   "window_sample": {
+    "window_from": "2025-08-23",
+    "population_closed_in_window": 158,
+    "sampled_tickets": 90,
+    "tickets_with_term_adding_merge": 76,
+    "tickets_closed_without_linked_merge": 14,
+    "closed_as_not_planned_or_duplicate": 5,
+    "merges_via_pr": 76,
+    "direct_pushes": 0,
+    "with_qc_run": 73,
+    "with_qc_success": 73,
+    "n_after_tau": 76,
+    "F_R": 0.961,
+    "other_workflows_seen": {
+     "yaml-schema-checks.yml": 75,
+     "claude-code-review.yml": 19,
+     "qc.yml": 74,
+     "inference_diff.yml": 67,
+     "ai-agent.yml": 60,
+     "asserted_owl_diff.yml": 7
+    },
+    "qc_workflow_first": {
+     "sha": "11b66255df",
+     "status": 200,
+     "jobs": [
+      "push",
+      "pull_request",
+      "workflow_dispatch",
+      "build"
+     ],
+     "on": [
+      "# Triggers the workflow on push or pull request events but only for the master branch",
+      "push:",
+      "pull_request:"
+     ]
+    },
+    "qc_workflow_current": {
+     "sha": "7f9b1add99",
+     "status": 200,
+     "jobs": [
+      "push",
+      "pull_request",
+      "workflow_dispatch",
+      "ontology_qc"
+     ],
+     "on": [
+      "# Triggers the workflow on push or pull request events but only for the master branch",
+      "push:",
+      "pull_request:",
+      "group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}"
+     ]
+    }
+   }
+  },
+  "hpo": {
+   "branch_protection_current": {
+    "protected": false,
+    "required_checks": {
+     "enforcement_level": "off",
+     "contexts": [],
+     "checks": []
+    },
+    "protection_history_visible": false,
+    "protection_endpoint_status": 403,
+    "rulesets": 0
+   },
+   "travis_yml": {
+    "first_commit": "2015-11-10",
+    "deleted": "2021-02-08",
+    "n_commits": 60
+   },
+   "qc_workflow_first": "2021-01-28",
+   "workflow_commits": 112,
+   "workflow_files_now": [
+    "deploy.yml",
+    "docs.yml",
+    "imports.yml",
+    "ontology_diff.yml",
+    "qc.yml"
+   ],
+   "workflow_files_added": {
+    "qc.yml": "2021-01-28",
+    "deploy.yml": "2022-10-05",
+    "imports.yml": "2022-10-05",
+    "docs.yml": "2023-11-01",
+    "ontology_diff.yml": "2024-03-03",
+    "ontology_diff_2.yml": "2024-03-21",
+    "ontology_diff_old.yml": "2024-03-21"
+   },
+   "codeowners_commits": 0,
+   "w2_linked_units": {
+    "n": 37,
+    "with_pr": 2,
+    "direct_push": 35,
+    "merge_year_range": [
+     "2016",
+     "2020"
+    ],
+    "with_any_retained_check_data": 0,
+    "earliest_merge_with_retained_runs": null,
+    "qc_success_among_retained": [
+     0,
+     0
+    ]
+   },
+   "window_sample": {
+    "window_from": "2025-08-23",
+    "population_closed_in_window": 295,
+    "sampled_tickets": 90,
+    "tickets_with_term_adding_merge": 0,
+    "tickets_closed_without_linked_merge": 90,
+    "closed_as_not_planned_or_duplicate": 0,
+    "merges_via_pr": 0,
+    "direct_pushes": 0,
+    "with_qc_run": 0,
+    "with_qc_success": 0,
+    "n_after_tau": 0,
+    "F_R": null,
+    "other_workflows_seen": {},
+    "qc_workflow_first": {
+     "sha": "0ed9eb8c35",
+     "status": 200,
+     "jobs": [
+      "push",
+      "pull_request",
+      "workflow_dispatch",
+      "ontology_qc"
+     ],
+     "on": [
+      "# Triggers the workflow on push or pull request events but only for the master branch",
+      "push:",
+      "pull_request:"
+     ]
+    },
+    "qc_workflow_current": {
+     "sha": "21ef115349",
+     "status": 200,
+     "jobs": [
+      "push",
+      "pull_request",
+      "workflow_dispatch",
+      "ontology_qc"
+     ],
+     "on": [
+      "# Triggers the workflow on push or pull request events but only for the master branch",
+      "push:",
+      "pull_request:"
+     ]
+    }
+   }
+  }
+ },
+ "t5_did": {
+  "E2025": {
+   "treated": "EID",
+   "control": "REV",
+   "T0": "2025-04",
+   "window": [
+    "2023-09",
+    "2026-09"
+   ],
+   "dropped": [],
+   "outcomes": {
+    "rejection_share_other_users": {
+     "treated_pre": {
+      "k": 17,
+      "n": 366,
+      "share": 0.0464
+     },
+     "treated_post": {
+      "k": 74,
+      "n": 515,
+      "share": 0.1437
+     },
+     "control_pre": {
+      "k": 261,
+      "n": 3211,
+      "share": 0.0813
+     },
+     "control_post": {
+      "k": 442,
+      "n": 4463,
+      "share": 0.099
+     },
+     "did_raw": 0.0796,
+     "randomisation_band_95": [
+      0.0124,
+      0.1438
+     ],
+     "randomisation_p_two_sided": 0.346,
+     "n_break_dates": 26
+    },
+    "withdrawal_share_terminal": {
+     "treated_pre": {
+      "k": 14,
+      "n": 380,
+      "share": 0.0368
+     },
+     "treated_post": {
+      "k": 11,
+      "n": 526,
+      "share": 0.0209
+     },
+     "control_pre": {
+      "k": 84,
+      "n": 3680,
+      "share": 0.0228
+     },
+     "control_post": {
+      "k": 311,
+      "n": 5320,
+      "share": 0.0585
+     },
+     "did_raw": -0.0516,
+     "randomisation_band_95": [
+      -0.0505,
+      -0.0153
+     ],
+     "randomisation_p_two_sided": 0.038,
+     "n_break_dates": 26
+    }
+   },
+   "quarterly": [
+    {
+     "series": "treated",
+     "rel_q": -7,
+     "rej": 0,
+     "n_other_dec": 21,
+     "rej_share": 0.0,
+     "arrivals_per_month": 7.0,
+     "months": 1
+    },
+    {
+     "series": "treated",
+     "rel_q": -6,
+     "rej": 10,
+     "n_other_dec": 56,
+     "rej_share": 0.1786,
+     "arrivals_per_month": 30.33,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": -5,
+     "rej": 0,
+     "n_other_dec": 69,
+     "rej_share": 0.0,
+     "arrivals_per_month": 61.0,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": -4,
+     "rej": 1,
+     "n_other_dec": 63,
+     "rej_share": 0.0159,
+     "arrivals_per_month": 90.0,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": -3,
+     "rej": 3,
+     "n_other_dec": 58,
+     "rej_share": 0.0517,
+     "arrivals_per_month": 31.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": -2,
+     "rej": 0,
+     "n_other_dec": 40,
+     "rej_share": 0.0,
+     "arrivals_per_month": 30.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": -1,
+     "rej": 3,
+     "n_other_dec": 59,
+     "rej_share": 0.0508,
+     "arrivals_per_month": 38.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 0,
+     "rej": 23,
+     "n_other_dec": 84,
+     "rej_share": 0.2738,
+     "arrivals_per_month": 32.33,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 1,
+     "rej": 5,
+     "n_other_dec": 40,
+     "rej_share": 0.125,
+     "arrivals_per_month": 16.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 2,
+     "rej": 3,
+     "n_other_dec": 151,
+     "rej_share": 0.0199,
+     "arrivals_per_month": 76.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 3,
+     "rej": 8,
+     "n_other_dec": 79,
+     "rej_share": 0.1013,
+     "arrivals_per_month": 44.0,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 4,
+     "rej": 25,
+     "n_other_dec": 80,
+     "rej_share": 0.3125,
+     "arrivals_per_month": 48.67,
+     "months": 3
+    },
+    {
+     "series": "treated",
+     "rel_q": 5,
+     "rej": 10,
+     "n_other_dec": 81,
+     "rej_share": 0.1235,
+     "arrivals_per_month": 105.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -7,
+     "rej": 34,
+     "n_other_dec": 185,
+     "rej_share": 0.1838,
+     "arrivals_per_month": 109.0,
+     "months": 1
+    },
+    {
+     "series": "control",
+     "rel_q": -6,
+     "rej": 42,
+     "n_other_dec": 703,
+     "rej_share": 0.0597,
+     "arrivals_per_month": 230.33,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -5,
+     "rej": 26,
+     "n_other_dec": 596,
+     "rej_share": 0.0436,
+     "arrivals_per_month": 457.33,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -4,
+     "rej": 13,
+     "n_other_dec": 297,
+     "rej_share": 0.0438,
+     "arrivals_per_month": 438.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -3,
+     "rej": 26,
+     "n_other_dec": 731,
+     "rej_share": 0.0356,
+     "arrivals_per_month": 291.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -2,
+     "rej": 37,
+     "n_other_dec": 270,
+     "rej_share": 0.137,
+     "arrivals_per_month": 136.33,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": -1,
+     "rej": 83,
+     "n_other_dec": 429,
+     "rej_share": 0.1935,
+     "arrivals_per_month": 201.67,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 0,
+     "rej": 90,
+     "n_other_dec": 602,
+     "rej_share": 0.1495,
+     "arrivals_per_month": 248.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 1,
+     "rej": 10,
+     "n_other_dec": 245,
+     "rej_share": 0.0408,
+     "arrivals_per_month": 148.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 2,
+     "rej": 89,
+     "n_other_dec": 771,
+     "rej_share": 0.1154,
+     "arrivals_per_month": 322.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 3,
+     "rej": 82,
+     "n_other_dec": 503,
+     "rej_share": 0.163,
+     "arrivals_per_month": 105.0,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 4,
+     "rej": 92,
+     "n_other_dec": 1294,
+     "rej_share": 0.0711,
+     "arrivals_per_month": 486.33,
+     "months": 3
+    },
+    {
+     "series": "control",
+     "rel_q": 5,
+     "rej": 79,
+     "n_other_dec": 1048,
+     "rej_share": 0.0754,
+     "arrivals_per_month": 341.67,
+     "months": 3
+    }
+   ],
+   "event_study_quarters": [
+    {
+     "rel_q": -7,
+     "diff_vs_ref": -0.0412,
+     "band_95": [
+      -0.1457,
+      0.0887
+     ]
+    },
+    {
+     "rel_q": -6,
+     "diff_vs_ref": 0.2615,
+     "band_95": [
+      -0.1661,
+      0.2186
+     ]
+    },
+    {
+     "rel_q": -5,
+     "diff_vs_ref": 0.099,
+     "band_95": [
+      -0.1994,
+      0.3182
+     ]
+    },
+    {
+     "rel_q": -4,
+     "diff_vs_ref": 0.1147,
+     "band_95": [
+      -0.2609,
+      0.2124
+     ]
+    },
+    {
+     "rel_q": -3,
+     "diff_vs_ref": 0.1588,
+     "band_95": [
+      -0.3278,
+      0.2384
+     ]
+    },
+    {
+     "rel_q": -2,
+     "diff_vs_ref": 0.0056,
+     "band_95": [
+      -0.2719,
+      0.2316
+     ]
+    },
+    {
+     "rel_q": -1,
+     "diff_vs_ref": 0.0,
+     "band_95": [
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "rel_q": 0,
+     "diff_vs_ref": 0.2669,
+     "band_95": [
+      -0.2316,
+      0.2888
+     ]
+    },
+    {
+     "rel_q": 1,
+     "diff_vs_ref": 0.2268,
+     "band_95": [
+      -0.2373,
+      0.4059
+     ]
+    },
+    {
+     "rel_q": 2,
+     "diff_vs_ref": 0.0471,
+     "band_95": [
+      -0.2345,
+      0.3428
+     ]
+    },
+    {
+     "rel_q": 3,
+     "diff_vs_ref": 0.0809,
+     "band_95": [
+      -0.1781,
+      0.213
+     ]
+    },
+    {
+     "rel_q": 4,
+     "diff_vs_ref": 0.384,
+     "band_95": [
+      -0.1957,
+      0.3657
+     ]
+    },
+    {
+     "rel_q": 5,
+     "diff_vs_ref": 0.1907,
+     "band_95": [
+      -0.0876,
+      0.5366
+     ]
+    }
+   ]
+  },
+  "E2025_control_revisions_on_evidence_items": {
+   "outcomes": {
+    "rejection_share_other_users": {
+     "treated_pre": {
+      "k": 17,
+      "n": 366,
+      "share": 0.0464
+     },
+     "treated_post": {
+      "k": 74,
+      "n": 515,
+      "share": 0.1437
+     },
+     "control_pre": {
+      "k": 224,
+      "n": 1724,
+      "share": 0.1299
+     },
+     "control_post": {
+      "k": 317,
+      "n": 1884,
+      "share": 0.1683
+     },
+     "did_raw": 0.0589,
+     "randomisation_band_95": [
+      -0.0142,
+      0.1825
+     ],
+     "randomisation_p_two_sided": 0.346,
+     "n_break_dates": 26
+    },
+    "withdrawal_share_terminal": {
+     "treated_pre": {
+      "k": 14,
+      "n": 380,
+      "share": 0.0368
+     },
+     "treated_post": {
+      "k": 11,
+      "n": 526,
+      "share": 0.0209
+     },
+     "control_pre": {
+      "k": 59,
+      "n": 2063,
+      "share": 0.0286
+     },
+     "control_post": {
+      "k": 230,
+      "n": 2461,
+      "share": 0.0935
+     },
+     "did_raw": -0.0808,
+     "randomisation_band_95": [
+      -0.0924,
+      -0.0397
+     ],
+     "randomisation_p_two_sided": 0.423,
+     "n_break_dates": 26
+    }
+   }
+  },
+  "E2022": {
+   "outcomes": {
+    "rejection_share_other_users": {
+     "treated_pre": {
+      "k": 492,
+      "n": 11986,
+      "share": 0.041
+     },
+     "treated_post": {
+      "k": 619,
+      "n": 7605,
+      "share": 0.0814
+     },
+     "control_pre": {
+      "k": 96,
+      "n": 972,
+      "share": 0.0988
+     },
+     "control_post": {
+      "k": 31,
+      "n": 539,
+      "share": 0.0575
+     },
+     "did_raw": 0.0817,
+     "randomisation_band_95": [
+      -0.0466,
+      0.0827
+     ],
+     "randomisation_p_two_sided": 0.068,
+     "n_break_dates": 59
+    },
+    "withdrawal_share_terminal": {
+     "treated_pre": {
+      "k": 882,
+      "n": 12868,
+      "share": 0.0685
+     },
+     "treated_post": {
+      "k": 134,
+      "n": 8497,
+      "share": 0.0158
+     },
+     "control_pre": {
+      "k": 91,
+      "n": 1063,
+      "share": 0.0856
+     },
+     "control_post": {
+      "k": 42,
+      "n": 581,
+      "share": 0.0723
+     },
+     "did_raw": -0.0394,
+     "randomisation_band_95": [
+      -0.0476,
+      0.0515
+     ],
+     "randomisation_p_two_sided": 0.203,
+     "n_break_dates": 59
+    }
+   }
+  },
+  "E2025_intake_falsification": {
+   "arrivals_per_month": {
+    "treated_pre": 44.95,
+    "treated_post": 53.89,
+    "control_pre": 282.79,
+    "control_post": 275.17
+   },
+   "did_log_ratio": 0.367,
+   "randomisation_band_95": [
+    0.038,
+    0.573
+   ],
+   "randomisation_p_two_sided": 0.577,
+   "monthly": [
+    {
+     "m": "2023-09",
+     "eid": 7,
+     "control_revisions": 109
+    },
+    {
+     "m": "2023-10",
+     "eid": 31,
+     "control_revisions": 260
+    },
+    {
+     "m": "2023-11",
+     "eid": 37,
+     "control_revisions": 66
+    },
+    {
+     "m": "2023-12",
+     "eid": 23,
+     "control_revisions": 365
+    },
+    {
+     "m": "2024-01",
+     "eid": 84,
+     "control_revisions": 253
+    },
+    {
+     "m": "2024-02",
+     "eid": 32,
+     "control_revisions": 694
+    },
+    {
+     "m": "2024-03",
+     "eid": 67,
+     "control_revisions": 425
+    },
+    {
+     "m": "2024-04",
+     "eid": 235,
+     "control_revisions": 537
+    },
+    {
+     "m": "2024-05",
+     "eid": 21,
+     "control_revisions": 375
+    },
+    {
+     "m": "2024-06",
+     "eid": 14,
+     "control_revisions": 402
+    },
+    {
+     "m": "2024-07",
+     "eid": 15,
+     "control_revisions": 290
+    },
+    {
+     "m": "2024-08",
+     "eid": 62,
+     "control_revisions": 343
+    },
+    {
+     "m": "2024-09",
+     "eid": 18,
+     "control_revisions": 240
+    },
+    {
+     "m": "2024-10",
+     "eid": 38,
+     "control_revisions": 167
+    },
+    {
+     "m": "2024-11",
+     "eid": 32,
+     "control_revisions": 171
+    },
+    {
+     "m": "2024-12",
+     "eid": 22,
+     "control_revisions": 71
+    },
+    {
+     "m": "2025-01",
+     "eid": 19,
+     "control_revisions": 120
+    },
+    {
+     "m": "2025-02",
+     "eid": 54,
+     "control_revisions": 342
+    },
+    {
+     "m": "2025-03",
+     "eid": 43,
+     "control_revisions": 143
+    },
+    {
+     "m": "2025-04",
+     "eid": 19,
+     "control_revisions": 38
+    },
+    {
+     "m": "2025-05",
+     "eid": 25,
+     "control_revisions": 191
+    },
+    {
+     "m": "2025-06",
+     "eid": 53,
+     "control_revisions": 515
+    },
+    {
+     "m": "2025-07",
+     "eid": 17,
+     "control_revisions": 271
+    },
+    {
+     "m": "2025-08",
+     "eid": 13,
+     "control_revisions": 79
+    },
+    {
+     "m": "2025-09",
+     "eid": 20,
+     "control_revisions": 94
+    },
+    {
+     "m": "2025-10",
+     "eid": 71,
+     "control_revisions": 203
+    },
+    {
+     "m": "2025-11",
+     "eid": 103,
+     "control_revisions": 328
+    },
+    {
+     "m": "2025-12",
+     "eid": 56,
+     "control_revisions": 435
+    },
+    {
+     "m": "2026-01",
+     "eid": 60,
+     "control_revisions": 118
+    },
+    {
+     "m": "2026-02",
+     "eid": 32,
+     "control_revisions": 126
+    },
+    {
+     "m": "2026-03",
+     "eid": 40,
+     "control_revisions": 71
+    },
+    {
+     "m": "2026-04",
+     "eid": 72,
+     "control_revisions": 294
+    },
+    {
+     "m": "2026-05",
+     "eid": 11,
+     "control_revisions": 744
+    },
+    {
+     "m": "2026-06",
+     "eid": 63,
+     "control_revisions": 421
+    },
+    {
+     "m": "2026-07",
+     "eid": 63,
+     "control_revisions": 435
+    },
+    {
+     "m": "2026-08",
+     "eid": 120,
+     "control_revisions": 227
+    },
+    {
+     "m": "2026-09",
+     "eid": 132,
+     "control_revisions": 363
+    }
+   ]
+  },
+  "notes": "Pooled raw shares = sum(numerator)/sum(denominator) over months. Randomisation: same statistic at every break date with >= 6 months each side; p = share with |placebo| >= |observed|. No Newey-West."
+ },
+ "t6_numbers": {
+  "pending": {
+   "all_items": [
+    6687,
+    12085,
+    55.3
+   ],
+   "submitted_since_2016": [
+    6685,
+    11472,
+    58.3
+   ]
+  },
+  "holdout_tokens": {
+   "all": 1050,
+   "by_outcome": {
+    "ACC": 923,
+    "REJ": 92,
+    "WDR": 35
+   },
+   "non_withdrawal": 1015
+  },
+  "intensity_unrounded": {
+   "common_types": {
+    "ev_per_day_2016_18": 2.0605,
+    "ev_per_day_2023_26": 0.6041,
+    "fold": 3.411,
+    "fold_CI": [
+     1.71,
+     5.95
+    ]
+   },
+   "all_types": {
+    "ev_per_day_2016_18": 2.0605,
+    "ev_per_day_2023_26": 0.5964,
+    "fold": 3.455,
+    "fold_CI": [
+     1.66,
+     6.2
+    ]
+   },
+   "strict_common": {
+    "ev_per_day_2016_18": 2.1017,
+    "ev_per_day_2023_26": 0.6041,
+    "fold": 3.479,
+    "fold_CI": [
+     1.72,
+     6.5
+    ]
+   }
+  },
+  "decomposition_A_star": {
+   "A_star_main": {
+    "intensity_2016_18": 2.06,
+    "intensity_2023_26": 0.604,
+    "fold": 3.411,
+    "delta": [
+     -1.46,
+     -2.62,
+     -0.45
+    ],
+    "stayers": [
+     -1.37,
+     -1.75,
+     -0.43
+    ],
+    "turnover": [
+     -0.09,
+     -1.32,
+     0.54
+    ],
+    "stayers_band": ">=5"
+   },
+   "all_activities_previous": {
+    "intensity_2016_18": 2.06,
+    "intensity_2023_26": 0.596,
+    "fold": 3.455,
+    "delta": [
+     -1.46,
+     -2.57,
+     -0.49
+    ],
+    "stayers": [
+     -1.37,
+     -1.75,
+     -0.49
+    ],
+    "turnover": [
+     -0.09,
+     -1.41,
+     0.56
+    ],
+    "stayers_band": ">=5"
+   }
+  },
+  "app_flags": {
+   "flag_objects": 7661,
+   "with_clear_event": 1584,
+   "open_at_end": 6106,
+   "closed_at_end": 1555,
+   "cleared_then_reraised_open_at_end": 29
+  },
+  "revision_rejection_note_share_pre_v2": {
+   "2019_other_users_revisions": {
+    "n": 103,
+    "note10": 0.612,
+    "note10_or_comment_before": 0.835
+   },
+   "2019_own_revisions_withdrawn": {
+    "n": 121,
+    "note10": 0.041,
+    "note10_or_comment_before": 0.041
+   },
+   "2019_all_revision_rejections": {
+    "n": 224,
+    "note10": 0.304
+   },
+   "2020_other_users_revisions": {
+    "n": 195,
+    "note10": 0.641,
+    "note10_or_comment_before": 0.713
+   },
+   "2020_own_revisions_withdrawn": {
+    "n": 386,
+    "note10": 0.062,
+    "note10_or_comment_before": 0.073
+   },
+   "2020_all_revision_rejections": {
+    "n": 581,
+    "note10": 0.256
+   },
+   "2021_other_users_revisions": {
+    "n": 115,
+    "note10": 0.53,
+    "note10_or_comment_before": 0.748
+   },
+   "2021_own_revisions_withdrawn": {
+    "n": 356,
+    "note10": 0.188,
+    "note10_or_comment_before": 0.239
+   },
+   "2021_all_revision_rejections": {
+    "n": 471,
+    "note10": 0.272
+   }
+  }
+ },
+ "t1_scan_meta": {
+  "v2_snapshots": 109,
+  "v2_first": "v2.0.0",
+  "v2_last": "v2.7.6",
+  "v1_snapshots": 90,
+  "v1_first": "2014-08-29",
+  "v1_last": "2022-11-15",
+  "v2_head": "0488d61ae",
+  "v1_head": "3f50f4de",
+  "n_signatures": 572
+ },
+ "github_requests": {
+  "cache_entries": 1556,
+  "note": "every API call is cached once; cache entries = requests made (t4 + t4b), well under 2,000"
+ }
+}

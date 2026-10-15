@@ -1,0 +1,239 @@
+{
+ "go": {
+  "branch_protection_current": {
+   "protected": true,
+   "required_checks": {
+    "enforcement_level": "non_admins",
+    "contexts": [
+     "ontology_qc"
+    ],
+    "checks": [
+     {
+      "context": "ontology_qc",
+      "app_id": null
+     }
+    ]
+   },
+   "protection_history_visible": false,
+   "protection_endpoint_status": 403,
+   "rulesets": 0
+  },
+  "travis_yml": {
+   "first_commit": "2017-01-06",
+   "deleted": "2021-04-13",
+   "n_commits": 28
+  },
+  "qc_workflow_first": "2020-12-01",
+  "workflow_commits": 141,
+  "workflow_files_now": [
+   "ai-agent.yml",
+   "asserted_owl_diff.yml",
+   "claude-code-review.yml",
+   "copilot-setup-steps.yml",
+   "deploy-gh-site.yml",
+   "design-patterns.yml",
+   "new_pr.yml",
+   "qc.yml",
+   "refresh-gorel.yml",
+   "refresh-reactome-xrefs.yml",
+   "refresh-rhea-rdf.yml",
+   "refresh-rhea-relationships.yml",
+   "refresh_obsolete_ec_file.yml",
+   "relation-diff.yml",
+   "update-diff-status.yml",
+   "update_ph_7_3.yml",
+   "update_reaction_participants.yml",
+   "update_taxon_constraints.yml",
+   "yaml-schema-checks.yml"
+  ],
+  "workflow_files_added": {
+   "qc.yml": "2020-12-01",
+   "inference_diff.yml": "2020-12-18",
+   "update_ph_7_3.yml": "2022-07-13",
+   "makefile.yml": "2022-07-15",
+   "update_taxon_constraints.yml": "2022-07-15",
+   "design-patterns.yml": "2022-07-19",
+   "new_pr.yml": "2023-01-10",
+   "update_reaction_participants.yml": "2023-06-26",
+   "relation-diff.yml": "2023-10-26",
+   "refresh_obsolete_ec_file.yml": "2024-05-01",
+   "yaml-schema-checks.yml": "2024-06-18",
+   "ai-agent.yml": "2025-05-03",
+   "copilot-setup-steps.yml": "2025-07-11",
+   "deploy-gh-site.yml": "2025-12-02",
+   "update-diff-status.yml": "2025-12-03",
+   "refresh-rhea-rdf.yml": "2026-01-28",
+   "refresh-reactome-xrefs.yml": "2026-02-11",
+   "refresh-rhea-relationships.yml": "2026-04-13",
+   "refresh-gorel.yml": "2026-05-07",
+   "claude-code-review.yml": "2026-07-27",
+   "asserted_owl_diff.yml": "2026-08-25"
+  },
+  "codeowners_commits": 0,
+  "w2_linked_units": {
+   "n": 172,
+   "with_pr": 171,
+   "direct_push": 1,
+   "merge_year_range": [
+    "2017",
+    "2026"
+   ],
+   "with_any_retained_check_data": 14,
+   "earliest_merge_with_retained_runs": "2025-08-22T00:55:18Z",
+   "qc_success_among_retained": [
+    13,
+    14
+   ]
+  },
+  "window_sample": {
+   "window_from": "2025-08-23",
+   "population_closed_in_window": 158,
+   "sampled_tickets": 90,
+   "tickets_with_term_adding_merge": 76,
+   "tickets_closed_without_linked_merge": 14,
+   "closed_as_not_planned_or_duplicate": 5,
+   "merges_via_pr": 76,
+   "direct_pushes": 0,
+   "with_qc_run": 73,
+   "with_qc_success": 73,
+   "n_after_tau": 76,
+   "F_R": 0.961,
+   "other_workflows_seen": {
+    "yaml-schema-checks.yml": 75,
+    "claude-code-review.yml": 19,
+    "qc.yml": 74,
+    "inference_diff.yml": 67,
+    "ai-agent.yml": 60,
+    "asserted_owl_diff.yml": 7
+   },
+   "qc_workflow_first": {
+    "sha": "11b66255df",
+    "status": 200,
+    "jobs": [
+     "push",
+     "pull_request",
+     "workflow_dispatch",
+     "build"
+    ],
+    "on": [
+     "# Triggers the workflow on push or pull request events but only for the master branch",
+     "push:",
+     "pull_request:"
+    ]
+   },
+   "qc_workflow_current": {
+    "sha": "7f9b1add99",
+    "status": 200,
+    "jobs": [
+     "push",
+     "pull_request",
+     "workflow_dispatch",
+     "ontology_qc"
+    ],
+    "on": [
+     "# Triggers the workflow on push or pull request events but only for the master branch",
+     "push:",
+     "pull_request:",
+     "group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}"
+    ]
+   }
+  }
+ },
+ "hpo": {
+  "branch_protection_current": {
+   "protected": false,
+   "required_checks": {
+    "enforcement_level": "off",
+    "contexts": [],
+    "checks": []
+   },
+   "protection_history_visible": false,
+   "protection_endpoint_status": 403,
+   "rulesets": 0
+  },
+  "travis_yml": {
+   "first_commit": "2015-11-10",
+   "deleted": "2021-02-08",
+   "n_commits": 60
+  },
+  "qc_workflow_first": "2021-01-28",
+  "workflow_commits": 112,
+  "workflow_files_now": [
+   "deploy.yml",
+   "docs.yml",
+   "imports.yml",
+   "ontology_diff.yml",
+   "qc.yml"
+  ],
+  "workflow_files_added": {
+   "qc.yml": "2021-01-28",
+   "deploy.yml": "2022-10-05",
+   "imports.yml": "2022-10-05",
+   "docs.yml": "2023-11-01",
+   "ontology_diff.yml": "2024-03-03",
+   "ontology_diff_2.yml": "2024-03-21",
+   "ontology_diff_old.yml": "2024-03-21"
+  },
+  "codeowners_commits": 0,
+  "w2_linked_units": {
+   "n": 37,
+   "with_pr": 2,
+   "direct_push": 35,
+   "merge_year_range": [
+    "2016",
+    "2020"
+   ],
+   "with_any_retained_check_data": 0,
+   "earliest_merge_with_retained_runs": null,
+   "qc_success_among_retained": [
+    0,
+    0
+   ]
+  },
+  "window_sample": {
+   "window_from": "2025-08-23",
+   "population_closed_in_window": 295,
+   "sampled_tickets": 90,
+   "tickets_with_term_adding_merge": 0,
+   "tickets_closed_without_linked_merge": 90,
+   "closed_as_not_planned_or_duplicate": 0,
+   "merges_via_pr": 0,
+   "direct_pushes": 0,
+   "with_qc_run": 0,
+   "with_qc_success": 0,
+   "n_after_tau": 0,
+   "F_R": null,
+   "other_workflows_seen": {},
+   "qc_workflow_first": {
+    "sha": "0ed9eb8c35",
+    "status": 200,
+    "jobs": [
+     "push",
+     "pull_request",
+     "workflow_dispatch",
+     "ontology_qc"
+    ],
+    "on": [
+     "# Triggers the workflow on push or pull request events but only for the master branch",
+     "push:",
+     "pull_request:"
+    ]
+   },
+   "qc_workflow_current": {
+    "sha": "21ef115349",
+    "status": 200,
+    "jobs": [
+     "push",
+     "pull_request",
+     "workflow_dispatch",
+     "ontology_qc"
+    ],
+    "on": [
+     "# Triggers the workflow on push or pull request events but only for the master branch",
+     "push:",
+     "pull_request:"
+    ]
+   }
+  }
+ }
+}

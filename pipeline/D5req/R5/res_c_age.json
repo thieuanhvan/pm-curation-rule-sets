@@ -1,0 +1,39 @@
+{
+ "n_pieces": 140720,
+ "items": 7108,
+ "acceptances": 897,
+ "submitters": 247,
+ "strat_submitter_point": [
+  0.649,
+  0.576,
+  0.731
+ ],
+ "strat_submitter_no_quality_covariates": [
+  0.607,
+  0.539,
+  0.684
+ ],
+ "strat_submitter_x_level": [
+  0.611,
+  0.593,
+  0.631
+ ],
+ "strat_submitter_high_quality_subset": {
+  "HR": [
+   0.656,
+   0.534,
+   0.807
+  ],
+  "events": 276,
+  "items": 1734
+ },
+ "cluster_bootstrap": {
+  "B": 1000,
+  "finite": 986,
+  "ci95": [
+   0.433,
+   0.765
+  ],
+  "median": 0.645
+ }
+}

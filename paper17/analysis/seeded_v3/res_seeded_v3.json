@@ -1,0 +1,1153 @@
+{
+ "protocol": "PROTOCOL.md (pre-registered 2026-10-15 14:04)",
+ "frozen_sha256": {
+  "t1_code_scan.py": "1515bc5eff59d6748bcfccf3dae0053e5fcbb28ed25f156a50fc4e44637b9677",
+  "t1d_extractor_v2.py": "57ffd16fafd764839c15286b93d2b9c78683a700be0194a51db2d8201ab058d7"
+ },
+ "files_planted": 49,
+ "recall_in_scope": {
+  "k": 15,
+  "n": 27,
+  "rate": 0.5555,
+  "ci95": [
+   0.3731,
+   0.7241
+  ]
+ },
+ "recall_other_layers": {
+  "k": 0,
+  "n": 14,
+  "rate": 0.0,
+  "ci95": [
+   0.0,
+   0.2153
+  ]
+ },
+ "recall_all": {
+  "k": 15,
+  "n": 41,
+  "rate": 0.3658,
+  "ci95": [
+   0.2358,
+   0.5187
+  ]
+ },
+ "recall_by_mode": {
+  "automatic": {
+   "k": 6,
+   "n": 14,
+   "rate": 0.4285,
+   "ci95": [
+    0.2138,
+    0.674
+   ]
+  },
+  "guard": {
+   "k": 8,
+   "n": 10,
+   "rate": 0.8,
+   "ci95": [
+    0.4901,
+    0.9433
+   ]
+  },
+  "permission": {
+   "k": 1,
+   "n": 3,
+   "rate": 0.3333,
+   "ci95": [
+    0.0614,
+    0.7923
+   ]
+  }
+ },
+ "recall_by_stage": {
+  "allocation": {
+   "k": 2,
+   "n": 4,
+   "rate": 0.5,
+   "ci95": [
+    0.15,
+    0.8499
+   ]
+  },
+  "decision": {
+   "k": 1,
+   "n": 2,
+   "rate": 0.5,
+   "ci95": [
+    0.0945,
+    0.9054
+   ]
+  },
+  "exit": {
+   "k": 2,
+   "n": 6,
+   "rate": 0.3333,
+   "ci95": [
+    0.0967,
+    0.7
+   ]
+  },
+  "fit": {
+   "k": 1,
+   "n": 2,
+   "rate": 0.5,
+   "ci95": [
+    0.0945,
+    0.9054
+   ]
+  },
+  "flag raising": {
+   "k": 1,
+   "n": 2,
+   "rate": 0.5,
+   "ci95": [
+    0.0945,
+    0.9054
+   ]
+  },
+  "flag resolution": {
+   "k": 4,
+   "n": 4,
+   "rate": 1.0,
+   "ci95": [
+    0.5101,
+    1.0
+   ]
+  },
+  "intake": {
+   "k": 2,
+   "n": 3,
+   "rate": 0.6666,
+   "ci95": [
+    0.2076,
+    0.9385
+   ]
+  },
+  "re-review": {
+   "k": 2,
+   "n": 3,
+   "rate": 0.6666,
+   "ci95": [
+    0.2076,
+    0.9385
+   ]
+  },
+  "selection": {
+   "k": 0,
+   "n": 1,
+   "rate": 0.0,
+   "ci95": [
+    0.0,
+    0.7934
+   ]
+  }
+ },
+ "false_positive_decoys": {
+  "k": 2,
+  "n": 15,
+  "rate": 0.1333,
+  "ci95": [
+   0.0373,
+   0.3788
+  ]
+ },
+ "stage_accuracy_detected": {
+  "k": 8,
+  "n": 15,
+  "rate": 0.5333,
+  "ci95": [
+   0.3011,
+   0.7519
+  ]
+ },
+ "unattributed_new_signatures": [
+  [
+   "ROLE",
+   "evidence_item_policy",
+   "coi:valid_coi_statement",
+   "decision",
+   "server/app/policies/evidence_item_policy.rb"
+  ],
+  [
+   "SCHED",
+   "scheduled_tasks",
+   "EscalateOverdueEvidenceReviews->EscalateOverdueEvidenceReviews",
+   "scheduled job",
+   "server/config/scheduled_tasks.yml"
+  ],
+  [
+   "AUTO",
+   "accept_revisions",
+   "status->submitted",
+   "decision",
+   "server/app/models/actions/accept_revisions.rb"
+  ],
+  [
+   "POLICY",
+   "application_policy",
+   "editor? :: signed_in? && Role.user_is_at_least_a?(user, :editor)",
+   "other",
+   "server/app/policies/application_policy.rb"
+  ],
+  [
+   "JOB",
+   "expire_stale_source_suggestions",
+   "writes_moderated_status",
+   "decision",
+   "server/app/jobs/expire_stale_source_suggestions.rb"
+  ],
+  [
+   "AUTO",
+   "expire_stale_source_suggestions",
+   "status->rejected",
+   "exit (automatic)",
+   "server/app/jobs/expire_stale_source_suggestions.rb"
+  ],
+  [
+   "SCHED",
+   "scheduled_tasks",
+   "CloseAbandonedRevisions->CloseAbandonedRevisions",
+   "scheduled job",
+   "server/config/scheduled_tasks.yml"
+  ],
+  [
+   "ROLE",
+   "application_policy",
+   "at_least:editor",
+   "other",
+   "server/app/policies/application_policy.rb"
+  ],
+  [
+   "VALID",
+   "evidence_item",
+   "validates :description, length: {",
+   "other",
+   "server/app/models/evidence_item.rb"
+  ],
+  [
+   "POLICY",
+   "application_policy",
+   "admin? :: signed_in? && Role.user_is_at_least_a?(user, :admin)",
+   "other",
+   "server/app/policies/application_policy.rb"
+  ],
+  [
+   "SCHED",
+   "scheduled_tasks",
+   "ExpireStaleSourceSuggestions->ExpireStaleSourceSuggestions",
+   "scheduled job",
+   "server/config/scheduled_tasks.yml"
+  ],
+  [
+   "POLICY",
+   "application_policy",
+   "signed_in? :: user.present?",
+   "other",
+   "server/app/policies/application_policy.rb"
+  ],
+  [
+   "POLICY",
+   "evidence_item_policy",
+   "accept? :: return false unless editor? && user.has_valid_coi_statement? return t",
+   "decision",
+   "server/app/policies/evidence_item_policy.rb"
+  ],
+  [
+   "POLICY",
+   "evidence_item_policy",
+   "withdraw? :: return false unless signed_in? record.status == \"submitted\" && reco",
+   "decision",
+   "server/app/policies/evidence_item_policy.rb"
+  ],
+  [
+   "ROLE",
+   "application_policy",
+   "at_least:admin",
+   "other",
+   "server/app/policies/application_policy.rb"
+  ]
+ ],
+ "items": [
+  {
+   "id": "zq01",
+   "path": "server/app/graphql/mutations/flag_entity.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag raising",
+   "mode": "guard",
+   "syntax": "ready? check; raise GraphQL::ExecutionError.new with extensions code",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "GUARD",
+     "flag_entity",
+     "You already have an open flag on this entity. Add a comment to the existing flag",
+     "flag raising (intake of flags)"
+    ]
+   ]
+  },
+  {
+   "id": "zq02",
+   "path": "server/app/graphql/mutations/moderate_evidence_item.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "fit",
+   "mode": "guard",
+   "syntax": "single-line raise with trailing if modifier on related Source state",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "GUARD",
+     "moderate_evidence_item",
+     "Cannot accept EID<x>: its Source is retracted or deprecated (zq02).",
+     "decision"
+    ]
+   ]
+  },
+  {
+   "id": "zq03",
+   "path": "server/app/graphql/mutations/resolve_flag.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "guard",
+   "syntax": "elsif branch in authorized? raising GraphQL::ExecutionError",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "GUARD",
+     "resolve_flag",
+     "zq03: Editors may not resolve flags raised against their own submissions.",
+     "flag resolution"
+    ]
+   ]
+  },
+  {
+   "id": "zq04",
+   "path": "server/app/graphql/mutations/suggest_evidence_item_revision.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "intake",
+   "mode": "guard",
+   "syntax": "bang helper method called from ready?, early return then raise",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "GUARD",
+     "suggest_evidence_item_revision",
+     "EID<x> has been rejected and can no longer receive revisions. Submit a new Evide",
+     "intake"
+    ]
+   ]
+  },
+  {
+   "id": "zq05",
+   "path": "server/app/graphql/mutations/moderate_assertion.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "re-review",
+   "mode": "guard",
+   "syntax": "computed boolean + unless/|| condition calling role helper on user",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "GUARD",
+     "moderate_assertion",
+     "Only administrators may revert an Assertion that has active organization approva",
+     "decision"
+    ]
+   ]
+  },
+  {
+   "id": "zq06",
+   "path": "server/app/policies/evidence_item_policy.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "decision",
+   "mode": "permission",
+   "syntax": "Pundit-style policy predicate accept?, used from ModerateEvidenceItem#authorized?",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq07",
+   "path": "server/app/policies/evidence_item_policy.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "permission",
+   "syntax": "Pundit-style policy predicate withdraw? (boolean chain)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq08",
+   "path": "server/app/policies/flag_policy.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "permission",
+   "syntax": "policy resolve? with case/when, private helper; bypasses COI check in ResolveFlag#authorized?",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "POLICY",
+     "flag_policy",
+     "resolve? :: return false unless record.state == \"open\" case when admin? true whe",
+     "flag resolution"
+    ],
+    [
+     "POLICY",
+     "flag_policy",
+     "bot_flag_resolver_zq08? :: editor? && user.organizations.any? { |o| o.name == \"C",
+     "flag resolution"
+    ]
+   ]
+  },
+  {
+   "id": "zq09",
+   "path": "server/app/models/activities/moderate_evidence_item.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "side effect in after_actions; update_all on association",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "AUTO",
+     "moderate_evidence_item",
+     "status->superseded",
+     "exit (revision, automatic)"
+    ]
+   ]
+  },
+  {
+   "id": "zq10",
+   "path": "server/app/models/activities/suggest_source.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "intake",
+   "mode": "guard",
+   "syntax": "custom error class raised in activity setup hook",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "GUARD",
+     "suggest_source",
+     "raise:DuplicateSourceSuggestionError",
+     "intake"
+    ]
+   ]
+  },
+  {
+   "id": "zq11",
+   "path": "server/app/models/activities/resolve_flag.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "automatic",
+   "syntax": "after_completed hook; update! on approvals when no open flags remain",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "AUTO",
+     "resolve_flag",
+     "status->active",
+     "flag resolution"
+    ]
+   ]
+  },
+  {
+   "id": "zq12",
+   "path": "server/app/models/actions/accept_revisions.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "re-review",
+   "mode": "automatic",
+   "syntax": "post-execute method; update_columns status back to submitted + event",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq13",
+   "path": "server/app/models/actions/submit_evidence_item.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "attribute assignment of due date at submission; ternary helper",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq14",
+   "path": "server/app/models/actions/flag_entity.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag raising",
+   "mode": "automatic",
+   "syntax": "side effect after flagging; update_column priority",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq15",
+   "path": "server/app/models/actions/update_source_suggestion_status.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "fit",
+   "mode": "guard",
+   "syntax": "errors << message; return (Transactional errors array)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq16",
+   "path": "server/app/jobs/expire_stale_source_suggestions.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "ActiveJob; find_each + with_lock + save!(validate: false)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq17",
+   "path": "server/config/scheduled_tasks.yml",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "cron schedule entry (YAML)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq18",
+   "path": "server/app/jobs/escalate_overdue_evidence_reviews.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "ActiveJob; update_columns reassigning editor and due date",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "JOB",
+     "escalate_overdue_evidence_reviews",
+     "writes_moderated_status",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq19",
+   "path": "server/config/scheduled_tasks.yml",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "cron schedule entry (YAML)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq20",
+   "path": "server/app/jobs/close_abandoned_revisions.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "ActiveJob; next-guard in find_each; update_columns",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": true,
+   "signatures": [
+    [
+     "AUTO",
+     "close_abandoned_revisions",
+     "status->superseded",
+     "exit (revision, automatic)"
+    ],
+    [
+     "JOB",
+     "close_abandoned_revisions",
+     "creates_revisions",
+     "intake"
+    ],
+    [
+     "JOB",
+     "close_abandoned_revisions",
+     "writes_moderated_status",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq21",
+   "path": "server/config/scheduled_tasks.yml",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "cron schedule entry (YAML)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq22",
+   "path": "server/app/models/evidence_item.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "selection",
+   "mode": "automatic",
+   "syntax": "ordering scope used by moderation queue (lambda scope with chained order)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq23",
+   "path": "server/app/models/evidence_item.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "intake",
+   "mode": "guard",
+   "syntax": "validates length with on: :create",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq24",
+   "path": "server/app/models/revision.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "decision",
+   "mode": "guard",
+   "syntax": "validate :method with dirty tracking (status_was)",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "VALID",
+     "revision",
+     "validate :resolved_revisions_are_final",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq25",
+   "path": "server/app/models/flag.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "guard",
+   "syntax": "conditional presence validation with if: lambda",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "VALID",
+     "flag",
+     "validates :resolving_user, presence: { message: \"must be recorded when a flag is",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq26",
+   "path": "server/app/models/source_suggestion.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "before_create callback assigning least-loaded curator",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "VALID",
+     "source_suggestion",
+     "validates_with SourceSuggestionScopeValidator, on: :create",
+     "decision"
+    ]
+   ]
+  },
+  {
+   "id": "zq27",
+   "path": "server/app/models/assertion.rb",
+   "category": "in_scope_layer",
+   "is_control": true,
+   "stage": "re-review",
+   "mode": "automatic",
+   "syntax": "after_update_commit with if: lambda on saved_change_to_*; update_all",
+   "detected": true,
+   "false_positive": null,
+   "stage_correct": false,
+   "signatures": [
+    [
+     "AUTO",
+     "assertion",
+     "status->requires_review",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq28",
+   "path": "server/app/controllers/moderation_queue_controller.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "selection",
+   "mode": "automatic",
+   "syntax": "controller private query picking next item, excluding own submissions and others' assignments",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq29",
+   "path": "server/app/controllers/concerns/requires_moderator.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "selection",
+   "mode": "guard",
+   "syntax": "controller concern before_action + custom error class + rescue_from",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq30",
+   "path": "server/app/services/evidence_review_assigner.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "service object; detect over sorted candidates, update! assignment",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq31",
+   "path": "server/app/lib/moderation/withdrawal.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "guard",
+   "syntax": "lib service; custom error class; unless policy check + second guard before update!",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq32",
+   "path": "server/app/models/concerns/moderated.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "guard",
+   "syntax": "concern before_destroy callback with throw :abort",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq33",
+   "path": "server/app/models/concerns/flaggable.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "re-review",
+   "mode": "automatic",
+   "syntax": "concern after_save callback with if: symbol; update_column",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq34",
+   "path": "server/db/migrate/20260905091500_add_flag_resolution_constraint.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "guard",
+   "syntax": "migration add_check_constraint",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq35",
+   "path": "server/db/migrate/20260905090000_add_moderation_assignment_fields.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "migration column with SQL default (due date)",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq36",
+   "path": "server/db/migrate/20260905093000_resolve_flags_on_evidence_rejection.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "flag resolution",
+   "mode": "automatic",
+   "syntax": "migration creating PL/pgSQL BEFORE UPDATE trigger",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq37",
+   "path": "server/app/validators/assertion_validator.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "fit",
+   "mode": "guard",
+   "syntax": "ActiveModel::Validator helper; errors.add on related evidence state",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq38",
+   "path": "server/app/validators/source_suggestion_scope_validator.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "intake",
+   "mode": "guard",
+   "syntax": "new custom ActiveModel::Validator, wired with validates_with ... on: :create in source_suggestion.rb",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq39",
+   "path": "server/lib/tasks/moderation.rake",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "exit",
+   "mode": "automatic",
+   "syntax": "rake task running ModerateEvidenceItem activity as bot user",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq40",
+   "path": "server/app/graphql/resolvers/top_level_evidence_items.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "selection",
+   "mode": "automatic",
+   "syntax": "SearchObject resolver option reordering queue and excluding own/flagged items",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq41",
+   "path": "server/app/models/user.rb",
+   "category": "other_layer",
+   "is_control": true,
+   "stage": "re-review",
+   "mode": "permission",
+   "syntax": "role-helper predicate on User (enum role methods), used by ModerateAssertion",
+   "detected": false,
+   "false_positive": null,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq42",
+   "path": "server/app/graphql/mutations/moderate_evidence_item.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "commented-out guard",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq43",
+   "path": "server/app/jobs/expire_stale_source_suggestions.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "log string mentioning status",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq44",
+   "path": "server/spec/models/evidence_item_moderation_spec.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "RSpec test code under spec/",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq45",
+   "path": "server/test/models/flag_resolution_test.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "Minitest test code with raise",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq46",
+   "path": "server/app/reports/pending_moderation_backlog.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "read-only report queries where(status: 'submitted')",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq47",
+   "path": "server/app/graphql/mutations/update_notification_status.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "guard on non-moderated object (notifications)",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": [
+    [
+     "GUARD",
+     "update_notification_status",
+     "zq47: At most 500 notifications can be updated in a single request.",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq48",
+   "path": "server/app/models/user.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "validation on user profile (non-moderated)",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": [
+    [
+     "VALID",
+     "user",
+     "validates :username, length: { maximum: 50, message: \"is too long (maximum is 50",
+     "other"
+    ]
+   ]
+  },
+  {
+   "id": "zq49",
+   "path": "server/app/models/actions/resolve_flag.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "dead code under if false",
+   "detected": null,
+   "false_positive": true,
+   "stage_correct": null,
+   "signatures": [
+    [
+     "AUTO",
+     "resolve_flag",
+     "status->submitted",
+     "flag resolution"
+    ]
+   ]
+  },
+  {
+   "id": "zq50",
+   "path": "server/app/graphql/mutations/approve_assertion.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "documentation string (GraphQL description heredoc)",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq51",
+   "path": "server/app/lib/moderation/status_labels.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "notification label constants mentioning statuses",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq52",
+   "path": "server/app/models/flag.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "TODO comment describing an unimplemented rule",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq53",
+   "path": "server/app/graphql/mutations/add_comment.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "guard on non-moderated object (comment body length)",
+   "detected": null,
+   "false_positive": true,
+   "stage_correct": null,
+   "signatures": [
+    [
+     "GUARD",
+     "add_comment",
+     "Comment body is too long (zq53_comment_too_long).",
+     "intake"
+    ]
+   ]
+  },
+  {
+   "id": "zq54",
+   "path": "server/app/models/actions/accept_revisions.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "dead code behind hard-coded false feature predicate",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq55",
+   "path": "server/db/migrate/20260905094500_add_status_index_to_evidence_items.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "migration adding a non-unique index (performance only)",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  },
+  {
+   "id": "zq56",
+   "path": "server/app/models/concerns/flaggable.rb",
+   "category": "decoy",
+   "is_control": false,
+   "stage": "none",
+   "mode": "none",
+   "syntax": "read-only count query",
+   "detected": null,
+   "false_positive": false,
+   "stage_correct": null,
+   "signatures": []
+  }
+ ]
+}

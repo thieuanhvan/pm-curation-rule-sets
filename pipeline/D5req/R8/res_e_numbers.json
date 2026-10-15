@@ -1,0 +1,64 @@
+{
+ "57718_documented_constant": {
+  "all_evaluable_events": 57718,
+  "FIT1_C3": 4996,
+  "SA_rev": 44762,
+  "SA_ei": 4996,
+  "RSN_rev": 2624,
+  "RSN_ei": 340
+ },
+ "table4_sum_56746": {
+  "equals_57718_minus_v2_own_pending_revision_acceptances": 56746,
+  "v2_own_pending_revision_acceptances": 972,
+  "other_gap": 0
+ },
+ "51659_latest_code": {
+  "equals_57718_minus_FIT1_minus_all_own_pending_SA_rev": 51659,
+  "own_pending_SA_rev_v1_era": 91,
+  "own_pending_SA_rev_v2_era": 972
+ },
+ "SA_rev_self_acceptances": {
+  "before_monthly_tau_2016-07-20": 284,
+  "before_commit_tau": 286,
+  "before_commit_tau_not_own_pending": 283,
+  "before_2016-02-24": 218
+ },
+ "SA_ei_self_acceptances": {
+  "before_monthly_tau_2016-07-20": 14,
+  "before_commit_tau": 14,
+  "before_commit_tau_not_own_pending": 14,
+  "before_2016-02-24": 10
+ },
+ "F_R": {
+  "monthly_tau": [
+   10,
+   44082
+  ],
+  "commit_tau": [
+   8,
+   44074
+  ]
+ },
+ "SA_rev_in_force_conformance_monthly_tau": [
+  39178,
+  39188,
+  99.974
+ ],
+ "SA_rev_in_force_conformance_commit_tau": [
+  39173,
+  39181,
+  99.98
+ ],
+ "releases_109_vs_110": {
+  "tags_total": 110,
+  "pre_release_tags_skipped": [
+   "v2.0.0-pre01"
+  ],
+  "scanned": 109,
+  "irregular_name_included": [
+   "v.2.5.3"
+  ]
+ },
+ "units_25_vs_controls_26": "25 harmonised units of the second coding = C1-C26 minus C3 (documented only, not coded) with C16+C17 as one unit (supersession), plus I3 (now absence record N5)",
+ "26.5_vs_19.5": "26.5 %: any first decision (accept or reject) within 365 days, liveness cohort Oct 2022-Oct 2025 (S2.1); 19.5 %: cumulative incidence of acceptance within one year, items submitted since 2021 (competing risks, S2.7/Table S-regime)"
+}

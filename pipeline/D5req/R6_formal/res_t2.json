@@ -1,0 +1,218 @@
+{
+ "rev_reject_by_quarter_2022_2024": {
+  "2021Q4": {
+   "n": 91,
+   "note10_all": 0.187,
+   "linked_share": 1.0,
+   "note10_linked": 0.187,
+   "self_share": 0.901
+  },
+  "2022Q1": {
+   "n": 141,
+   "note10_all": 0.461,
+   "linked_share": 1.0,
+   "note10_linked": 0.461,
+   "self_share": 0.355
+  },
+  "2022Q2": {
+   "n": 67,
+   "note10_all": 0.836,
+   "linked_share": 1.0,
+   "note10_linked": 0.836,
+   "self_share": 0.358
+  },
+  "2022Q3": {
+   "n": 82,
+   "note10_all": 0.915,
+   "linked_share": 1.0,
+   "note10_linked": 0.915,
+   "self_share": 0.366
+  },
+  "2022Q4": {
+   "n": 15,
+   "note10_all": 1.0,
+   "linked_share": 1.0,
+   "note10_linked": 1.0,
+   "self_share": 0.133
+  },
+  "2023Q1": {
+   "n": 327,
+   "note10_all": 0.997,
+   "linked_share": 1.0,
+   "note10_linked": 0.997,
+   "self_share": 0.052
+  },
+  "2023Q2": {
+   "n": 33,
+   "note10_all": 0.939,
+   "linked_share": 1.0,
+   "note10_linked": 0.939,
+   "self_share": 0.212
+  },
+  "2023Q3": {
+   "n": 77,
+   "note10_all": 0.987,
+   "linked_share": 1.0,
+   "note10_linked": 0.987,
+   "self_share": 0.169
+  },
+  "2023Q4": {
+   "n": 48,
+   "note10_all": 0.979,
+   "linked_share": 1.0,
+   "note10_linked": 0.979,
+   "self_share": 0.125
+  },
+  "2024Q1": {
+   "n": 33,
+   "note10_all": 1.0,
+   "linked_share": 1.0,
+   "note10_linked": 1.0,
+   "self_share": 0.212
+  },
+  "2024Q2": {
+   "n": 28,
+   "note10_all": 1.0,
+   "linked_share": 1.0,
+   "note10_linked": 1.0,
+   "self_share": 0.536
+  }
+ },
+ "rev_reject_post_launch": {
+  "n": 1662,
+  "without_note10": 21,
+  "without_note10_unlinked_to_activity": 0,
+  "without_note10_linked_empty_note": 13,
+  "without_note10_linked_short_note": 8,
+  "without_note10_self_withdrawal": 13,
+  "by_quarter": {
+   "2022Q2": 5,
+   "2022Q3": 7,
+   "2023Q1": 1,
+   "2023Q2": 2,
+   "2023Q3": 1,
+   "2023Q4": 1,
+   "2025Q2": 2,
+   "2025Q4": 2
+  },
+  "subject_types": {
+   "EvidenceItem": 14,
+   "GeneVariant": 2,
+   "Assertion": 2,
+   "MolecularProfile": 2,
+   "FusionVariant": 1
+  },
+  "last": "2025-12-17"
+ },
+ "rev_reject_2022Q2": {
+  "n": 57,
+  "without_note10": 5,
+  "unlinked": 0,
+  "first_week_after_launch_share_of_unnoted": 0.2,
+  "in_multi_event_activities": 0,
+  "distinct_rejectors_band": "<5"
+ },
+ "reject_revisions_activities_first": "2015-06-29",
+ "rev_reject_linked_share_pre_launch": 1.0,
+ "rev_self_accept_nonconforming": {
+  "n": 10,
+  "of_revision_acceptances": 44762,
+  "rate": 0.000223,
+  "by_platform": {
+   "v2": 8,
+   "v1": 2
+  },
+  "by_year": {
+   "2016": 2,
+   "2023": 1,
+   "2024": 4,
+   "2025": 3
+  },
+  "by_subject_type": {
+   "EvidenceItem": 6,
+   "VariantCoordinate": 2,
+   "VariantGroup": 1,
+   "GeneVariant": 1
+  },
+  "by_subject_status": {
+   "accepted": 4,
+   "no status (non-submittable entity)": 4,
+   "submitted": 2
+  },
+  "by_current_role": {
+   "ADMIN": 6,
+   "EDITOR": 4
+  },
+  "accepted_within_60s_of_suggestion": 2,
+  "distinct_users_band": ">=5"
+ },
+ "eid": {
+  "self_accept_total": 14,
+  "self_accept_after_2016-07-20": 0,
+  "rejections_after_2025-04-07": 85,
+  "without_note10": 0,
+  "unlinked": 0
+ },
+ "revision_superseded_events_by_year": {
+  "2022": 34,
+  "2023": 376,
+  "2024": 56,
+  "2025": 122,
+  "2026": 75
+ },
+ "revision_superseded_actor": {
+  "bot_or_null": 0,
+  "human_account": 663
+ },
+ "revision_superseded_same_second_as_acceptance_by_same_account": 0.998,
+ "addendum": {
+  "rev_reject_2022Q2_pre_launch_days": {
+   "n": 10,
+   "note10": 4
+  },
+  "post_launch_by_quarter_raw_length": {
+   "2022Q2": {
+    "n": 57,
+    "note_raw10": 0.912,
+    "note_null": 5
+   },
+   "2022Q3": {
+    "n": 82,
+    "note_raw10": 0.951,
+    "note_null": 4
+   },
+   "2022Q4": {
+    "n": 15,
+    "note_raw10": 1.0,
+    "note_null": 0
+   },
+   "2023Q1": {
+    "n": 327,
+    "note_raw10": 0.997,
+    "note_null": 1
+   },
+   "2023Q2": {
+    "n": 33,
+    "note_raw10": 0.97,
+    "note_null": 1
+   },
+   "2023Q3": {
+    "n": 77,
+    "note_raw10": 0.987,
+    "note_null": 1
+   },
+   "2023Q4": {
+    "n": 48,
+    "note_raw10": 0.979,
+    "note_null": 1
+   }
+  },
+  "post_launch_raw_length_ge10": 1649,
+  "post_launch_n": 1662,
+  "null_note_n": 13,
+  "null_note_before_v2.3.0": 13,
+  "null_note_with_comment_by_rejector_within_2min": 13,
+  "null_note_self_withdrawal": 9,
+  "whitespace_padded_10char_notes": 8
+ }
+}

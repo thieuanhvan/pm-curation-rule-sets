@@ -1,0 +1,3477 @@
+{
+ "t1b_agreement": {
+  "units": [
+   {
+    "unit": "account to submit",
+    "R6": [
+     "I2"
+    ],
+    "coder2": [
+     "intake_account"
+    ],
+    "pres_R6": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "intake",
+    "stage_coder2": "intake",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "revision comment>=10",
+    "R6": [
+     "I1"
+    ],
+    "coder2": [
+     "intake_rev_comment10"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "stage_R6": "intake",
+    "stage_coder2": "intake",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "acting organisation",
+    "R6": [
+     "D8"
+    ],
+    "coder2": [
+     "acting_org"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "cross-cutting",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "editor accepts EI",
+    "R6": [
+     "D1"
+    ],
+    "coder2": [
+     "dec_editor_ei"
+    ],
+    "pres_R6": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "editor accepts revision",
+    "R6": [
+     "D3"
+    ],
+    "coder2": [
+     "dec_editor_rev"
+    ],
+    "pres_R6": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "no self-acceptance EI",
+    "R6": [
+     "D2"
+    ],
+    "coder2": [
+     "dec_noself_ei"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "no self-acceptance revision",
+    "R6": [
+     "D4"
+    ],
+    "coder2": [
+     "dec_noself_rev"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "assertion accept: editor, not submitter",
+    "R6": [],
+    "coder2": [
+     "dec_assertion_editor_noself"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": null,
+    "stage_coder2": "decision",
+    "mode_R6": null,
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "COI for EI/assertion moderation",
+    "R6": [
+     "D5"
+    ],
+    "coder2": [
+     "dec_coi_ei",
+     "dec_coi_assertion_moderation"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "COI for revision/flag/source-suggestion moderation",
+    "R6": [
+     "D5",
+     "D5b"
+    ],
+    "coder2": [
+     "dec_coi_rev",
+     "source_suggestion_coi"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "reason>=10 to reject revision",
+    "R6": [
+     "D6"
+    ],
+    "coder2": [
+     "dec_reason_rev_reject"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "reason to reject EI/assertion",
+    "R6": [
+     "D7"
+    ],
+    "coder2": [
+     "dec_reason_ei_reject"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "stage_R6": "decision",
+    "stage_coder2": "decision",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "assertion approval: org approver + COI",
+    "R6": [],
+    "coder2": [
+     "approval_coi_org"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "stage_R6": null,
+    "stage_coder2": "decision",
+    "mode_R6": null,
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "fit: stale base value refuses revision acceptance (v1, force override)",
+    "R6": [],
+    "coder2": [
+     "fit_stale_revision"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     0,
+     0
+    ],
+    "stage_R6": null,
+    "stage_coder2": "fit",
+    "mode_R6": null,
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "fit: approval refused if assertion flagged/not accepted",
+    "R6": [],
+    "coder2": [
+     "fit_approval_state"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "stage_R6": null,
+    "stage_coder2": "fit",
+    "mode_R6": null,
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "account to raise flag",
+    "R6": [],
+    "coder2": [
+     "flag_raise_account"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": null,
+    "stage_coder2": "flag raising",
+    "mode_R6": null,
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "flag comment>=10",
+    "R6": [
+     "F1"
+    ],
+    "coder2": [
+     "flag_raise_comment10"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "stage_R6": "flag raising",
+    "stage_coder2": "flag raising",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "bot duplicate flags",
+    "R6": [
+     "F2"
+    ],
+    "coder2": [
+     "flag_raise_bot_dup"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "stage_R6": "flag raising",
+    "stage_coder2": "flag raising",
+    "mode_R6": "automatic",
+    "mode_coder2": "automatic"
+   },
+   {
+    "unit": "flag resolution permission (+comment v2)",
+    "R6": [
+     "R1"
+    ],
+    "coder2": [
+     "flag_resolve_perm",
+     "flag_resolve_comment10"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "flag resolution",
+    "stage_coder2": "flag resolution",
+    "mode_R6": "guard",
+    "mode_coder2": "guard"
+   },
+   {
+    "unit": "revision superseded on acceptance",
+    "R6": [
+     "X1",
+     "X2"
+    ],
+    "coder2": [
+     "exit_rev_superseded"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     1,
+     1
+    ],
+    "stage_R6": "exit",
+    "stage_coder2": "exit",
+    "mode_R6": "automatic",
+    "mode_coder2": "automatic"
+   },
+   {
+    "unit": "source suggestion auto-curated on EI submission (v1)",
+    "R6": [],
+    "coder2": [
+     "exit_source_suggestion_curated"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     0,
+     0
+    ],
+    "stage_R6": null,
+    "stage_coder2": "exit",
+    "mode_R6": null,
+    "mode_coder2": "automatic"
+   },
+   {
+    "unit": "rejected EI re-opened on revision suggestion/acceptance (v1)",
+    "R6": [],
+    "coder2": [
+     "reopen_rejected_ei"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     1,
+     1,
+     0,
+     0
+    ],
+    "stage_R6": null,
+    "stage_coder2": "re-review",
+    "mode_R6": null,
+    "mode_coder2": "automatic"
+   },
+   {
+    "unit": "assertion approvals reset to requires_review",
+    "R6": [
+     "RR1"
+    ],
+    "coder2": [
+     "rereview_assertion_approval"
+    ],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     1
+    ],
+    "stage_R6": "re-review",
+    "stage_coder2": "re-review",
+    "mode_R6": "automatic",
+    "mode_coder2": "automatic"
+   },
+   {
+    "unit": "withdrawal permission",
+    "R6": [
+     "X3"
+    ],
+    "coder2": [
+     "withdrawal_permission"
+    ],
+    "pres_R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "pres_coder2": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "stage_R6": "exit",
+    "stage_coder2": "exit",
+    "mode_R6": "permission",
+    "mode_coder2": "permission"
+   },
+   {
+    "unit": "bot preprint revisions (unreleased)",
+    "R6": [
+     "I3"
+    ],
+    "coder2": [],
+    "pres_R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "pres_coder2": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "stage_R6": "intake",
+    "stage_coder2": null,
+    "mode_R6": "automatic",
+    "mode_coder2": null
+   }
+  ],
+  "n_units": 25,
+  "n_absence_records": 5,
+  "presence_kappa_controls_only": {
+   "kappa": 0.707,
+   "p_agree": 0.85,
+   "cells": 100
+  },
+  "presence_kappa_with_absence_records": {
+   "kappa": 0.746,
+   "p_agree": 0.875,
+   "cells": 120
+  },
+  "units_matched_both": 17,
+  "stage_agreement": "16/17",
+  "mode_agreement": "17/17",
+  "presence_disagreements": [
+   {
+    "unit": "no self-acceptance EI",
+    "R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "coder2": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "unit": "no self-acceptance revision",
+    "R6": [
+     0,
+     1,
+     1,
+     1
+    ],
+    "coder2": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "unit": "assertion accept: editor, not submitter",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "unit": "assertion approval: org approver + COI",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "unit": "fit: stale base value refuses revision acceptance (v1, force override)",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "unit": "fit: approval refused if assertion flagged/not accepted",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "unit": "account to raise flag",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "unit": "source suggestion auto-curated on EI submission (v1)",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     0,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "unit": "rejected EI re-opened on revision suggestion/acceptance (v1)",
+    "R6": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "coder2": [
+     1,
+     1,
+     0,
+     0
+    ]
+   }
+  ],
+  "stage_disagreements": [
+   {
+    "unit": "acting organisation",
+    "R6": "decision",
+    "coder2": "cross-cutting"
+   }
+  ],
+  "units_only_coder2": [
+   "assertion accept: editor, not submitter",
+   "assertion approval: org approver + COI",
+   "fit: stale base value refuses revision acceptance (v1, force override)",
+   "fit: approval refused if assertion flagged/not accepted",
+   "account to raise flag",
+   "source suggestion auto-curated on EI submission (v1)",
+   "rejected EI re-opened on revision suggestion/acceptance (v1)"
+  ],
+  "units_only_R6": [
+   "bot preprint revisions (unreleased)"
+  ]
+ },
+ "t1c_release_recall": {
+  "release_notes": 110,
+  "lines_matching_keywords": 70,
+  "control_relevant_server_changes": 20,
+  "client_or_no_server_diff_excluded": [
+   "v2.0.8 show reject button for own submissions (UI)",
+   "v2.0.8 own revisions on genes/variants (no server diff in control files)",
+   "v2.7.5.2 approver/COI behaviour (no server/app diff)",
+   "v2.7.6 oncogenic assertion form validation (client)"
+  ],
+  "detected_all": [
+   9,
+   20
+  ],
+  "detected_core_moderated_objects": [
+   5,
+   8
+  ],
+  "detected_entity_level": [
+   3,
+   11
+  ],
+  "post_launch_code_controls_in_R6_table_with_release_note": "4 of 4 (F2 v2.2.29, D7 v2.5.13, RR1 v2.5.17, approval COI v2.7.2)",
+  "rows": [
+   {
+    "release": "v2.0.3",
+    "change": "RejectRevision ready? returns true (bug fix in guard control flow)",
+    "scope": "core",
+    "detected": false,
+    "note": "control-flow fix, no predicate change"
+   },
+   {
+    "release": "v2.1.1",
+    "change": "reject an evidence item without passing model validation",
+    "scope": "core",
+    "detected": false,
+    "note": "save(validate: false) not an extractor pattern"
+   },
+   {
+    "release": "v2.2.0",
+    "change": "deprecation of variants and molecular profiles (editor guard, linked-EID guard)",
+    "scope": "entity",
+    "detected": true,
+    "note": "detected, stage mapped other"
+   },
+   {
+    "release": "v2.2.1",
+    "change": "citation ID format validation",
+    "scope": "entity",
+    "detected": false,
+    "note": "source model outside file set"
+   },
+   {
+    "release": "v2.2.10",
+    "change": "duplicate-name validations on variants and molecular profiles",
+    "scope": "entity",
+    "detected": false,
+    "note": "models outside file set"
+   },
+   {
+    "release": "v2.2.12",
+    "change": "flag subject no longer validated when a flag is created",
+    "scope": "core",
+    "detected": false,
+    "note": "association option, not an extractor pattern"
+   },
+   {
+    "release": "v2.2.16",
+    "change": "some form fields no longer required",
+    "scope": "entity",
+    "detected": false,
+    "note": "revision field requirements in validators/actions"
+   },
+   {
+    "release": "v2.2.22",
+    "change": "name uniqueness validated in revision context",
+    "scope": "entity",
+    "detected": false,
+    "note": "models outside file set"
+   },
+   {
+    "release": "v2.2.29",
+    "change": "bot flags on duplicate allele-registry ids",
+    "scope": "core",
+    "detected": true,
+    "note": "detected"
+   },
+   {
+    "release": "v2.2.29",
+    "change": "deprecation of diseases and therapies",
+    "scope": "entity",
+    "detected": false,
+    "note": "admin layer / models outside file set"
+   },
+   {
+    "release": "v2.3.0",
+    "change": "deprecation of complex molecular profiles",
+    "scope": "entity",
+    "detected": true,
+    "note": "detected, stage mapped other"
+   },
+   {
+    "release": "v2.4.7",
+    "change": "open-revision check before deprecating a therapy or disease",
+    "scope": "entity",
+    "detected": false,
+    "note": "validators outside file set"
+   },
+   {
+    "release": "v2.5.13",
+    "change": "comment required to reject an evidence item or assertion",
+    "scope": "core",
+    "detected": true,
+    "note": "detected"
+   },
+   {
+    "release": "v2.5.15",
+    "change": "feature uniqueness validation in revision context",
+    "scope": "entity",
+    "detected": false,
+    "note": "feature model outside file set"
+   },
+   {
+    "release": "v2.5.17",
+    "change": "organisational endorsements (approval) with re-review trigger",
+    "scope": "core",
+    "detected": true,
+    "note": "detected"
+   },
+   {
+    "release": "v2.5.17",
+    "change": "no deprecation of variants/MPs in an open revision",
+    "scope": "entity",
+    "detected": true,
+    "note": "detected, stage mapped other"
+   },
+   {
+    "release": "v2.5.24",
+    "change": "endorsements renamed approvals",
+    "scope": "core",
+    "detected": true,
+    "note": "detected as new keys; continuity needs manual linking"
+   },
+   {
+    "release": "v2.7.0",
+    "change": "deprecation of sources",
+    "scope": "entity",
+    "detected": false,
+    "note": "admin console layer not scanned"
+   },
+   {
+    "release": "v2.7.0",
+    "change": "automated ClinVar submission of approved assertions",
+    "scope": "downstream",
+    "detected": true,
+    "note": "detected (jobs), stage mapped intake"
+   },
+   {
+    "release": "v2.7.2",
+    "change": "approval requires a valid COI statement",
+    "scope": "core",
+    "detected": true,
+    "note": "detected"
+   }
+  ]
+ },
+ "t1d_extractor_v2": {
+  "seeded_v2_extractor": {
+   "SEED1": [
+    [
+     "POLICY",
+     "evidence_item_policy",
+     "accept? :: Role.user_is_at_least_a?(user, :editor) && record.submitter",
+     "decision"
+    ]
+   ],
+   "SEED2": [
+    [
+     "GUARD",
+     "moderate_evidence_item",
+     "SEED2 Evidence Item has a pending revision.",
+     "decision"
+    ]
+   ],
+   "SEED3": [
+    [
+     "VALID",
+     "evidence_item",
+     "validate :seed3_no_acceptance_without_two_sources, if: -> { status == ",
+     "other"
+    ]
+   ],
+   "SEED4": [
+    [
+     "SCHED",
+     "scheduled_tasks",
+     "Seed4ExpireStaleEvidence->Seed4ExpireStaleEvidence",
+     "scheduled job"
+    ],
+    [
+     "AUTO",
+     "seed4_expire_stale_evidence",
+     "status->rejected",
+     "exit (automatic)"
+    ]
+   ],
+   "SEED5": [
+    [
+     "GUARD",
+     "moderate_evidence_item",
+     "SEED5 Evidence Item is flagged.",
+     "decision"
+    ]
+   ],
+   "DECOY1": [],
+   "DECOY2": [],
+   "DECOY3": [
+    [
+     "GUARD",
+     "update_notification_status",
+     "DECOY3 notification already read.",
+     "other"
+    ]
+   ]
+  },
+  "seeded_v2_other_new": [
+   [
+    "ROLE",
+    "evidence_item_policy",
+    "at_least:editor",
+    "decision"
+   ],
+   [
+    "JOB",
+    "seed4_expire_stale_evidence",
+    "writes_moderated_status",
+    "other"
+   ]
+  ],
+  "v1_fit_stale_guard": [
+   [
+    "GUARD",
+    "update_suggested_change_status",
+    "raise:ChangeApplicationConflictError",
+    "decision",
+    [
+     "v1@2016-06",
+     "v1@2020-06"
+    ]
+   ]
+  ],
+  "v1_reentry_auto": [
+   [
+    "AUTO",
+    "evidence_item",
+    "status->submitted",
+    "re-entry (automatic)",
+    [
+     "v1@2016-06",
+     "v1@2020-06"
+    ]
+   ]
+  ]
+ },
+ "t1d_seeded": {
+  "new_signatures_total": 10,
+  "removed_signatures_total": 0,
+  "planted": {
+   "SEED1 policy method (Pundit accept?, age < 730 d)": {
+    "extracted": true,
+    "signatures": [
+     [
+      "POLICY",
+      "evidence_item_policy",
+      "accept? :: Role.user_is_at_least_a?(user, :editor) && record.submitter != user &",
+      "decision"
+     ]
+    ]
+   },
+   "SEED2 mutation guard, double quotes (pending revision blocks acceptance)": {
+    "extracted": true,
+    "signatures": [
+     [
+      "GUARD",
+      "moderate_evidence_item",
+      "SEED2 Evidence Item has a pending revision.",
+      "decision"
+     ]
+    ]
+   },
+   "SEED3 model validation, custom-method style (validate :m)": {
+    "extracted": false,
+    "signatures": []
+   },
+   "SEED4 scheduled job writing evidence-item status (stale exit)": {
+    "extracted": true,
+    "signatures": [
+     [
+      "SCHED",
+      "scheduled_tasks",
+      "Seed4ExpireStaleEvidence->Seed4ExpireStaleEvidence",
+      "scheduled job"
+     ],
+     [
+      "AUTO",
+      "seed4_expire_stale_evidence",
+      "status->rejected",
+      "other"
+     ]
+    ]
+   },
+   "SEED5 guard, ExecutionError.new with single quotes": {
+    "extracted": false,
+    "signatures": []
+   },
+   "DECOY1 commented-out guard": {
+    "extracted": true,
+    "signatures": [
+     [
+      "GUARD",
+      "moderate_evidence_item",
+      "DECOY1 retired check kept as a comment",
+      "decision"
+     ]
+    ]
+   },
+   "DECOY2 log string resembling a status assignment": {
+    "extracted": true,
+    "signatures": [
+     [
+      "AUTO",
+      "notify_subscribers",
+      "status->accepted",
+      "other"
+     ]
+    ]
+   },
+   "DECOY3 guard on a non-moderated object (notification)": {
+    "extracted": true,
+    "signatures": [
+     [
+      "GUARD",
+      "update_notification_status",
+      "DECOY3 notification already read.",
+      "other"
+     ]
+    ]
+   }
+  },
+  "unexplained_new": [
+   [
+    "JOB",
+    "seed4_expire_stale_evidence",
+    "writes_moderated_status",
+    "other"
+   ],
+   [
+    "AUTO",
+    "seed4_expire_stale_evidence",
+    "status->submitted",
+    "other"
+   ],
+   [
+    "ROLE",
+    "evidence_item_policy",
+    "at_least:editor",
+    "decision"
+   ]
+  ]
+ },
+ "t2_t3": {
+  "n_evaluable_events": {
+   "SA_ei": 4996,
+   "FIT1": 4996,
+   "SA_rev": 44762,
+   "RSN_rev": 2624,
+   "RSN_ei": 340
+  },
+  "task2_baselines": {
+   "static_doc": {
+    "violations": 2469,
+    "false_violations_vs_R_t": 2459,
+    "missed_violations_vs_R_t": 0,
+    "false_by_control": {
+     "SA_rev": 1041,
+     "FIT1": 888,
+     "RSN_rev": 399,
+     "RSN_ei": 117,
+     "SA_ei": 14
+    },
+    "false_by_period": {
+     "2017-21": 820,
+     "2022-24": 401,
+     "2025-26": 522,
+     "<=2016": 716
+    },
+    "events_with_control_in_force": 57718,
+    "conformance": 0.9572,
+    "SA_rev_false_split": {
+     "pre_tau": 284,
+     "v2_own_pending_exception": 757
+    }
+   },
+   "static_latest_code": {
+    "violations": 821,
+    "false_violations_vs_R_t": 811,
+    "missed_violations_vs_R_t": 0,
+    "false_by_control": {
+     "RSN_rev": 399,
+     "SA_rev": 281,
+     "RSN_ei": 117,
+     "SA_ei": 14
+    },
+    "false_by_period": {
+     "2017-21": 298,
+     "2022-24": 38,
+     "<=2016": 475
+    },
+    "events_with_control_in_force": 51659,
+    "conformance": 0.9841
+   },
+   "R_t": {
+    "violations": 10,
+    "by_control": {
+     "SA_rev": 10
+    },
+    "by_year": {
+     "2016": 2,
+     "2023": 1,
+     "2024": 4,
+     "2025": 3
+    },
+    "events_with_control_in_force": 44082,
+    "F_R_evaluable": 0.99977
+   }
+  },
+  "task2_not_evaluable": {
+   "self_acceptances_2016-02-24_to_2016-07-19 (non-admins refused; role at event not public)": 70,
+   "EI decisions under COI requirement 2019-09-10..2022-04-08 (in R(t), absent from latest code; COI at event not public)": 872
+  },
+  "task1e_lag": {
+   "+0d": {
+    "v1_violations": 2,
+    "in_2016": 2,
+    "days_after_tau_of_2016_violations": [
+     0,
+     0
+    ]
+   },
+   "+14d": {
+    "v1_violations": 0,
+    "in_2016": 0,
+    "days_after_tau_of_2016_violations": []
+   },
+   "+30d": {
+    "v1_violations": 0,
+    "in_2016": 0,
+    "days_after_tau_of_2016_violations": []
+   },
+   "2016_violations_hours_after_commit_313586fa": [
+    -0.08,
+    -0.08
+   ]
+  },
+  "task3_enactment": {
+   "SA_rev": {
+    "in_force_n": 39188,
+    "in_force_conforming": [
+     0.9997,
+     0.9995,
+     0.9999
+    ],
+    "not_in_force_n": 5574,
+    "f_c_documented_norm": [
+     0.8132,
+     0.8028,
+     0.8233
+    ],
+    "f_c_by_year": {
+     "2015": [
+      0.8807,
+      0.8623,
+      0.8969,
+      1349
+     ],
+     "2016": [
+      0.9622,
+      0.9551,
+      0.9682,
+      3253
+     ],
+     "2022": [
+      0.2245,
+      0.1302,
+      0.3588,
+      49
+     ],
+     "2023": [
+      0.4468,
+      0.3846,
+      0.5107,
+      235
+     ],
+     "2024": [
+      0.0752,
+      0.0414,
+      0.1329,
+      133
+     ],
+     "2025": [
+      0.1453,
+      0.1059,
+      0.1962,
+      234
+     ],
+     "2026": [
+      0.1713,
+      0.1341,
+      0.2164,
+      321
+     ]
+    },
+    "f_c_pre_tau_2015_to_2016-07-19": [
+     0.9383,
+     0.931,
+     0.9449,
+     4602
+    ],
+    "v2_own_pending_exception_events": 972,
+    "v2_own_pending_exception_self_accept_share": 0.7788
+   },
+   "SA_ei": {
+    "in_force_n": 3640,
+    "in_force_conforming": [
+     1.0,
+     0.9989,
+     1.0
+    ],
+    "not_in_force_n": 1356,
+    "f_c_documented_norm": [
+     0.9897,
+     0.9827,
+     0.9938
+    ],
+    "f_c_by_year": {
+     "2015": [
+      0.9884,
+      0.9762,
+      0.9944,
+      603
+     ],
+     "2016": [
+      0.9907,
+      0.9809,
+      0.9955,
+      753
+     ]
+    }
+   },
+   "RSN_rev": {
+    "in_force_n": 1180,
+    "in_force_conforming": [
+     1.0,
+     0.9968,
+     1.0
+    ],
+    "not_in_force_n": 1444,
+    "f_c_documented_norm": [
+     0.7237,
+     0.7,
+     0.7461
+    ],
+    "f_c_by_year": {
+     "2015": [
+      0.6412,
+      0.5561,
+      0.7183,
+      131
+     ],
+     "2016": [
+      0.6723,
+      0.622,
+      0.7189,
+      357
+     ],
+     "2017": [
+      0.9121,
+      0.8725,
+      0.9402,
+      273
+     ],
+     "2018": [
+      0.7019,
+      0.6272,
+      0.7671,
+      161
+     ],
+     "2019": [
+      0.6286,
+      0.5331,
+      0.7149,
+      105
+     ],
+     "2020": [
+      0.6751,
+      0.6069,
+      0.7366,
+      197
+     ],
+     "2021": [
+      0.7154,
+      0.6301,
+      0.7877,
+      123
+     ],
+     "2022": [
+      0.7423,
+      0.6472,
+      0.8189,
+      97
+     ]
+    }
+   },
+   "RSN_ei": {
+    "in_force_n": 74,
+    "in_force_conforming": [
+     1.0,
+     0.9506,
+     1.0
+    ],
+    "not_in_force_n": 266,
+    "f_c_documented_norm": [
+     0.5602,
+     0.5001,
+     0.6185
+    ],
+    "f_c_by_year": {
+     "2016": [
+      0.5625,
+      0.3933,
+      0.7183,
+      32
+     ],
+     "2017": [
+      0.3788,
+      0.2715,
+      0.4994,
+      66
+     ],
+     "2018": [
+      0.4242,
+      0.2724,
+      0.5919,
+      33
+     ],
+     "2020": [
+      0.7674,
+      0.6226,
+      0.8685,
+      43
+     ],
+     "2021": [
+      0.6279,
+      0.4786,
+      0.7562,
+      43
+     ],
+     "2023": [
+      0.6957,
+      0.4913,
+      0.844,
+      23
+     ]
+    }
+   },
+   "FIT1": {
+    "in_force_n": 0,
+    "in_force_conforming": null,
+    "not_in_force_n": 4996,
+    "f_c_documented_norm": [
+     0.8223,
+     0.8114,
+     0.8326
+    ],
+    "f_c_by_year": {
+     "2015": [
+      0.9718,
+      0.9553,
+      0.9823,
+      603
+     ],
+     "2016": [
+      0.7749,
+      0.7478,
+      0.8,
+      982
+     ],
+     "2017": [
+      0.6658,
+      0.6319,
+      0.6981,
+      778
+     ],
+     "2018": [
+      0.8197,
+      0.788,
+      0.8476,
+      638
+     ],
+     "2019": [
+      0.861,
+      0.8169,
+      0.8959,
+      295
+     ],
+     "2020": [
+      0.874,
+      0.8374,
+      0.9034,
+      389
+     ],
+     "2021": [
+      0.7233,
+      0.6585,
+      0.7799,
+      206
+     ],
+     "2022": [
+      0.9148,
+      0.8642,
+      0.9477,
+      176
+     ],
+     "2023": [
+      0.8325,
+      0.7751,
+      0.8776,
+      203
+     ],
+     "2024": [
+      0.8982,
+      0.8519,
+      0.9312,
+      226
+     ],
+     "2025": [
+      0.9067,
+      0.8684,
+      0.9346,
+      300
+     ],
+     "2026": [
+      0.86,
+      0.8051,
+      0.9013,
+      200
+     ]
+    }
+   }
+  },
+  "task3_not_evaluable": [
+   "D1/D3 editor role at event (only current role is public)",
+   "D5/D5b COI statement valid at event",
+   "D8 acting organisation membership at event",
+   "R1 flag resolver role (flagger part only)",
+   "I1/F1 comment at suggestion/flag (stored in activity notes, not in the cached public event log)",
+   "automatic controls X2, F2, RR1 (performed by the system; conformance true by construction)"
+  ]
+ },
+ "t4_graded_kappa": {
+  "ei_queue_R6": [
+   {
+    "from": "2015Q1",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2016Q3",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q1",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q3",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.6,
+     "weighted": 0.6,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2020Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2022Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.6,
+     "weighted": 0.6,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2025Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    }
+   }
+  ],
+  "all_objects_R6": [
+   {
+    "from": "2015Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.222,
+     "weighted": 0.222,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2015Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.222,
+     "weighted": 0.222,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2016Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.222,
+     "weighted": 0.222,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2016Q3",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.444,
+     "weighted": 0.444,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2017Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.444,
+     "weighted": 0.444,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.444,
+     "weighted": 0.444,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.167,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q3",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.556,
+     "weighted": 0.556,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.167,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2020Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.667,
+     "weighted": 0.667,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.167,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2022Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.778,
+     "weighted": 0.778,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.333,
+     "weighted": 0.5,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2023Q4",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.778,
+     "weighted": 0.778,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.333,
+     "weighted": 0.5,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2025Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.889,
+     "weighted": 0.889,
+     "n_controls": 9
+    },
+    "flag raising": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.333,
+     "weighted": 0.5,
+     "n_controls": 3
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   }
+  ],
+  "ei_queue_R6_plus_coder2": [
+   {
+    "from": "2015Q1",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2016Q1",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2016Q3",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q1",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2019Q3",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.6,
+     "weighted": 0.6,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2020Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2022Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.6,
+     "weighted": 0.6,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   },
+   {
+    "from": "2025Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 5
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.5,
+     "n_controls": 1
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    }
+   }
+  ],
+  "all_objects_R6_plus_coder2": [
+   {
+    "from": "2015Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2015Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.25,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2016Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.2,
+     "weighted": 0.2,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2016Q3",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2016Q4",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.25,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2017Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.4,
+     "weighted": 0.4,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.25,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2017Q4",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.25,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2019Q1",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2019Q3",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.6,
+     "weighted": 0.6,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2020Q2",
+    "intake": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.7,
+     "weighted": 0.7,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2022Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 0.667,
+     "weighted": 0.667,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2023Q4",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.8,
+     "weighted": 0.8,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.0,
+     "weighted": 0.0,
+     "n_controls": 2
+    }
+   },
+   {
+    "from": "2025Q2",
+    "intake": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 2
+    },
+    "fit": {
+     "share": 0.333,
+     "weighted": 0.333,
+     "n_controls": 3
+    },
+    "decision": {
+     "share": 0.9,
+     "weighted": 0.9,
+     "n_controls": 10
+    },
+    "flag raising": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 3
+    },
+    "flag resolution": {
+     "share": 1.0,
+     "weighted": 1.0,
+     "n_controls": 1
+    },
+    "exit": {
+     "share": 0.25,
+     "weighted": 0.375,
+     "n_controls": 4
+    },
+    "re-review": {
+     "share": 0.5,
+     "weighted": 0.5,
+     "n_controls": 2
+    }
+   }
+  ],
+  "coi_removal_ei_decision": {
+   "2022Q1": [
+    0.8,
+    0.8
+   ],
+   "2022Q2": [
+    0.6,
+    0.6
+   ],
+   "n_controls": 5
+  }
+ },
+ "t5_go_hpo": {
+  "go_merged_prs_since_2025-06": 1307,
+  "with_check_runs_fetched": 515,
+  "fetched_window": [
+   "2026-04-02",
+   "2026-10-07"
+  ],
+  "qc_outcome_counts": {
+   "success": 515
+  },
+  "by_month": {
+   "2026-04": {
+    "n": 110,
+    "success": 110,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-05": {
+    "n": 84,
+    "success": 84,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-06": {
+    "n": 76,
+    "success": 76,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-07": {
+    "n": 58,
+    "success": 58,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-08": {
+    "n": 104,
+    "success": 104,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-09": {
+    "n": 67,
+    "success": 67,
+    "missing": 0,
+    "failure_or_pending": 0
+   },
+   "2026-10": {
+    "n": 16,
+    "success": 16,
+    "missing": 0,
+    "failure_or_pending": 0
+   }
+  },
+  "last_merge_without_passing_qc": null,
+  "first_fetched_merge_with_check_runs_present": "2026-04-02",
+  "merges_without_any_check_run_record": 0,
+  "bad_by_author_association": {},
+  "hpo": {
+   "commits_touching_hp-edit.owl_since_2025-08": 211,
+   "sample": 35,
+   "patch_available": 30,
+   "with_added_class_declaration": 17,
+   "with_added_term_tracker_item": 7,
+   "class_adding_with_tracker_issue_ref": 7,
+   "commit_message_has_issue_ref": 1
+  }
+ },
+ "t6_its": {
+  "window": [
+   "2022-05",
+   "2026-09"
+  ],
+  "T0": "2025-04",
+  "months_treated": 52,
+  "outcome": "rejection share of decisions on other users items (monthly, binomial GLM, logit link)",
+  "ITS_treated": {
+   "intercept": {
+    "coef_logit": -2.3598,
+    "ci95": [
+     -3.5194,
+     -1.2003
+    ],
+    "p_HAC": 0.0001
+   },
+   "pre_trend_per_month": {
+    "coef_logit": -0.0266,
+    "ci95": [
+     -0.078,
+     0.0249
+    ],
+    "p_HAC": 0.3114
+   },
+   "level_change": {
+    "coef_logit": 1.3722,
+    "ci95": [
+     -0.6827,
+     3.4271
+    ],
+    "p_HAC": 0.1906
+   },
+   "slope_change_per_month": {
+    "coef_logit": 0.0416,
+    "ci95": [
+     -0.1166,
+     0.1998
+    ],
+    "p_HAC": 0.6063
+   }
+  },
+  "comparative_ITS": {
+   "treated_intercept": {
+    "coef_logit": 0.0045,
+    "ci95": [
+     -1.3335,
+     1.3426
+    ],
+    "p_HAC": 0.9947
+   },
+   "treated_pre_trend_per_month": {
+    "coef_logit": -0.0299,
+    "ci95": [
+     -0.0973,
+     0.0374
+    ],
+    "p_HAC": 0.3833
+   },
+   "treated_level_change": {
+    "coef_logit": 0.9738,
+    "ci95": [
+     -1.3668,
+     3.3143
+    ],
+    "p_HAC": 0.4148
+   },
+   "treated_slope_change_per_month": {
+    "coef_logit": 0.0813,
+    "ci95": [
+     -0.0914,
+     0.2539
+    ],
+    "p_HAC": 0.3562
+   }
+  },
+  "pre_treatment_placebos_level_change": {
+   "treated_ITS": {
+    "observed": 1.3722,
+    "n_placebos": 23,
+    "placebo_range": [
+     -2.963,
+     1.1886
+    ],
+    "p_placebo_two_sided": 0.304
+   },
+   "comparative_ITS": {
+    "observed": 0.9738,
+    "n_placebos": 23,
+    "placebo_range": [
+     -3.3474,
+     3.3121
+    ],
+    "p_placebo_two_sided": 0.435
+   }
+  },
+  "treated_post_mean_observed_vs_counterfactual": [
+   0.1431,
+   0.0291
+  ],
+  "intensity_ratio": {
+   "intensity_2016_18": 2.06,
+   "intensity_2023_26": 0.604,
+   "fold": 3.411,
+   "wild_cluster_bootstrap_webb_95": [
+    1.99,
+    5.82
+   ],
+   "pairs_cluster_bootstrap_95": [
+    1.7,
+    6.19
+   ],
+   "clusters_band": "20-49",
+   "share_of_both_periods_days_from_top_cluster_band": "not reported (individual)"
+  }
+ },
+ "t7_numbers": {
+  "ei_rejections_after_2025-04-07": {
+   "all": 85,
+   "by_submitter_withdrawal": 11,
+   "of_other_users_items": 74,
+   "with_note_or_comment_all": null
+  },
+  "ei_rejections_2025-04-01_to_06": {
+   "all": 0,
+   "of_other_users_items": 0
+  },
+  "arrivals_log_ratio_of_pooled_means": {
+   "estimate": 0.209,
+   "placebo_95": [
+    -0.026,
+    0.398
+   ],
+   "p": 0.654
+  },
+  "arrivals_mean_of_monthly_log_ratios": {
+   "estimate": 0.367,
+   "placebo_95": [
+    0.038,
+    0.573
+   ],
+   "p": 0.577
+  },
+  "wikidata_from2016_kinds": {
+   "done": 11229,
+   "notdone": 2186,
+   "withdrawn": 534,
+   "other:done": 16,
+   "pending": 45,
+   "other:rP11770": 1
+  },
+  "S14_within90": {
+   "observed": 0.2368,
+   "pred_mean_and_range_over_40_reps": [
+    0.2333,
+    0.1976,
+    0.2627
+   ],
+   "abs_error_of_mean_prediction": 0.0035,
+   "mean_abs_error_over_reps": [
+    0.0136,
+    0.0015,
+    0.0392
+   ],
+   "naive_persistence_abs_error": 0.1086
+  },
+  "v1_snapshots": {
+   "months_with_commit": 90,
+   "calendar_months_2014-08_to_2022-11": 100
+  }
+ },
+ "coder2_controls": {
+  "coder": "second coder: automated-assisted (LLM agent reading git objects with git show/grep at four snapshots), NOT a human; coded before opening the R6 control table (res_t1_controls.json, t1_controls.py); the R6 notes.md summary had been read",
+  "snapshots": {
+   "S1": "v1@2016-06 (civic-server 79df8f24)",
+   "S2": "v1@2020-06 (civic-server bb87f18e)",
+   "S3": "v2.0.0 (2022-04-08)",
+   "S4": "v2.7.6 (2026-08-27)"
+  },
+  "controls": [
+   {
+    "id": "intake_account",
+    "stage": "intake",
+    "mode": "guard",
+    "pred": "submit/suggest requires signed-in user (policy create?/propose? = user; v2 authenticated mutation)",
+    "S": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "intake_rev_comment10",
+    "stage": "intake",
+    "mode": "guard",
+    "pred": "suggest revision: comment required, length >= 10",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "acting_org",
+    "stage": "cross-cutting (attribution)",
+    "mode": "guard",
+    "pred": "acting organisation in user's organisations (belongs_to_action_organization? / validate_user_acting_as_org)",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_editor_ei",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "accept/reject other's evidence item requires role >= editor",
+    "S": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_editor_rev",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "accept revision requires role >= editor (v2: except submitter of a still-submitted subject)",
+    "S": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_noself_ei",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "submitter may not accept own evidence item (S1: admins exempt, from 2016-02-24; full from 2016-07-20)",
+    "S": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_noself_rev",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "revisor may not accept own revision (S1: admins exempt; v2: bypassed when acceptor is submitter of still-submitted subject)",
+    "S": [
+     1,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_assertion_editor_noself",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "assertion accept: editor and not submitter",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_coi_ei",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "valid (unexpired) COI statement to moderate evidence items",
+    "S": [
+     0,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "id": "dec_coi_assertion_moderation",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "valid COI to accept/reject assertions",
+    "S": [
+     0,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "id": "dec_coi_rev",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "valid COI to accept/reject revisions",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_reason_rev_reject",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "reject revision: comment required, length >= 10",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "dec_reason_ei_reject",
+    "stage": "decision",
+    "mode": "guard",
+    "pred": "reject/revert evidence item or assertion: comment required",
+    "S": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "approval_coi_org",
+    "stage": "decision (assertion approval)",
+    "mode": "guard",
+    "pred": "approve assertion: can_approve_for_org and valid COI",
+    "S": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "fit_stale_revision",
+    "stage": "fit",
+    "mode": "guard",
+    "pred": "accept revision refused if field's current value != revision's base value (ChangeApplicationConflictError), unless editor passes force",
+    "S": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "id": "fit_approval_state",
+    "stage": "fit",
+    "mode": "guard",
+    "pred": "approve assertion refused if assertion not accepted or flagged",
+    "S": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "flag_raise_account",
+    "stage": "flag raising",
+    "mode": "guard",
+    "pred": "flagging requires signed-in user (+ acting org)",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "flag_raise_comment10",
+    "stage": "flag raising",
+    "mode": "guard",
+    "pred": "flag: comment required, length >= 10",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "flag_raise_bot_dup",
+    "stage": "flag raising",
+    "mode": "automatic",
+    "pred": "scheduled job FlagDuplicateAlleleRegistryIds raises flags as bot",
+    "S": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "flag_resolve_perm",
+    "stage": "flag resolution",
+    "mode": "guard",
+    "pred": "resolve flag: flagger, or editor with valid COI",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "flag_resolve_comment10",
+    "stage": "flag resolution",
+    "mode": "guard",
+    "pred": "resolve flag: comment required, length >= 10",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "exit_rev_superseded",
+    "stage": "exit",
+    "mode": "automatic",
+    "pred": "on acceptance, pending revisions of same subject+field set superseded (v1 job 2015-04..2016-02; v2 action)",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "exit_source_suggestion_curated",
+    "stage": "exit",
+    "mode": "automatic",
+    "pred": "submitting an evidence item from a source suggestion sets the suggestion to curated (v1 2016-10 onward)",
+    "S": [
+     0,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "id": "reopen_rejected_ei",
+    "stage": "re-review",
+    "mode": "automatic",
+    "pred": "rejected evidence item set back to submitted when a revision is suggested or accepted (v1 2016-01)",
+    "S": [
+     1,
+     1,
+     0,
+     0
+    ]
+   },
+   {
+    "id": "rereview_assertion_approval",
+    "stage": "re-review",
+    "mode": "automatic",
+    "pred": "active approvals set requires_review on flag, revision acceptance, EI/assertion moderation",
+    "S": [
+     0,
+     0,
+     0,
+     1
+    ]
+   },
+   {
+    "id": "source_suggestion_coi",
+    "stage": "decision (source suggestion)",
+    "mode": "guard",
+    "pred": "editor changing source-suggestion status needs valid COI",
+    "S": [
+     0,
+     0,
+     1,
+     1
+    ]
+   },
+   {
+    "id": "withdrawal_permission",
+    "stage": "exit",
+    "mode": "permission",
+    "pred": "submitter may reject (withdraw) own evidence item",
+    "S": [
+     0,
+     1,
+     1,
+     1
+    ]
+   }
+  ],
+  "absences": [
+   {
+    "stage": "selection",
+    "note": "no code orders or restricts which pending item an editor may decide (all snapshots)"
+   },
+   {
+    "stage": "allocation",
+    "note": "no owner/assignee/due-date field or rule on evidence items or revisions (all snapshots)"
+   },
+   {
+    "stage": "exit (evidence items, stale)",
+    "note": "no job or scheduled task writes evidence-item status (all snapshots)"
+   },
+   {
+    "stage": "fit (EI acceptance with pending revision)",
+    "note": "no guard refusing EI acceptance while a revision is pending (all snapshots)"
+   }
+  ]
+ },
+ "github_requests": {
+  "releases": 2,
+  "t5_run1_network_error": 68,
+  "t5_run2_stopped": 464,
+  "t5_run3": 38,
+  "total": 572
+ }
+}

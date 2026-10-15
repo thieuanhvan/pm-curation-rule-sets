@@ -1,0 +1,725 @@
+{
+ "hpo_2014": {
+  "n": 3616,
+  "outcomes": {
+   "closed": 3515,
+   "pending": 100,
+   "rej": 1
+  },
+  "span": [
+   "2014-05-09",
+   "2026-10-07"
+  ],
+  "ttd_all": {
+   "n": 3516,
+   "med": 53.5,
+   "p90": 225.5,
+   "le1d": 0.061
+  },
+  "ttd_acc": {
+   "n": 0,
+   "med": null,
+   "p90": null,
+   "le1d": null
+  },
+  "ttd_rej": {
+   "n": 1,
+   "med": 0,
+   "p90": 0,
+   "le1d": 1
+  },
+  "backlog": {
+   "n": 100,
+   "share": 0.028,
+   "ageMed": 121.7,
+   "ageP90": 635.6,
+   "gt2y": 0.09
+  },
+  "hazard": {
+   "age30d": {
+    "n": 2144,
+    "p": 0.926
+   },
+   "age365d": {
+    "n": 167,
+    "p": 0.832
+   },
+   "age1460d": {
+    "n": 0,
+    "p": null
+   }
+  },
+  "by_year": {
+   "2014": {
+    "sub": 1,
+    "dec": 0,
+    "pendingEnd": 1,
+    "pendMedAgeD": 236.4
+   },
+   "2015": {
+    "sub": 44,
+    "dec": 22,
+    "pendingEnd": 23,
+    "pendMedAgeD": 4.6
+   },
+   "2016": {
+    "sub": 127,
+    "dec": 130,
+    "pendingEnd": 20,
+    "pendMedAgeD": 21
+   },
+   "2017": {
+    "sub": 787,
+    "dec": 777,
+    "pendingEnd": 30,
+    "pendMedAgeD": 97.1
+   },
+   "2018": {
+    "sub": 35,
+    "dec": 56,
+    "pendingEnd": 9,
+    "pendMedAgeD": 108.4
+   },
+   "2019": {
+    "sub": 196,
+    "dec": 192,
+    "pendingEnd": 13,
+    "pendMedAgeD": 279
+   },
+   "2020": {
+    "sub": 530,
+    "dec": 370,
+    "pendingEnd": 173,
+    "pendMedAgeD": 156.2
+   },
+   "2021": {
+    "sub": 445,
+    "dec": 530,
+    "pendingEnd": 88,
+    "pendMedAgeD": 137.5
+   },
+   "2022": {
+    "sub": 288,
+    "dec": 312,
+    "pendingEnd": 64,
+    "pendMedAgeD": 118.5
+   },
+   "2023": {
+    "sub": 394,
+    "dec": 220,
+    "pendingEnd": 238,
+    "pendMedAgeD": 150.2
+   },
+   "2024": {
+    "sub": 383,
+    "dec": 468,
+    "pendingEnd": 153,
+    "pendMedAgeD": 111.4
+   },
+   "2025": {
+    "sub": 197,
+    "dec": 308,
+    "pendingEnd": 42,
+    "pendMedAgeD": 323.2
+   },
+   "2026": {
+    "sub": 189,
+    "dec": 131,
+    "pendingEnd": 100,
+    "pendMedAgeD": 121.7
+   }
+  },
+  "flow_2023_25": {
+   "subPerY": 324.7,
+   "decPerY": 332
+  },
+  "little_impliedWaitY": 0.3,
+  "fourEyes": {
+   "n": 2694,
+   "other": 0.7294,
+   "self": 729
+  },
+  "deciders": {
+   "n": 5,
+   "gini": 0.777,
+   "top5share": 1,
+   "lt10": 2
+  },
+  "position": {
+   "all": {
+    "mean": 0.354,
+    "newest10": 0.281
+   },
+   "by_year": {
+    "2015": {
+     "n": 22,
+     "mean": 0.35,
+     "newest10": 0.32,
+     "Lmed": 12
+    },
+    "2016": {
+     "n": 130,
+     "mean": 0.43,
+     "newest10": 0.19,
+     "Lmed": 24
+    },
+    "2017": {
+     "n": 777,
+     "mean": 0.41,
+     "newest10": 0.23,
+     "Lmed": 338
+    },
+    "2018": {
+     "n": 56,
+     "mean": 0.44,
+     "newest10": 0.23,
+     "Lmed": 17
+    },
+    "2019": {
+     "n": 192,
+     "mean": 0.29,
+     "newest10": 0.27,
+     "Lmed": 49
+    },
+    "2020": {
+     "n": 370,
+     "mean": 0.27,
+     "newest10": 0.35,
+     "Lmed": 176
+    },
+    "2021": {
+     "n": 530,
+     "mean": 0.31,
+     "newest10": 0.35,
+     "Lmed": 69
+    },
+    "2022": {
+     "n": 312,
+     "mean": 0.29,
+     "newest10": 0.34,
+     "Lmed": 64
+    },
+    "2023": {
+     "n": 220,
+     "mean": 0.15,
+     "newest10": 0.58,
+     "Lmed": 239
+    },
+    "2024": {
+     "n": 468,
+     "mean": 0.5,
+     "newest10": 0.15,
+     "Lmed": 156
+    },
+    "2025": {
+     "n": 308,
+     "mean": 0.41,
+     "newest10": 0.15,
+     "Lmed": 140
+    },
+    "2026": {
+     "n": 131,
+     "mean": 0.26,
+     "newest10": 0.31,
+     "Lmed": 67
+    }
+   }
+  },
+  "decider_source": "first assignee as proxy (validated on 28-issue closed_by sample)",
+  "assignedClosedShare": 0.766,
+  "submitterAssoc": {
+   "NONE": 2613,
+   "CONTRIBUTOR": 744,
+   "MEMBER": 231,
+   "COLLABORATOR": 28
+  }
+ },
+ "go_2008": {
+  "n": 5381,
+  "outcomes": {
+   "closed": 5251,
+   "rej": 54,
+   "pending": 76
+  },
+  "span": [
+   "2008-01-02",
+   "2026-10-07"
+  ],
+  "ttd_all": {
+   "n": 5305,
+   "med": 1251.5,
+   "p90": 2386.3,
+   "le1d": 0.062
+  },
+  "ttd_acc": {
+   "n": 0,
+   "med": null,
+   "p90": null,
+   "le1d": null
+  },
+  "ttd_rej": {
+   "n": 54,
+   "med": 7,
+   "p90": 1415,
+   "le1d": 0.037
+  },
+  "backlog": {
+   "n": 76,
+   "share": 0.014,
+   "ageMed": 902.5,
+   "ageP90": 2415.1,
+   "gt2y": 0.553
+  },
+  "hazard": {
+   "age30d": {
+    "n": 4178,
+    "p": 0.14
+   },
+   "age365d": {
+    "n": 3604,
+    "p": 0.095
+   },
+   "age1460d": {
+    "n": 2355,
+    "p": 0.283
+   }
+  },
+  "by_year": {
+   "2008": {
+    "sub": 512,
+    "dec": 0,
+    "pendingEnd": 512,
+    "pendMedAgeD": 155.1
+   },
+   "2009": {
+    "sub": 693,
+    "dec": 0,
+    "pendingEnd": 1205,
+    "pendMedAgeD": 321.1
+   },
+   "2010": {
+    "sub": 686,
+    "dec": 0,
+    "pendingEnd": 1891,
+    "pendMedAgeD": 501.1
+   },
+   "2011": {
+    "sub": 614,
+    "dec": 0,
+    "pendingEnd": 2505,
+    "pendMedAgeD": 717
+   },
+   "2012": {
+    "sub": 476,
+    "dec": 0,
+    "pendingEnd": 2981,
+    "pendMedAgeD": 985.3
+   },
+   "2013": {
+    "sub": 239,
+    "dec": 0,
+    "pendingEnd": 3220,
+    "pendMedAgeD": 1272.5
+   },
+   "2014": {
+    "sub": 268,
+    "dec": 0,
+    "pendingEnd": 3488,
+    "pendMedAgeD": 1569.1
+   },
+   "2015": {
+    "sub": 132,
+    "dec": 3540,
+    "pendingEnd": 80,
+    "pendMedAgeD": 468.7
+   },
+   "2016": {
+    "sub": 109,
+    "dec": 132,
+    "pendingEnd": 57,
+    "pendMedAgeD": 758.3
+   },
+   "2017": {
+    "sub": 153,
+    "dec": 146,
+    "pendingEnd": 64,
+    "pendMedAgeD": 272.4
+   },
+   "2018": {
+    "sub": 181,
+    "dec": 139,
+    "pendingEnd": 106,
+    "pendMedAgeD": 256.5
+   },
+   "2019": {
+    "sub": 117,
+    "dec": 108,
+    "pendingEnd": 115,
+    "pendMedAgeD": 482.2
+   },
+   "2020": {
+    "sub": 174,
+    "dec": 178,
+    "pendingEnd": 111,
+    "pendMedAgeD": 594.3
+   },
+   "2021": {
+    "sub": 177,
+    "dec": 184,
+    "pendingEnd": 104,
+    "pendMedAgeD": 461.3
+   },
+   "2022": {
+    "sub": 191,
+    "dec": 206,
+    "pendingEnd": 89,
+    "pendMedAgeD": 593.2
+   },
+   "2023": {
+    "sub": 181,
+    "dec": 194,
+    "pendingEnd": 76,
+    "pendMedAgeD": 641.3
+   },
+   "2024": {
+    "sub": 202,
+    "dec": 179,
+    "pendingEnd": 99,
+    "pendMedAgeD": 328.4
+   },
+   "2025": {
+    "sub": 162,
+    "dec": 176,
+    "pendingEnd": 85,
+    "pendMedAgeD": 680.3
+   },
+   "2026": {
+    "sub": 114,
+    "dec": 123,
+    "pendingEnd": 76,
+    "pendMedAgeD": 902.5
+   }
+  },
+  "flow_2023_25": {
+   "subPerY": 181.7,
+   "decPerY": 183
+  },
+  "little_impliedWaitY": 0.42,
+  "fourEyes": {
+   "n": 5170,
+   "other": 0.4896,
+   "self": 2639
+  },
+  "deciders": {
+   "n": 26,
+   "gini": 0.786,
+   "top5share": 0.81,
+   "lt10": 10
+  },
+  "position": {
+   "all": {
+    "mean": 0.694,
+    "newest10": 0.225
+   },
+   "by_year": {
+    "2015": {
+     "n": 3540,
+     "mean": 0.96,
+     "newest10": 0.01,
+     "Lmed": 1809
+    },
+    "2016": {
+     "n": 132,
+     "mean": 0.21,
+     "newest10": 0.57,
+     "Lmed": 73
+    },
+    "2017": {
+     "n": 146,
+     "mean": 0.15,
+     "newest10": 0.71,
+     "Lmed": 64
+    },
+    "2018": {
+     "n": 139,
+     "mean": 0.2,
+     "newest10": 0.64,
+     "Lmed": 80
+    },
+    "2019": {
+     "n": 108,
+     "mean": 0.11,
+     "newest10": 0.69,
+     "Lmed": 101
+    },
+    "2020": {
+     "n": 178,
+     "mean": 0.17,
+     "newest10": 0.62,
+     "Lmed": 128
+    },
+    "2021": {
+     "n": 184,
+     "mean": 0.19,
+     "newest10": 0.64,
+     "Lmed": 104
+    },
+    "2022": {
+     "n": 206,
+     "mean": 0.15,
+     "newest10": 0.68,
+     "Lmed": 111
+    },
+    "2023": {
+     "n": 194,
+     "mean": 0.15,
+     "newest10": 0.69,
+     "Lmed": 83
+    },
+    "2024": {
+     "n": 179,
+     "mean": 0.13,
+     "newest10": 0.68,
+     "Lmed": 90
+    },
+    "2025": {
+     "n": 176,
+     "mean": 0.13,
+     "newest10": 0.64,
+     "Lmed": 86
+    },
+    "2026": {
+     "n": 123,
+     "mean": 0.1,
+     "newest10": 0.73,
+     "Lmed": 80
+    }
+   }
+  },
+  "decider_source": "first assignee as proxy (validated on 28-issue closed_by sample)",
+  "assignedClosedShare": 0.975,
+  "submitterAssoc": {
+   "NONE": 4530,
+   "CONTRIBUTOR": 688,
+   "COLLABORATOR": 160,
+   "MEMBER": 3
+  }
+ },
+ "go_2016": {
+  "n": 1761,
+  "outcomes": {
+   "closed": 1632,
+   "rej": 53,
+   "pending": 76
+  },
+  "span": [
+   "2016-01-04",
+   "2026-10-07"
+  ],
+  "ttd_all": {
+   "n": 1685,
+   "med": 7.6,
+   "p90": 396.4,
+   "le1d": 0.192
+  },
+  "ttd_acc": {
+   "n": 0,
+   "med": null,
+   "p90": null,
+   "le1d": null
+  },
+  "ttd_rej": {
+   "n": 53,
+   "med": 7,
+   "p90": 1050,
+   "le1d": 0.038
+  },
+  "backlog": {
+   "n": 76,
+   "share": 0.043,
+   "ageMed": 902.5,
+   "ageP90": 2415.1,
+   "gt2y": 0.553
+  },
+  "hazard": {
+   "age30d": {
+    "n": 587,
+    "p": 0.617
+   },
+   "age365d": {
+    "n": 220,
+    "p": 0.405
+   },
+   "age1460d": {
+    "n": 36,
+    "p": 0.222
+   }
+  },
+  "by_year": {
+   "2016": {
+    "sub": 109,
+    "dec": 93,
+    "pendingEnd": 16,
+    "pendMedAgeD": 130.7
+   },
+   "2017": {
+    "sub": 153,
+    "dec": 125,
+    "pendingEnd": 44,
+    "pendMedAgeD": 186.3
+   },
+   "2018": {
+    "sub": 181,
+    "dec": 132,
+    "pendingEnd": 93,
+    "pendMedAgeD": 215.2
+   },
+   "2019": {
+    "sub": 117,
+    "dec": 107,
+    "pendingEnd": 103,
+    "pendMedAgeD": 419.6
+   },
+   "2020": {
+    "sub": 174,
+    "dec": 175,
+    "pendingEnd": 102,
+    "pendMedAgeD": 454.4
+   },
+   "2021": {
+    "sub": 177,
+    "dec": 182,
+    "pendingEnd": 97,
+    "pendMedAgeD": 410.2
+   },
+   "2022": {
+    "sub": 191,
+    "dec": 205,
+    "pendingEnd": 83,
+    "pendMedAgeD": 555.5
+   },
+   "2023": {
+    "sub": 181,
+    "dec": 190,
+    "pendingEnd": 74,
+    "pendMedAgeD": 614.2
+   },
+   "2024": {
+    "sub": 202,
+    "dec": 178,
+    "pendingEnd": 98,
+    "pendMedAgeD": 315.5
+   },
+   "2025": {
+    "sub": 162,
+    "dec": 176,
+    "pendingEnd": 84,
+    "pendMedAgeD": 666.4
+   },
+   "2026": {
+    "sub": 114,
+    "dec": 122,
+    "pendingEnd": 76,
+    "pendMedAgeD": 902.5
+   }
+  },
+  "flow_2023_25": {
+   "subPerY": 181.7,
+   "decPerY": 181.3
+  },
+  "little_impliedWaitY": 0.42,
+  "fourEyes": {
+   "n": 1557,
+   "other": 0.8189,
+   "self": 282
+  },
+  "deciders": {
+   "n": 24,
+   "gini": 0.734,
+   "top5share": 0.774,
+   "lt10": 10
+  },
+  "position": {
+   "all": {
+    "mean": 0.154,
+    "newest10": 0.649
+   },
+   "by_year": {
+    "2016": {
+     "n": 93,
+     "mean": 0.24,
+     "newest10": 0.45,
+     "Lmed": 20
+    },
+    "2017": {
+     "n": 125,
+     "mean": 0.13,
+     "newest10": 0.63,
+     "Lmed": 33
+    },
+    "2018": {
+     "n": 132,
+     "mean": 0.2,
+     "newest10": 0.64,
+     "Lmed": 66
+    },
+    "2019": {
+     "n": 107,
+     "mean": 0.12,
+     "newest10": 0.69,
+     "Lmed": 89
+    },
+    "2020": {
+     "n": 175,
+     "mean": 0.17,
+     "newest10": 0.61,
+     "Lmed": 117
+    },
+    "2021": {
+     "n": 182,
+     "mean": 0.2,
+     "newest10": 0.63,
+     "Lmed": 97
+    },
+    "2022": {
+     "n": 205,
+     "mean": 0.15,
+     "newest10": 0.68,
+     "Lmed": 104
+    },
+    "2023": {
+     "n": 190,
+     "mean": 0.14,
+     "newest10": 0.68,
+     "Lmed": 80
+    },
+    "2024": {
+     "n": 178,
+     "mean": 0.13,
+     "newest10": 0.68,
+     "Lmed": 89
+    },
+    "2025": {
+     "n": 176,
+     "mean": 0.13,
+     "newest10": 0.64,
+     "Lmed": 85
+    },
+    "2026": {
+     "n": 122,
+     "mean": 0.09,
+     "newest10": 0.74,
+     "Lmed": 79
+    }
+   }
+  },
+  "decider_source": "first assignee as proxy (validated on 28-issue closed_by sample)",
+  "assignedClosedShare": 0.924,
+  "submitterAssoc": {
+   "NONE": 917,
+   "COLLABORATOR": 154,
+   "CONTRIBUTOR": 687,
+   "MEMBER": 3
+  }
+ }
+}

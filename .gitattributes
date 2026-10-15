@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+# frozen extractor files: keep the exact bytes hashed in seeded_v3/PROTOCOL.md
+pipeline/D5req/R6_formal/t1_code_scan.py -text
+pipeline/D5req/R7/t1d_extractor_v2.py -text

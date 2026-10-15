@@ -1,0 +1,740 @@
+{
+ "E2025": {
+  "treated": "EID",
+  "control": "REV",
+  "T0": "2025-04",
+  "window": [
+   "2023-09",
+   "2026-09"
+  ],
+  "dropped": [],
+  "outcomes": {
+   "rejection_share_other_users": {
+    "treated_pre": {
+     "k": 17,
+     "n": 366,
+     "share": 0.0464
+    },
+    "treated_post": {
+     "k": 74,
+     "n": 515,
+     "share": 0.1437
+    },
+    "control_pre": {
+     "k": 261,
+     "n": 3211,
+     "share": 0.0813
+    },
+    "control_post": {
+     "k": 442,
+     "n": 4463,
+     "share": 0.099
+    },
+    "did_raw": 0.0796,
+    "randomisation_band_95": [
+     0.0124,
+     0.1438
+    ],
+    "randomisation_p_two_sided": 0.346,
+    "n_break_dates": 26
+   },
+   "withdrawal_share_terminal": {
+    "treated_pre": {
+     "k": 14,
+     "n": 380,
+     "share": 0.0368
+    },
+    "treated_post": {
+     "k": 11,
+     "n": 526,
+     "share": 0.0209
+    },
+    "control_pre": {
+     "k": 84,
+     "n": 3680,
+     "share": 0.0228
+    },
+    "control_post": {
+     "k": 311,
+     "n": 5320,
+     "share": 0.0585
+    },
+    "did_raw": -0.0516,
+    "randomisation_band_95": [
+     -0.0505,
+     -0.0153
+    ],
+    "randomisation_p_two_sided": 0.038,
+    "n_break_dates": 26
+   }
+  },
+  "quarterly": [
+   {
+    "series": "treated",
+    "rel_q": -7,
+    "rej": 0,
+    "n_other_dec": 21,
+    "rej_share": 0.0,
+    "arrivals_per_month": 7.0,
+    "months": 1
+   },
+   {
+    "series": "treated",
+    "rel_q": -6,
+    "rej": 10,
+    "n_other_dec": 56,
+    "rej_share": 0.1786,
+    "arrivals_per_month": 30.33,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": -5,
+    "rej": 0,
+    "n_other_dec": 69,
+    "rej_share": 0.0,
+    "arrivals_per_month": 61.0,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": -4,
+    "rej": 1,
+    "n_other_dec": 63,
+    "rej_share": 0.0159,
+    "arrivals_per_month": 90.0,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": -3,
+    "rej": 3,
+    "n_other_dec": 58,
+    "rej_share": 0.0517,
+    "arrivals_per_month": 31.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": -2,
+    "rej": 0,
+    "n_other_dec": 40,
+    "rej_share": 0.0,
+    "arrivals_per_month": 30.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": -1,
+    "rej": 3,
+    "n_other_dec": 59,
+    "rej_share": 0.0508,
+    "arrivals_per_month": 38.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 0,
+    "rej": 23,
+    "n_other_dec": 84,
+    "rej_share": 0.2738,
+    "arrivals_per_month": 32.33,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 1,
+    "rej": 5,
+    "n_other_dec": 40,
+    "rej_share": 0.125,
+    "arrivals_per_month": 16.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 2,
+    "rej": 3,
+    "n_other_dec": 151,
+    "rej_share": 0.0199,
+    "arrivals_per_month": 76.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 3,
+    "rej": 8,
+    "n_other_dec": 79,
+    "rej_share": 0.1013,
+    "arrivals_per_month": 44.0,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 4,
+    "rej": 25,
+    "n_other_dec": 80,
+    "rej_share": 0.3125,
+    "arrivals_per_month": 48.67,
+    "months": 3
+   },
+   {
+    "series": "treated",
+    "rel_q": 5,
+    "rej": 10,
+    "n_other_dec": 81,
+    "rej_share": 0.1235,
+    "arrivals_per_month": 105.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -7,
+    "rej": 34,
+    "n_other_dec": 185,
+    "rej_share": 0.1838,
+    "arrivals_per_month": 109.0,
+    "months": 1
+   },
+   {
+    "series": "control",
+    "rel_q": -6,
+    "rej": 42,
+    "n_other_dec": 703,
+    "rej_share": 0.0597,
+    "arrivals_per_month": 230.33,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -5,
+    "rej": 26,
+    "n_other_dec": 596,
+    "rej_share": 0.0436,
+    "arrivals_per_month": 457.33,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -4,
+    "rej": 13,
+    "n_other_dec": 297,
+    "rej_share": 0.0438,
+    "arrivals_per_month": 438.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -3,
+    "rej": 26,
+    "n_other_dec": 731,
+    "rej_share": 0.0356,
+    "arrivals_per_month": 291.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -2,
+    "rej": 37,
+    "n_other_dec": 270,
+    "rej_share": 0.137,
+    "arrivals_per_month": 136.33,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": -1,
+    "rej": 83,
+    "n_other_dec": 429,
+    "rej_share": 0.1935,
+    "arrivals_per_month": 201.67,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 0,
+    "rej": 90,
+    "n_other_dec": 602,
+    "rej_share": 0.1495,
+    "arrivals_per_month": 248.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 1,
+    "rej": 10,
+    "n_other_dec": 245,
+    "rej_share": 0.0408,
+    "arrivals_per_month": 148.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 2,
+    "rej": 89,
+    "n_other_dec": 771,
+    "rej_share": 0.1154,
+    "arrivals_per_month": 322.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 3,
+    "rej": 82,
+    "n_other_dec": 503,
+    "rej_share": 0.163,
+    "arrivals_per_month": 105.0,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 4,
+    "rej": 92,
+    "n_other_dec": 1294,
+    "rej_share": 0.0711,
+    "arrivals_per_month": 486.33,
+    "months": 3
+   },
+   {
+    "series": "control",
+    "rel_q": 5,
+    "rej": 79,
+    "n_other_dec": 1048,
+    "rej_share": 0.0754,
+    "arrivals_per_month": 341.67,
+    "months": 3
+   }
+  ],
+  "event_study_quarters": [
+   {
+    "rel_q": -7,
+    "diff_vs_ref": -0.0412,
+    "band_95": [
+     -0.1457,
+     0.0887
+    ]
+   },
+   {
+    "rel_q": -6,
+    "diff_vs_ref": 0.2615,
+    "band_95": [
+     -0.1661,
+     0.2186
+    ]
+   },
+   {
+    "rel_q": -5,
+    "diff_vs_ref": 0.099,
+    "band_95": [
+     -0.1994,
+     0.3182
+    ]
+   },
+   {
+    "rel_q": -4,
+    "diff_vs_ref": 0.1147,
+    "band_95": [
+     -0.2609,
+     0.2124
+    ]
+   },
+   {
+    "rel_q": -3,
+    "diff_vs_ref": 0.1588,
+    "band_95": [
+     -0.3278,
+     0.2384
+    ]
+   },
+   {
+    "rel_q": -2,
+    "diff_vs_ref": 0.0056,
+    "band_95": [
+     -0.2719,
+     0.2316
+    ]
+   },
+   {
+    "rel_q": -1,
+    "diff_vs_ref": 0.0,
+    "band_95": [
+     0.0,
+     0.0
+    ]
+   },
+   {
+    "rel_q": 0,
+    "diff_vs_ref": 0.2669,
+    "band_95": [
+     -0.2316,
+     0.2888
+    ]
+   },
+   {
+    "rel_q": 1,
+    "diff_vs_ref": 0.2268,
+    "band_95": [
+     -0.2373,
+     0.4059
+    ]
+   },
+   {
+    "rel_q": 2,
+    "diff_vs_ref": 0.0471,
+    "band_95": [
+     -0.2345,
+     0.3428
+    ]
+   },
+   {
+    "rel_q": 3,
+    "diff_vs_ref": 0.0809,
+    "band_95": [
+     -0.1781,
+     0.213
+    ]
+   },
+   {
+    "rel_q": 4,
+    "diff_vs_ref": 0.384,
+    "band_95": [
+     -0.1957,
+     0.3657
+    ]
+   },
+   {
+    "rel_q": 5,
+    "diff_vs_ref": 0.1907,
+    "band_95": [
+     -0.0876,
+     0.5366
+    ]
+   }
+  ]
+ },
+ "E2025_control_revisions_on_evidence_items": {
+  "outcomes": {
+   "rejection_share_other_users": {
+    "treated_pre": {
+     "k": 17,
+     "n": 366,
+     "share": 0.0464
+    },
+    "treated_post": {
+     "k": 74,
+     "n": 515,
+     "share": 0.1437
+    },
+    "control_pre": {
+     "k": 224,
+     "n": 1724,
+     "share": 0.1299
+    },
+    "control_post": {
+     "k": 317,
+     "n": 1884,
+     "share": 0.1683
+    },
+    "did_raw": 0.0589,
+    "randomisation_band_95": [
+     -0.0142,
+     0.1825
+    ],
+    "randomisation_p_two_sided": 0.346,
+    "n_break_dates": 26
+   },
+   "withdrawal_share_terminal": {
+    "treated_pre": {
+     "k": 14,
+     "n": 380,
+     "share": 0.0368
+    },
+    "treated_post": {
+     "k": 11,
+     "n": 526,
+     "share": 0.0209
+    },
+    "control_pre": {
+     "k": 59,
+     "n": 2063,
+     "share": 0.0286
+    },
+    "control_post": {
+     "k": 230,
+     "n": 2461,
+     "share": 0.0935
+    },
+    "did_raw": -0.0808,
+    "randomisation_band_95": [
+     -0.0924,
+     -0.0397
+    ],
+    "randomisation_p_two_sided": 0.423,
+    "n_break_dates": 26
+   }
+  }
+ },
+ "E2022": {
+  "outcomes": {
+   "rejection_share_other_users": {
+    "treated_pre": {
+     "k": 492,
+     "n": 11986,
+     "share": 0.041
+    },
+    "treated_post": {
+     "k": 619,
+     "n": 7605,
+     "share": 0.0814
+    },
+    "control_pre": {
+     "k": 96,
+     "n": 972,
+     "share": 0.0988
+    },
+    "control_post": {
+     "k": 31,
+     "n": 539,
+     "share": 0.0575
+    },
+    "did_raw": 0.0817,
+    "randomisation_band_95": [
+     -0.0466,
+     0.0827
+    ],
+    "randomisation_p_two_sided": 0.068,
+    "n_break_dates": 59
+   },
+   "withdrawal_share_terminal": {
+    "treated_pre": {
+     "k": 882,
+     "n": 12868,
+     "share": 0.0685
+    },
+    "treated_post": {
+     "k": 134,
+     "n": 8497,
+     "share": 0.0158
+    },
+    "control_pre": {
+     "k": 91,
+     "n": 1063,
+     "share": 0.0856
+    },
+    "control_post": {
+     "k": 42,
+     "n": 581,
+     "share": 0.0723
+    },
+    "did_raw": -0.0394,
+    "randomisation_band_95": [
+     -0.0476,
+     0.0515
+    ],
+    "randomisation_p_two_sided": 0.203,
+    "n_break_dates": 59
+   }
+  }
+ },
+ "E2025_intake_falsification": {
+  "arrivals_per_month": {
+   "treated_pre": 44.95,
+   "treated_post": 53.89,
+   "control_pre": 282.79,
+   "control_post": 275.17
+  },
+  "did_log_ratio": 0.367,
+  "randomisation_band_95": [
+   0.038,
+   0.573
+  ],
+  "randomisation_p_two_sided": 0.577,
+  "monthly": [
+   {
+    "m": "2023-09",
+    "eid": 7,
+    "control_revisions": 109
+   },
+   {
+    "m": "2023-10",
+    "eid": 31,
+    "control_revisions": 260
+   },
+   {
+    "m": "2023-11",
+    "eid": 37,
+    "control_revisions": 66
+   },
+   {
+    "m": "2023-12",
+    "eid": 23,
+    "control_revisions": 365
+   },
+   {
+    "m": "2024-01",
+    "eid": 84,
+    "control_revisions": 253
+   },
+   {
+    "m": "2024-02",
+    "eid": 32,
+    "control_revisions": 694
+   },
+   {
+    "m": "2024-03",
+    "eid": 67,
+    "control_revisions": 425
+   },
+   {
+    "m": "2024-04",
+    "eid": 235,
+    "control_revisions": 537
+   },
+   {
+    "m": "2024-05",
+    "eid": 21,
+    "control_revisions": 375
+   },
+   {
+    "m": "2024-06",
+    "eid": 14,
+    "control_revisions": 402
+   },
+   {
+    "m": "2024-07",
+    "eid": 15,
+    "control_revisions": 290
+   },
+   {
+    "m": "2024-08",
+    "eid": 62,
+    "control_revisions": 343
+   },
+   {
+    "m": "2024-09",
+    "eid": 18,
+    "control_revisions": 240
+   },
+   {
+    "m": "2024-10",
+    "eid": 38,
+    "control_revisions": 167
+   },
+   {
+    "m": "2024-11",
+    "eid": 32,
+    "control_revisions": 171
+   },
+   {
+    "m": "2024-12",
+    "eid": 22,
+    "control_revisions": 71
+   },
+   {
+    "m": "2025-01",
+    "eid": 19,
+    "control_revisions": 120
+   },
+   {
+    "m": "2025-02",
+    "eid": 54,
+    "control_revisions": 342
+   },
+   {
+    "m": "2025-03",
+    "eid": 43,
+    "control_revisions": 143
+   },
+   {
+    "m": "2025-04",
+    "eid": 19,
+    "control_revisions": 38
+   },
+   {
+    "m": "2025-05",
+    "eid": 25,
+    "control_revisions": 191
+   },
+   {
+    "m": "2025-06",
+    "eid": 53,
+    "control_revisions": 515
+   },
+   {
+    "m": "2025-07",
+    "eid": 17,
+    "control_revisions": 271
+   },
+   {
+    "m": "2025-08",
+    "eid": 13,
+    "control_revisions": 79
+   },
+   {
+    "m": "2025-09",
+    "eid": 20,
+    "control_revisions": 94
+   },
+   {
+    "m": "2025-10",
+    "eid": 71,
+    "control_revisions": 203
+   },
+   {
+    "m": "2025-11",
+    "eid": 103,
+    "control_revisions": 328
+   },
+   {
+    "m": "2025-12",
+    "eid": 56,
+    "control_revisions": 435
+   },
+   {
+    "m": "2026-01",
+    "eid": 60,
+    "control_revisions": 118
+   },
+   {
+    "m": "2026-02",
+    "eid": 32,
+    "control_revisions": 126
+   },
+   {
+    "m": "2026-03",
+    "eid": 40,
+    "control_revisions": 71
+   },
+   {
+    "m": "2026-04",
+    "eid": 72,
+    "control_revisions": 294
+   },
+   {
+    "m": "2026-05",
+    "eid": 11,
+    "control_revisions": 744
+   },
+   {
+    "m": "2026-06",
+    "eid": 63,
+    "control_revisions": 421
+   },
+   {
+    "m": "2026-07",
+    "eid": 63,
+    "control_revisions": 435
+   },
+   {
+    "m": "2026-08",
+    "eid": 120,
+    "control_revisions": 227
+   },
+   {
+    "m": "2026-09",
+    "eid": 132,
+    "control_revisions": 363
+   }
+  ]
+ },
+ "notes": "Pooled raw shares = sum(numerator)/sum(denominator) over months. Randomisation: same statistic at every break date with >= 6 months each side; p = share with |placebo| >= |observed|. No Newey-West."
+}

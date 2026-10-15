@@ -1,0 +1,166 @@
+{
+ "tokens_holdout": 1050,
+ "token_item_years_sum": 1816.6,
+ "arrivals": {
+  "holdout_2023-01-01_to_2026-10-07": 2328,
+  "calendar_2023_25": 1720,
+  "in_2026": 608,
+  "final_90d": 314,
+  "final_365d": 830,
+  "with_90d_followup": 2014,
+  "with_365d_followup": 1498,
+  "per_month_2026_Jan_Oct": 66.1,
+  "per_month_final_90d": 106.2
+ },
+ "bound_90d": {
+  "eligible": 2014,
+  "max_matching": 1043,
+  "share_max_matching": 0.5179,
+  "greedy_EDF_matched": 1043,
+  "share_greedy_EDF": 0.5179
+ },
+ "bound_365d": {
+  "eligible": 1498,
+  "max_matching": 1006,
+  "share_max_matching": 0.6716,
+  "greedy_EDF_matched": 1006,
+  "share_greedy_EDF": 0.6716
+ },
+ "value_uniform_by_policy": {
+  "ASIS_logit": {
+   "value_item_years": 1676.4,
+   "token_weighted_EA_share": 0.9228,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "FIFO_pool": {
+   "value_item_years": 1574.6,
+   "token_weighted_EA_share": 0.8668,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "LIFO_pool": {
+   "value_item_years": 1676.4,
+   "token_weighted_EA_share": 0.9228,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "PRIO_AB": {
+   "value_item_years": 1677.6,
+   "token_weighted_EA_share": 0.9235,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "PANEL25_old365_quality": {
+   "value_item_years": 1678.7,
+   "token_weighted_EA_share": 0.9241,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "PANEL10_old365_oldest": {
+   "value_item_years": 1662.5,
+   "token_weighted_EA_share": 0.9152,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "SKILL_pool_affinity": {
+   "value_item_years": 1667.3,
+   "token_weighted_EA_share": 0.9178,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "OWN_strict": {
+   "value_item_years": 1591.3,
+   "token_weighted_EA_share": 0.876,
+   "endPending": 6706,
+   "lostByExpiry": 0,
+   "idleTokens": 19,
+   "resub": 0
+  },
+  "OWN_steal": {
+   "value_item_years": 1616.0,
+   "token_weighted_EA_share": 0.8896,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "EXP365_grandf": {
+   "value_item_years": 1680.1,
+   "token_weighted_EA_share": 0.9249,
+   "endPending": 5791.35,
+   "lostByExpiry": 890.75,
+   "idleTokens": 0,
+   "resub": 288.05
+  },
+  "EXP365_purge": {
+   "value_item_years": 1680.4,
+   "token_weighted_EA_share": 0.925,
+   "endPending": 559.6,
+   "lostByExpiry": 6124,
+   "idleTokens": 0,
+   "resub": 2007.15
+  },
+  "EDF365_noexpiry": {
+   "value_item_years": 1662.1,
+   "token_weighted_EA_share": 0.9149,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "EDF90_noexpiry": {
+   "value_item_years": 1682.2,
+   "token_weighted_EA_share": 0.926,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "EDF90_panel20_oldest": {
+   "value_item_years": 1663.3,
+   "token_weighted_EA_share": 0.9156,
+   "endPending": 6687,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  },
+  "SPRINT_added_2xY": {
+   "value_item_years": 2472.8,
+   "token_weighted_EA_share": 1.3612,
+   "endPending": 6207,
+   "lostByExpiry": 0,
+   "idleTokens": 0,
+   "resub": 0
+  }
+ },
+ "holdout_token_types_W3": {
+  "accept": 924,
+  "reject_by_other": 92,
+  "withdrawal_by_submitter": 35
+ },
+ "resubmissions": {
+  "max_events": 10629,
+  "policy": "EXP365_purge",
+  "r": 0.75,
+  "base_r0.25_EXP365_purge": 2007.15,
+  "base_r0.25_EXP365_grandf": 288.05,
+  "stock_at_risk": 7737,
+  "max_resub_per_item_in_code": 3,
+  "geometric_expectation_purge_r0.75_legacy_only": 9381.0
+ }
+}

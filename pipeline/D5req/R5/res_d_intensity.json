@@ -1,0 +1,261 @@
+{
+ "common_types": {
+  "active_days_2016_18": 1224,
+  "active_days_2023_26": 1710,
+  "ev_per_day_2016_18": 2.0605,
+  "ev_per_day_2023_26": 0.6041,
+  "fold": 3.411,
+  "FE_ratio": [
+   0.269,
+   0.149,
+   0.486
+  ],
+  "noFE_ratio": [
+   0.293,
+   0.167,
+   0.515
+  ],
+  "moderation_days_only_fold": 3.105,
+  "fold_CI": [
+   1.71,
+   5.95
+  ]
+ },
+ "v2_only_or_excluded": [
+  "ASSERTION_APPROVED",
+  "ASSERTION_REVERTED",
+  "COMMENT_DELETED",
+  "COMPLEX_MOLECULAR_PROFILE_CREATED",
+  "CURATED_SOURCE_SUGGESTION",
+  "DEPRECATED_FEATURE",
+  "DEPRECATED_MOLECULAR_PROFILE",
+  "DEPRECATED_VARIANT",
+  "FEATURE_CREATED",
+  "REVISION_SUPERSEDED"
+ ],
+ "all_types": {
+  "active_days_2016_18": 1224,
+  "active_days_2023_26": 1732,
+  "ev_per_day_2016_18": 2.0605,
+  "ev_per_day_2023_26": 0.5964,
+  "fold": 3.455,
+  "FE_ratio": [
+   0.265,
+   0.147,
+   0.478
+  ],
+  "noFE_ratio": [
+   0.289,
+   0.165,
+   0.508
+  ],
+  "moderation_days_only_fold": 3.118,
+  "fold_CI": [
+   1.66,
+   6.2
+  ]
+ },
+ "strict_common": {
+  "active_days_2016_18": 1200,
+  "active_days_2023_26": 1710,
+  "ev_per_day_2016_18": 2.1017,
+  "ev_per_day_2023_26": 0.6041,
+  "fold": 3.479,
+  "FE_ratio": [
+   0.265,
+   0.147,
+   0.478
+  ],
+  "noFE_ratio": [
+   0.287,
+   0.164,
+   0.505
+  ],
+  "moderation_days_only_fold": 3.105,
+  "fold_CI": [
+   1.72,
+   6.5
+  ]
+ },
+ "moderators_active_per_year": {
+  "2016": 7,
+  "2017": 10,
+  "2018": 10,
+  "2019": 15,
+  "2020": 14,
+  "2021": 15,
+  "2022": 13,
+  "2023": 12,
+  "2024": 13,
+  "2025": 14,
+  "2026": 16
+ },
+ "moderators_with_ev_decision_per_year": {
+  "2016": 6,
+  "2017": 9,
+  "2018": 9,
+  "2019": 12,
+  "2020": 12,
+  "2021": 10,
+  "2022": 10,
+  "2023": 8,
+  "2024": 8,
+  "2025": 11,
+  "2026": 11
+ },
+ "moderators_with_ge20_active_days_per_year": {
+  "2016": 6,
+  "2017": 8,
+  "2018": 5,
+  "2019": 6,
+  "2020": 8,
+  "2021": 7,
+  "2022": 7,
+  "2023": 8,
+  "2024": 8,
+  "2025": 8,
+  "2026": 7
+ },
+ "crowdout_all_types": {
+  "RR_any_ev_with_own_control": {
+   "rev_1-4": [
+    0.765,
+    0.626,
+    0.934
+   ],
+   "rev_5-19": [
+    0.883,
+    0.763,
+    1.022
+   ],
+   "rev_20+": [
+    0.879,
+    0.697,
+    1.107
+   ]
+  },
+  "RR_any_ev_without_own_control": {
+   "rev_1-4": [
+    0.747,
+    0.61,
+    0.914
+   ],
+   "rev_5-19": [
+    0.944,
+    0.812,
+    1.098
+   ],
+   "rev_20+": [
+    1.134,
+    0.817,
+    1.572
+   ]
+  },
+  "IRR_count_with_own_control": {
+   "rev_1-4": [
+    0.962,
+    0.819,
+    1.13
+   ],
+   "rev_5-19": [
+    1.072,
+    0.762,
+    1.509
+   ],
+   "rev_20+": [
+    1.164,
+    0.864,
+    1.568
+   ]
+  },
+  "IRR_count_without_own_control": {
+   "rev_1-4": [
+    0.944,
+    0.759,
+    1.173
+   ],
+   "rev_5-19": [
+    1.249,
+    0.921,
+    1.694
+   ],
+   "rev_20+": [
+    2.184,
+    1.474,
+    3.235
+   ]
+  },
+  "days": 4838
+ },
+ "crowdout_common_types": {
+  "RR_any_ev_with_own_control": {
+   "rev_1-4": [
+    0.756,
+    0.615,
+    0.928
+   ],
+   "rev_5-19": [
+    0.874,
+    0.755,
+    1.012
+   ],
+   "rev_20+": [
+    0.872,
+    0.69,
+    1.101
+   ]
+  },
+  "RR_any_ev_without_own_control": {
+   "rev_1-4": [
+    0.739,
+    0.601,
+    0.909
+   ],
+   "rev_5-19": [
+    0.934,
+    0.803,
+    1.087
+   ],
+   "rev_20+": [
+    1.123,
+    0.807,
+    1.561
+   ]
+  },
+  "IRR_count_with_own_control": {
+   "rev_1-4": [
+    0.956,
+    0.812,
+    1.126
+   ],
+   "rev_5-19": [
+    1.067,
+    0.757,
+    1.503
+   ],
+   "rev_20+": [
+    1.159,
+    0.86,
+    1.563
+   ]
+  },
+  "IRR_count_without_own_control": {
+   "rev_1-4": [
+    0.938,
+    0.753,
+    1.168
+   ],
+   "rev_5-19": [
+    1.241,
+    0.913,
+    1.688
+   ],
+   "rev_20+": [
+    2.171,
+    1.463,
+    3.221
+   ]
+  },
+  "days": 4816
+ }
+}

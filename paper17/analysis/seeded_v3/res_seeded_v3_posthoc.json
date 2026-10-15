@@ -1,0 +1,80 @@
+{
+ "note": "post hoc manual attribution; primary result is res_seeded_v3.json",
+ "recall_in_scope_posthoc": {
+  "k": 23,
+  "n": 27,
+  "rate": 0.8518,
+  "ci95": [
+   0.6752,
+   0.9408
+  ]
+ },
+ "manual_attributions": {
+  "zq06": [
+   "POLICY",
+   "evidence_item_policy",
+   "accept?"
+  ],
+  "zq07": [
+   "POLICY",
+   "evidence_item_policy",
+   "withdraw?"
+  ],
+  "zq12": [
+   "AUTO",
+   "accept_revisions",
+   "status->submitted"
+  ],
+  "zq16": [
+   "AUTO",
+   "expire_stale_source_suggestions",
+   "status->rejected"
+  ],
+  "zq17": [
+   "SCHED",
+   "scheduled_tasks",
+   "ExpireStaleSourceSuggestions"
+  ],
+  "zq19": [
+   "SCHED",
+   "scheduled_tasks",
+   "EscalateOverdueEvidenceReviews"
+  ],
+  "zq21": [
+   "SCHED",
+   "scheduled_tasks",
+   "CloseAbandonedRevisions"
+  ],
+  "zq23": [
+   "VALID",
+   "evidence_item",
+   "validates :description, length"
+  ]
+ },
+ "true_misses": [
+  {
+   "id": "zq13",
+   "stage": "allocation",
+   "mode": "automatic",
+   "syntax": "attribute assignment of due date at submission; ternary helper"
+  },
+  {
+   "id": "zq14",
+   "stage": "flag raising",
+   "mode": "automatic",
+   "syntax": "side effect after flagging; update_column priority"
+  },
+  {
+   "id": "zq15",
+   "stage": "fit",
+   "mode": "guard",
+   "syntax": "errors << message; return (Transactional errors array)"
+  },
+  {
+   "id": "zq22",
+   "stage": "selection",
+   "mode": "automatic",
+   "syntax": "ordering scope used by moderation queue (lambda scope with chained order)"
+  }
+ ]
+}

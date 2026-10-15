@@ -1,0 +1,837 @@
+{
+ "panel": {
+  "moderator_days": 4838,
+  "moderators": 31,
+  "years": [
+   2016,
+   2026
+  ],
+  "moderators_by_period": {
+   "2015-18": 11,
+   "2019-22": 22,
+   "2023-26": 20
+  },
+  "moderators_in_both_2015-18_and_2023-26": 6,
+  "moderators_in_>=2_periods": 16
+ },
+ "crowd_out_models": {
+  "M1_poisson_FEmod_FEyear_revOtherItems": {
+   "revOther_1-4": [
+    0.944,
+    0.759,
+    1.173
+   ],
+   "revOther_5-19": [
+    1.249,
+    0.921,
+    1.694
+   ],
+   "revOther_20+": [
+    2.184,
+    1.474,
+    3.235
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M2_plus_own_work_control": {
+   "revOther_1-4": [
+    0.962,
+    0.819,
+    1.13
+   ],
+   "revOther_5-19": [
+    1.072,
+    0.762,
+    1.509
+   ],
+   "revOther_20+": [
+    1.164,
+    0.864,
+    1.568
+   ],
+   "own_1-4": [
+    1.001,
+    0.66,
+    1.517
+   ],
+   "own_5-19": [
+    2.511,
+    1.374,
+    4.586
+   ],
+   "own_20+": [
+    6.204,
+    2.754,
+    13.974
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M3_negbin_FEmod_FEyear": {
+   "revOther_1-4": [
+    0.891,
+    0.715,
+    1.111
+   ],
+   "revOther_5-19": [
+    0.846,
+    0.607,
+    1.179
+   ],
+   "revOther_20+": [
+    1.02,
+    0.774,
+    1.345
+   ],
+   "own_1-4": [
+    1.145,
+    0.747,
+    1.757
+   ],
+   "own_5-19": [
+    3.095,
+    1.592,
+    6.017
+   ],
+   "own_20+": [
+    8.387,
+    3.453,
+    20.369
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724,
+   "alpha": 3.834
+  },
+  "M1b_log1p_revOther_poisson": {
+   "log1p_revOther": [
+    1.222,
+    1.122,
+    1.332
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M1c_log1p_revAll_incl_same_item_poisson": {
+   "log1p_revAll": [
+    1.445,
+    1.29,
+    1.619
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M4_any_ev_decision_RR": {
+   "revOther_1-4": [
+    0.765,
+    0.626,
+    0.934
+   ],
+   "revOther_5-19": [
+    0.883,
+    0.763,
+    1.022
+   ],
+   "revOther_20+": [
+    0.879,
+    0.697,
+    1.107
+   ],
+   "own_1-4": [
+    1.087,
+    0.826,
+    1.432
+   ],
+   "own_5-19": [
+    1.774,
+    1.131,
+    2.781
+   ],
+   "own_20+": [
+    2.26,
+    1.367,
+    3.736
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 1295
+  },
+  "M5_lag1_7_poisson": {
+   "revLag1_7_1-9": [
+    1.15,
+    0.991,
+    1.333
+   ],
+   "revLag1_7_10-49": [
+    1.127,
+    0.9,
+    1.411
+   ],
+   "revLag1_7_50+": [
+    1.361,
+    0.807,
+    2.294
+   ],
+   "revOther_1-4": [
+    0.953,
+    0.808,
+    1.124
+   ],
+   "revOther_5-19": [
+    1.039,
+    0.756,
+    1.426
+   ],
+   "revOther_20+": [
+    1.083,
+    0.781,
+    1.502
+   ],
+   "own_1-4": [
+    1.002,
+    0.65,
+    1.545
+   ],
+   "own_5-19": [
+    2.523,
+    1.357,
+    4.692
+   ],
+   "own_20+": [
+    6.204,
+    2.752,
+    13.983
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M5b_lag1_log1p": {
+   "log1p_revPrevDay": [
+    0.977,
+    0.913,
+    1.045
+   ],
+   "log1p_revLag1_7": [
+    0.946,
+    0.874,
+    1.024
+   ],
+   "log1p_revOtherToday": [
+    1.207,
+    1.09,
+    1.337
+   ],
+   "log1p_evLag1_7": [
+    1.466,
+    1.236,
+    1.739
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "M6_2023_26_only_poisson": {
+   "revOther_1-4": [
+    0.776,
+    0.599,
+    1.004
+   ],
+   "revOther_5-19": [
+    1.067,
+    0.596,
+    1.911
+   ],
+   "revOther_20+": [
+    0.579,
+    0.171,
+    1.956
+   ],
+   "own_1-4": [
+    1.005,
+    0.74,
+    1.367
+   ],
+   "own_5-19": [
+    1.921,
+    1.231,
+    2.997
+   ],
+   "own_20+": [
+    4.721,
+    1.828,
+    12.193
+   ],
+   "n_days": 1675,
+   "n_moderators": 13,
+   "events": 1033
+  },
+  "M7_weekly_poisson": {
+   "log1p_revOther_week": [
+    1.164,
+    1.048,
+    1.292
+   ],
+   "log1p_revOther_prevWeek": [
+    1.005,
+    0.934,
+    1.082
+   ],
+   "log1p_own_week": [
+    1.672,
+    1.303,
+    2.146
+   ],
+   "n_days": 2364,
+   "n_moderators": 28,
+   "events": 4724
+  }
+ },
+ "within_moderator_period_effects_IRR_vs_2015-18": {
+  "no_moderator_FE": {
+   "2019-22": [
+    0.301,
+    0.136,
+    0.668
+   ],
+   "2023-26": [
+    0.289,
+    0.165,
+    0.508
+   ],
+   "n_days": 4838,
+   "n_moderators": 31,
+   "events": 4724
+  },
+  "moderator_FE": {
+   "2019-22": [
+    0.355,
+    0.153,
+    0.823
+   ],
+   "2023-26": [
+    0.265,
+    0.147,
+    0.478
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "moderator_FE_plus_load_controls": {
+   "2019-22": [
+    0.456,
+    0.196,
+    1.062
+   ],
+   "2023-26": [
+    0.315,
+    0.161,
+    0.618
+   ],
+   "revOther_1-4": [
+    0.962,
+    0.825,
+    1.123
+   ],
+   "revOther_5-19": [
+    1.08,
+    0.75,
+    1.555
+   ],
+   "revOther_20+": [
+    1.173,
+    0.845,
+    1.628
+   ],
+   "own_1-4": [
+    0.969,
+    0.642,
+    1.464
+   ],
+   "own_5-19": [
+    2.35,
+    1.274,
+    4.335
+   ],
+   "own_20+": [
+    5.846,
+    2.431,
+    14.057
+   ],
+   "n_days": 4806,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "moderation_days_only_moderator_FE": {
+   "2019-22": [
+    0.411,
+    0.196,
+    0.861
+   ],
+   "2023-26": [
+    0.281,
+    0.162,
+    0.487
+   ],
+   "n_days": 3350,
+   "n_moderators": 28,
+   "events": 4724
+  },
+  "revision_moderation_outcome_moderator_FE": {
+   "2019-22": [
+    0.62,
+    0.337,
+    1.14
+   ],
+   "2023-26": [
+    0.624,
+    0.354,
+    1.1
+   ],
+   "n_days": 4823,
+   "n_moderators": 29,
+   "events": 45007
+  },
+  "all_moderation_actions_outcome_moderator_FE": {
+   "2019-22": [
+    0.595,
+    0.336,
+    1.055
+   ],
+   "2023-26": [
+    0.591,
+    0.351,
+    0.993
+   ],
+   "n_days": 4838,
+   "n_moderators": 31,
+   "events": 49900
+  }
+ },
+ "action_composition": {
+  "2015-18": {
+   "moderators": 11,
+   "active_days": 1224,
+   "actions_per_active_day": 26.74,
+   "pooled_share": {
+    "ev_decision": 0.077,
+    "rev_all": 0.612,
+    "assertion_moderation": 0.0,
+    "revision_suggestion": 0.181,
+    "comment": 0.09,
+    "submission": 0.017,
+    "deprecation": 0.0,
+    "other": 0.023
+   },
+   "per_active_day": {
+    "ev_decision": 2.06,
+    "rev_all": 16.355,
+    "assertion_moderation": 0.011,
+    "revision_suggestion": 4.834,
+    "comment": 2.404,
+    "submission": 0.449,
+    "deprecation": 0.0,
+    "other": 0.627
+   },
+   "mean_of_moderator_shares": {
+    "ev_decision": 0.112,
+    "rev_all": 0.51,
+    "assertion_moderation": 0.001,
+    "revision_suggestion": 0.17,
+    "comment": 0.063,
+    "submission": 0.087,
+    "deprecation": 0.0,
+    "other": 0.058
+   },
+   "moderators_ge20_actions": 10,
+   "mean_moderator_share_ev_decision_CI": [
+    0.067,
+    0.176
+   ],
+   "ev_share_of_moderation_actions_pooled": 0.112
+  },
+  "2019-22": {
+   "moderators": 22,
+   "active_days": 1882,
+   "actions_per_active_day": 15.32,
+   "pooled_share": {
+    "ev_decision": 0.041,
+    "rev_all": 0.483,
+    "assertion_moderation": 0.0,
+    "revision_suggestion": 0.287,
+    "comment": 0.089,
+    "submission": 0.035,
+    "deprecation": 0.0,
+    "other": 0.064
+   },
+   "per_active_day": {
+    "ev_decision": 0.621,
+    "rev_all": 7.402,
+    "assertion_moderation": 0.006,
+    "revision_suggestion": 4.404,
+    "comment": 1.361,
+    "submission": 0.543,
+    "deprecation": 0.0,
+    "other": 0.983
+   },
+   "mean_of_moderator_shares": {
+    "ev_decision": 0.072,
+    "rev_all": 0.372,
+    "assertion_moderation": 0.001,
+    "revision_suggestion": 0.303,
+    "comment": 0.062,
+    "submission": 0.113,
+    "deprecation": 0.0,
+    "other": 0.077
+   },
+   "moderators_ge20_actions": 19,
+   "mean_moderator_share_ev_decision_CI": [
+    0.045,
+    0.102
+   ],
+   "ev_share_of_moderation_actions_pooled": 0.077
+  },
+  "2023-26": {
+   "moderators": 20,
+   "active_days": 1732,
+   "actions_per_active_day": 14.45,
+   "pooled_share": {
+    "ev_decision": 0.041,
+    "rev_all": 0.442,
+    "assertion_moderation": 0.006,
+    "revision_suggestion": 0.306,
+    "comment": 0.026,
+    "submission": 0.037,
+    "deprecation": 0.03,
+    "other": 0.113
+   },
+   "per_active_day": {
+    "ev_decision": 0.596,
+    "rev_all": 6.385,
+    "assertion_moderation": 0.083,
+    "revision_suggestion": 4.416,
+    "comment": 0.37,
+    "submission": 0.536,
+    "deprecation": 0.434,
+    "other": 1.635
+   },
+   "mean_of_moderator_shares": {
+    "ev_decision": 0.079,
+    "rev_all": 0.322,
+    "assertion_moderation": 0.012,
+    "revision_suggestion": 0.285,
+    "comment": 0.045,
+    "submission": 0.098,
+    "deprecation": 0.021,
+    "other": 0.139
+   },
+   "moderators_ge20_actions": 17,
+   "mean_moderator_share_ev_decision_CI": [
+    0.032,
+    0.137
+   ],
+   "ev_share_of_moderation_actions_pooled": 0.084
+  },
+  "by_year": {
+   "2016": {
+    "ev_share_of_moderation": 0.144,
+    "moderation_per_active_day": 13.11,
+    "ev_per_active_day": 1.886,
+    "own_work_per_active_day": 6.86,
+    "share_days_with_any_moderation": 0.753
+   },
+   "2017": {
+    "ev_share_of_moderation": 0.094,
+    "moderation_per_active_day": 22.34,
+    "ev_per_active_day": 2.1,
+    "own_work_per_active_day": 9.37,
+    "share_days_with_any_moderation": 0.796
+   },
+   "2018": {
+    "ev_share_of_moderation": 0.102,
+    "moderation_per_active_day": 22.82,
+    "ev_per_active_day": 2.33,
+    "own_work_per_active_day": 6.87,
+    "share_days_with_any_moderation": 0.736
+   },
+   "2019": {
+    "ev_share_of_moderation": 0.103,
+    "moderation_per_active_day": 10.81,
+    "ev_per_active_day": 1.11,
+    "own_work_per_active_day": 3.35,
+    "share_days_with_any_moderation": 0.706
+   },
+   "2020": {
+    "ev_share_of_moderation": 0.089,
+    "moderation_per_active_day": 7.32,
+    "ev_per_active_day": 0.655,
+    "own_work_per_active_day": 6.63,
+    "share_days_with_any_moderation": 0.65
+   },
+   "2021": {
+    "ev_share_of_moderation": 0.068,
+    "moderation_per_active_day": 6.09,
+    "ev_per_active_day": 0.416,
+    "own_work_per_active_day": 7.85,
+    "share_days_with_any_moderation": 0.659
+   },
+   "2022": {
+    "ev_share_of_moderation": 0.05,
+    "moderation_per_active_day": 10.53,
+    "ev_per_active_day": 0.53,
+    "own_work_per_active_day": 5.36,
+    "share_days_with_any_moderation": 0.63
+   },
+   "2023": {
+    "ev_share_of_moderation": 0.05,
+    "moderation_per_active_day": 11.1,
+    "ev_per_active_day": 0.559,
+    "own_work_per_active_day": 5.36,
+    "share_days_with_any_moderation": 0.71
+   },
+   "2024": {
+    "ev_share_of_moderation": 0.106,
+    "moderation_per_active_day": 5.25,
+    "ev_per_active_day": 0.558,
+    "own_work_per_active_day": 4.88,
+    "share_days_with_any_moderation": 0.723
+   },
+   "2025": {
+    "ev_share_of_moderation": 0.138,
+    "moderation_per_active_day": 5.4,
+    "ev_per_active_day": 0.744,
+    "own_work_per_active_day": 4.47,
+    "share_days_with_any_moderation": 0.635
+   },
+   "2026": {
+    "ev_share_of_moderation": 0.077,
+    "moderation_per_active_day": 6.78,
+    "ev_per_active_day": 0.52,
+    "own_work_per_active_day": 6.5,
+    "share_days_with_any_moderation": 0.692
+   }
+  }
+ },
+ "shift_share_FHK_ev_per_active_day": {
+  "2016-18_to_2023-26": {
+   "R0": 2.06,
+   "R1": 0.596,
+   "delta": -1.464,
+   "within": -1.061,
+   "between": 0.21,
+   "cross": 0.427,
+   "entry": -0.762,
+   "exit": -0.278,
+   "n_stay": 6,
+   "n_entry": 14,
+   "n_exit": 5,
+   "delta_CI": [
+    -2.634,
+    -0.496
+   ],
+   "within_CI": [
+    -1.431,
+    -0.319
+   ],
+   "between_CI": [
+    -0.087,
+    0.586
+   ],
+   "cross_CI": [
+    -0.143,
+    0.899
+   ],
+   "entry_CI": [
+    -1.865,
+    -0.17
+   ],
+   "exit_CI": [
+    -0.884,
+    0.12
+   ],
+   "composition_total(between+entry+exit)": -0.83,
+   "composition_total_CI": [
+    -2.17,
+    0.03
+   ],
+   "within_plus_cross": -0.634,
+   "within_plus_cross_CI": [
+    -1.218,
+    -0.051
+   ]
+  },
+  "2016-18_to_2019-22": {
+   "R0": 2.06,
+   "R1": 0.621,
+   "delta": -1.439,
+   "within": -1.459,
+   "between": -0.088,
+   "cross": 1.087,
+   "entry": -1.009,
+   "exit": 0.029,
+   "n_stay": 10,
+   "n_entry": 12,
+   "n_exit": 1,
+   "delta_CI": [
+    -2.586,
+    -0.49
+   ],
+   "within_CI": [
+    -2.429,
+    -0.315
+   ],
+   "between_CI": [
+    -0.557,
+    0.22
+   ],
+   "cross_CI": [
+    0.208,
+    2.148
+   ],
+   "entry_CI": [
+    -2.094,
+    -0.226
+   ],
+   "exit_CI": [
+    -0.0,
+    0.16
+   ],
+   "composition_total(between+entry+exit)": -1.067,
+   "composition_total_CI": [
+    -2.39,
+    -0.094
+   ],
+   "within_plus_cross": -0.372,
+   "within_plus_cross_CI": [
+    -0.914,
+    -0.031
+   ]
+  },
+  "2019-22_to_2023-26": {
+   "R0": 0.621,
+   "R1": 0.596,
+   "delta": -0.025,
+   "within": -0.086,
+   "between": 0.068,
+   "cross": -0.049,
+   "entry": 0.043,
+   "exit": -0.0,
+   "n_stay": 12,
+   "n_entry": 8,
+   "n_exit": 10,
+   "delta_CI": [
+    -0.715,
+    0.439
+   ],
+   "within_CI": [
+    -0.804,
+    0.348
+   ],
+   "between_CI": [
+    -0.102,
+    0.151
+   ],
+   "cross_CI": [
+    -0.19,
+    0.225
+   ],
+   "entry_CI": [
+    -0.134,
+    0.225
+   ],
+   "exit_CI": [
+    -0.077,
+    0.134
+   ],
+   "composition_total(between+entry+exit)": 0.111,
+   "composition_total_CI": [
+    -0.101,
+    0.262
+   ],
+   "within_plus_cross": -0.135,
+   "within_plus_cross_CI": [
+    -0.747,
+    0.295
+   ]
+  },
+  "chained_annual_2016_to_2026": {
+   "within": -1.152,
+   "between": -0.486,
+   "cross": 0.768,
+   "entry": -0.516,
+   "exit": 0.021,
+   "total": -1.365,
+   "composition_total": -0.981,
+   "within_plus_cross": -0.384,
+   "min_stayers_per_step": 7,
+   "steps": [
+    {
+     "from": 2016,
+     "n_stay": 7,
+     "delta": 0.214,
+     "within": 0.623
+    },
+    {
+     "from": 2017,
+     "n_stay": 9,
+     "delta": 0.23,
+     "within": 0.202
+    },
+    {
+     "from": 2018,
+     "n_stay": 10,
+     "delta": -1.22,
+     "within": -1.614
+    },
+    {
+     "from": 2019,
+     "n_stay": 10,
+     "delta": -0.456,
+     "within": 0.06
+    },
+    {
+     "from": 2020,
+     "n_stay": 12,
+     "delta": -0.239,
+     "within": -0.25
+    },
+    {
+     "from": 2021,
+     "n_stay": 11,
+     "delta": 0.114,
+     "within": 0.021
+    },
+    {
+     "from": 2022,
+     "n_stay": 10,
+     "delta": 0.029,
+     "within": -0.078
+    },
+    {
+     "from": 2023,
+     "n_stay": 10,
+     "delta": -0.001,
+     "within": -0.032
+    },
+    {
+     "from": 2024,
+     "n_stay": 11,
+     "delta": 0.186,
+     "within": 0.102
+    },
+    {
+     "from": 2025,
+     "n_stay": 14,
+     "delta": -0.224,
+     "within": -0.187
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "key_source": "file",
+ "ocel_events": 4442,
+ "ocel_objects": {
+  "comment": 1425,
+  "commit": 521,
+  "ticket": 400,
+  "user": 146,
+  "label": 81,
+  "pr": 54
+ },
+ "ocel_relations": 12414,
+ "case_events": 3937,
+ "cases": {
+  "go": 200,
+  "hpo": 200
+ },
+ "activities": {
+  "go": {
+   "ASSIGNED": 225,
+   "CLOSED_ACC": 165,
+   "CLOSED_INTERIM": 39,
+   "CLOSED_REJ": 12,
+   "CLOSED_UNCLEAR": 17,
+   "COMMENT_BOT": 8,
+   "COMMENT_OTHER": 729,
+   "COMMENT_SUBMITTER": 366,
+   "COMMIT_REF": 507,
+   "CROSS_REF": 69,
+   "LABELED": 213,
+   "OPENED": 200,
+   "PR_LINKED": 54,
+   "PR_MERGED": 42,
+   "RENAMED": 34,
+   "REOPENED": 38
+  },
+  "hpo": {
+   "ASSIGNED": 408,
+   "CLOSED_ACC": 157,
+   "CLOSED_INTERIM": 2,
+   "CLOSED_REJ": 17,
+   "CLOSED_UNCLEAR": 23,
+   "COMMENT_BOT": 0,
+   "COMMENT_OTHER": 216,
+   "COMMENT_SUBMITTER": 106,
+   "COMMIT_REF": 6,
+   "CROSS_REF": 5,
+   "LABELED": 68,
+   "OPENED": 200,
+   "PR_LINKED": 1,
+   "PR_MERGED": 1,
+   "RENAMED": 7,
+   "REOPENED": 2
+  }
+ }
+}

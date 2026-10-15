@@ -1,0 +1,106 @@
+{
+ "new_signatures_total": 10,
+ "removed_signatures_total": 0,
+ "planted": {
+  "SEED1 policy method (Pundit accept?, age < 730 d)": {
+   "extracted": true,
+   "signatures": [
+    [
+     "POLICY",
+     "evidence_item_policy",
+     "accept? :: Role.user_is_at_least_a?(user, :editor) && record.submitter != user &",
+     "decision"
+    ]
+   ]
+  },
+  "SEED2 mutation guard, double quotes (pending revision blocks acceptance)": {
+   "extracted": true,
+   "signatures": [
+    [
+     "GUARD",
+     "moderate_evidence_item",
+     "SEED2 Evidence Item has a pending revision.",
+     "decision"
+    ]
+   ]
+  },
+  "SEED3 model validation, custom-method style (validate :m)": {
+   "extracted": false,
+   "signatures": []
+  },
+  "SEED4 scheduled job writing evidence-item status (stale exit)": {
+   "extracted": true,
+   "signatures": [
+    [
+     "SCHED",
+     "scheduled_tasks",
+     "Seed4ExpireStaleEvidence->Seed4ExpireStaleEvidence",
+     "scheduled job"
+    ],
+    [
+     "AUTO",
+     "seed4_expire_stale_evidence",
+     "status->rejected",
+     "other"
+    ]
+   ]
+  },
+  "SEED5 guard, ExecutionError.new with single quotes": {
+   "extracted": false,
+   "signatures": []
+  },
+  "DECOY1 commented-out guard": {
+   "extracted": true,
+   "signatures": [
+    [
+     "GUARD",
+     "moderate_evidence_item",
+     "DECOY1 retired check kept as a comment",
+     "decision"
+    ]
+   ]
+  },
+  "DECOY2 log string resembling a status assignment": {
+   "extracted": true,
+   "signatures": [
+    [
+     "AUTO",
+     "notify_subscribers",
+     "status->accepted",
+     "other"
+    ]
+   ]
+  },
+  "DECOY3 guard on a non-moderated object (notification)": {
+   "extracted": true,
+   "signatures": [
+    [
+     "GUARD",
+     "update_notification_status",
+     "DECOY3 notification already read.",
+     "other"
+    ]
+   ]
+  }
+ },
+ "unexplained_new": [
+  [
+   "JOB",
+   "seed4_expire_stale_evidence",
+   "writes_moderated_status",
+   "other"
+  ],
+  [
+   "AUTO",
+   "seed4_expire_stale_evidence",
+   "status->submitted",
+   "other"
+  ],
+  [
+   "ROLE",
+   "evidence_item_policy",
+   "at_least:editor",
+   "decision"
+  ]
+ ]
+}

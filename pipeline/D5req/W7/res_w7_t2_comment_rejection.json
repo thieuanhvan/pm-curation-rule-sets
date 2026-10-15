@@ -1,0 +1,1035 @@
+{
+ "cohort": {
+  "n": 12085,
+  "events": {
+   "PEND": 6687,
+   "ACC": 4950,
+   "REJ": 297,
+   "WDR": 151
+  },
+  "items_exposed_before_end": {
+   "rev_submitter": 1569,
+   "rev_moderator": 2359,
+   "rev_moderator_eventual_decider": 875,
+   "rev_moderator_not_decider": 1572,
+   "rev_other_curator": 1852,
+   "rev_bot": 2296,
+   "com_moderator": 861,
+   "com_moderator_decider": 405,
+   "com_moderator_not_decider": 507,
+   "com_submitter": 295,
+   "com_other": 258,
+   "flag_human": 176,
+   "flag_bot": 2012,
+   "rev_submitter_after_mod_comment": 79,
+   "rev_submitter_no_prior_mod_comment": 1518
+  }
+ },
+ "rejections_with_comment": {
+  "decider_comment_0to1d_before": {
+   "k": 81,
+   "n": 297,
+   "share": 0.273,
+   "CI": [
+    0.222,
+    0.323
+   ]
+  },
+  "decider_comment_strictly_before_0to1d": {
+   "k": 81,
+   "n": 297,
+   "share": 0.273,
+   "CI": [
+    0.222,
+    0.323
+   ]
+  },
+  "decider_comment_within_1min_after_to_1d_before": {
+   "k": 115,
+   "n": 297,
+   "share": 0.387,
+   "CI": [
+    0.33,
+    0.444
+   ]
+  },
+  "decider_comment_0to7d_before": {
+   "k": 82,
+   "n": 297,
+   "share": 0.276,
+   "CI": [
+    0.226,
+    0.33
+   ]
+  },
+  "decider_comment_0to30d_before": {
+   "k": 83,
+   "n": 297,
+   "share": 0.279,
+   "CI": [
+    0.229,
+    0.333
+   ]
+  },
+  "decider_comment_more_than_30d_before": {
+   "k": 7,
+   "n": 297,
+   "share": 0.024,
+   "CI": [
+    0.007,
+    0.04
+   ]
+  },
+  "decider_comment_any_time_before": {
+   "k": 87,
+   "n": 297,
+   "share": 0.293,
+   "CI": [
+    0.239,
+    0.347
+   ]
+  },
+  "other_moderator_comment_0to1d_before": {
+   "k": 2,
+   "n": 297,
+   "share": 0.007,
+   "CI": [
+    0.0,
+    0.017
+   ]
+  },
+  "other_moderator_comment_more_than_7d_before": {
+   "k": 15,
+   "n": 297,
+   "share": 0.051,
+   "CI": [
+    0.027,
+    0.077
+   ]
+  },
+  "decider_comment_0to1d_before_pre_2025-03-20": {
+   "k": 79,
+   "n": 231,
+   "share": 0.342
+  },
+  "decider_comment_0to1d_before_post_2025-03-20": {
+   "k": 2,
+   "n": 66,
+   "share": 0.03
+  }
+ },
+ "tvcox_lag0_split_decider": {
+  "rej": {
+   "rev_submitter": [
+    0.91,
+    0.0,
+    598325.22,
+    "events_exposed=34"
+   ],
+   "rev_moderator": [
+    0.23,
+    0.0,
+    2255204.2,
+    "events_exposed=21"
+   ],
+   "rev_other_curator": [
+    0.2,
+    0.0,
+    25.86,
+    "events_exposed=14"
+   ],
+   "com_moderator_decider": [
+    727.3,
+    0.0,
+    1.8162469922000305e+21,
+    "events_exposed=86"
+   ],
+   "com_moderator_not_decider": [
+    1.7,
+    0.0,
+    475843339031.61,
+    "events_exposed=20"
+   ],
+   "com_submitter": [
+    0.55,
+    0.0,
+    3039590227.39,
+    "events_exposed=8"
+   ],
+   "com_other": [
+    2.18,
+    0.0,
+    35278.95,
+    "events_exposed=13"
+   ],
+   "flag_human": [
+    7.13,
+    0.0,
+    58309.13,
+    "events_exposed=23"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.42,
+    0.05,
+    43.98,
+    "events_exposed=764"
+   ],
+   "rev_moderator": [
+    9.79,
+    0.58,
+    165.69,
+    "events_exposed=1284"
+   ],
+   "rev_other_curator": [
+    4.76,
+    0.01,
+    4481.99,
+    "events_exposed=554"
+   ],
+   "com_moderator_decider": [
+    10.3,
+    0.0,
+    14139169.14,
+    "events_exposed=319"
+   ],
+   "com_moderator_not_decider": [
+    0.49,
+    0.01,
+    37.6,
+    "events_exposed=178"
+   ],
+   "com_submitter": [
+    0.76,
+    0.03,
+    20.08,
+    "events_exposed=125"
+   ],
+   "com_other": [
+    1.83,
+    0.23,
+    14.84,
+    "events_exposed=86"
+   ],
+   "flag_human": [
+    0.99,
+    0.2,
+    4.8,
+    "events_exposed=16"
+   ],
+   "events": 4950
+  }
+ },
+ "tvcox_lag0_excl_decider_comments": {
+  "rej": {
+   "rev_submitter": [
+    1.44,
+    0.91,
+    2.29,
+    "events_exposed=34"
+   ],
+   "rev_moderator": [
+    0.74,
+    0.28,
+    1.93,
+    "events_exposed=21"
+   ],
+   "rev_other_curator": [
+    0.44,
+    0.23,
+    0.83,
+    "events_exposed=14"
+   ],
+   "com_moderator_not_decider": [
+    1.28,
+    0.63,
+    2.58,
+    "events_exposed=20"
+   ],
+   "com_submitter": [
+    1.2,
+    0.49,
+    2.92,
+    "events_exposed=8"
+   ],
+   "com_other": [
+    2.8,
+    1.23,
+    6.39,
+    "events_exposed=13"
+   ],
+   "flag_human": [
+    7.89,
+    2.39,
+    26.09,
+    "events_exposed=23"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.59,
+    0.98,
+    2.57,
+    "events_exposed=764"
+   ],
+   "rev_moderator": [
+    10.87,
+    5.76,
+    20.52,
+    "events_exposed=1284"
+   ],
+   "rev_other_curator": [
+    5.23,
+    1.42,
+    19.31,
+    "events_exposed=554"
+   ],
+   "com_moderator_not_decider": [
+    0.53,
+    0.23,
+    1.18,
+    "events_exposed=178"
+   ],
+   "com_submitter": [
+    1.01,
+    0.62,
+    1.63,
+    "events_exposed=125"
+   ],
+   "com_other": [
+    2.18,
+    0.44,
+    10.83,
+    "events_exposed=86"
+   ],
+   "flag_human": [
+    0.97,
+    0.4,
+    2.37,
+    "events_exposed=16"
+   ],
+   "events": 4950
+  }
+ },
+ "tvcox_lag7_split_decider": {
+  "rej": {
+   "rev_submitter": [
+    1.24,
+    0.74,
+    2.08,
+    "events_exposed=26"
+   ],
+   "rev_moderator": [
+    0.4,
+    0.18,
+    0.89,
+    "events_exposed=13"
+   ],
+   "rev_other_curator": [
+    0.29,
+    0.16,
+    0.51,
+    "events_exposed=10"
+   ],
+   "com_moderator_decider": [
+    21.66,
+    4.77,
+    98.24,
+    "events_exposed=7"
+   ],
+   "com_moderator_not_decider": [
+    1.48,
+    0.74,
+    2.95,
+    "events_exposed=15"
+   ],
+   "com_submitter": [
+    0.65,
+    0.22,
+    1.88,
+    "events_exposed=4"
+   ],
+   "com_other": [
+    2.38,
+    1.13,
+    5.02,
+    "events_exposed=8"
+   ],
+   "flag_human": [
+    3.39,
+    0.64,
+    17.96,
+    "events_exposed=11"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.57,
+    1.2,
+    2.04,
+    "events_exposed=457"
+   ],
+   "rev_moderator": [
+    2.22,
+    1.25,
+    3.94,
+    "events_exposed=386"
+   ],
+   "rev_other_curator": [
+    2.9,
+    1.24,
+    6.78,
+    "events_exposed=361"
+   ],
+   "com_moderator_decider": [
+    3.48,
+    0.71,
+    16.96,
+    "events_exposed=49"
+   ],
+   "com_moderator_not_decider": [
+    0.73,
+    0.47,
+    1.15,
+    "events_exposed=110"
+   ],
+   "com_submitter": [
+    1.05,
+    0.67,
+    1.62,
+    "events_exposed=79"
+   ],
+   "com_other": [
+    2.84,
+    0.99,
+    8.1,
+    "events_exposed=78"
+   ],
+   "flag_human": [
+    0.95,
+    0.31,
+    2.92,
+    "events_exposed=14"
+   ],
+   "events": 4950
+  }
+ },
+ "tvcox_lag7_excl_decider_comments": {
+  "rej": {
+   "rev_submitter": [
+    1.32,
+    0.78,
+    2.23,
+    "events_exposed=26"
+   ],
+   "rev_moderator": [
+    0.45,
+    0.23,
+    0.89,
+    "events_exposed=13"
+   ],
+   "rev_other_curator": [
+    0.3,
+    0.18,
+    0.5,
+    "events_exposed=10"
+   ],
+   "com_moderator_not_decider": [
+    1.39,
+    0.67,
+    2.88,
+    "events_exposed=15"
+   ],
+   "com_submitter": [
+    0.73,
+    0.24,
+    2.26,
+    "events_exposed=4"
+   ],
+   "com_other": [
+    2.4,
+    1.14,
+    5.07,
+    "events_exposed=8"
+   ],
+   "flag_human": [
+    3.39,
+    0.64,
+    18.0,
+    "events_exposed=11"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.62,
+    1.27,
+    2.06,
+    "events_exposed=457"
+   ],
+   "rev_moderator": [
+    2.32,
+    1.43,
+    3.74,
+    "events_exposed=386"
+   ],
+   "rev_other_curator": [
+    2.96,
+    1.35,
+    6.47,
+    "events_exposed=361"
+   ],
+   "com_moderator_not_decider": [
+    0.7,
+    0.45,
+    1.08,
+    "events_exposed=110"
+   ],
+   "com_submitter": [
+    1.11,
+    0.72,
+    1.7,
+    "events_exposed=79"
+   ],
+   "com_other": [
+    2.9,
+    1.12,
+    7.54,
+    "events_exposed=78"
+   ],
+   "flag_human": [
+    0.96,
+    0.31,
+    2.92,
+    "events_exposed=14"
+   ],
+   "events": 4950
+  }
+ },
+ "tvcox_lag30_split_decider": {
+  "rej": {
+   "rev_submitter": [
+    1.29,
+    0.71,
+    2.34,
+    "events_exposed=24"
+   ],
+   "rev_moderator": [
+    0.39,
+    0.18,
+    0.83,
+    "events_exposed=12"
+   ],
+   "rev_other_curator": [
+    0.23,
+    0.14,
+    0.37,
+    "events_exposed=8"
+   ],
+   "com_moderator_decider": [
+    22.33,
+    1.23,
+    404.98,
+    "events_exposed=5"
+   ],
+   "com_moderator_not_decider": [
+    1.67,
+    0.8,
+    3.47,
+    "events_exposed=15"
+   ],
+   "com_submitter": [
+    0.55,
+    0.12,
+    2.48,
+    "events_exposed=3"
+   ],
+   "com_other": [
+    2.54,
+    1.14,
+    5.65,
+    "events_exposed=8"
+   ],
+   "flag_human": [
+    3.31,
+    0.58,
+    18.83,
+    "events_exposed=11"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.55,
+    1.22,
+    1.97,
+    "events_exposed=339"
+   ],
+   "rev_moderator": [
+    2.08,
+    1.2,
+    3.61,
+    "events_exposed=287"
+   ],
+   "rev_other_curator": [
+    1.89,
+    0.93,
+    3.85,
+    "events_exposed=248"
+   ],
+   "com_moderator_decider": [
+    4.75,
+    1.62,
+    13.98,
+    "events_exposed=32"
+   ],
+   "com_moderator_not_decider": [
+    0.61,
+    0.38,
+    0.99,
+    "events_exposed=72"
+   ],
+   "com_submitter": [
+    1.19,
+    0.74,
+    1.91,
+    "events_exposed=57"
+   ],
+   "com_other": [
+    2.0,
+    1.0,
+    4.0,
+    "events_exposed=45"
+   ],
+   "flag_human": [
+    1.2,
+    0.38,
+    3.8,
+    "events_exposed=14"
+   ],
+   "events": 4950
+  }
+ },
+ "tvcox_lag30_excl_decider_comments": {
+  "rej": {
+   "rev_submitter": [
+    1.35,
+    0.76,
+    2.37,
+    "events_exposed=24"
+   ],
+   "rev_moderator": [
+    0.45,
+    0.23,
+    0.86,
+    "events_exposed=12"
+   ],
+   "rev_other_curator": [
+    0.24,
+    0.15,
+    0.39,
+    "events_exposed=8"
+   ],
+   "com_moderator_not_decider": [
+    1.55,
+    0.74,
+    3.28,
+    "events_exposed=15"
+   ],
+   "com_submitter": [
+    0.59,
+    0.16,
+    2.18,
+    "events_exposed=3"
+   ],
+   "com_other": [
+    2.6,
+    1.21,
+    5.55,
+    "events_exposed=8"
+   ],
+   "flag_human": [
+    3.31,
+    0.59,
+    18.49,
+    "events_exposed=11"
+   ],
+   "events": 297
+  },
+  "acc": {
+   "rev_submitter": [
+    1.59,
+    1.24,
+    2.03,
+    "events_exposed=339"
+   ],
+   "rev_moderator": [
+    2.19,
+    1.35,
+    3.56,
+    "events_exposed=287"
+   ],
+   "rev_other_curator": [
+    1.95,
+    0.99,
+    3.86,
+    "events_exposed=248"
+   ],
+   "com_moderator_not_decider": [
+    0.59,
+    0.36,
+    0.95,
+    "events_exposed=72"
+   ],
+   "com_submitter": [
+    1.19,
+    0.74,
+    1.91,
+    "events_exposed=57"
+   ],
+   "com_other": [
+    2.06,
+    1.0,
+    4.27,
+    "events_exposed=45"
+   ],
+   "flag_human": [
+    1.21,
+    0.39,
+    3.74,
+    "events_exposed=14"
+   ],
+   "events": 4950
+  }
+ },
+ "landmark_split": {
+  "gap7_L90": {
+   "n_at_risk": 8285,
+   "rej": {
+    "rev_submitter": [
+     0.89,
+     0.39,
+     2.0,
+     "events_exposed=6"
+    ],
+    "rev_moderator": [
+     0.11,
+     0.0,
+     19.99,
+     "events_exposed=1"
+    ],
+    "rev_other_curator": [
+     0.99,
+     0.3,
+     3.28,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     0.56,
+     0.09,
+     3.34,
+     "events_exposed=1"
+    ],
+    "com_moderator_decider": [
+     22.35,
+     0.29,
+     1696.51,
+     "events_exposed=1"
+    ],
+    "com_submitter": [
+     1.56,
+     0.29,
+     8.27,
+     "events_exposed=2"
+    ],
+    "com_other": [
+     0.14,
+     0.02,
+     1.03,
+     "events_exposed=0"
+    ],
+    "flag_human": [
+     16.21,
+     1.52,
+     172.78,
+     "events_exposed=1"
+    ],
+    "events": 72
+   }
+  },
+  "gap7_L180": {
+   "n_at_risk": 7730,
+   "rej": {
+    "rev_submitter": [
+     1.21,
+     0.43,
+     3.41,
+     "events_exposed=6"
+    ],
+    "rev_moderator": [
+     0.31,
+     0.02,
+     3.99,
+     "events_exposed=1"
+    ],
+    "rev_other_curator": [
+     0.14,
+     0.01,
+     3.32,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     0.65,
+     0.1,
+     4.34,
+     "events_exposed=2"
+    ],
+    "com_moderator_decider": [
+     314.45,
+     30.43,
+     3248.86,
+     "events_exposed=1"
+    ],
+    "com_submitter": [
+     2.07,
+     0.34,
+     12.46,
+     "events_exposed=2"
+    ],
+    "com_other": [
+     2.52,
+     0.2,
+     31.58,
+     "events_exposed=1"
+    ],
+    "flag_human": [
+     58.81,
+     18.67,
+     185.26,
+     "events_exposed=4"
+    ],
+    "events": 48
+   }
+  },
+  "gap7_L365": {
+   "n_at_risk": 7088,
+   "rej": {
+    "rev_submitter": [
+     1.08,
+     0.38,
+     3.08,
+     "events_exposed=5"
+    ],
+    "rev_moderator": [
+     0.79,
+     0.15,
+     4.2,
+     "events_exposed=2"
+    ],
+    "rev_other_curator": [
+     0.11,
+     0.01,
+     1.11,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     1.67,
+     0.38,
+     7.45,
+     "events_exposed=3"
+    ],
+    "com_moderator_decider": [
+     0.82,
+     0.06,
+     11.92,
+     "events_exposed=0"
+    ],
+    "com_submitter": [
+     1.11,
+     0.07,
+     16.63,
+     "events_exposed=1"
+    ],
+    "com_other": [
+     0.0,
+     0.0,
+     0.0,
+     "events_exposed=0"
+    ],
+    "flag_human": [
+     13.41,
+     2.25,
+     80.09,
+     "events_exposed=2"
+    ],
+    "events": 44
+   }
+  },
+  "gap30_L90": {
+   "n_at_risk": 8005,
+   "rej": {
+    "rev_submitter": [
+     0.63,
+     0.25,
+     1.57,
+     "events_exposed=4"
+    ],
+    "rev_moderator": [
+     0.04,
+     0.02,
+     0.09,
+     "events_exposed=0"
+    ],
+    "rev_other_curator": [
+     1.03,
+     0.33,
+     3.26,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     0.08,
+     0.03,
+     0.19,
+     "events_exposed=0"
+    ],
+    "com_moderator_decider": [
+     126.06,
+     21.34,
+     744.68,
+     "events_exposed=1"
+    ],
+    "com_submitter": [
+     1.64,
+     0.33,
+     8.24,
+     "events_exposed=2"
+    ],
+    "com_other": [
+     0.26,
+     0.08,
+     0.8,
+     "events_exposed=0"
+    ],
+    "flag_human": [
+     0.62,
+     0.19,
+     1.99,
+     "events_exposed=0"
+    ],
+    "events": 63
+   }
+  },
+  "gap30_L180": {
+   "n_at_risk": 7618,
+   "rej": {
+    "rev_submitter": [
+     1.24,
+     0.4,
+     3.85,
+     "events_exposed=5"
+    ],
+    "rev_moderator": [
+     0.58,
+     0.08,
+     4.45,
+     "events_exposed=1"
+    ],
+    "rev_other_curator": [
+     0.25,
+     0.01,
+     7.41,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     0.5,
+     0.06,
+     4.47,
+     "events_exposed=2"
+    ],
+    "com_moderator_decider": [
+     0.92,
+     0.08,
+     9.93,
+     "events_exposed=0"
+    ],
+    "com_submitter": [
+     2.01,
+     0.2,
+     20.07,
+     "events_exposed=1"
+    ],
+    "com_other": [
+     2.19,
+     0.07,
+     70.35,
+     "events_exposed=1"
+    ],
+    "flag_human": [
+     72.33,
+     18.55,
+     281.93,
+     "events_exposed=4"
+    ],
+    "events": 42
+   }
+  },
+  "gap30_L365": {
+   "n_at_risk": 7047,
+   "rej": {
+    "rev_submitter": [
+     0.97,
+     0.35,
+     2.68,
+     "events_exposed=5"
+    ],
+    "rev_moderator": [
+     0.68,
+     0.12,
+     3.75,
+     "events_exposed=2"
+    ],
+    "rev_other_curator": [
+     0.1,
+     0.01,
+     1.03,
+     "events_exposed=1"
+    ],
+    "com_moderator_not_decider": [
+     2.57,
+     0.73,
+     9.09,
+     "events_exposed=4"
+    ],
+    "com_moderator_decider": [
+     0.85,
+     0.06,
+     12.23,
+     "events_exposed=0"
+    ],
+    "com_submitter": [
+     0.96,
+     0.08,
+     11.93,
+     "events_exposed=1"
+    ],
+    "com_other": [
+     0.0,
+     0.0,
+     0.0,
+     "events_exposed=0"
+    ],
+    "flag_human": [
+     11.01,
+     2.0,
+     60.54,
+     "events_exposed=2"
+    ],
+    "events": 46
+   }
+  }
+ }
+}

@@ -1,0 +1,514 @@
+{
+ "break_all": {
+  "2019-01..2026-09": {
+   "k_BIC(log1p LS)": 2,
+   "changepoints": [
+    "2023-08",
+    "2025-10"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2019-01",
+     "2023-07",
+     81.1,
+     72.0
+    ],
+    [
+     "2023-08",
+     "2025-09",
+     39.3,
+     24.0
+    ],
+    [
+     "2025-10",
+     "2026-09",
+     68.6,
+     63.0
+    ]
+   ],
+   "single_break_k1": "2023-08",
+   "single_break_ci95_block_boot": [
+    "2022-10",
+    "2024-01"
+   ],
+   "single_break_means_before_after": [
+    81.1,
+    48.5
+   ],
+   "single_break_k1_poisson": "2022-12"
+  },
+  "full": {
+   "k_BIC(log1p LS)": 2,
+   "changepoints": [
+    "2016-01",
+    "2023-08"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2015-07",
+     "2015-12",
+     39.0,
+     18.5
+    ],
+    [
+     "2016-01",
+     "2023-07",
+     105.6,
+     72.0
+    ],
+    [
+     "2023-08",
+     "2026-09",
+     48.5,
+     34.5
+    ]
+   ],
+   "single_break_k1": "2016-01",
+   "single_break_ci95_block_boot": [
+    "2016-01",
+    "2025-01"
+   ],
+   "single_break_means_before_after": [
+    39.0,
+    88.8
+   ],
+   "single_break_k1_poisson": "2017-09"
+  }
+ },
+ "break_non_burst(<20/submitter-day)": {
+  "2019-01..2026-09": {
+   "k_BIC(log1p LS)": 2,
+   "changepoints": [
+    "2023-08",
+    "2025-10"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2019-01",
+     "2023-07",
+     66.7,
+     68.0
+    ],
+    [
+     "2023-08",
+     "2025-09",
+     31.4,
+     24.0
+    ],
+    [
+     "2025-10",
+     "2026-09",
+     62.2,
+     63.0
+    ]
+   ],
+   "single_break_k1": "2023-08",
+   "single_break_ci95_block_boot": [
+    "2022-07",
+    "2023-10"
+   ],
+   "single_break_means_before_after": [
+    66.7,
+    41.1
+   ],
+   "single_break_k1_poisson": "2023-08"
+  },
+  "full": {
+   "k_BIC(log1p LS)": 2,
+   "changepoints": [
+    "2016-01",
+    "2023-08"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2015-07",
+     "2015-12",
+     27.5,
+     18.5
+    ],
+    [
+     "2016-01",
+     "2023-07",
+     66.4,
+     60.0
+    ],
+    [
+     "2023-08",
+     "2026-09",
+     41.1,
+     34.5
+    ]
+   ],
+   "single_break_k1": "2016-01",
+   "single_break_ci95_block_boot": [
+    "2016-01",
+    "2024-04"
+   ],
+   "single_break_means_before_after": [
+    27.5,
+    58.9
+   ],
+   "single_break_k1_poisson": "2023-08"
+  }
+ },
+ "break_distinct_submitters": {
+  "2019-01..2026-09": {
+   "k_BIC(log1p LS)": 2,
+   "changepoints": [
+    "2022-09",
+    "2025-02"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2019-01",
+     "2022-08",
+     12.5,
+     12.0
+    ],
+    [
+     "2022-09",
+     "2025-01",
+     6.9,
+     7.0
+    ],
+    [
+     "2025-02",
+     "2026-09",
+     10.8,
+     11.0
+    ]
+   ],
+   "single_break_k1": "2022-09",
+   "single_break_ci95_block_boot": [
+    "2021-09",
+    "2023-01"
+   ],
+   "single_break_means_before_after": [
+    12.5,
+    8.5
+   ],
+   "single_break_k1_poisson": "2021-11"
+  },
+  "full": {
+   "k_BIC(log1p LS)": 4,
+   "changepoints": [
+    "2016-01",
+    "2019-01",
+    "2022-09",
+    "2025-02"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2015-07",
+     "2015-12",
+     3.7,
+     4.5
+    ],
+    [
+     "2016-01",
+     "2018-12",
+     8.2,
+     7.0
+    ],
+    [
+     "2019-01",
+     "2022-08",
+     12.5,
+     12.0
+    ],
+    [
+     "2022-09",
+     "2025-01",
+     6.9,
+     7.0
+    ],
+    [
+     "2025-02",
+     "2026-09",
+     10.8,
+     11.0
+    ]
+   ],
+   "single_break_k1": "2016-01",
+   "single_break_ci95_block_boot": [
+    "2016-01",
+    "2018-12"
+   ],
+   "single_break_means_before_after": [
+    3.7,
+    9.8
+   ],
+   "single_break_k1_poisson": "2016-11"
+  }
+ },
+ "break_new_submitters": {
+  "2019-01..2026-09": {
+   "k_BIC(log1p LS)": 1,
+   "changepoints": [
+    "2021-08"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2019-01",
+     "2021-07",
+     4.3,
+     3.0
+    ],
+    [
+     "2021-08",
+     "2026-09",
+     1.6,
+     1.0
+    ]
+   ],
+   "single_break_k1": "2021-08",
+   "single_break_ci95_block_boot": [
+    "2020-04",
+    "2023-02"
+   ],
+   "single_break_means_before_after": [
+    4.3,
+    1.6
+   ],
+   "single_break_k1_poisson": "2021-10"
+  },
+  "full": {
+   "k_BIC(log1p LS)": 1,
+   "changepoints": [
+    "2021-08"
+   ],
+   "segments(start,end,mean,median)": [
+    [
+     "2015-07",
+     "2021-07",
+     3.2,
+     2.0
+    ],
+    [
+     "2021-08",
+     "2026-09",
+     1.6,
+     1.0
+    ]
+   ],
+   "single_break_k1": "2021-08",
+   "single_break_ci95_block_boot": [
+    "2016-12",
+    "2025-02"
+   ],
+   "single_break_means_before_after": [
+    3.2,
+    1.6
+   ],
+   "single_break_k1_poisson": "2021-10"
+  }
+ },
+ "annual_intake": {
+  "2015": {
+   "arrivals": 613,
+   "submitters": 17,
+   "share_burst20": 0.711
+  },
+  "2016": {
+   "arrivals": 1112,
+   "submitters": 39,
+   "share_burst20": 0.131
+  },
+  "2017": {
+   "arrivals": 2932,
+   "submitters": 42,
+   "share_burst20": 0.732
+  },
+  "2018": {
+   "arrivals": 1109,
+   "submitters": 47,
+   "share_burst20": 0.446
+  },
+  "2019": {
+   "arrivals": 763,
+   "submitters": 63,
+   "share_burst20": 0.066
+  },
+  "2020": {
+   "arrivals": 1189,
+   "submitters": 89,
+   "share_burst20": 0.264
+  },
+  "2021": {
+   "arrivals": 1052,
+   "submitters": 67,
+   "share_burst20": 0.184
+  },
+  "2022": {
+   "arrivals": 987,
+   "submitters": 49,
+   "share_burst20": 0.204
+  },
+  "2023": {
+   "arrivals": 587,
+   "submitters": 33,
+   "share_burst20": 0.051
+  },
+  "2024": {
+   "arrivals": 640,
+   "submitters": 33,
+   "share_burst20": 0.32
+  },
+  "2025": {
+   "arrivals": 493,
+   "submitters": 44,
+   "share_burst20": 0.061
+  },
+  "2026": {
+   "arrivals": 608,
+   "submitters": 52,
+   "share_burst20": 0.077
+  }
+ },
+ "event_type_first_last_month": {
+  "DEPRECATED_VARIANT": [
+   "2023-01",
+   "2026-07",
+   362
+  ],
+  "DEPRECATED_MOLECULAR_PROFILE": [
+   "2023-01",
+   "2026-08",
+   391
+  ],
+  "REVISION_SUPERSEDED": [
+   "2022-04",
+   "2026-09",
+   663
+  ],
+  "CURATED_SOURCE_SUGGESTION": [
+   "2022-10",
+   "2025-12",
+   22
+  ],
+  "REVERTED": [
+   "2020-12",
+   "2026-07",
+   45
+  ],
+  "FEATURE_CREATED": [
+   "2024-01",
+   "2026-09",
+   417
+  ],
+  "DEPRECATED_FEATURE": [
+   "2024-10",
+   "2026-06",
+   17464
+  ],
+  "COMMENT_DELETED": [
+   "2024-09",
+   "2026-10",
+   43
+  ]
+ },
+ "bot_activity_by_month_top": {
+  "2026-02": 17475,
+  "2023-01": 9250,
+  "2021-08": 2279,
+  "2022-03": 627,
+  "2024-09": 236,
+  "2023-11": 109,
+  "2021-02": 109,
+  "2024-04": 41,
+  "2025-04": 40,
+  "2026-08": 27
+ },
+ "monthly_arrivals_2021_2024": {
+  "2021-07": 104,
+  "2021-08": 112,
+  "2021-09": 71,
+  "2021-10": 38,
+  "2021-11": 87,
+  "2021-12": 140,
+  "2022-01": 116,
+  "2022-02": 26,
+  "2022-03": 49,
+  "2022-04": 100,
+  "2022-05": 41,
+  "2022-06": 120,
+  "2022-07": 143,
+  "2022-08": 118,
+  "2022-09": 83,
+  "2022-10": 70,
+  "2022-11": 78,
+  "2022-12": 43,
+  "2023-01": 56,
+  "2023-02": 49,
+  "2023-03": 60,
+  "2023-04": 42,
+  "2023-05": 110,
+  "2023-06": 84,
+  "2023-07": 68,
+  "2023-08": 20,
+  "2023-09": 7,
+  "2023-10": 31,
+  "2023-11": 37,
+  "2023-12": 23
+ },
+ "monthly_distinct_submitters_2021_2024": {
+  "2021-07": 15,
+  "2021-08": 9,
+  "2021-09": 13,
+  "2021-10": 14,
+  "2021-11": 7,
+  "2021-12": 10,
+  "2022-01": 15,
+  "2022-02": 7,
+  "2022-03": 8,
+  "2022-04": 9,
+  "2022-05": 10,
+  "2022-06": 13,
+  "2022-07": 13,
+  "2022-08": 13,
+  "2022-09": 8,
+  "2022-10": 9,
+  "2022-11": 7,
+  "2022-12": 7,
+  "2023-01": 9,
+  "2023-02": 10,
+  "2023-03": 7,
+  "2023-04": 6,
+  "2023-05": 5,
+  "2023-06": 6,
+  "2023-07": 9,
+  "2023-08": 4,
+  "2023-09": 4,
+  "2023-10": 9,
+  "2023-11": 8,
+  "2023-12": 2
+ },
+ "drop_decomposition_2021_22_vs_2023_25": {
+  "per_month_before_after": [
+   85.0,
+   47.8
+  ],
+  "submitters_before_after": [
+   90,
+   78
+  ],
+  "submitters_in_both": 24,
+  "top5_2021_22_submitters_per_month_before_after": [
+   49.4,
+   2.1
+  ],
+  "top10_2021_22_submitters_per_month_before_after": [
+   64.2,
+   4.1
+  ],
+  "others_per_month_before_after": [
+   20.8,
+   43.7
+  ],
+  "share_of_drop_explained_by_top10_2021_22": 1.617,
+  "burst20_items_per_month_before_after": [
+   16.5,
+   7.4
+  ]
+ }
+}

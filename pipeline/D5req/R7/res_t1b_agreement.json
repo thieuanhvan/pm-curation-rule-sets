@@ -1,0 +1,789 @@
+{
+ "units": [
+  {
+   "unit": "account to submit",
+   "R6": [
+    "I2"
+   ],
+   "coder2": [
+    "intake_account"
+   ],
+   "pres_R6": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "intake",
+   "stage_coder2": "intake",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "revision comment>=10",
+   "R6": [
+    "I1"
+   ],
+   "coder2": [
+    "intake_rev_comment10"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "stage_R6": "intake",
+   "stage_coder2": "intake",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "acting organisation",
+   "R6": [
+    "D8"
+   ],
+   "coder2": [
+    "acting_org"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "cross-cutting",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "editor accepts EI",
+   "R6": [
+    "D1"
+   ],
+   "coder2": [
+    "dec_editor_ei"
+   ],
+   "pres_R6": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "editor accepts revision",
+   "R6": [
+    "D3"
+   ],
+   "coder2": [
+    "dec_editor_rev"
+   ],
+   "pres_R6": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "no self-acceptance EI",
+   "R6": [
+    "D2"
+   ],
+   "coder2": [
+    "dec_noself_ei"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "no self-acceptance revision",
+   "R6": [
+    "D4"
+   ],
+   "coder2": [
+    "dec_noself_rev"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "assertion accept: editor, not submitter",
+   "R6": [],
+   "coder2": [
+    "dec_assertion_editor_noself"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": null,
+   "stage_coder2": "decision",
+   "mode_R6": null,
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "COI for EI/assertion moderation",
+   "R6": [
+    "D5"
+   ],
+   "coder2": [
+    "dec_coi_ei",
+    "dec_coi_assertion_moderation"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "COI for revision/flag/source-suggestion moderation",
+   "R6": [
+    "D5",
+    "D5b"
+   ],
+   "coder2": [
+    "dec_coi_rev",
+    "source_suggestion_coi"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "reason>=10 to reject revision",
+   "R6": [
+    "D6"
+   ],
+   "coder2": [
+    "dec_reason_rev_reject"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "reason to reject EI/assertion",
+   "R6": [
+    "D7"
+   ],
+   "coder2": [
+    "dec_reason_ei_reject"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "stage_R6": "decision",
+   "stage_coder2": "decision",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "assertion approval: org approver + COI",
+   "R6": [],
+   "coder2": [
+    "approval_coi_org"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "stage_R6": null,
+   "stage_coder2": "decision",
+   "mode_R6": null,
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "fit: stale base value refuses revision acceptance (v1, force override)",
+   "R6": [],
+   "coder2": [
+    "fit_stale_revision"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "stage_R6": null,
+   "stage_coder2": "fit",
+   "mode_R6": null,
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "fit: approval refused if assertion flagged/not accepted",
+   "R6": [],
+   "coder2": [
+    "fit_approval_state"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "stage_R6": null,
+   "stage_coder2": "fit",
+   "mode_R6": null,
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "account to raise flag",
+   "R6": [],
+   "coder2": [
+    "flag_raise_account"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": null,
+   "stage_coder2": "flag raising",
+   "mode_R6": null,
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "flag comment>=10",
+   "R6": [
+    "F1"
+   ],
+   "coder2": [
+    "flag_raise_comment10"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "stage_R6": "flag raising",
+   "stage_coder2": "flag raising",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "bot duplicate flags",
+   "R6": [
+    "F2"
+   ],
+   "coder2": [
+    "flag_raise_bot_dup"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "stage_R6": "flag raising",
+   "stage_coder2": "flag raising",
+   "mode_R6": "automatic",
+   "mode_coder2": "automatic"
+  },
+  {
+   "unit": "flag resolution permission (+comment v2)",
+   "R6": [
+    "R1"
+   ],
+   "coder2": [
+    "flag_resolve_perm",
+    "flag_resolve_comment10"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "flag resolution",
+   "stage_coder2": "flag resolution",
+   "mode_R6": "guard",
+   "mode_coder2": "guard"
+  },
+  {
+   "unit": "revision superseded on acceptance",
+   "R6": [
+    "X1",
+    "X2"
+   ],
+   "coder2": [
+    "exit_rev_superseded"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    1,
+    1
+   ],
+   "stage_R6": "exit",
+   "stage_coder2": "exit",
+   "mode_R6": "automatic",
+   "mode_coder2": "automatic"
+  },
+  {
+   "unit": "source suggestion auto-curated on EI submission (v1)",
+   "R6": [],
+   "coder2": [
+    "exit_source_suggestion_curated"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "stage_R6": null,
+   "stage_coder2": "exit",
+   "mode_R6": null,
+   "mode_coder2": "automatic"
+  },
+  {
+   "unit": "rejected EI re-opened on revision suggestion/acceptance (v1)",
+   "R6": [],
+   "coder2": [
+    "reopen_rejected_ei"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    1,
+    1,
+    0,
+    0
+   ],
+   "stage_R6": null,
+   "stage_coder2": "re-review",
+   "mode_R6": null,
+   "mode_coder2": "automatic"
+  },
+  {
+   "unit": "assertion approvals reset to requires_review",
+   "R6": [
+    "RR1"
+   ],
+   "coder2": [
+    "rereview_assertion_approval"
+   ],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    1
+   ],
+   "stage_R6": "re-review",
+   "stage_coder2": "re-review",
+   "mode_R6": "automatic",
+   "mode_coder2": "automatic"
+  },
+  {
+   "unit": "withdrawal permission",
+   "R6": [
+    "X3"
+   ],
+   "coder2": [
+    "withdrawal_permission"
+   ],
+   "pres_R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "pres_coder2": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "stage_R6": "exit",
+   "stage_coder2": "exit",
+   "mode_R6": "permission",
+   "mode_coder2": "permission"
+  },
+  {
+   "unit": "bot preprint revisions (unreleased)",
+   "R6": [
+    "I3"
+   ],
+   "coder2": [],
+   "pres_R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "pres_coder2": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "stage_R6": "intake",
+   "stage_coder2": null,
+   "mode_R6": "automatic",
+   "mode_coder2": null
+  }
+ ],
+ "n_units": 25,
+ "n_absence_records": 5,
+ "presence_kappa_controls_only": {
+  "kappa": 0.707,
+  "p_agree": 0.85,
+  "cells": 100
+ },
+ "presence_kappa_with_absence_records": {
+  "kappa": 0.746,
+  "p_agree": 0.875,
+  "cells": 120
+ },
+ "units_matched_both": 17,
+ "stage_agreement": "16/17",
+ "mode_agreement": "17/17",
+ "presence_disagreements": [
+  {
+   "unit": "no self-acceptance EI",
+   "R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "coder2": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "unit": "no self-acceptance revision",
+   "R6": [
+    0,
+    1,
+    1,
+    1
+   ],
+   "coder2": [
+    1,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "unit": "assertion accept: editor, not submitter",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "unit": "assertion approval: org approver + COI",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "unit": "fit: stale base value refuses revision acceptance (v1, force override)",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    1,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "unit": "fit: approval refused if assertion flagged/not accepted",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    0,
+    0,
+    0,
+    1
+   ]
+  },
+  {
+   "unit": "account to raise flag",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    0,
+    1,
+    1,
+    1
+   ]
+  },
+  {
+   "unit": "source suggestion auto-curated on EI submission (v1)",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    0,
+    1,
+    0,
+    0
+   ]
+  },
+  {
+   "unit": "rejected EI re-opened on revision suggestion/acceptance (v1)",
+   "R6": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "coder2": [
+    1,
+    1,
+    0,
+    0
+   ]
+  }
+ ],
+ "stage_disagreements": [
+  {
+   "unit": "acting organisation",
+   "R6": "decision",
+   "coder2": "cross-cutting"
+  }
+ ],
+ "units_only_coder2": [
+  "assertion accept: editor, not submitter",
+  "assertion approval: org approver + COI",
+  "fit: stale base value refuses revision acceptance (v1, force override)",
+  "fit: approval refused if assertion flagged/not accepted",
+  "account to raise flag",
+  "source suggestion auto-curated on EI submission (v1)",
+  "rejected EI re-opened on revision suggestion/acceptance (v1)"
+ ],
+ "units_only_R6": [
+  "bot preprint revisions (unreleased)"
+ ]
+}

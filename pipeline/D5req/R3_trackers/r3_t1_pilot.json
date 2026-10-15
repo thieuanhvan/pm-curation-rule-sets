@@ -1,0 +1,35 @@
+{
+ "go": {
+  "n_extra_closed": 93,
+  "post2022": 44,
+  "confusion_v2": {
+   "completed|REJ": 2,
+   "completed|ACC": 38,
+   "completed|UNCLEAR": 2,
+   "not_planned|REJ": 2
+  },
+  "confusion_noSR": {
+   "completed|REJ": 2,
+   "completed|ACC": 38,
+   "completed|UNCLEAR": 2,
+   "not_planned|ACC": 1,
+   "not_planned|REJ": 1
+  },
+  "bugfix_changed": []
+ },
+ "hpo": {
+  "n_extra_closed": 96,
+  "post2022": 35,
+  "confusion_v2": {
+   "completed|ACC": 31,
+   "completed|UNCLEAR": 3,
+   "completed|REJ": 1
+  },
+  "confusion_noSR": {
+   "completed|ACC": 31,
+   "completed|UNCLEAR": 3,
+   "completed|REJ": 1
+  },
+  "bugfix_changed": []
+ }
+}

@@ -1,0 +1,865 @@
+{
+ "ocel_ei_excl_bot": {
+  "events": 65079,
+  "objects": {
+   "revision": 25380,
+   "evidence_item": 12092,
+   "comment": 3837,
+   "flag": 567,
+   "user": 377,
+   "organisation": 22
+  },
+  "relations": 242111
+ },
+ "ocdfg_edges_by_object_type": {
+  "user": {
+   "n_edges": 118,
+   "top": [
+    [
+     "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+     17123
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_ACCEPTED",
+     11679
+    ],
+    [
+     "SUBMITTED -> SUBMITTED",
+     9942
+    ],
+    [
+     "ACCEPTED -> ACCEPTED",
+     1824
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     1613
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     1570
+    ],
+    [
+     "ACCEPTED -> REVISION_SUGGESTED",
+     1566
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+     1513
+    ],
+    [
+     "REVISION_SUGGESTED -> ACCEPTED",
+     1440
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     1312
+    ],
+    [
+     "REVISION_ACCEPTED -> ACCEPTED",
+     1221
+    ],
+    [
+     "SUBMITTED -> REVISION_SUGGESTED",
+     1158
+    ]
+   ]
+  },
+  "organisation": {
+   "n_edges": 118,
+   "top": [
+    [
+     "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+     15940
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_ACCEPTED",
+     11158
+    ],
+    [
+     "SUBMITTED -> SUBMITTED",
+     8695
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     2293
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+     1861
+    ],
+    [
+     "ACCEPTED -> REVISION_SUGGESTED",
+     1754
+    ],
+    [
+     "ACCEPTED -> ACCEPTED",
+     1567
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     1464
+    ],
+    [
+     "REVISION_SUGGESTED -> ACCEPTED",
+     1409
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     1308
+    ],
+    [
+     "REVISION_ACCEPTED -> ACCEPTED",
+     1206
+    ],
+    [
+     "SUBMITTED -> REVISION_SUGGESTED",
+     1136
+    ]
+   ]
+  },
+  "evidence_item": {
+   "n_edges": 104,
+   "top": [
+    [
+     "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+     11148
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     7081
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_ACCEPTED",
+     6675
+    ],
+    [
+     "SUBMITTED -> REVISION_SUGGESTED",
+     4525
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+     3212
+    ],
+    [
+     "SUBMITTED -> ACCEPTED",
+     2566
+    ],
+    [
+     "ACCEPTED -> REVISION_SUGGESTED",
+     2468
+    ],
+    [
+     "REVISION_ACCEPTED -> ACCEPTED",
+     1303
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     1242
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     1168
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_REJECTED",
+     1073
+    ],
+    [
+     "REVISION_SUGGESTED -> ACCEPTED",
+     808
+    ]
+   ]
+  },
+  "revision": {
+   "n_edges": 14,
+   "top": [
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     13733
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_REJECTED",
+     2654
+    ],
+    [
+     "REVISION_SUGGESTED -> COMMENTED",
+     711
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_SUPERSEDED",
+     509
+    ],
+    [
+     "REVISION_ACCEPTED -> COMMENTED",
+     453
+    ],
+    [
+     "COMMENTED -> REVISION_ACCEPTED",
+     329
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     255
+    ],
+    [
+     "COMMENTED -> REVISION_REJECTED",
+     197
+    ],
+    [
+     "REVISION_REJECTED -> COMMENTED",
+     94
+    ],
+    [
+     "COMMENTED -> REVISION_SUPERSEDED",
+     18
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     12
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_REJECTED",
+     8
+    ]
+   ]
+  },
+  "flag": {
+   "n_edges": 3,
+   "top": [
+    [
+     "FLAGGED -> FLAG_RESOLVED",
+     187
+    ],
+    [
+     "FLAG_RESOLVED -> FLAG_RESOLVED",
+     1
+    ],
+    [
+     "FLAGGED -> FLAGGED",
+     1
+    ]
+   ]
+  },
+  "comment": {
+   "n_edges": 1,
+   "top": [
+    [
+     "COMMENTED -> COMMENT_DELETED",
+     20
+    ]
+   ]
+  }
+ },
+ "activities_per_object_type": {
+  "evidence_item": [
+   "ACCEPTED",
+   "COMMENTED",
+   "COMMENT_DELETED",
+   "FLAGGED",
+   "FLAG_RESOLVED",
+   "REJECTED",
+   "REVERTED",
+   "REVISION_ACCEPTED",
+   "REVISION_REJECTED",
+   "REVISION_SUGGESTED",
+   "REVISION_SUPERSEDED",
+   "SUBMITTED"
+  ],
+  "organisation": [
+   "ACCEPTED",
+   "COMMENTED",
+   "COMMENT_DELETED",
+   "FLAGGED",
+   "FLAG_RESOLVED",
+   "REJECTED",
+   "REVERTED",
+   "REVISION_ACCEPTED",
+   "REVISION_REJECTED",
+   "REVISION_SUGGESTED",
+   "REVISION_SUPERSEDED",
+   "SUBMITTED"
+  ],
+  "user": [
+   "ACCEPTED",
+   "COMMENTED",
+   "COMMENT_DELETED",
+   "FLAGGED",
+   "FLAG_RESOLVED",
+   "REJECTED",
+   "REVERTED",
+   "REVISION_ACCEPTED",
+   "REVISION_REJECTED",
+   "REVISION_SUGGESTED",
+   "REVISION_SUPERSEDED",
+   "SUBMITTED"
+  ],
+  "comment": [
+   "COMMENTED",
+   "COMMENT_DELETED"
+  ],
+  "revision": [
+   "COMMENTED",
+   "REVISION_ACCEPTED",
+   "REVISION_REJECTED",
+   "REVISION_SUGGESTED",
+   "REVISION_SUPERSEDED"
+  ],
+  "flag": [
+   "FLAGGED",
+   "FLAG_RESOLVED"
+  ]
+ },
+ "objects_per_evidence_item": {
+  "revision": {
+   "share_ge1": 0.5875,
+   "mean": 2.099,
+   "p90": 6,
+   "max": 25
+  },
+  "flag": {
+   "share_ge1": 0.0413,
+   "mean": 0.047,
+   "p90": 0,
+   "max": 6
+  },
+  "comment": {
+   "share_ge1": 0.1708,
+   "mean": 0.317,
+   "p90": 1,
+   "max": 20
+  },
+  "user": {
+   "share_ge1": 1.0,
+   "mean": 2.482,
+   "p90": 5,
+   "max": 10
+  },
+  "organisation": {
+   "share_ge1": 0.95,
+   "mean": 1.643,
+   "p90": 3,
+   "max": 8
+  }
+ },
+ "per_object_type_dfg": {
+  "evidence_item": {
+   "cases": 12092,
+   "start": {
+    "SUBMITTED": 12084,
+    "REVISION_SUGGESTED": 5,
+    "ACCEPTED": 3
+   },
+   "end": {
+    "REVISION_ACCEPTED": 3764,
+    "SUBMITTED": 3447,
+    "REVISION_SUGGESTED": 1706,
+    "ACCEPTED": 1553,
+    "COMMENTED": 621,
+    "REVISION_REJECTED": 425
+   },
+   "top_edges": [
+    [
+     "REVISION_SUGGESTED -> REVISION_SUGGESTED",
+     11148
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     7081
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_ACCEPTED",
+     6675
+    ],
+    [
+     "SUBMITTED -> REVISION_SUGGESTED",
+     4525
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_SUGGESTED",
+     3212
+    ],
+    [
+     "SUBMITTED -> ACCEPTED",
+     2566
+    ],
+    [
+     "ACCEPTED -> REVISION_SUGGESTED",
+     2468
+    ],
+    [
+     "REVISION_ACCEPTED -> ACCEPTED",
+     1303
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     1242
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     1168
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_REJECTED",
+     1073
+    ],
+    [
+     "REVISION_SUGGESTED -> ACCEPTED",
+     808
+    ]
+   ]
+  },
+  "revision": {
+   "cases": 25380,
+   "start": {
+    "REVISION_SUGGESTED": 23045,
+    "REVISION_ACCEPTED": 2296,
+    "REVISION_REJECTED": 36,
+    "REVISION_SUPERSEDED": 2,
+    "COMMENTED": 1
+   },
+   "end": {
+    "REVISION_ACCEPTED": 15902,
+    "REVISION_SUGGESTED": 5438,
+    "REVISION_REJECTED": 2796,
+    "COMMENTED": 715,
+    "REVISION_SUPERSEDED": 529
+   },
+   "top_edges": [
+    [
+     "REVISION_SUGGESTED -> REVISION_ACCEPTED",
+     13733
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_REJECTED",
+     2654
+    ],
+    [
+     "REVISION_SUGGESTED -> COMMENTED",
+     711
+    ],
+    [
+     "REVISION_SUGGESTED -> REVISION_SUPERSEDED",
+     509
+    ],
+    [
+     "REVISION_ACCEPTED -> COMMENTED",
+     453
+    ],
+    [
+     "COMMENTED -> REVISION_ACCEPTED",
+     329
+    ],
+    [
+     "COMMENTED -> COMMENTED",
+     255
+    ],
+    [
+     "COMMENTED -> REVISION_REJECTED",
+     197
+    ],
+    [
+     "REVISION_REJECTED -> COMMENTED",
+     94
+    ],
+    [
+     "COMMENTED -> REVISION_SUPERSEDED",
+     18
+    ],
+    [
+     "REVISION_REJECTED -> REVISION_REJECTED",
+     12
+    ],
+    [
+     "REVISION_ACCEPTED -> REVISION_REJECTED",
+     8
+    ]
+   ]
+  },
+  "flag": {
+   "cases": 567,
+   "start": {
+    "FLAGGED": 328,
+    "FLAG_RESOLVED": 239
+   },
+   "end": {
+    "FLAG_RESOLVED": 426,
+    "FLAGGED": 141
+   },
+   "top_edges": [
+    [
+     "FLAGGED -> FLAG_RESOLVED",
+     187
+    ],
+    [
+     "FLAGGED -> FLAGGED",
+     1
+    ],
+    [
+     "FLAG_RESOLVED -> FLAG_RESOLVED",
+     1
+    ]
+   ]
+  },
+  "comment": {
+   "cases": 3837,
+   "start": {
+    "COMMENTED": 3837
+   },
+   "end": {
+    "COMMENTED": 3817,
+    "COMMENT_DELETED": 20
+   },
+   "top_edges": [
+    [
+     "COMMENTED -> COMMENT_DELETED",
+     20
+    ]
+   ]
+  },
+  "note": "pm4py.get_variants on the flattened revision/flag logs returned inconsistent variants (removed); use revision_object_lifecycles and conformance.json OC constraints instead. Flag lifecycles in this bot-excluded view lack bot-raised FLAGGED events."
+ },
+ "variants_full": {
+  "cases": 12092,
+  "distinct": 2753,
+  "singletons": 2254,
+  "distinct_per_case": 0.228,
+  "top1": [
+   0.2851,
+   0.2771,
+   0.2932
+  ],
+  "top5_cov": 0.4483,
+  "top10_cov": 0.5245,
+  "n_for_80pct": 417,
+  "n_for_90pct": 1544,
+  "top": [
+   [
+    "SUBMITTED",
+    3447,
+    0.2851
+   ],
+   [
+    "SUBMITTED > ACCEPTED",
+    871,
+    0.072
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REVISION_SUGGESTED > REVISION_ACCEPTED",
+    395,
+    0.0327
+   ],
+   [
+    "SUBMITTED > REVISION_SUGGESTED",
+    392,
+    0.0324
+   ],
+   [
+    "SUBMITTED > REVISION_ACCEPTED > REVISION_ACCEPTED",
+    316,
+    0.0261
+   ],
+   [
+    "SUBMITTED > REVISION_SUGGESTED > REVISION_ACCEPTED",
+    269,
+    0.0222
+   ],
+   [
+    "SUBMITTED > REVISION_SUGGESTED > REVISION_SUGGESTED",
+    180,
+    0.0149
+   ],
+   [
+    "SUBMITTED > REJECTED",
+    174,
+    0.0144
+   ],
+   [
+    "SUBMITTED > REVISION_SUGGESTED > REVISION_SUGGESTED > REVISION_ACCEPTED > REVISION_ACCEPTED",
+    171,
+    0.0141
+   ],
+   [
+    "SUBMITTED > COMMENTED",
+    127,
+    0.0105
+   ]
+  ]
+ },
+ "variants_no_comments_selfloops_collapsed": {
+  "cases": 8503,
+  "distinct": 938,
+  "singletons": 617,
+  "distinct_per_case": 0.11,
+  "top1": [
+   0.1147,
+   0.1081,
+   0.1216
+  ],
+  "top5_cov": 0.4403,
+  "top10_cov": 0.5871,
+  "n_for_80pct": 58,
+  "n_for_90pct": 209,
+  "top": [
+   [
+    "ACCEPTED",
+    975,
+    0.1147
+   ],
+   [
+    "REVISION_SUGGESTED",
+    941,
+    0.1107
+   ],
+   [
+    "ACCEPTED > REVISION_SUGGESTED > REVISION_ACCEPTED",
+    717,
+    0.0843
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_ACCEPTED",
+    702,
+    0.0826
+   ],
+   [
+    "REVISION_ACCEPTED",
+    409,
+    0.0481
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_ACCEPTED > ACCEPTED",
+    354,
+    0.0416
+   ],
+   [
+    "REJECTED",
+    282,
+    0.0332
+   ],
+   [
+    "ACCEPTED > REVISION_SUGGESTED > REVISION_ACCEPTED > REVISION_SUGGESTED > REVISION_ACCEPTED",
+    223,
+    0.0262
+   ],
+   [
+    "REVISION_SUGGESTED > ACCEPTED > REVISION_ACCEPTED",
+    204,
+    0.024
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_ACCEPTED > ACCEPTED > REVISION_SUGGESTED > REVISION_ACCEPTED",
+    185,
+    0.0218
+   ]
+  ]
+ },
+ "variants_status_projection": {
+  "cases": 12091,
+  "distinct": 18,
+  "singletons": 5,
+  "distinct_per_case": 0.001,
+  "top1": [
+   0.5531,
+   0.5442,
+   0.5619
+  ],
+  "top5_cov": 0.9955,
+  "top10_cov": 0.9987,
+  "n_for_80pct": 2,
+  "n_for_90pct": 2,
+  "top": [
+   [
+    "SUBMITTED",
+    6687,
+    0.5531
+   ],
+   [
+    "SUBMITTED > ACCEPTED",
+    4900,
+    0.4053
+   ],
+   [
+    "SUBMITTED > REJECTED",
+    403,
+    0.0333
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REVERTED > REJECTED",
+    24,
+    0.002
+   ],
+   [
+    "SUBMITTED > REJECTED > ACCEPTED",
+    23,
+    0.0019
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REJECTED",
+    11,
+    0.0009
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REVERTED",
+    8,
+    0.0007
+   ],
+   [
+    "SUBMITTED > REJECTED > REJECTED",
+    8,
+    0.0007
+   ],
+   [
+    "ACCEPTED",
+    6,
+    0.0005
+   ],
+   [
+    "SUBMITTED > REJECTED > REVERTED",
+    5,
+    0.0004
+   ]
+  ]
+ },
+ "imf_full": {
+  "noise": 0.2,
+  "places": 46,
+  "transitions": 63,
+  "silent": 50,
+  "tbr_log_fitness": 0.9599,
+  "tbr_perc_fit_traces": 57.36,
+  "tbr_precision": 0.6772,
+  "process_tree": "->( X( +( X( tau, *( 'REVISION_REJECTED', tau ) ), X( tau, *( 'REVISION_COMMENTED', tau ) ) ), +( X( tau, *( 'ACCEPTED', tau ) ), ->( 'SUBMITTED', X( tau, +( X( tau, *( 'COMMENTED', tau ) ), X( tau, ->( X( tau, *( 'COMMENT_DELETED', tau ) ), +( X( tau, *( 'FLAG_RESOLVED', tau ) ), X( tau, *( 'REJECTED', tau ) ), X( tau, ->( *( 'FLAGGED', tau ), X( tau, 'REVERTED' ) ) ) ) ) ) ) ) ) ) ), X( tau, 'REVISION_SUPERSEDED' ), X( tau, +( *( 'REVISION_SUGGESTED', tau ), *( 'REVISION_ACCEPTED', tau ) ) ) )"
+ },
+ "imf_no_comments": {
+  "noise": 0.2,
+  "places": 37,
+  "transitions": 47,
+  "silent": 37,
+  "tbr_log_fitness": 0.9884,
+  "tbr_perc_fit_traces": 92.47,
+  "tbr_precision": 0.5475,
+  "process_tree": "+( X( tau, *( 'ACCEPTED', tau ) ), ->( 'SUBMITTED', X( tau, +( X( tau, *( 'REVISION_REJECTED', tau ) ), *( 'REVISION_SUGGESTED', tau ), X( tau, *( 'REVISION_ACCEPTED', tau ) ), X( tau, +( X( tau, *( 'FLAG_RESOLVED', tau ) ), X( tau, *( 'FLAGGED', tau ) ), X( tau, *( 'REVISION_SUPERSEDED', tau ), +( X( tau, 'REVERTED' ), *( 'REJECTED', tau ) ) ) ) ) ) ) ) )"
+ },
+ "imf_full_imf0": {
+  "noise": 0.0,
+  "places": 65,
+  "transitions": 85,
+  "silent": 72,
+  "tbr_log_fitness": 1.0,
+  "tbr_perc_fit_traces": 100.0,
+  "tbr_precision": 0.3963,
+  "process_tree": "+( X( tau, *( 'ACCEPTED', tau ) ), ->( X( tau, 'SUBMITTED' ), X( tau, +( X( tau, *( 'REVISION_ACCEPTED', tau ) ), X( tau, +( X( tau, *( 'COMMENTED', tau ) ), X( tau, *( 'REVISION_SUGGESTED', tau ) ), X( tau, +( X( tau, *( 'REVISION_REJECTED', tau ) ), X( tau, +( X( tau, *( 'COMMENT_DELETED', tau ) ), X( tau, +( X( tau, *( 'FLAG_RESOLVED', tau ) ), X( tau, +( X( tau, *( 'REJECTED', tau ) ), X( tau, +( X( tau, *( 'REVISION_COMMENTED', tau ) ), X( tau, +( X( tau, 'REVERTED' ), X( tau, *( 'REVISION_SUPERSEDED', tau ) ), X( tau, *( 'FLAGGED', tau ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) ) )"
+ },
+ "rework": {
+  "cases": 12092,
+  "loop_suggest_reject_suggest": [
+   0.0632,
+   0.059,
+   0.0677
+  ],
+  "loop_same_suggester_resubmits": [
+   0.041,
+   0.0376,
+   0.0447
+  ],
+  "resubmit_gap_days_median": 0.0,
+  "resubmit_gap_p25_p75": [
+   0.0,
+   0.0
+  ]
+ },
+ "revision_object_lifecycles": {
+  "revisions": 25380,
+  "top": [
+   [
+    "REVISION_SUGGESTED > REVISION_ACCEPTED",
+    14051,
+    0.5536
+   ],
+   [
+    "REVISION_SUGGESTED",
+    5610,
+    0.221
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_REJECTED",
+    2828,
+    0.1114
+   ],
+   [
+    "REVISION_ACCEPTED",
+    2297,
+    0.0905
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_SUPERSEDED",
+    527,
+    0.0208
+   ],
+   [
+    "REVISION_REJECTED",
+    36,
+    0.0014
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_REJECTED > REVISION_REJECTED",
+    13,
+    0.0005
+   ],
+   [
+    "REVISION_SUGGESTED > REVISION_ACCEPTED > REVISION_REJECTED",
+    8,
+    0.0003
+   ]
+  ],
+  "no_suggestion_event_in_scope": 2335,
+  "pending": 5610
+ },
+ "status_loops": {
+  "decision_then_reverted": 45,
+  "multiple_decisions": 82,
+  "accepted_and_rejected_both": 68,
+  "patterns": [
+   [
+    "SUBMITTED",
+    6687
+   ],
+   [
+    "SUBMITTED > ACCEPTED",
+    4900
+   ],
+   [
+    "SUBMITTED > REJECTED",
+    403
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REVERTED > REJECTED",
+    24
+   ],
+   [
+    "SUBMITTED > REJECTED > ACCEPTED",
+    23
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REJECTED",
+    11
+   ],
+   [
+    "SUBMITTED > ACCEPTED > REVERTED",
+    8
+   ],
+   [
+    "SUBMITTED > REJECTED > REJECTED",
+    8
+   ],
+   [
+    "ACCEPTED",
+    6
+   ],
+   [
+    "SUBMITTED > REJECTED > REVERTED",
+    5
+   ]
+  ]
+ }
+}

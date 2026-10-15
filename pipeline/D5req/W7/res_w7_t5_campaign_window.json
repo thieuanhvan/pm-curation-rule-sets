@@ -1,0 +1,136 @@
+{
+ "rho_noncampaign_by_window": {
+  "full_followup_2022-10-07..2025-10-06": {
+   "all": {
+    "est": 0.401,
+    "ci_cluster_submitter": [
+     0.283,
+     0.579
+    ],
+    "arrivals": 1676
+   },
+   "bulk27": {
+    "est": 0.454,
+    "ci_cluster_submitter": [
+     0.286,
+     0.656
+    ],
+    "arrivals": 689
+   },
+   "C1": {
+    "est": 0.446,
+    "ci_cluster_submitter": [
+     0.349,
+     0.577
+    ],
+    "arrivals": 1278
+   },
+   "C2": {
+    "est": 0.398,
+    "ci_cluster_submitter": [
+     0.281,
+     0.574
+    ],
+    "arrivals": 1669
+   },
+   "C2b": {
+    "est": 0.372,
+    "ci_cluster_submitter": [
+     0.274,
+     0.52
+    ],
+    "arrivals": 1665
+   },
+   "C3": {
+    "est": 0.395,
+    "ci_cluster_submitter": [
+     0.309,
+     0.531
+    ],
+    "arrivals": 1523
+   },
+   "U": {
+    "est": 0.442,
+    "ci_cluster_submitter": [
+     0.346,
+     0.572
+    ],
+    "arrivals": 1271
+   },
+   "W": {
+    "est": 0.484,
+    "ci_cluster_submitter": [
+     0.318,
+     0.677
+    ],
+    "arrivals": 626
+   }
+  },
+  "cal2023_25": {
+   "all": {
+    "est": 0.466,
+    "ci_cluster_submitter": [
+     0.338,
+     0.667
+    ],
+    "arrivals": 1720
+   },
+   "bulk27": {
+    "est": 0.541,
+    "ci_cluster_submitter": [
+     0.354,
+     0.771
+    ],
+    "arrivals": 658
+   },
+   "C1": {
+    "est": 0.5,
+    "ci_cluster_submitter": [
+     0.391,
+     0.663
+    ],
+    "arrivals": 1296
+   },
+   "C2": {
+    "est": 0.464,
+    "ci_cluster_submitter": [
+     0.336,
+     0.663
+    ],
+    "arrivals": 1713
+   },
+   "C2b": {
+    "est": 0.434,
+    "ci_cluster_submitter": [
+     0.325,
+     0.6
+    ],
+    "arrivals": 1709
+   },
+   "C3": {
+    "est": 0.462,
+    "ci_cluster_submitter": [
+     0.369,
+     0.625
+    ],
+    "arrivals": 1567
+   },
+   "U": {
+    "est": 0.497,
+    "ci_cluster_submitter": [
+     0.388,
+     0.664
+    ],
+    "arrivals": 1289
+   },
+   "W": {
+    "est": 0.58,
+    "ci_cluster_submitter": [
+     0.401,
+     0.791
+    ],
+    "arrivals": 595
+   }
+  }
+ }
+}

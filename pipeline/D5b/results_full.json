@@ -1,0 +1,360 @@
+{
+ "events_unique": 175036,
+ "event_span": [
+  "2015-06-21T16:49:38Z",
+  "2026-10-06T21:18:35Z"
+ ],
+ "actions": {
+  "SUBMITTED": 12085,
+  "ACCEPTED": 4996,
+  "VARIANT_CREATED": 4453,
+  "COMPLEX_MOLECULAR_PROFILE_CREATED": 594,
+  "REVISION_SUGGESTED": 66786,
+  "COMMENTED": 8321,
+  "REVISION_ACCEPTED": 44762,
+  "REVISION_REJECTED": 7098,
+  "REJECTED": 495,
+  "PUBLICATION_SUGGESTED": 1364,
+  "FLAGGED": 3545,
+  "FLAG_RESOLVED": 617,
+  "ASSERTION_SUBMITTED": 331,
+  "ASSERTION_REJECTED": 18,
+  "ASSERTION_ACCEPTED": 152,
+  "REVERTED": 45,
+  "REVISION_SUPERSEDED": 663,
+  "CURATED_SOURCE_SUGGESTION": 22,
+  "DEPRECATED_VARIANT": 362,
+  "DEPRECATED_MOLECULAR_PROFILE": 391,
+  "FEATURE_CREATED": 417,
+  "COMMENT_DELETED": 43,
+  "DEPRECATED_FEATURE": 17464,
+  "ASSERTION_REVERTED": 1,
+  "ASSERTION_APPROVED": 11
+ },
+ "eid_cases_in_log": 12092,
+ "eid_meta": 12092,
+ "status_now": {
+  "ACCEPTED": 4943,
+  "REJECTED": 425,
+  "SUBMITTED": 6724
+ },
+ "status_log_mismatch": {
+  "logAccNowSub": 38,
+  "logNoneNowAcc": 2
+ },
+ "acc_days": {
+  "n": 4950,
+  "p25": 2.3,
+  "med": 31.4,
+  "p75": 189.8,
+  "p90": 698.2,
+  "le1d": 0.215
+ },
+ "rej_days": {
+  "n": 448,
+  "med": 87.6,
+  "p90": 2429.1,
+  "rejWithCommentWithin30d": 0.393
+ },
+ "pending_age_days": {
+  "n": 6723,
+  "p25": 1423.3,
+  "med": 2235.9,
+  "p75": 3014.3,
+  "gt2y": 0.872,
+  "gt5y": 0.614
+ },
+ "pending_touched": {
+  "touchedByOtherEditor": 2228,
+  "untouched": 4495
+ },
+ "four_eyes_accept": {
+  "ok": 4936,
+  "self": 14,
+  "rate": 0.9972
+ },
+ "accept_by_current_role": {
+  "ADMIN": 3881,
+  "EDITOR": 1075
+ },
+ "reject_by_current_role": {
+  "ADMIN": 208,
+  "EDITOR": 148,
+  "CURATOR": 92
+ },
+ "rework": {
+  "withRev": 0.634,
+  "withRevRej": 0.271,
+  "reworkLoop": 0.072,
+  "withFlag": 0.248,
+  "withComment": 0.137,
+  "revSugPerCase_mean": 2.48,
+  "p90": 7,
+  "multiDecision": 82,
+  "reverted": 45,
+  "decidedNoSubmit": 6
+ },
+ "variants": {
+  "distinct": 1227,
+  "top1cov": 0.25,
+  "top10cov": 0.601,
+  "singletons": 819,
+  "top": [
+   [
+    "SUBMITTED",
+    3023
+   ],
+   [
+    "SUBMITTED>ACCEPTED",
+    920
+   ],
+   [
+    "SUBMITTED>FLAGGED>R_SUGGESTED>R_REJECTED",
+    683
+   ],
+   [
+    "SUBMITTED>ACCEPTED>R_SUGGESTED>R_ACCEPTED",
+    670
+   ],
+   [
+    "SUBMITTED>R_SUGGESTED>R_ACCEPTED",
+    575
+   ],
+   [
+    "SUBMITTED>R_SUGGESTED",
+    323
+   ],
+   [
+    "SUBMITTED>R_SUGGESTED>R_ACCEPTED>ACCEPTED",
+    317
+   ],
+   [
+    "SUBMITTED>R_SUGGESTED>R_REJECTED>R_ACCEPTED",
+    305
+   ]
+  ]
+ },
+ "revision_four_eyes_all_entities": {
+  "ok": 42678,
+  "self": 1051,
+  "rate": 0.976,
+  "selfByRole": {
+   "ADMIN": 475,
+   "CURATOR": 194,
+   "EDITOR": 382
+  },
+  "acceptorRole": {
+   "ADMIN": 38177,
+   "CURATOR": 194,
+   "EDITOR": 5358
+  },
+  "acceptDaysMed": 11.7,
+  "le1d": 0.297
+ },
+ "revision_with_comment_share": {
+  "suggested": 66786,
+  "commented": 4046,
+  "share": 0.061
+ },
+ "by_year": [
+  {
+   "y": "2015",
+   "sub": 613,
+   "dec": 604,
+   "deciders": 4,
+   "decPerDecider": 151,
+   "pendingEnd": 10,
+   "pendMedAgeD": 1.4
+  },
+  {
+   "y": "2016",
+   "sub": 1112,
+   "dec": 1003,
+   "deciders": 6,
+   "decPerDecider": 167.2,
+   "pendingEnd": 120,
+   "pendMedAgeD": 29.5
+  },
+  {
+   "y": "2017",
+   "sub": 2932,
+   "dec": 837,
+   "deciders": 9,
+   "decPerDecider": 93,
+   "pendingEnd": 2216,
+   "pendMedAgeD": 212.8
+  },
+  {
+   "y": "2018",
+   "sub": 1109,
+   "dec": 663,
+   "deciders": 9,
+   "decPerDecider": 73.7,
+   "pendingEnd": 2664,
+   "pendMedAgeD": 556.3
+  },
+  {
+   "y": "2019",
+   "sub": 763,
+   "dec": 322,
+   "deciders": 18,
+   "decPerDecider": 17.9,
+   "pendingEnd": 3105,
+   "pendMedAgeD": 875
+  },
+  {
+   "y": "2020",
+   "sub": 1189,
+   "dec": 456,
+   "deciders": 20,
+   "decPerDecider": 22.8,
+   "pendingEnd": 3838,
+   "pendMedAgeD": 876.3
+  },
+  {
+   "y": "2021",
+   "sub": 1052,
+   "dec": 259,
+   "deciders": 21,
+   "decPerDecider": 12.3,
+   "pendingEnd": 4631,
+   "pendMedAgeD": 1043.1
+  },
+  {
+   "y": "2022",
+   "sub": 987,
+   "dec": 209,
+   "deciders": 21,
+   "decPerDecider": 10,
+   "pendingEnd": 5409,
+   "pendMedAgeD": 1143.6
+  },
+  {
+   "y": "2023",
+   "sub": 587,
+   "dec": 237,
+   "deciders": 11,
+   "decPerDecider": 21.5,
+   "pendingEnd": 5759,
+   "pendMedAgeD": 1347.2
+  },
+  {
+   "y": "2024",
+   "sub": 640,
+   "dec": 232,
+   "deciders": 13,
+   "decPerDecider": 17.8,
+   "pendingEnd": 6167,
+   "pendMedAgeD": 1644.1
+  },
+  {
+   "y": "2025",
+   "sub": 493,
+   "dec": 334,
+   "deciders": 15,
+   "decPerDecider": 22.3,
+   "pendingEnd": 6327,
+   "pendMedAgeD": 1990.1
+  },
+  {
+   "y": "2026",
+   "sub": 608,
+   "dec": 248,
+   "deciders": 13,
+   "decPerDecider": 19.1,
+   "pendingEnd": 6687,
+   "pendMedAgeD": 2320.3
+  }
+ ],
+ "conditional_decision": [
+  {
+   "pendingAtDays": 30,
+   "n": 8794,
+   "decidedWithinNextYear": 0.199
+  },
+  {
+   "pendingAtDays": 90,
+   "n": 7938,
+   "decidedWithinNextYear": 0.129
+  },
+  {
+   "pendingAtDays": 180,
+   "n": 7428,
+   "decidedWithinNextYear": 0.084
+  },
+  {
+   "pendingAtDays": 365,
+   "n": 6876,
+   "decidedWithinNextYear": 0.066
+  },
+  {
+   "pendingAtDays": 730,
+   "n": 6017,
+   "decidedWithinNextYear": 0.03
+  },
+  {
+   "pendingAtDays": 1460,
+   "n": 4286,
+   "decidedWithinNextYear": 0.012
+  }
+ ],
+ "decider_concentration": {
+  "deciders": 62,
+  "gini": 0.852,
+  "top1": 0.218,
+  "top5": 0.718
+ },
+ "submitter_concentration": {
+  "submitters": 344,
+  "gini": 0.855,
+  "top1": 0.13,
+  "top5": 0.349
+ },
+ "decider_concentration_2023plus": {
+  "deciders": 24,
+  "gini": 0.671,
+  "top1": 0.215,
+  "top5": 0.682
+ },
+ "to_be": {
+  "lambda_sub_per_yr": 573,
+  "mu_dec_per_yr": 268,
+  "backlog_now": 6723,
+  "dec_per_decider_yr": 20.6,
+  "clear_in_2y_need_mu": 3935,
+  "extra_decider_equiv_2y": 178.1,
+  "littles_law_W_days_now": 9168,
+  "wip_cap_90d_SLA": 141,
+  "wip_cap_180d_SLA": 283,
+  "backlog_over_cap90": 47.6,
+  "cohort2023_25": {
+   "n": 1720,
+   "decided": 604,
+   "share": 0.351,
+   "medDaysIfDecided": 21.8
+  }
+ },
+ "events_with_org": {
+  "all": 0.802,
+  "decisions": 0.992
+ },
+ "moderating_users_by_current_role": {
+  "ADMIN": 12,
+  "EDITOR": 21,
+  "CURATOR": 60
+ },
+ "users_by_role_now": {
+  "ADMIN": 12,
+  "EDITOR": 27,
+  "CURATOR": 3041
+ },
+ "assertions": {
+  "cases": 331,
+  "accepted": 151,
+  "accMedDays": 26.2,
+  "accP90": 402.1,
+  "fourEyes": "151/151",
+  "approved": 9,
+  "apprMedDays": 653.7
+ }
+}

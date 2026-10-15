@@ -1,0 +1,108 @@
+{
+ "civic-client": {
+  "n_commits_touching_docs": 223,
+  "first_date": "2014-08-20",
+  "last_date": "2020-01-16",
+  "first_match": {
+   "C1_account_to_submit": {
+    "commit": "af8bfdff",
+    "date": "2018-10-29",
+    "files": [
+     "src/app/pages/help_intro.tpl.html"
+    ],
+    "match": "Signing into CIViC to Add Evidence"
+   },
+   "C4C6_editor_accepts": {
+    "commit": "592db52e",
+    "date": "2016-01-13",
+    "files": [
+     "src/app/pages/faq.tpl.html"
+    ],
+    "match": "editor, moderat"
+   },
+   "C5C7_no_self_acceptance": null,
+   "C8C9_coi_statement": null,
+   "C10C11_reason_on_reject": null,
+   "C2_C13_comment_required": null,
+   "C18_withdraw_own": null,
+   "C25_account_to_flag": null,
+   "C3_pending_revision_rule": null
+  }
+ },
+ "civic-docs": {
+  "n_commits_touching_docs": 670,
+  "first_date": "2018-10-26",
+  "last_date": "2026-07-11",
+  "first_match": {
+   "C1_account_to_submit": {
+    "commit": "ea3eab7",
+    "date": "2018-10-31",
+    "files": [
+     "docs/index.rst"
+    ],
+    "match": "Signing into CIViC to Add Evidence"
+   },
+   "C4C6_editor_accepts": {
+    "commit": "39a2963",
+    "date": "2019-03-20",
+    "files": [
+     "docs/faq.rst"
+    ],
+    "match": "editor, moderat"
+   },
+   "C5C7_no_self_acceptance": {
+    "commit": "7a5c16d",
+    "date": "2019-10-15",
+    "files": [
+     "docs/curating/evidence.rst"
+    ],
+    "match": "accept) their own submission"
+   },
+   "C8C9_coi_statement": {
+    "commit": "3e6728e",
+    "date": "2020-05-08",
+    "files": [
+     "docs/about/faq.rst"
+    ],
+    "match": "conflicts of interest"
+   },
+   "C10C11_reason_on_reject": {
+    "commit": "3753adb",
+    "date": "2019-10-09",
+    "files": [
+     "docs/using/notifications.rst"
+    ],
+    "match": "rejected, comment"
+   },
+   "C2_C13_comment_required": {
+    "commit": "16883cd",
+    "date": "2019-10-04",
+    "files": [
+     "docs/using/comments.rst"
+    ],
+    "match": "comment is not required"
+   },
+   "C18_withdraw_own": {
+    "commit": "7a5c16d",
+    "date": "2019-10-15",
+    "files": [
+     "docs/curating/evidence.rst"
+    ],
+    "match": "reject (but not accept) their own"
+   },
+   "C25_account_to_flag": {
+    "commit": "61fa985",
+    "date": "2019-03-29",
+    "files": [
+     "docs/about.rst"
+    ],
+    "match": "account to flag"
+   },
+   "C3_pending_revision_rule": null
+  }
+ },
+ "danos_2019_sop": {
+  "epub": "2019-11-29",
+  "doi": "10.1186/s13073-019-0687-x"
+ }
+}

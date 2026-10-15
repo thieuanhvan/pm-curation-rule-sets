@@ -1,0 +1,763 @@
+{
+ "n_pending": 6687,
+ "overall": {
+  "all": {
+   "n": 6687,
+   "nSubmitters": 239,
+   "live": [
+    0.155,
+    0.146,
+    0.163
+   ],
+   "dormant_item_submitter_active": [
+    0.159,
+    0.15,
+    0.168
+   ],
+   "abandoned": [
+    0.686,
+    0.675,
+    0.697
+   ],
+   "otherEditorTouchedEver": 0.42
+  }
+ },
+ "share_itemActivity_last90d": [
+  0.067,
+  0.061,
+  0.073
+ ],
+ "share_nonSubmitterActivity_last90d": [
+  0.028,
+  0.024,
+  0.032
+ ],
+ "share_submitterActive_last90d": [
+  0.222,
+  0.212,
+  0.232
+ ],
+ "share_itemActivity_last365d": [
+  0.155,
+  0.146,
+  0.163
+ ],
+ "share_nonSubmitterActivity_last365d": [
+  0.067,
+  0.061,
+  0.073
+ ],
+ "share_submitterActive_last365d": [
+  0.266,
+  0.256,
+  0.277
+ ],
+ "share_itemActivity_last730d": [
+  0.204,
+  0.194,
+  0.214
+ ],
+ "share_nonSubmitterActivity_last730d": [
+  0.087,
+  0.081,
+  0.094
+ ],
+ "share_submitterActive_last730d": [
+  0.299,
+  0.288,
+  0.31
+ ],
+ "yearsSinceLastItemActivity_quartiles": [
+  2.51,
+  4.21,
+  6.02
+ ],
+ "by_level": {
+  "A": {
+   "n": 177,
+   "nSubmitters": 27,
+   "live": [
+    0.147,
+    0.102,
+    0.207
+   ],
+   "dormant_item_submitter_active": [
+    0.35,
+    0.284,
+    0.423
+   ],
+   "abandoned": [
+    0.503,
+    0.43,
+    0.576
+   ],
+   "otherEditorTouchedEver": 0.277
+  },
+  "B": {
+   "n": 976,
+   "nSubmitters": 134,
+   "live": [
+    0.209,
+    0.185,
+    0.236
+   ],
+   "dormant_item_submitter_active": [
+    0.169,
+    0.147,
+    0.194
+   ],
+   "abandoned": [
+    0.622,
+    0.591,
+    0.652
+   ],
+   "otherEditorTouchedEver": 0.246
+  },
+  "C": {
+   "n": 3378,
+   "nSubmitters": 119,
+   "live": [
+    0.104,
+    0.094,
+    0.115
+   ],
+   "dormant_item_submitter_active": [
+    0.056,
+    0.049,
+    0.064
+   ],
+   "abandoned": [
+    0.84,
+    0.827,
+    0.852
+   ],
+   "otherEditorTouchedEver": 0.591
+  },
+  "D": {
+   "n": 1975,
+   "nSubmitters": 133,
+   "live": [
+    0.224,
+    0.206,
+    0.243
+   ],
+   "dormant_item_submitter_active": [
+    0.326,
+    0.306,
+    0.347
+   ],
+   "abandoned": [
+    0.45,
+    0.428,
+    0.472
+   ],
+   "otherEditorTouchedEver": 0.257
+  },
+  "E": {
+   "n": 181,
+   "nSubmitters": 22,
+   "live": [
+    0.055,
+    0.03,
+    0.099
+   ],
+   "dormant_item_submitter_active": [
+    0.017,
+    0.006,
+    0.048
+   ],
+   "abandoned": [
+    0.928,
+    0.881,
+    0.958
+   ],
+   "otherEditorTouchedEver": 0.072
+  }
+ },
+ "by_etype": {
+  "DIAGNOSTIC": {
+   "n": 225,
+   "nSubmitters": 61,
+   "live": [
+    0.147,
+    0.106,
+    0.199
+   ],
+   "dormant_item_submitter_active": [
+    0.262,
+    0.209,
+    0.323
+   ],
+   "abandoned": [
+    0.591,
+    0.526,
+    0.653
+   ],
+   "otherEditorTouchedEver": 0.351
+  },
+  "FUNCTIONAL": {
+   "n": 591,
+   "nSubmitters": 47,
+   "live": [
+    0.205,
+    0.174,
+    0.239
+   ],
+   "dormant_item_submitter_active": [
+    0.602,
+    0.562,
+    0.641
+   ],
+   "abandoned": [
+    0.193,
+    0.163,
+    0.227
+   ],
+   "otherEditorTouchedEver": 0.174
+  },
+  "ONCOGENIC": {
+   "n": 560,
+   "nSubmitters": 65,
+   "live": [
+    0.334,
+    0.296,
+    0.374
+   ],
+   "dormant_item_submitter_active": [
+    0.168,
+    0.139,
+    0.201
+   ],
+   "abandoned": [
+    0.498,
+    0.457,
+    0.539
+   ],
+   "otherEditorTouchedEver": 0.334
+  },
+  "PREDICTIVE": {
+   "n": 2777,
+   "nSubmitters": 152,
+   "live": [
+    0.175,
+    0.162,
+    0.19
+   ],
+   "dormant_item_submitter_active": [
+    0.155,
+    0.142,
+    0.169
+   ],
+   "abandoned": [
+    0.669,
+    0.652,
+    0.687
+   ],
+   "otherEditorTouchedEver": 0.263
+  },
+  "PREDISPOSING": {
+   "n": 2281,
+   "nSubmitters": 45,
+   "live": [
+    0.078,
+    0.068,
+    0.09
+   ],
+   "dormant_item_submitter_active": [
+    0.012,
+    0.009,
+    0.018
+   ],
+   "abandoned": [
+    0.909,
+    0.897,
+    0.92
+   ],
+   "otherEditorTouchedEver": 0.717
+  },
+  "PROGNOSTIC": {
+   "n": 253,
+   "nSubmitters": 80,
+   "live": [
+    0.107,
+    0.074,
+    0.151
+   ],
+   "dormant_item_submitter_active": [
+    0.375,
+    0.318,
+    0.437
+   ],
+   "abandoned": [
+    0.518,
+    0.456,
+    0.579
+   ],
+   "otherEditorTouchedEver": 0.285
+  }
+ },
+ "by_rating": {
+  "1.0": {
+   "n": 262,
+   "nSubmitters": 61,
+   "live": [
+    0.183,
+    0.141,
+    0.235
+   ],
+   "dormant_item_submitter_active": [
+    0.164,
+    0.124,
+    0.214
+   ],
+   "abandoned": [
+    0.653,
+    0.593,
+    0.708
+   ],
+   "otherEditorTouchedEver": 0.489
+  },
+  "2.0": {
+   "n": 1484,
+   "nSubmitters": 110,
+   "live": [
+    0.175,
+    0.156,
+    0.195
+   ],
+   "dormant_item_submitter_active": [
+    0.229,
+    0.208,
+    0.251
+   ],
+   "abandoned": [
+    0.596,
+    0.571,
+    0.621
+   ],
+   "otherEditorTouchedEver": 0.459
+  },
+  "3.0": {
+   "n": 3273,
+   "nSubmitters": 157,
+   "live": [
+    0.144,
+    0.132,
+    0.156
+   ],
+   "dormant_item_submitter_active": [
+    0.146,
+    0.134,
+    0.159
+   ],
+   "abandoned": [
+    0.71,
+    0.695,
+    0.726
+   ],
+   "otherEditorTouchedEver": 0.483
+  },
+  "4.0": {
+   "n": 847,
+   "nSubmitters": 121,
+   "live": [
+    0.21,
+    0.184,
+    0.239
+   ],
+   "dormant_item_submitter_active": [
+    0.213,
+    0.186,
+    0.241
+   ],
+   "abandoned": [
+    0.577,
+    0.544,
+    0.61
+   ],
+   "otherEditorTouchedEver": 0.307
+  },
+  "5.0": {
+   "n": 117,
+   "nSubmitters": 54,
+   "live": [
+    0.35,
+    0.27,
+    0.44
+   ],
+   "dormant_item_submitter_active": [
+    0.188,
+    0.128,
+    0.268
+   ],
+   "abandoned": [
+    0.462,
+    0.374,
+    0.552
+   ],
+   "otherEditorTouchedEver": 0.342
+  }
+ },
+ "by_volc": {
+  "1": {
+   "n": 82,
+   "nSubmitters": 82,
+   "live": [
+    0.098,
+    0.05,
+    0.181
+   ],
+   "dormant_item_submitter_active": [
+    0.012,
+    0.002,
+    0.066
+   ],
+   "abandoned": [
+    0.89,
+    0.804,
+    0.941
+   ],
+   "otherEditorTouchedEver": 0.476
+  },
+  "10-99": {
+   "n": 1413,
+   "nSubmitters": 66,
+   "live": [
+    0.182,
+    0.163,
+    0.203
+   ],
+   "dormant_item_submitter_active": [
+    0.178,
+    0.159,
+    0.198
+   ],
+   "abandoned": [
+    0.64,
+    0.615,
+    0.665
+   ],
+   "otherEditorTouchedEver": 0.406
+  },
+  "100+": {
+   "n": 4977,
+   "nSubmitters": 27,
+   "live": [
+    0.142,
+    0.133,
+    0.152
+   ],
+   "dormant_item_submitter_active": [
+    0.161,
+    0.151,
+    0.171
+   ],
+   "abandoned": [
+    0.697,
+    0.684,
+    0.709
+   ],
+   "otherEditorTouchedEver": 0.424
+  },
+  "2-9": {
+   "n": 215,
+   "nSubmitters": 64,
+   "live": [
+    0.279,
+    0.223,
+    0.343
+   ],
+   "dormant_item_submitter_active": [
+    0.051,
+    0.029,
+    0.089
+   ],
+   "abandoned": [
+    0.67,
+    0.604,
+    0.729
+   ],
+   "otherEditorTouchedEver": 0.405
+  }
+ },
+ "by_burst": {
+  "burst>=20/day": {
+   "n": 2356,
+   "nSubmitters": 21,
+   "live": [
+    0.076,
+    0.066,
+    0.087
+   ],
+   "dormant_item_submitter_active": [
+    0.051,
+    0.043,
+    0.061
+   ],
+   "abandoned": [
+    0.873,
+    0.859,
+    0.886
+   ],
+   "otherEditorTouchedEver": 0.461
+  },
+  "non-burst": {
+   "n": 4331,
+   "nSubmitters": 238,
+   "live": [
+    0.197,
+    0.186,
+    0.21
+   ],
+   "dormant_item_submitter_active": [
+    0.218,
+    0.206,
+    0.23
+   ],
+   "abandoned": [
+    0.585,
+    0.57,
+    0.599
+   ],
+   "otherEditorTouchedEver": 0.397
+  }
+ },
+ "by_firstSub": {
+  "first-time": {
+   "n": 174,
+   "nSubmitters": 174,
+   "live": [
+    0.138,
+    0.094,
+    0.197
+   ],
+   "dormant_item_submitter_active": [
+    0.092,
+    0.057,
+    0.144
+   ],
+   "abandoned": [
+    0.77,
+    0.702,
+    0.826
+   ],
+   "otherEditorTouchedEver": 0.483
+  },
+  "repeat": {
+   "n": 6513,
+   "nSubmitters": 152,
+   "live": [
+    0.155,
+    0.146,
+    0.164
+   ],
+   "dormant_item_submitter_active": [
+    0.161,
+    0.152,
+    0.17
+   ],
+   "abandoned": [
+    0.684,
+    0.673,
+    0.695
+   ],
+   "otherEditorTouchedEver": 0.418
+  }
+ },
+ "by_subRoleNow": {
+  "ADMIN": {
+   "n": 431,
+   "nSubmitters": 8,
+   "live": [
+    0.299,
+    0.258,
+    0.344
+   ],
+   "dormant_item_submitter_active": [
+    0.568,
+    0.521,
+    0.614
+   ],
+   "abandoned": [
+    0.132,
+    0.103,
+    0.168
+   ],
+   "otherEditorTouchedEver": 0.374
+  },
+  "CURATOR": {
+   "n": 4497,
+   "nSubmitters": 213,
+   "live": [
+    0.14,
+    0.13,
+    0.151
+   ],
+   "dormant_item_submitter_active": [
+    0.03,
+    0.026,
+    0.036
+   ],
+   "abandoned": [
+    0.83,
+    0.818,
+    0.84
+   ],
+   "otherEditorTouchedEver": 0.461
+  },
+  "EDITOR": {
+   "n": 1759,
+   "nSubmitters": 18,
+   "live": [
+    0.156,
+    0.14,
+    0.174
+   ],
+   "dormant_item_submitter_active": [
+    0.388,
+    0.365,
+    0.411
+   ],
+   "abandoned": [
+    0.456,
+    0.433,
+    0.479
+   ],
+   "otherEditorTouchedEver": 0.326
+  }
+ },
+ "by_era": {
+  "2015-16": {
+   "n": "<5 (suppressed)"
+  },
+  "2017-18": {
+   "n": 2113,
+   "nSubmitters": 51,
+   "live": [
+    0.083,
+    0.072,
+    0.096
+   ],
+   "dormant_item_submitter_active": [
+    0.037,
+    0.03,
+    0.046
+   ],
+   "abandoned": [
+    0.879,
+    0.865,
+    0.893
+   ],
+   "otherEditorTouchedEver": 0.57
+  },
+  "2019-22": {
+   "n": 2978,
+   "nSubmitters": 154,
+   "live": [
+    0.053,
+    0.046,
+    0.062
+   ],
+   "dormant_item_submitter_active": [
+    0.219,
+    0.204,
+    0.234
+   ],
+   "abandoned": [
+    0.728,
+    0.711,
+    0.743
+   ],
+   "otherEditorTouchedEver": 0.473
+  },
+  "2023-26": {
+   "n": 1593,
+   "nSubmitters": 79,
+   "live": [
+    0.438,
+    0.414,
+    0.463
+   ],
+   "dormant_item_submitter_active": [
+    0.208,
+    0.189,
+    0.229
+   ],
+   "abandoned": [
+    0.353,
+    0.33,
+    0.377
+   ],
+   "otherEditorTouchedEver": 0.12
+  }
+ },
+ "pending_by_top_submitters": {
+  "submitters": 239,
+  "top1share": 0.133,
+  "top5share": 0.384,
+  "top10share": 0.541
+ },
+ "level_x_state": {
+  "A": {
+   "abandoned": 89,
+   "dormant_item_submitter_active": 62,
+   "live": 26
+  },
+  "B": {
+   "abandoned": 607,
+   "dormant_item_submitter_active": 165,
+   "live": 204
+  },
+  "C": {
+   "abandoned": 2838,
+   "dormant_item_submitter_active": 189,
+   "live": 351
+  },
+  "D": {
+   "abandoned": 888,
+   "dormant_item_submitter_active": 644,
+   "live": 443
+  },
+  "E": {
+   "abandoned": 168,
+   "dormant_item_submitter_active": "<5",
+   "live": 10
+  }
+ },
+ "volume_x_state": {
+  "1": {
+   "abandoned": 73,
+   "dormant_item_submitter_active": "<5",
+   "live": 8
+  },
+  "10-99": {
+   "abandoned": 905,
+   "dormant_item_submitter_active": 251,
+   "live": 257
+  },
+  "100+": {
+   "abandoned": 3468,
+   "dormant_item_submitter_active": 800,
+   "live": 709
+  },
+  "2-9": {
+   "abandoned": 144,
+   "dormant_item_submitter_active": 11,
+   "live": 60
+  }
+ },
+ "clusterBootCI_overall": {
+  "live": [
+   0.104,
+   0.229
+  ],
+  "dormant_item_submitter_active": [
+   0.051,
+   0.309
+  ],
+  "abandoned": [
+   0.523,
+   0.819
+  ]
+ }
+}

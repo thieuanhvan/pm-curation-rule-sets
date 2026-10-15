@@ -1,0 +1,594 @@
+{
+ "evidence item|wp=0": [
+  {
+   "from": "2015Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.2,
+   "exit": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2016Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.4,
+   "exit": 0.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 0.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 0.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 0.0,
+   "re-review": 0.0
+  }
+ ],
+ "revision|wp=0": [
+  {
+   "from": "2015Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.0
+  },
+  {
+   "from": "2015Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.5
+  },
+  {
+   "from": "2016Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.4,
+   "exit": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.6,
+   "exit": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.8,
+   "exit": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 1.0,
+   "exit": 0.5
+  }
+ ],
+ "assertion|wp=0": [
+  {
+   "from": "2015Q1",
+   "fit": 0.0,
+   "decision": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "fit": 0.0,
+   "decision": 0.2,
+   "re-review": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "fit": 0.0,
+   "decision": 0.6,
+   "re-review": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "fit": 0.0,
+   "decision": 0.4,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "fit": 1.0,
+   "decision": 0.6,
+   "re-review": 1.0
+  },
+  {
+   "from": "2025Q4",
+   "fit": 1.0,
+   "decision": 0.8,
+   "re-review": 1.0
+  }
+ ],
+ "flag|wp=0": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 0.0
+  },
+  {
+   "from": "2017Q2",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "decision": 1.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0,
+   "flag raising": 0.333,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 1.0,
+   "flag raising": 0.667,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2023Q4",
+   "decision": 1.0,
+   "flag raising": 1.0,
+   "flag resolution": 1.0
+  }
+ ],
+ "source suggestion|wp=0": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0
+  },
+  {
+   "from": "2016Q4",
+   "decision": 0.333
+  },
+  {
+   "from": "2019Q3",
+   "decision": 0.667
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 0.667
+  }
+ ],
+ "evidence item|wp=0.5": [
+  {
+   "from": "2015Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.2,
+   "exit": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2016Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.4,
+   "exit": 0.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2019Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.4,
+   "exit": 0.5,
+   "re-review": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 0.5,
+   "re-review": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 0.5,
+   "re-review": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 0.5,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 0.5,
+   "re-review": 0.0
+  }
+ ],
+ "revision|wp=0.5": [
+  {
+   "from": "2015Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.0
+  },
+  {
+   "from": "2015Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.5
+  },
+  {
+   "from": "2016Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.4,
+   "exit": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.6,
+   "exit": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.8,
+   "exit": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 1.0,
+   "exit": 0.5
+  }
+ ],
+ "assertion|wp=0.5": [
+  {
+   "from": "2015Q1",
+   "fit": 0.0,
+   "decision": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "fit": 0.0,
+   "decision": 0.2,
+   "re-review": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "fit": 0.0,
+   "decision": 0.6,
+   "re-review": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "fit": 0.0,
+   "decision": 0.4,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "fit": 1.0,
+   "decision": 0.6,
+   "re-review": 1.0
+  },
+  {
+   "from": "2025Q4",
+   "fit": 1.0,
+   "decision": 0.8,
+   "re-review": 1.0
+  }
+ ],
+ "flag|wp=0.5": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 0.0
+  },
+  {
+   "from": "2017Q2",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "decision": 1.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0,
+   "flag raising": 0.333,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 1.0,
+   "flag raising": 0.667,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2023Q4",
+   "decision": 1.0,
+   "flag raising": 1.0,
+   "flag resolution": 1.0
+  }
+ ],
+ "source suggestion|wp=0.5": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0
+  },
+  {
+   "from": "2016Q4",
+   "decision": 0.333
+  },
+  {
+   "from": "2019Q3",
+   "decision": 0.667
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 0.667
+  }
+ ],
+ "evidence item|wp=1": [
+  {
+   "from": "2015Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.2,
+   "exit": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2016Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.4,
+   "exit": 0.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2019Q1",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.4,
+   "exit": 1.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 1.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 1.0,
+   "re-review": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.6,
+   "exit": 1.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 0.8,
+   "exit": 1.0,
+   "re-review": 0.0
+  }
+ ],
+ "revision|wp=1": [
+  {
+   "from": "2015Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.0
+  },
+  {
+   "from": "2015Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.2,
+   "exit": 0.5
+  },
+  {
+   "from": "2016Q1",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.4,
+   "exit": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.6,
+   "exit": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "intake": 0.0,
+   "fit": 1.0,
+   "decision": 0.8,
+   "exit": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "intake": 1.0,
+   "fit": 0.0,
+   "decision": 1.0,
+   "exit": 0.5
+  }
+ ],
+ "assertion|wp=1": [
+  {
+   "from": "2015Q1",
+   "fit": 0.0,
+   "decision": 0.0,
+   "re-review": 0.0
+  },
+  {
+   "from": "2019Q3",
+   "fit": 0.0,
+   "decision": 0.2,
+   "re-review": 0.0
+  },
+  {
+   "from": "2020Q2",
+   "fit": 0.0,
+   "decision": 0.6,
+   "re-review": 0.0
+  },
+  {
+   "from": "2022Q2",
+   "fit": 0.0,
+   "decision": 0.4,
+   "re-review": 0.0
+  },
+  {
+   "from": "2025Q2",
+   "fit": 1.0,
+   "decision": 0.6,
+   "re-review": 1.0
+  },
+  {
+   "from": "2025Q4",
+   "fit": 1.0,
+   "decision": 0.8,
+   "re-review": 1.0
+  }
+ ],
+ "flag|wp=1": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 0.0
+  },
+  {
+   "from": "2017Q2",
+   "decision": 0.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2019Q3",
+   "decision": 1.0,
+   "flag raising": 0.0,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0,
+   "flag raising": 0.333,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 1.0,
+   "flag raising": 0.667,
+   "flag resolution": 1.0
+  },
+  {
+   "from": "2023Q4",
+   "decision": 1.0,
+   "flag raising": 1.0,
+   "flag resolution": 1.0
+  }
+ ],
+ "source suggestion|wp=1": [
+  {
+   "from": "2015Q1",
+   "decision": 0.0
+  },
+  {
+   "from": "2016Q4",
+   "decision": 0.333
+  },
+  {
+   "from": "2019Q3",
+   "decision": 0.667
+  },
+  {
+   "from": "2020Q2",
+   "decision": 1.0
+  },
+  {
+   "from": "2022Q2",
+   "decision": 0.667
+  }
+ ]
+}

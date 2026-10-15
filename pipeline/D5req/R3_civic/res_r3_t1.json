@@ -1,0 +1,155 @@
+{
+ "cohort": {
+  "window": [
+   "2022-10-07",
+   "2025-10-06"
+  ],
+  "data_end": "2026-10-06 21:18:35",
+  "arrivals": 1676
+ },
+ "cohort_estimates": {
+  "live_L0": 781,
+  "live_share_L0": [
+   0.466,
+   0.359,
+   0.594
+  ],
+  "rho_d365": [
+   0.265,
+   0.172,
+   0.385
+  ],
+  "rho_live_L0_d365": [
+   0.569,
+   0.421,
+   0.711
+  ],
+  "share_dec_on_nonlive_L0_d365": [
+   0.0,
+   0.0,
+   0.0
+  ],
+  "share_live_decided_L0_d365": [
+   0.569,
+   0.421,
+   0.711
+  ],
+  "rho_dEnd": [
+   0.325,
+   0.21,
+   0.456
+  ],
+  "rho_live_L0_dEnd": [
+   0.698,
+   0.51,
+   0.852
+  ],
+  "share_dec_on_nonlive_L0_dEnd": [
+   0.121,
+   0.053,
+   0.186
+  ],
+  "share_live_decided_L0_dEnd": [
+   0.613,
+   0.453,
+   0.752
+  ],
+  "live_L1": 508,
+  "live_share_L1": [
+   0.303,
+   0.228,
+   0.396
+  ],
+  "rho_live_L1_d365": [
+   0.874,
+   0.554,
+   1.307
+  ],
+  "share_dec_on_nonlive_L1_d365": [
+   0.615,
+   0.506,
+   0.701
+  ],
+  "share_live_decided_L1_d365": [
+   0.337,
+   0.222,
+   0.488
+  ],
+  "rho_live_L1_dEnd": [
+   1.073,
+   0.677,
+   1.559
+  ],
+  "share_dec_on_nonlive_L1_dEnd": [
+   0.622,
+   0.528,
+   0.696
+  ],
+  "share_live_decided_L1_dEnd": [
+   0.406,
+   0.269,
+   0.555
+  ],
+  "live_L1ns": 251,
+  "live_share_L1ns": [
+   0.15,
+   0.099,
+   0.234
+  ],
+  "rho_live_L1ns_d365": [
+   1.769,
+   1.019,
+   2.733
+  ],
+  "share_dec_on_nonlive_L1ns_d365": [
+   0.761,
+   0.672,
+   0.819
+  ],
+  "share_live_decided_L1ns_d365": [
+   0.422,
+   0.271,
+   0.596
+  ],
+  "rho_live_L1ns_dEnd": [
+   2.171,
+   1.214,
+   3.285
+  ],
+  "share_dec_on_nonlive_L1ns_dEnd": [
+   0.776,
+   0.689,
+   0.825
+  ],
+  "share_live_decided_L1ns_dEnd": [
+   0.486,
+   0.317,
+   0.665
+  ]
+ },
+ "cohort_counts": {
+  "decided_365": 444,
+  "decided_by_end": 545,
+  "acc365": 410,
+  "rej365": 6,
+  "wdr365": 28,
+  "decided365_not_live_L1": 273,
+  "decided365_not_live_L1_decided_within_1d": 53,
+  "decided365_not_live_L1_acc": 243
+ },
+ "period_definition_same_window": {
+  "decisions_in_window_any_item": 672,
+  "of_which_on_items_arrived_before_window": 224,
+  "rho_period": 0.401,
+  "rho_live_period_L0": 0.86,
+  "rho_live_period_L1": 1.323,
+  "rho_live_period_L1ns": 2.677
+ },
+ "addendum": {
+  "decided365_rate_live_L1": 0.337,
+  "decided365_rate_nonlive_L1": 0.234,
+  "pending_at_end": 1131,
+  "pending_at_end_share_never_live_L1": 0.733,
+  "pending_at_end_share_no_activity_at_all_after_submission": 0.668
+ }
+}

@@ -1,0 +1,824 @@
+{
+ "P2_service_position_2021plus": {
+  "no_filter(all pending)": {
+   "all": {
+    "n": 1518,
+    "meanU": [
+     0.182,
+     0.149,
+     0.219
+    ],
+    "newest10": [
+     0.628,
+     0.571,
+     0.679
+    ],
+    "null_meanU_95": [
+     0.486,
+     0.514
+    ],
+    "median_queue_L": 5849
+   },
+   "crossOrg_nonWDR": {
+    "n": 626,
+    "meanU": [
+     0.305,
+     0.241,
+     0.374
+    ],
+    "newest10": [
+     0.409,
+     0.331,
+     0.495
+    ],
+    "null_meanU_95": [
+     0.478,
+     0.521
+    ],
+    "median_queue_L": 5784
+   }
+  },
+  "age<=180": {
+   "share_decisions_on_live_items": 0.56,
+   "all": {
+    "n": 850,
+    "meanU": [
+     0.167,
+     0.139,
+     0.202
+    ],
+    "newest10": [
+     0.634,
+     0.575,
+     0.693
+    ],
+    "null_meanU_95": [
+     0.482,
+     0.519
+    ],
+    "median_queue_L": 305
+   },
+   "crossOrg_nonWDR": {
+    "n": 213,
+    "meanU": [
+     0.248,
+     0.163,
+     0.34
+    ],
+    "newest10": [
+     0.559,
+     0.433,
+     0.673
+    ],
+    "null_meanU_95": [
+     0.462,
+     0.535
+    ],
+    "median_queue_L": 323
+   }
+  },
+  "itemAct<=180": {
+   "share_decisions_on_live_items": 0.827,
+   "all": {
+    "n": 1256,
+    "meanU": [
+     0.299,
+     0.263,
+     0.336
+    ],
+    "newest10": [
+     0.483,
+     0.428,
+     0.537
+    ],
+    "null_meanU_95": [
+     0.485,
+     0.516
+    ],
+    "median_queue_L": 514
+   },
+   "crossOrg_nonWDR": {
+    "n": 456,
+    "meanU": [
+     0.459,
+     0.383,
+     0.518
+    ],
+    "newest10": [
+     0.296,
+     0.21,
+     0.402
+    ],
+    "null_meanU_95": [
+     0.475,
+     0.526
+    ],
+    "median_queue_L": 546
+   }
+  },
+  "subActive<=180": {
+   "share_decisions_on_live_items": 0.74,
+   "all": {
+    "n": 1123,
+    "meanU": [
+     0.146,
+     0.121,
+     0.173
+    ],
+    "newest10": [
+     0.673,
+     0.613,
+     0.726
+    ],
+    "null_meanU_95": [
+     0.485,
+     0.516
+    ],
+    "median_queue_L": 1433
+   },
+   "crossOrg_nonWDR": {
+    "n": 369,
+    "meanU": [
+     0.239,
+     0.191,
+     0.289
+    ],
+    "newest10": [
+     0.458,
+     0.354,
+     0.571
+    ],
+    "null_meanU_95": [
+     0.469,
+     0.529
+    ],
+    "median_queue_L": 1449
+   }
+  },
+  "itemOrSub<=180": {
+   "share_decisions_on_live_items": 0.893,
+   "all": {
+    "n": 1355,
+    "meanU": [
+     0.232,
+     0.2,
+     0.268
+    ],
+    "newest10": [
+     0.572,
+     0.521,
+     0.624
+    ],
+    "null_meanU_95": [
+     0.486,
+     0.516
+    ],
+    "median_queue_L": 1549
+   },
+   "crossOrg_nonWDR": {
+    "n": 505,
+    "meanU": [
+     0.365,
+     0.312,
+     0.421
+    ],
+    "newest10": [
+     0.345,
+     0.266,
+     0.433
+    ],
+    "null_meanU_95": [
+     0.475,
+     0.526
+    ],
+    "median_queue_L": 1551
+   }
+  },
+  "age<=365": {
+   "share_decisions_on_live_items": 0.629,
+   "all": {
+    "n": 955,
+    "meanU": [
+     0.152,
+     0.122,
+     0.182
+    ],
+    "newest10": [
+     0.659,
+     0.601,
+     0.715
+    ],
+    "null_meanU_95": [
+     0.48,
+     0.517
+    ],
+    "median_queue_L": 557
+   },
+   "crossOrg_nonWDR": {
+    "n": 270,
+    "meanU": [
+     0.252,
+     0.175,
+     0.34
+    ],
+    "newest10": [
+     0.519,
+     0.388,
+     0.644
+    ],
+    "null_meanU_95": [
+     0.468,
+     0.532
+    ],
+    "median_queue_L": 736
+   }
+  },
+  "itemAct<=365": {
+   "share_decisions_on_live_items": 0.855,
+   "all": {
+    "n": 1298,
+    "meanU": [
+     0.265,
+     0.23,
+     0.3
+    ],
+    "newest10": [
+     0.552,
+     0.5,
+     0.609
+    ],
+    "null_meanU_95": [
+     0.486,
+     0.516
+    ],
+    "median_queue_L": 1249
+   },
+   "crossOrg_nonWDR": {
+    "n": 483,
+    "meanU": [
+     0.421,
+     0.362,
+     0.479
+    ],
+    "newest10": [
+     0.331,
+     0.247,
+     0.423
+    ],
+    "null_meanU_95": [
+     0.475,
+     0.528
+    ],
+    "median_queue_L": 1295
+   }
+  },
+  "subActive<=365": {
+   "share_decisions_on_live_items": 0.785,
+   "all": {
+    "n": 1192,
+    "meanU": [
+     0.166,
+     0.14,
+     0.195
+    ],
+    "newest10": [
+     0.662,
+     0.608,
+     0.716
+    ],
+    "null_meanU_95": [
+     0.483,
+     0.516
+    ],
+    "median_queue_L": 1724
+   },
+   "crossOrg_nonWDR": {
+    "n": 419,
+    "meanU": [
+     0.283,
+     0.233,
+     0.342
+    ],
+    "newest10": [
+     0.425,
+     0.324,
+     0.514
+    ],
+    "null_meanU_95": [
+     0.475,
+     0.526
+    ],
+    "median_queue_L": 1773
+   }
+  },
+  "itemOrSub<=365": {
+   "share_decisions_on_live_items": 0.913,
+   "all": {
+    "n": 1386,
+    "meanU": [
+     0.23,
+     0.198,
+     0.259
+    ],
+    "newest10": [
+     0.582,
+     0.531,
+     0.632
+    ],
+    "null_meanU_95": [
+     0.484,
+     0.515
+    ],
+    "median_queue_L": 1974
+   },
+   "crossOrg_nonWDR": {
+    "n": 530,
+    "meanU": [
+     0.361,
+     0.305,
+     0.412
+    ],
+    "newest10": [
+     0.347,
+     0.276,
+     0.433
+    ],
+    "null_meanU_95": [
+     0.475,
+     0.525
+    ],
+    "median_queue_L": 1987
+   }
+  },
+  "age<=730": {
+   "share_decisions_on_live_items": 0.738,
+   "all": {
+    "n": 1121,
+    "meanU": [
+     0.173,
+     0.142,
+     0.208
+    ],
+    "newest10": [
+     0.651,
+     0.594,
+     0.702
+    ],
+    "null_meanU_95": [
+     0.483,
+     0.516
+    ],
+    "median_queue_L": 1383
+   },
+   "crossOrg_nonWDR": {
+    "n": 363,
+    "meanU": [
+     0.289,
+     0.215,
+     0.363
+    ],
+    "newest10": [
+     0.452,
+     0.343,
+     0.565
+    ],
+    "null_meanU_95": [
+     0.469,
+     0.532
+    ],
+    "median_queue_L": 1534
+   }
+  },
+  "itemAct<=730": {
+   "share_decisions_on_live_items": 0.91,
+   "all": {
+    "n": 1382,
+    "meanU": [
+     0.243,
+     0.211,
+     0.276
+    ],
+    "newest10": [
+     0.58,
+     0.53,
+     0.633
+    ],
+    "null_meanU_95": [
+     0.484,
+     0.515
+    ],
+    "median_queue_L": 1997
+   },
+   "crossOrg_nonWDR": {
+    "n": 531,
+    "meanU": [
+     0.386,
+     0.325,
+     0.448
+    ],
+    "newest10": [
+     0.352,
+     0.266,
+     0.435
+    ],
+    "null_meanU_95": [
+     0.477,
+     0.528
+    ],
+    "median_queue_L": 1978
+   }
+  },
+  "subActive<=730": {
+   "share_decisions_on_live_items": 0.858,
+   "all": {
+    "n": 1302,
+    "meanU": [
+     0.18,
+     0.155,
+     0.206
+    ],
+    "newest10": [
+     0.632,
+     0.583,
+     0.681
+    ],
+    "null_meanU_95": [
+     0.482,
+     0.515
+    ],
+    "median_queue_L": 2446
+   },
+   "crossOrg_nonWDR": {
+    "n": 470,
+    "meanU": [
+     0.292,
+     0.24,
+     0.342
+    ],
+    "newest10": [
+     0.409,
+     0.316,
+     0.502
+    ],
+    "null_meanU_95": [
+     0.469,
+     0.527
+    ],
+    "median_queue_L": 2524
+   }
+  },
+  "itemOrSub<=730": {
+   "share_decisions_on_live_items": 0.953,
+   "all": {
+    "n": 1447,
+    "meanU": [
+     0.222,
+     0.191,
+     0.253
+    ],
+    "newest10": [
+     0.594,
+     0.542,
+     0.643
+    ],
+    "null_meanU_95": [
+     0.485,
+     0.516
+    ],
+    "median_queue_L": 2838
+   },
+   "crossOrg_nonWDR": {
+    "n": 563,
+    "meanU": [
+     0.348,
+     0.298,
+     0.405
+    ],
+    "newest10": [
+     0.382,
+     0.297,
+     0.466
+    ],
+    "null_meanU_95": [
+     0.477,
+     0.525
+    ],
+    "median_queue_L": 2844
+   }
+  }
+ },
+ "age_hazard_ge1y_by_definition": {
+  "all_intervals": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.845,
+     0.671,
+     1.064
+    ],
+    "p": 0.15,
+    "events": 1048,
+    "intervals": 140720,
+    "submitters": 247
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.761,
+     0.63,
+     0.918
+    ],
+    "p": 0.0045,
+    "events": 897,
+    "intervals": 140720,
+    "submitters": 247
+   }
+  },
+  "itemAct<=180": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.766,
+     0.594,
+     0.988
+    ],
+    "p": 0.04,
+    "events": 176,
+    "intervals": 7544,
+    "submitters": 153
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.747,
+     0.567,
+     0.986
+    ],
+    "p": 0.039,
+    "events": 165,
+    "intervals": 7544,
+    "submitters": 153
+   }
+  },
+  "subActive<=180": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.729,
+     0.617,
+     0.862
+    ],
+    "p": 0.00021,
+    "events": 320,
+    "intervals": 27549,
+    "submitters": 99
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.706,
+     0.586,
+     0.852
+    ],
+    "p": 0.00027,
+    "events": 287,
+    "intervals": 27549,
+    "submitters": 99
+   }
+  },
+  "itemOrSub<=180": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.737,
+     0.634,
+     0.857
+    ],
+    "p": 7.2e-05,
+    "events": 434,
+    "intervals": 33187,
+    "submitters": 172
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.717,
+     0.607,
+     0.846
+    ],
+    "p": 8.3e-05,
+    "events": 393,
+    "intervals": 33187,
+    "submitters": 172
+   }
+  },
+  "itemAND_sub<=180": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.751,
+     0.492,
+     1.147
+    ],
+    "p": 0.19,
+    "events": 62,
+    "intervals": 1906,
+    "submitters": 58
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.71,
+     0.463,
+     1.089
+    ],
+    "p": 0.12,
+    "events": 59,
+    "intervals": 1906,
+    "submitters": 58
+   }
+  },
+  "itemAct<=365": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.84,
+     0.675,
+     1.045
+    ],
+    "p": 0.12,
+    "events": 280,
+    "intervals": 15734,
+    "submitters": 181
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.807,
+     0.629,
+     1.035
+    ],
+    "p": 0.091,
+    "events": 256,
+    "intervals": 15734,
+    "submitters": 181
+   }
+  },
+  "subActive<=365": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.802,
+     0.69,
+     0.934
+    ],
+    "p": 0.0044,
+    "events": 444,
+    "intervals": 38216,
+    "submitters": 153
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.773,
+     0.652,
+     0.916
+    ],
+    "p": 0.0029,
+    "events": 400,
+    "intervals": 38216,
+    "submitters": 153
+   }
+  },
+  "itemOrSub<=365": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.817,
+     0.693,
+     0.963
+    ],
+    "p": 0.016,
+    "events": 586,
+    "intervals": 47821,
+    "submitters": 200
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.796,
+     0.66,
+     0.962
+    ],
+    "p": 0.018,
+    "events": 533,
+    "intervals": 47821,
+    "submitters": 200
+   }
+  },
+  "itemAND_sub<=365": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.839,
+     0.529,
+     1.329
+    ],
+    "p": 0.45,
+    "events": 138,
+    "intervals": 6129,
+    "submitters": 123
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.72,
+     0.432,
+     1.199
+    ],
+    "p": 0.21,
+    "events": 123,
+    "intervals": 6129,
+    "submitters": 123
+   }
+  },
+  "itemAct<=730": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.843,
+     0.724,
+     0.983
+    ],
+    "p": 0.03,
+    "events": 660,
+    "intervals": 49904,
+    "submitters": 247
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.817,
+     0.682,
+     0.98
+    ],
+    "p": 0.03,
+    "events": 606,
+    "intervals": 49904,
+    "submitters": 247
+   }
+  },
+  "subActive<=730": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.766,
+     0.664,
+     0.884
+    ],
+    "p": 0.00025,
+    "events": 666,
+    "intervals": 59538,
+    "submitters": 247
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.732,
+     0.623,
+     0.86
+    ],
+    "p": 0.00014,
+    "events": 600,
+    "intervals": 59538,
+    "submitters": 247
+   }
+  },
+  "itemOrSub<=730": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.81,
+     0.705,
+     0.932
+    ],
+    "p": 0.0032,
+    "events": 805,
+    "intervals": 74068,
+    "submitters": 247
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.791,
+     0.676,
+     0.927
+    ],
+    "p": 0.0037,
+    "events": 732,
+    "intervals": 74068,
+    "submitters": 247
+   }
+  },
+  "itemAND_sub<=730": {
+   "eANY": {
+    "HR_per_year_of_age": [
+     0.81,
+     0.607,
+     1.082
+    ],
+    "p": 0.15,
+    "events": 521,
+    "intervals": 35374,
+    "submitters": 247
+   },
+   "eACC": {
+    "HR_per_year_of_age": [
+     0.732,
+     0.533,
+     1.006
+    ],
+    "p": 0.054,
+    "events": 474,
+    "intervals": 35374,
+    "submitters": 247
+   }
+  }
+ }
+}

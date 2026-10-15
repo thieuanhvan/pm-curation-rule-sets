@@ -1,0 +1,1541 @@
+{
+ "identity_check_REAL_replay": {
+  "sameDecisions": true,
+  "lost": 0
+ },
+ "OBSERVED": {
+  "name": "OBSERVED",
+  "reps": 1,
+  "all": {
+   "n": 12085,
+   "decided": 5398,
+   "expired": 0,
+   "bounced": 0,
+   "medDecided": 34.7,
+   "p90Decided": 854,
+   "medAll": "never",
+   "p90All": "never",
+   "within90": 0.291,
+   "within365": 0.368,
+   "shareExpired": 0,
+   "decidedNeverDecidedInReality": 0
+  },
+  "ab": {
+   "n": 3179,
+   "decided": 2026,
+   "expired": 0,
+   "bounced": 0,
+   "medDecided": 8.6,
+   "p90Decided": 473.2,
+   "medAll": 108.9,
+   "p90All": "never",
+   "within90": 0.498,
+   "within365": 0.576,
+   "shareExpired": 0,
+   "decidedNeverDecidedInReality": 0
+  },
+  "rec": {
+   "n": 4367,
+   "decided": 1147,
+   "expired": 0,
+   "bounced": 0,
+   "medDecided": 18.3,
+   "p90Decided": 716.2,
+   "medAll": "never",
+   "p90All": "never",
+   "within90": 0.177,
+   "within365": 0.203,
+   "shareExpired": 0,
+   "decidedNeverDecidedInReality": 0
+  },
+  "sys": {
+   "endBacklog": 6687,
+   "endInQueue": 6687,
+   "endOutside": 0,
+   "endMedAgeD": 2234.3,
+   "lostTokens": 0,
+   "yearEnd": {
+    "2015": 10,
+    "2016": 120,
+    "2017": 2216,
+    "2018": 2664,
+    "2019": 3105,
+    "2020": 3838,
+    "2021": 4631,
+    "2022": 5409,
+    "2023": 5759,
+    "2024": 6167,
+    "2025": 6327
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  }
+ },
+ "observed_discipline_by_year": {
+  "2015": {
+   "n": 603,
+   "newest10pct": 0.148,
+   "oldest10pct": 0.362,
+   "mean": 0.673
+  },
+  "2016": {
+   "n": 1002,
+   "newest10pct": 0.227,
+   "oldest10pct": 0.212,
+   "mean": 0.495
+  },
+  "2017": {
+   "n": 836,
+   "newest10pct": 0.188,
+   "oldest10pct": 0.097,
+   "mean": 0.397
+  },
+  "2018": {
+   "n": 661,
+   "newest10pct": 0.319,
+   "oldest10pct": 0.018,
+   "mean": 0.266
+  },
+  "2019": {
+   "n": 322,
+   "newest10pct": 0.45,
+   "oldest10pct": 0.084,
+   "mean": 0.293
+  },
+  "2020": {
+   "n": 456,
+   "newest10pct": 0.349,
+   "oldest10pct": 0.094,
+   "mean": 0.358
+  },
+  "2021": {
+   "n": 259,
+   "newest10pct": 0.44,
+   "oldest10pct": 0.085,
+   "mean": 0.258
+  },
+  "2022": {
+   "n": 209,
+   "newest10pct": 0.722,
+   "oldest10pct": 0,
+   "mean": 0.116
+  },
+  "2023": {
+   "n": 237,
+   "newest10pct": 0.549,
+   "oldest10pct": 0.055,
+   "mean": 0.229
+  },
+  "2024": {
+   "n": 232,
+   "newest10pct": 0.862,
+   "oldest10pct": 0,
+   "mean": 0.079
+  },
+  "2025": {
+   "n": 333,
+   "newest10pct": 0.592,
+   "oldest10pct": 0.06,
+   "mean": 0.224
+  },
+  "2026": {
+   "n": 248,
+   "newest10pct": 0.649,
+   "oldest10pct": 0.048,
+   "mean": 0.153
+  }
+ },
+ "observed_discipline": {
+  "all": {
+   "n": 5398,
+   "mean": 0.36,
+   "newest10pct": 0.36,
+   "oldest10pct": 0.122,
+   "exactNewest": 0.077
+  },
+  "before2021": {
+   "n": 3880,
+   "mean": 0.43,
+   "newest10pct": 0.255,
+   "oldest10pct": 0.153,
+   "exactNewest": 0.074
+  },
+  "from2021": {
+   "n": 1518,
+   "mean": 0.182,
+   "newest10pct": 0.628,
+   "oldest10pct": 0.044,
+   "exactNewest": 0.084
+  }
+ },
+ "validation": {
+  "FIFO": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 1749,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": null,
+    "p90Decided": null,
+    "within90": 0,
+    "within365": 0,
+    "KS_decidedTimes": 0
+   },
+   "all": {
+    "medDecided": 399.4,
+    "p90Decided": 2510.8,
+    "within90": 0.172,
+    "within365": 0.234
+   },
+   "lostTokens": 0
+  },
+  "LIFO": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 2345.4,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 1.3,
+    "p90Decided": 14,
+    "within90": 0.349,
+    "within365": 0.314,
+    "KS_decidedTimes": 0.444
+   },
+   "all": {
+    "medDecided": 1.6,
+    "p90Decided": 51.6,
+    "within90": 0.432,
+    "within365": 0.445
+   },
+   "lostTokens": 0
+  },
+  "RANDOM": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 1899.79,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 693.54,
+    "p90Decided": 1524.64,
+    "within90": 0.011,
+    "within365": 0.042,
+    "KS_decidedTimes": 0.596
+   },
+   "all": {
+    "medDecided": 163.03,
+    "p90Decided": 1638.32,
+    "within90": 0.199,
+    "within365": 0.287
+   },
+   "lostTokens": 0
+  },
+  "RANK_insample": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 2012.385,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 124.155,
+    "p90Decided": 1160.17,
+    "within90": 0.093,
+    "within365": 0.123,
+    "KS_decidedTimes": 0.209
+   },
+   "all": {
+    "medDecided": 52.75,
+    "p90Decided": 1340.79,
+    "within90": 0.26,
+    "within365": 0.335
+   },
+   "lostTokens": 0
+  },
+  "RANK_cal2015_20": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 1951.205,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 280.355,
+    "p90Decided": 1231.005,
+    "within90": 0.061,
+    "within365": 0.093,
+    "KS_decidedTimes": 0.323
+   },
+   "all": {
+    "medDecided": 79.55,
+    "p90Decided": 1493.96,
+    "within90": 0.236,
+    "within365": 0.318
+   },
+   "lostTokens": 0
+  },
+  "RANK_byYear_insample": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 2226.925,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 21.11,
+    "p90Decided": 762.885,
+    "within90": 0.172,
+    "within365": 0.195,
+    "KS_decidedTimes": 0.078
+   },
+   "all": {
+    "medDecided": 37.8,
+    "p90Decided": 873.555,
+    "within90": 0.288,
+    "within365": 0.366
+   },
+   "lostTokens": 0
+  },
+  "RANK_holdout_u2019_20": {
+   "yearEndBacklogRMSE": 0,
+   "endMedAgeD": 2028.675,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 142.59,
+    "p90Decided": 1053.38,
+    "within90": 0.094,
+    "within365": 0.133,
+    "KS_decidedTimes": 0.229
+   },
+   "all": {
+    "medDecided": 55.46,
+    "p90Decided": 1265.095,
+    "within90": 0.261,
+    "within365": 0.347
+   },
+   "lostTokens": 0
+  },
+  "RANK_cal2015_20_monthlyCap": {
+   "yearEndBacklogRMSE": 259,
+   "endMedAgeD": 2018.66,
+   "obsEndMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 279.58,
+    "p90Decided": 1232.4,
+    "within90": 0.06,
+    "within365": 0.091,
+    "KS_decidedTimes": 0.325
+   },
+   "all": {
+    "medDecided": 196.16,
+    "p90Decided": 1617.815,
+    "within90": 0.16,
+    "within365": 0.285
+   },
+   "lostTokens": 259.25
+  },
+  "OBSERVED": {
+   "endMedAgeD": 2234.3,
+   "holdout2021plus": {
+    "medDecided": 18.3,
+    "p90Decided": 716.2,
+    "within90": 0.177,
+    "within365": 0.203
+   },
+   "all": {
+    "medDecided": 34.7,
+    "p90Decided": 854,
+    "within90": 0.291,
+    "within365": 0.368
+   },
+   "yearEnd": {
+    "2015": 10,
+    "2016": 120,
+    "2017": 2216,
+    "2018": 2664,
+    "2019": 3105,
+    "2020": 3838,
+    "2021": 4631,
+    "2022": 5409,
+    "2023": 5759,
+    "2024": 6167,
+    "2025": 6327
+   }
+  }
+ },
+ "counterfactual": {
+  "OBSERVED": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2234.3,
+   "lostTokens": 0,
+   "medDecided": 34.7,
+   "p90Decided": 854,
+   "medAll": "never",
+   "within90": 0.291,
+   "within365": 0.368,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 0,
+   "AB": {
+    "n": 3179,
+    "medDecided": 8.6,
+    "p90Decided": 473.2,
+    "within90": 0.498,
+    "within365": 0.576,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "a_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 1749,
+   "lostTokens": 0,
+   "medDecided": 399.4,
+   "p90Decided": 2510.8,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.234,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1831,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.5,
+    "p90Decided": 2285.3,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "b_LIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2345.4,
+   "lostTokens": 0,
+   "medDecided": 1.6,
+   "p90Decided": 51.6,
+   "medAll": "never",
+   "within90": 0.432,
+   "within365": 0.445,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2026,
+   "AB": {
+    "n": 3179,
+    "medDecided": 1.1,
+    "p90Decided": 29.3,
+    "within90": 0.612,
+    "within365": 0.631,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "base_OBSDISC": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2226.925,
+   "lostTokens": 0,
+   "medDecided": 37.8,
+   "p90Decided": 873.555,
+   "medAll": "never",
+   "within90": 0.288,
+   "within365": 0.366,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2102.5,
+   "AB": {
+    "n": 3179,
+    "medDecided": 12.2,
+    "p90Decided": 489.25,
+    "within90": 0.443,
+    "within365": 0.511,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "c_expire90_OBSDISC": {
+   "endBacklog": 240.55,
+   "endMedAgeD": 36.23,
+   "lostTokens": 101.1,
+   "medDecided": 8.23,
+   "p90Decided": 66.45,
+   "medAll": "never",
+   "within90": 0.444,
+   "within365": 0.437,
+   "shareExpired": 0.542,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.288,
+   "realAcceptedLostToExpiry": 0.38,
+   "AB_realAcceptedLostToExpiry": 0.27,
+   "decidedNeverDecidedInReality": 2073.8,
+   "AB": {
+    "n": 3179,
+    "medDecided": 4.605,
+    "p90Decided": 54.46,
+    "within90": 0.605,
+    "within365": 0.602,
+    "shareExpired": 0.383
+   },
+   "little": {
+    "Lbar": 172.2,
+    "lambdaW": 172.3,
+    "relErr": 0,
+    "W_days": 59
+   }
+  },
+  "c_expire90_FIFO": {
+   "endBacklog": 314,
+   "endMedAgeD": 39,
+   "lostTokens": 4,
+   "medDecided": 57.2,
+   "p90Decided": 88.1,
+   "medAll": "never",
+   "within90": 0.458,
+   "within365": 0.449,
+   "shareExpired": 0.528,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.282,
+   "realAcceptedLostToExpiry": 0.363,
+   "AB_realAcceptedLostToExpiry": 0.203,
+   "decidedNeverDecidedInReality": 2060,
+   "AB": {
+    "n": 3179,
+    "medDecided": 41.6,
+    "p90Decided": 87.1,
+    "within90": 0.669,
+    "within365": 0.669,
+    "shareExpired": 0.32
+   },
+   "little": {
+    "Lbar": 210,
+    "lambdaW": 210,
+    "relErr": 0,
+    "W_days": 72
+   }
+  },
+  "c_expire180_OBSDISC": {
+   "endBacklog": 304.85,
+   "endMedAgeD": 44.215,
+   "lostTokens": 0,
+   "medDecided": 14.18,
+   "p90Decided": 117.78,
+   "medAll": "never",
+   "within90": 0.38,
+   "within365": 0.448,
+   "shareExpired": 0.528,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.293,
+   "realAcceptedLostToExpiry": 0.377,
+   "AB_realAcceptedLostToExpiry": 0.269,
+   "decidedNeverDecidedInReality": 2165.55,
+   "AB": {
+    "n": 3179,
+    "medDecided": 6.33,
+    "p90Decided": 83.735,
+    "within90": 0.546,
+    "within365": 0.6,
+    "shareExpired": 0.381
+   },
+   "little": {
+    "Lbar": 331.6,
+    "lambdaW": 331.65,
+    "relErr": 0,
+    "W_days": 113.05
+   }
+  },
+  "c_expire180_FIFO": {
+   "endBacklog": 436,
+   "endMedAgeD": 47.6,
+   "lostTokens": 0,
+   "medDecided": 140,
+   "p90Decided": 178.8,
+   "medAll": "never",
+   "within90": 0.181,
+   "within365": 0.457,
+   "shareExpired": 0.517,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.293,
+   "realAcceptedLostToExpiry": 0.37,
+   "AB_realAcceptedLostToExpiry": 0.214,
+   "decidedNeverDecidedInReality": 2104,
+   "AB": {
+    "n": 3179,
+    "medDecided": 73.2,
+    "p90Decided": 178.1,
+    "within90": 0.336,
+    "within365": 0.663,
+    "shareExpired": 0.317
+   },
+   "little": {
+    "Lbar": 420,
+    "lambdaW": 420,
+    "relErr": 0,
+    "W_days": 143
+   }
+  },
+  "c_expire365_OBSDISC": {
+   "endBacklog": 492,
+   "endMedAgeD": 86.905,
+   "lostTokens": 0,
+   "medDecided": 22.225,
+   "p90Decided": 218.055,
+   "medAll": "never",
+   "within90": 0.339,
+   "within365": 0.45,
+   "shareExpired": 0.513,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.295,
+   "realAcceptedLostToExpiry": 0.37,
+   "AB_realAcceptedLostToExpiry": 0.262,
+   "decidedNeverDecidedInReality": 2176.9,
+   "AB": {
+    "n": 3179,
+    "medDecided": 7.735,
+    "p90Decided": 148.545,
+    "within90": 0.504,
+    "within365": 0.595,
+    "shareExpired": 0.369
+   },
+   "little": {
+    "Lbar": 649.65,
+    "lambdaW": 649.8,
+    "relErr": 0,
+    "W_days": 221.8
+   }
+  },
+  "c_expire365_FIFO": {
+   "endBacklog": 793,
+   "endMedAgeD": 145.9,
+   "lostTokens": 0,
+   "medDecided": 314.8,
+   "p90Decided": 363.9,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.476,
+   "shareExpired": 0.488,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.276,
+   "realAcceptedLostToExpiry": 0.329,
+   "AB_realAcceptedLostToExpiry": 0.182,
+   "decidedNeverDecidedInReality": 2000,
+   "AB": {
+    "n": 3179,
+    "medDecided": 117,
+    "p90Decided": 362.6,
+    "within90": 0.328,
+    "within365": 0.723,
+    "shareExpired": 0.252
+   },
+   "little": {
+    "Lbar": 829,
+    "lambdaW": 829,
+    "relErr": 0,
+    "W_days": 283
+   }
+  },
+  "d_wip141_bounce_FIFO": {
+   "endBacklog": 141,
+   "endMedAgeD": 61.4,
+   "lostTokens": 219,
+   "medDecided": 58.1,
+   "p90Decided": 230.6,
+   "medAll": "never",
+   "within90": 0.264,
+   "within365": 0.438,
+   "shareExpired": 0,
+   "bounced": 6765,
+   "decidedNeverDecidedInReality": 1964,
+   "AB": {
+    "n": 3179,
+    "medDecided": 44,
+    "p90Decided": 219.4,
+    "within90": 0.414,
+    "within365": 0.628,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 115,
+    "lambdaW": 115,
+    "relErr": 0.001,
+    "W_days": 89
+   }
+  },
+  "d_wip141_defer_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2961.1,
+   "lostTokens": 0,
+   "medDecided": 399.4,
+   "p90Decided": 2510.8,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.234,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1831,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.5,
+    "p90Decided": 2285.3,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "d_wip283_bounce_FIFO": {
+   "endBacklog": 283,
+   "endMedAgeD": 145.9,
+   "lostTokens": 0,
+   "medDecided": 96.2,
+   "p90Decided": 434.1,
+   "medAll": "never",
+   "within90": 0.216,
+   "within365": 0.383,
+   "shareExpired": 0,
+   "bounced": 6404,
+   "decidedNeverDecidedInReality": 1988,
+   "AB": {
+    "n": 3179,
+    "medDecided": 51.5,
+    "p90Decided": 422.9,
+    "within90": 0.359,
+    "within365": 0.553,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 231,
+    "lambdaW": 231,
+    "relErr": 0,
+    "W_days": 168
+   }
+  },
+  "d_wip283_defer_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2958.3,
+   "lostTokens": 0,
+   "medDecided": 399.4,
+   "p90Decided": 2510.8,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.234,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1831,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.5,
+    "p90Decided": 2285.3,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "d_wip600_bounce_FIFO": {
+   "endBacklog": 600,
+   "endMedAgeD": 314.2,
+   "lostTokens": 0,
+   "medDecided": 249.2,
+   "p90Decided": 899.1,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.292,
+   "shareExpired": 0,
+   "bounced": 6087,
+   "decidedNeverDecidedInReality": 1964,
+   "AB": {
+    "n": 3179,
+    "medDecided": 53.1,
+    "p90Decided": 770.9,
+    "within90": 0.328,
+    "within365": 0.45,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 498,
+    "lambdaW": 498,
+    "relErr": 0,
+    "W_days": 343
+   }
+  },
+  "d_wip600_defer_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2913,
+   "lostTokens": 0,
+   "medDecided": 399.4,
+   "p90Decided": 2510.8,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.234,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1831,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.5,
+    "p90Decided": 2285.3,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "e_prioAB_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2225.1,
+   "lostTokens": 0,
+   "medDecided": 45.4,
+   "p90Decided": 1133.7,
+   "medAll": "never",
+   "within90": 0.279,
+   "within365": 0.363,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1944,
+   "AB": {
+    "n": 3179,
+    "medDecided": 13.7,
+    "p90Decided": 149.4,
+    "within90": 0.81,
+    "within365": 1,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "e_prioAB_OBSDISC": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2286.305,
+   "lostTokens": 0,
+   "medDecided": 13.785,
+   "p90Decided": 359.435,
+   "medAll": "never",
+   "within90": 0.343,
+   "within365": 0.406,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1970.65,
+   "AB": {
+    "n": 3179,
+    "medDecided": 4.675,
+    "p90Decided": 85.61,
+    "within90": 0.902,
+    "within365": 0.967,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "e_prioAB_FIFO_expire365": {
+   "endBacklog": 572,
+   "endMedAgeD": 118.2,
+   "lostTokens": 0,
+   "medDecided": 45.4,
+   "p90Decided": 359.2,
+   "medAll": "never",
+   "within90": 0.279,
+   "within365": 0.457,
+   "shareExpired": 0.506,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.264,
+   "realAcceptedLostToExpiry": 0.326,
+   "decidedNeverDecidedInReality": 1911,
+   "AB": {
+    "n": 3179,
+    "medDecided": 13.7,
+    "p90Decided": 149.4,
+    "within90": 0.81,
+    "within365": 1,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 714,
+    "lambdaW": 714,
+    "relErr": 0,
+    "W_days": 244
+   }
+  },
+  "f_route_rr_strict": {
+   "endBacklog": 7575,
+   "endMedAgeD": 2289.1,
+   "lostTokens": 888,
+   "medDecided": 128.4,
+   "p90Decided": 940.1,
+   "medAll": "never",
+   "within90": 0.145,
+   "within365": 0.265,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1842,
+   "AB": {
+    "n": 3179,
+    "medDecided": 98,
+    "p90Decided": 748.2,
+    "within90": 0.231,
+    "within365": 0.394,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 4376,
+    "lambdaW": 4376,
+    "relErr": 0,
+    "W_days": 1494
+   }
+  },
+  "f_route_rr_steal": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2082.1,
+   "lostTokens": 0,
+   "medDecided": 85.1,
+   "p90Decided": 1094.7,
+   "medAll": "never",
+   "within90": 0.231,
+   "within365": 0.316,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2202,
+   "AB": {
+    "n": 3179,
+    "medDecided": 27.4,
+    "p90Decided": 657.8,
+    "within90": 0.386,
+    "within365": 0.472,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "f_route_org_strict": {
+   "endBacklog": 7619,
+   "endMedAgeD": 2288,
+   "lostTokens": 932,
+   "medDecided": 140.8,
+   "p90Decided": 1071.9,
+   "medAll": "never",
+   "within90": 0.133,
+   "within365": 0.249,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1658,
+   "AB": {
+    "n": 3179,
+    "medDecided": 103.1,
+    "p90Decided": 608.6,
+    "within90": 0.221,
+    "within365": 0.393,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 4406,
+    "lambdaW": 4406,
+    "relErr": 0,
+    "W_days": 1504
+   }
+  },
+  "f_route_org_steal": {
+   "endBacklog": 6687,
+   "endMedAgeD": 2067,
+   "lostTokens": 0,
+   "medDecided": 102.1,
+   "p90Decided": 1325.2,
+   "medAll": "never",
+   "within90": 0.215,
+   "within365": 0.302,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2046,
+   "AB": {
+    "n": 3179,
+    "medDecided": 30.9,
+    "p90Decided": 535.9,
+    "within90": 0.371,
+    "within365": 0.475,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  }
+ },
+ "routing_feasibility": {
+  "deciders": 62,
+  "decidersWithLt10Decisions": 40,
+  "medianActiveSpanDays": 83.8,
+  "decisionsWithOrg": 0.992,
+  "submissionsWithOrg": 0.909
+ },
+ "sensitivity": {
+  "cap0.75_FIFO": {
+   "endBacklog": 8047.9,
+   "endMedAgeD": 1960.28,
+   "lostTokens": 0,
+   "medDecided": 461.45,
+   "p90Decided": 2803.79,
+   "medAll": "never",
+   "within90": 0.052,
+   "within365": 0.173,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1159.3,
+   "AB": {
+    "n": 3179,
+    "medDecided": 173.77,
+    "p90Decided": 1002.73,
+    "within90": 0.12,
+    "within365": 0.345,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 4623.6,
+    "lambdaW": 4623.6,
+    "relErr": 0,
+    "W_days": 1578.2
+   }
+  },
+  "cap0.75_OBSDISC": {
+   "endBacklog": 8047.9,
+   "endMedAgeD": 2289.91,
+   "lostTokens": 0,
+   "medDecided": 84.73,
+   "p90Decided": 940.96,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.266,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1502.2,
+   "AB": {
+    "n": 3179,
+    "medDecided": 52.78,
+    "p90Decided": 561.65,
+    "within90": 0.256,
+    "within365": 0.394,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 4623.6,
+    "lambdaW": 4623.6,
+    "relErr": 0,
+    "W_days": 1578.2
+   }
+  },
+  "cap0.75_expire365_OBSDISC": {
+   "endBacklog": 579.2,
+   "endMedAgeD": 98.44,
+   "lostTokens": 0,
+   "medDecided": 43.93,
+   "p90Decided": 251.06,
+   "medAll": "never",
+   "within90": 0.214,
+   "within365": 0.336,
+   "shareExpired": 0.618,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.339,
+   "realAcceptedLostToExpiry": 0.511,
+   "AB_realAcceptedLostToExpiry": 0.398,
+   "decidedNeverDecidedInReality": 1599.5,
+   "AB": {
+    "n": 3179,
+    "medDecided": 31.56,
+    "p90Decided": 218.19,
+    "within90": 0.309,
+    "within365": 0.469,
+    "shareExpired": 0.484
+   },
+   "little": {
+    "Lbar": 765.6,
+    "lambdaW": 765.7,
+    "relErr": 0,
+    "W_days": 261.5
+   }
+  },
+  "cap0.75_expire180_FIFO": {
+   "endBacklog": 436,
+   "endMedAgeD": 47.6,
+   "lostTokens": 0,
+   "medDecided": 162.24,
+   "p90Decided": 179.08,
+   "medAll": "never",
+   "within90": 0.052,
+   "within365": 0.346,
+   "shareExpired": 0.63,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.323,
+   "realAcceptedLostToExpiry": 0.497,
+   "AB_realAcceptedLostToExpiry": 0.353,
+   "decidedNeverDecidedInReality": 1452.7,
+   "AB": {
+    "n": 3179,
+    "medDecided": 149.24,
+    "p90Decided": 178.67,
+    "within90": 0.12,
+    "within365": 0.528,
+    "shareExpired": 0.454
+   },
+   "little": {
+    "Lbar": 475,
+    "lambdaW": 475.1,
+    "relErr": 0,
+    "W_days": 162.3
+   }
+  },
+  "cap0.75_prioAB_FIFO": {
+   "endBacklog": 8047.9,
+   "endMedAgeD": 2333.67,
+   "lostTokens": 0,
+   "medDecided": 76.68,
+   "p90Decided": 707.84,
+   "medAll": "never",
+   "within90": 0.182,
+   "within365": 0.27,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1106,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.84,
+    "p90Decided": 307.7,
+    "within90": 0.685,
+    "within365": 0.933,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 4623.6,
+    "lambdaW": 4623.6,
+    "relErr": 0,
+    "W_days": 1578.2
+   }
+  },
+  "cap0.75_wip283_bounce": {
+   "endBacklog": 283,
+   "endMedAgeD": 221.34,
+   "lostTokens": 0,
+   "medDecided": 182.16,
+   "p90Decided": 583.29,
+   "medAll": "never",
+   "within90": 0.055,
+   "within365": 0.253,
+   "shareExpired": 0,
+   "bounced": 7764.9,
+   "decidedNeverDecidedInReality": 1363.6,
+   "AB": {
+    "n": 3179,
+    "medDecided": 143.29,
+    "p90Decided": 552.36,
+    "within90": 0.13,
+    "within365": 0.404,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 263.6,
+    "lambdaW": 263.9,
+    "relErr": 0,
+    "W_days": 251.8
+   }
+  },
+  "cap1.25_FIFO": {
+   "endBacklog": 5733.9,
+   "endMedAgeD": 1556.13,
+   "lostTokens": 394.9,
+   "medDecided": 408.29,
+   "p90Decided": 2338.96,
+   "medAll": 2435.34,
+   "within90": 0.181,
+   "within365": 0.258,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2485.8,
+   "AB": {
+    "n": 3179,
+    "medDecided": 28.32,
+    "p90Decided": 2414.21,
+    "within90": 0.346,
+    "within365": 0.426,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3227.5,
+    "lambdaW": 3227.5,
+    "relErr": 0,
+    "W_days": 1101.6
+   }
+  },
+  "cap1.25_OBSDISC": {
+   "endBacklog": 5733.9,
+   "endMedAgeD": 2047.78,
+   "lostTokens": 394.9,
+   "medDecided": 33.77,
+   "p90Decided": 857.91,
+   "medAll": 1315.09,
+   "within90": 0.333,
+   "within365": 0.426,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2684.7,
+   "AB": {
+    "n": 3179,
+    "medDecided": 8.46,
+    "p90Decided": 520.53,
+    "within90": 0.489,
+    "within365": 0.563,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3227.5,
+    "lambdaW": 3227.5,
+    "relErr": 0,
+    "W_days": 1101.6
+   }
+  },
+  "cap1.25_expire365_OBSDISC": {
+   "endBacklog": 408.6,
+   "endMedAgeD": 65.5,
+   "lostTokens": 394.9,
+   "medDecided": 18.3,
+   "p90Decided": 218.53,
+   "medAll": 298.91,
+   "within90": 0.398,
+   "within365": 0.527,
+   "shareExpired": 0.441,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.282,
+   "realAcceptedLostToExpiry": 0.304,
+   "AB_realAcceptedLostToExpiry": 0.212,
+   "decidedNeverDecidedInReality": 2743.7,
+   "AB": {
+    "n": 3179,
+    "medDecided": 5.57,
+    "p90Decided": 158.73,
+    "within90": 0.564,
+    "within365": 0.668,
+    "shareExpired": 0.302
+   },
+   "little": {
+    "Lbar": 582,
+    "lambdaW": 582.1,
+    "relErr": 0,
+    "W_days": 198.6
+   }
+  },
+  "cap1.25_expire180_FIFO": {
+   "endBacklog": 435.5,
+   "endMedAgeD": 47.6,
+   "lostTokens": 394.9,
+   "medDecided": 137.47,
+   "p90Decided": 178.46,
+   "medAll": 179.46,
+   "within90": 0.214,
+   "within365": 0.534,
+   "shareExpired": 0.438,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.28,
+   "realAcceptedLostToExpiry": 0.3,
+   "AB_realAcceptedLostToExpiry": 0.17,
+   "decidedNeverDecidedInReality": 2669,
+   "AB": {
+    "n": 3179,
+    "medDecided": 85.74,
+    "p90Decided": 177.81,
+    "within90": 0.381,
+    "within365": 0.745,
+    "shareExpired": 0.236
+   },
+   "little": {
+    "Lbar": 399.6,
+    "lambdaW": 399.7,
+    "relErr": 0,
+    "W_days": 136.2
+   }
+  },
+  "cap1.25_prioAB_FIFO": {
+   "endBacklog": 5733.9,
+   "endMedAgeD": 1942.42,
+   "lostTokens": 394.9,
+   "medDecided": 36.65,
+   "p90Decided": 1338.98,
+   "medAll": 2430.26,
+   "within90": 0.326,
+   "within365": 0.388,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2401.7,
+   "AB": {
+    "n": 3179,
+    "medDecided": 5.07,
+    "p90Decided": 63.01,
+    "within90": 0.965,
+    "within365": 1,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3227.5,
+    "lambdaW": 3227.5,
+    "relErr": 0,
+    "W_days": 1101.6
+   }
+  },
+  "cap1.25_wip283_bounce": {
+   "endBacklog": 282.6,
+   "endMedAgeD": 114.63,
+   "lostTokens": 469.1,
+   "medDecided": 79.62,
+   "p90Decided": 356.13,
+   "medAll": 389.06,
+   "within90": 0.281,
+   "within365": 0.493,
+   "shareExpired": 0,
+   "bounced": 5525.5,
+   "decidedNeverDecidedInReality": 2546.8,
+   "AB": {
+    "n": 3179,
+    "medDecided": 40.37,
+    "p90Decided": 345.52,
+    "within90": 0.433,
+    "within365": 0.688,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 218,
+    "lambdaW": 218,
+    "relErr": 0,
+    "W_days": 137.2
+   }
+  },
+  "missing0.26_FIFO": {
+   "endBacklog": 6672.1,
+   "endMedAgeD": 1746.92,
+   "lostTokens": 0.6,
+   "medDecided": 399.4,
+   "p90Decided": 2513.85,
+   "medAll": "never",
+   "within90": 0.171,
+   "within365": 0.233,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1825.7,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 34.69,
+    "p90Decided": 2284.18,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3734,
+    "lambdaW": 3734,
+    "relErr": 0,
+    "W_days": 1277.6
+   }
+  },
+  "missing0.26_OBSDISC": {
+   "endBacklog": 6672.1,
+   "endMedAgeD": 2232.41,
+   "lostTokens": 0.6,
+   "medDecided": 37.81,
+   "p90Decided": 850.69,
+   "medAll": "never",
+   "within90": 0.288,
+   "within365": 0.366,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 2093.2,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 11.97,
+    "p90Decided": 460.71,
+    "within90": 0.443,
+    "within365": 0.513,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3734,
+    "lambdaW": 3734,
+    "relErr": 0,
+    "W_days": 1277.6
+   }
+  },
+  "missing0.26_expire365_OBSDISC": {
+   "endBacklog": 488.5,
+   "endMedAgeD": 85.66,
+   "lostTokens": 0.6,
+   "medDecided": 22.21,
+   "p90Decided": 212.61,
+   "medAll": "never",
+   "within90": 0.341,
+   "within365": 0.45,
+   "shareExpired": 0.513,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.295,
+   "realAcceptedLostToExpiry": 0.369,
+   "AB_realAcceptedLostToExpiry": 0.263,
+   "decidedNeverDecidedInReality": 2173.5,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 7.68,
+    "p90Decided": 143.66,
+    "within90": 0.504,
+    "within365": 0.596,
+    "shareExpired": 0.368
+   },
+   "little": {
+    "Lbar": 647.4,
+    "lambdaW": 647.6,
+    "relErr": 0,
+    "W_days": 221.6
+   }
+  },
+  "missing0.26_expire180_FIFO": {
+   "endBacklog": 434.8,
+   "endMedAgeD": 47.62,
+   "lostTokens": 0.6,
+   "medDecided": 140,
+   "p90Decided": 178.8,
+   "medAll": "never",
+   "within90": 0.181,
+   "within365": 0.457,
+   "shareExpired": 0.517,
+   "bounced": 0,
+   "expiredLaterAcceptedInReality": 0.293,
+   "realAcceptedLostToExpiry": 0.37,
+   "AB_realAcceptedLostToExpiry": 0.215,
+   "decidedNeverDecidedInReality": 2100.7,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 73.44,
+    "p90Decided": 178.1,
+    "within90": 0.336,
+    "within365": 0.663,
+    "shareExpired": 0.317
+   },
+   "little": {
+    "Lbar": 418.8,
+    "lambdaW": 418.9,
+    "relErr": 0,
+    "W_days": 143.3
+   }
+  },
+  "missing0.26_prioAB_FIFO": {
+   "endBacklog": 6672.1,
+   "endMedAgeD": 2227.5,
+   "lostTokens": 0.6,
+   "medDecided": 45.87,
+   "p90Decided": 1134.32,
+   "medAll": "never",
+   "within90": 0.278,
+   "within365": 0.362,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1938.4,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 13.8,
+    "p90Decided": 149.2,
+    "within90": 0.81,
+    "within365": 1,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3734,
+    "lambdaW": 3734,
+    "relErr": 0,
+    "W_days": 1277.6
+   }
+  },
+  "missing0.26_wip283_bounce": {
+   "endBacklog": 283,
+   "endMedAgeD": 145.9,
+   "lostTokens": 0.6,
+   "medDecided": 96.85,
+   "p90Decided": 434.49,
+   "medAll": "never",
+   "within90": 0.215,
+   "within365": 0.383,
+   "shareExpired": 0,
+   "bounced": 6389.1,
+   "decidedNeverDecidedInReality": 1983.6,
+   "AB": {
+    "n": 3171.3,
+    "medDecided": 51.98,
+    "p90Decided": 424.24,
+    "within90": 0.358,
+    "within365": 0.552,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 231.6,
+    "lambdaW": 231.6,
+    "relErr": 0,
+    "W_days": 168.5
+   }
+  },
+  "botIncluded_FIFO": {
+   "endBacklog": 6687,
+   "endMedAgeD": 1749,
+   "lostTokens": 0,
+   "medDecided": 399.4,
+   "p90Decided": 2510.8,
+   "medAll": "never",
+   "within90": 0.172,
+   "within365": 0.234,
+   "shareExpired": 0,
+   "bounced": 0,
+   "decidedNeverDecidedInReality": 1831,
+   "AB": {
+    "n": 3179,
+    "medDecided": 33.5,
+    "p90Decided": 2285.3,
+    "within90": 0.328,
+    "within365": 0.415,
+    "shareExpired": 0
+   },
+   "little": {
+    "Lbar": 3741,
+    "lambdaW": 3741,
+    "relErr": 0,
+    "W_days": 1277
+   }
+  },
+  "botIncluded_identicalQueueTrace": true
+ }
+}

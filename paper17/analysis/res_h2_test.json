@@ -1,0 +1,196 @@
+{
+ "v1 2015-22": {
+  "acceptances": 3938,
+  "rejections": 204,
+  "rejection_share": 0.04925156929019797,
+  "median_age_days_acceptance": 29.0,
+  "median_age_days_rejection": 87.0,
+  "share_over_1y_acceptance": 0.1389029964448959,
+  "share_over_1y_rejection": 0.24509803921568626,
+  "months": 83,
+  "rejections_in_busiest_10pct_months": 0.4803921568627451,
+  "fano_monthly_rejections": 6.463175514108083
+ },
+ "v2 2022-25": {
+  "acceptances": 569,
+  "rejections": 29,
+  "rejection_share": 0.048494983277591976,
+  "median_age_days_acceptance": 65.0,
+  "median_age_days_rejection": 2042.0,
+  "share_over_1y_acceptance": 0.30755711775043937,
+  "share_over_1y_rejection": 0.7586206896551724,
+  "months": 37,
+  "rejections_in_busiest_10pct_months": 0.7586206896551724,
+  "fano_monthly_rejections": 4.90038314176245
+ },
+ "v2 after 2025 rule": {
+  "acceptances": 441,
+  "rejections": 66,
+  "rejection_share": 0.1301775147928994,
+  "median_age_days_acceptance": 49.0,
+  "median_age_days_rejection": 2932.0,
+  "share_over_1y_acceptance": 0.3968253968253968,
+  "share_over_1y_rejection": 0.8636363636363636,
+  "months": 19,
+  "rejections_in_busiest_10pct_months": 0.5606060606060606,
+  "fano_monthly_rejections": 9.895622895622896
+ },
+ "queue_position_by_period_and_action": {
+  "v1 2015-22|ACCEPTED": {
+   "mean_u": 0.352,
+   "median_u": 0.255,
+   "n": 3667
+  },
+  "v1 2015-22|REJECTED": {
+   "mean_u": 0.471,
+   "median_u": 0.436,
+   "n": 204
+  },
+  "v2 2022-25|ACCEPTED": {
+   "mean_u": 0.149,
+   "median_u": 0.02,
+   "n": 569
+  },
+  "v2 2022-25|REJECTED": {
+   "mean_u": 0.637,
+   "median_u": 0.829,
+   "n": 29
+  },
+  "v2 after 2025 rule|ACCEPTED": {
+   "mean_u": 0.124,
+   "median_u": 0.013,
+   "n": 441
+  },
+  "v2 after 2025 rule|REJECTED": {
+   "mean_u": 0.627,
+   "median_u": 0.875,
+   "n": 66
+  }
+ },
+ "queue_position_difference": {
+  "v1 2015-22": {
+   "diff_mean_u": 0.11923454146308526,
+   "ci95": [
+    0.0725189632243142,
+    0.1680372075513507
+   ],
+   "mannwhitney_p": 1.7221542260551503e-08,
+   "n_rej": 204,
+   "n_acc": 3667
+  },
+  "v2 2022-25": {
+   "diff_mean_u": 0.4883373581491769,
+   "ci95": [
+    0.3458688666256756,
+    0.6192776126121868
+   ],
+   "mannwhitney_p": 1.0048657226626568e-11,
+   "n_rej": 29,
+   "n_acc": 569
+  },
+  "v2 after 2025 rule": {
+   "diff_mean_u": 0.5027341654101125,
+   "ci95": [
+    0.4121791932185262,
+    0.5895626165987936
+   ],
+   "mannwhitney_p": 1.4697336509030623e-21,
+   "n_rej": 66,
+   "n_acc": 441
+  },
+  "v2_minus_v1_gap": {
+   "estimate": 0.37275135621335437,
+   "ci95": [
+    0.28254260098000544,
+    0.46044440527685015
+   ]
+  }
+ },
+ "clustered": {
+  "v1 2015-22": {
+   "diff_mean_u": 0.11923454146308526,
+   "ci95_clustered_by_editor_and_n_editors": [
+    0.004099904900693961,
+    0.27548650871286795,
+    21
+   ],
+   "editors_with_rejections": 15
+  },
+  "v2 2022-25": {
+   "diff_mean_u": 0.4883373581491769,
+   "ci95_clustered_by_editor_and_n_editors": [
+    0.09997918987517675,
+    0.5826986117319942,
+    13
+   ],
+   "editors_with_rejections": 9
+  },
+  "v2 after 2025 rule": {
+   "diff_mean_u": 0.5027341654101125,
+   "ci95_clustered_by_editor_and_n_editors": [
+    0.1517383703839363,
+    0.6701668888892582,
+    12
+   ],
+   "editors_with_rejections": 7
+  },
+  "v2_minus_v1_gap_clustered": {
+   "estimate": 0.37275135621335437,
+   "ci95": [
+    0.08502531509277642,
+    0.5614094981382343
+   ]
+  }
+ },
+ "bursts": {
+  "v1 2015-22": {
+   "rejections_top10pct_months": 0.4803921568627451,
+   "acceptances_top10pct_months": 0.3599672757022089,
+   "null_mean_random_decisions": 0.39116911764705886,
+   "permutation_p": 0.0014992503748125937
+  },
+  "v2 2022-25": {
+   "rejections_top10pct_months": 0.7586206896551724,
+   "acceptances_top10pct_months": 0.2460456942003515,
+   "null_mean_random_decisions": 0.38612068965517243,
+   "permutation_p": 0.0004997501249375312
+  },
+  "v2 after 2025 rule": {
+   "rejections_top10pct_months": 0.5606060606060606,
+   "acceptances_top10pct_months": 0.25170068027210885,
+   "null_mean_random_decisions": 0.26603787878787877,
+   "permutation_p": 0.0004997501249375312
+  }
+ },
+ "joint_editor_bootstrap": {
+  "v2 2022-25 minus v1": {
+   "estimate": 0.36910281668609163,
+   "ci95": [
+    -0.06634437533969882,
+    0.5033007982187683
+   ]
+  },
+  "after 2025 rule minus v1": {
+   "estimate": 0.38349962394702725,
+   "ci95": [
+    -0.028425383660514832,
+    0.6053628223526919
+   ]
+  },
+  "v2 pooled minus v1": {
+   "estimate": 0.37275135621335437,
+   "ci95": [
+    0.07363597179266286,
+    0.5664090245307946
+   ]
+  },
+  "draws": 4000,
+  "dropped_draws_without_a_rejection_in_some_period": 1,
+  "n_editors_all_periods": 28
+ },
+ "per_period_dropped_draws": {
+  "v1 2015-22": 0,
+  "v2 2022-25": 0,
+  "v2 after 2025 rule": 0
+ }
+}

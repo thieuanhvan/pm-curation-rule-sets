@@ -1,0 +1,71 @@
+{
+ "cohort_n": 1676,
+ "exclusion_window_days": 7.0,
+ "full_window_7d": {
+  "live_share": 0.303,
+  "p_live": 0.337,
+  "p_notlive": 0.234,
+  "diff": 0.103,
+  "diff_ci": [
+   -0.029,
+   0.247
+  ],
+  "share_of_365d_decisions_on_not_live": 0.615,
+  "n_live": 508
+ },
+ "landmark_30d": {
+  "at_risk": 1402,
+  "live_n": 234,
+  "live_share": 0.167,
+  "p_decided_by_365_live": 0.132,
+  "p_not_live": 0.119,
+  "diff": 0.013,
+  "diff_ci": [
+   -0.051,
+   0.107
+  ],
+  "decided_n": 170
+ },
+ "landmark_90d": {
+  "at_risk": 1339,
+  "live_n": 294,
+  "live_share": 0.22,
+  "p_decided_by_365_live": 0.075,
+  "p_not_live": 0.081,
+  "diff": -0.007,
+  "diff_ci": [
+   -0.067,
+   0.081
+  ],
+  "decided_n": 107
+ },
+ "cohort_decided_365": {
+  "share": 0.265,
+  "ci": [
+   0.171,
+   0.38
+  ],
+  "n": 1676,
+  "decided": 444
+ },
+ "cohort_decided_365_drop_top1_submitters": {
+  "share": 0.258,
+  "ci": [
+   0.161,
+   0.391
+  ],
+  "n": 1456,
+  "top_share_of_cohort_rounded": 0.1
+ },
+ "cohort_decided_365_drop_top5_submitters": {
+  "share": 0.304,
+  "ci": [
+   0.173,
+   0.492
+  ],
+  "n": 956,
+  "top_share_of_cohort": 0.43,
+  "top_decided_share": 0.212
+ },
+ "n_submitters_cohort": 79
+}

@@ -1,0 +1,496 @@
+{
+  "coder": "A",
+  "controls": [
+    {"id": "K1", "object_type": "evidence_item", "stage": "intake", "mode": "G",
+     "rule": "Only a signed-in user may submit a new evidence item (from S2 the user must also be entitled to act for the chosen organization).",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/evidence_item_policy.rb:6 propose?; app/controllers/evidence_items_controller.rb propose (authorize)", "S2": "app/policies/evidence_item_policy.rb:8 propose? (user && belongs_to_action_organization?)", "S3": "server/app/graphql/mutations/submit_evidence_item.rb ready? validate_user_logged_in / authorized? validate_user_acting_as_org", "S4": "server/app/graphql/mutations/submit_evidence_item.rb ready?/authorized?"}},
+
+    {"id": "K2", "object_type": "evidence_item", "stage": "intake", "mode": "G",
+     "rule": "A submitted evidence item must pass model validation: type-specific significance and direction values, disease and drug/therapy required or forbidden by evidence type, interaction type only with multiple drugs, rating 1-5.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/validators/evidence_item_validator.rb validate; server/app/models/evidence_item.rb validates :rating; actions/submit_evidence_item.rb save!", "S4": "server/app/validators/evidence_item_validator.rb validate; server/app/models/activities/submit_evidence_item.rb setup (valid?)"}},
+
+    {"id": "K3", "object_type": "evidence_item", "stage": "intake", "mode": "G",
+     "rule": "Entities referenced by a submitted or revised evidence item (variant/molecular profile, source, disease, drugs/therapies, phenotypes) must exist; in S4 the molecular profile must not be deprecated.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "partial only: app/models/actions/propose_evidence_item.rb get_source returns errors if the source record is invalid (citation_id missing); not counted", "S3": "server/app/models/input_adaptors/evidence_item_input_adaptor.rb check_input_for_errors", "S4": "server/app/models/input_adaptors/evidence_item_input_adaptor.rb check_input_for_errors"}},
+
+    {"id": "K4", "object_type": "evidence_item", "stage": "intake", "mode": "G",
+     "rule": "A submission or revision is refused if an identical evidence item already exists in submitted or accepted status (rejected ones do not count).",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/models/input_adaptors/evidence_item_input_adaptor.rb check_input_for_errors ('Existing identical Evidence Item found')"}},
+
+    {"id": "K5", "object_type": "evidence_item", "stage": "intake", "mode": "G",
+     "rule": "An optional comment attached to an evidence-item submission must be at least 10 characters long.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/submit_evidence_item.rb argument :comment validates length minimum 10", "S4": "server/app/graphql/mutations/submit_evidence_item.rb argument :comment"}},
+
+    {"id": "K6", "object_type": "evidence_item", "stage": "decision", "mode": "G",
+     "rule": "Accepting or rejecting another user's evidence item requires at least the moderator role (S1) or editor role (S2-S4).",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/evidence_item_policy.rb:14 accept? / :22 reject? (moderator)", "S2": "app/policies/evidence_item_policy.rb:16 accept? / :20 reject? (editor_without_coi?)", "S3": "server/app/graphql/mutations/moderate_evidence_item.rb:32 authorized? ('User must be an editor')", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb:42 authorized?"}},
+
+    {"id": "K7", "object_type": "evidence_item", "stage": "decision", "mode": "G",
+     "rule": "The editor accepting or rejecting an evidence item must have a conflict-of-interest statement on file that is less than one year old (server-side).",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/policies/policy_helpers.rb:2 editor_without_coi?; app/models/conflict_of_interest_statement.rb expired?", "S3": "absent on server: server/app/graphql/mutations/moderate_evidence_item.rb checks role only (see K8)", "S4": "absent on server: server/app/graphql/mutations/moderate_evidence_item.rb checks role only (see K8)"}},
+
+    {"id": "K8", "object_type": "evidence_item", "stage": "decision", "mode": "C",
+     "rule": "The client shows accept/reject/revert controls for evidence items only to editors with a valid conflict-of-interest statement; the server checks only the editor role.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "no client code in civic-server repository", "S2": "no client code in civic-server repository (and server enforces COI, K7)", "S3": "client/src/app/views/evidence/evidence-detail/evidence-detail.view.html:76,95 (viewer.canModerate); client/src/app/core/services/viewer/viewer.service.ts canModerate", "S4": "client/src/app/components/shared/moderate-entity-buttons/moderate-entity-buttons.component.html:4; evidence-detail.view.html:98; viewer.service.ts canModerate"}},
+
+    {"id": "K9", "object_type": "evidence_item", "stage": "decision", "mode": "G",
+     "rule": "The submitter of an evidence item cannot accept it unless the submitter is an admin.",
+     "present": {"S1": true, "S2": false, "S3": false, "S4": false},
+     "evidence": {"S1": "app/policies/evidence_item_policy.rb:14 accept? (submitter == user -> admin required)", "S2": "replaced by K10", "S3": "replaced by K10", "S4": "replaced by K10"}},
+
+    {"id": "K10", "object_type": "evidence_item", "stage": "decision", "mode": "G",
+     "rule": "The submitter of an evidence item can never accept it, regardless of role.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/evidence_item_policy.rb:17 accept? (evidence_item.submitter != user)", "S3": "server/app/graphql/mutations/moderate_evidence_item.rb authorized? ('Users may not accept their own submitted evidence')", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb authorized?"}},
+
+    {"id": "K11", "object_type": "evidence_item", "stage": "fit", "mode": "G",
+     "rule": "A moderation action is refused if the evidence item already has the requested status.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/models/actions/update_evidence_item_status.rb:15-25", "S2": "app/models/actions/update_evidence_item_status.rb:26", "S3": "server/app/graphql/mutations/moderate_evidence_item.rb ready?; server/app/models/actions/moderate_evidence_item.rb update_status", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb ready?; server/app/models/actions/moderate_evidence_item.rb update_status"}},
+
+    {"id": "K12", "object_type": "evidence_item", "stage": "fit", "mode": "G",
+     "rule": "An evidence item can be accepted (or reverted to submitted) only if it passes model validation at that moment; in S4 rejection skips validation.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/models/actions/moderate_evidence_item.rb update_status (save!) + validators/evidence_item_validator.rb", "S4": "server/app/models/actions/moderate_evidence_item.rb update_status (save! unless rejected -> save(validate: false))"}},
+
+    {"id": "K13", "object_type": "evidence_item", "stage": "fit", "mode": "G",
+     "rule": "An evidence item whose source is marked as retracted by Retraction Watch fails validation and so cannot be submitted, accepted or reverted.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/validators/evidence_item_validator.rb (source.retraction_nature == 'Retraction')"}},
+
+    {"id": "K14", "object_type": "evidence_item", "stage": "fit", "mode": "G",
+     "rule": "An evidence item linked to a deprecated molecular profile, disease, therapy or source fails validation and so cannot be submitted, accepted or reverted.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/validators/evidence_item_validator.rb (molecular_profile.deprecated, disease&.deprecated, therapies deprecated, source.deprecated)"}},
+
+    {"id": "K15", "object_type": "evidence_item", "stage": "decision", "mode": "G",
+     "rule": "Rejecting or reverting an evidence item requires a comment, and accepting it must not carry a comment.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb:18 ready? ('A comment is required when rejecting or reverting')"}},
+
+    {"id": "K16", "object_type": "evidence_item", "stage": "exit", "mode": "P",
+     "rule": "The submitter of an evidence item may reject (withdraw) it without holding the editor role.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/evidence_item_policy.rb:21 reject? (submitter == user && org)", "S3": "server/app/graphql/mutations/moderate_evidence_item.rb authorized? ('users may reject their own eids')", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb authorized?"}},
+
+    {"id": "K17", "object_type": "evidence_item", "stage": "exit", "mode": "G",
+     "rule": "Deleting (soft-deleting) an evidence item through the API requires the moderator role (S1) or editor role with valid COI acting for a member organization (S2).",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/policies/evidence_item_policy.rb:10 destroy?; app/controllers/evidence_items_controller.rb destroy; app/models/concerns/soft_deletable.rb", "S2": "app/policies/evidence_item_policy.rb:12 destroy?", "S3": "no deletion mutation", "S4": "no deletion mutation"}},
+
+    {"id": "K18", "object_type": "evidence_item", "stage": "re-review", "mode": "A",
+     "rule": "Suggesting a revision to a rejected evidence item automatically returns it to submitted status.",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/models/evidence_item.rb:115 suggest_change! (rejected -> submitted)", "S2": "app/models/evidence_item.rb:185 on_change_suggested", "S3": "removed (TODO comment in server/app/models/concerns/moderated.rb)", "S4": "-"}},
+
+    {"id": "K19", "object_type": "evidence_item", "stage": "re-review", "mode": "A",
+     "rule": "Accepting a revision to a rejected evidence item automatically returns it to submitted status.",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/models/evidence_item.rb:135 after_change_accept", "S2": "app/models/evidence_item.rb:192 after_change_accept", "S3": "removed (TODO comment in server/app/models/concerns/moderated.rb)", "S4": "-"}},
+
+    {"id": "K20", "object_type": "evidence_item", "stage": "re-review", "mode": "G",
+     "rule": "Only a moderator/editor may reverse a decided evidence item (accept a rejected one, reject an accepted one, or revert it to submitted); there is no requirement that the item be pending.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/controllers/evidence_items_controller.rb update_status + evidence_item_policy.rb accept?/reject? (no status precondition)", "S2": "same path, app/policies/evidence_item_policy.rb", "S3": "server/app/graphql/mutations/moderate_evidence_item.rb (new_status SUBMITTED = 'reverted', editor)", "S4": "server/app/graphql/mutations/moderate_evidence_item.rb"}},
+
+    {"id": "K21", "object_type": "evidence_item", "stage": "re-review", "mode": "P",
+     "rule": "Admins can set an evidence item's status directly in the admin console (accept/reject/resubmit actions in S1-S2, status field in S3-S4), bypassing the API's self-acceptance and COI checks.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/admin/evidence_item.rb:116-130 member_action accept/reject/resubmit_evidence_item; config/initializers/active_admin.rb ensure_admin_user", "S2": "app/admin/evidence_item.rb:130 resubmit_evidence_item", "S3": "server/app/admin/evidence_items_admin.rb:62 select :status; config/initializers/trestle.rb admin before_action", "S4": "server/app/admin/evidence_items_admin.rb:54 select :status"}},
+
+    {"id": "K22", "object_type": "evidence_item", "stage": "re-review", "mode": "A",
+     "rule": "When a source is no longer listed as retracted, a nightly job flags that source's rejected evidence items for re-evaluation (CIViCBot flag).",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/lib/importer/retraction_watch.rb flag_eids_for_reevaluation; server/app/jobs/find_retracted_sources.rb; server/config/scheduled_tasks.yml FindRetractedSources"}},
+
+    {"id": "K23", "object_type": "flag", "stage": "flag raising", "mode": "A",
+     "rule": "A nightly job automatically flags (as CIViCBot) every evidence item whose source Retraction Watch lists as retracted, unless such a flag is already open.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/lib/importer/retraction_watch.rb add_eid_flags; server/config/scheduled_tasks.yml FindRetractedSources"}},
+
+    {"id": "K24", "object_type": "flag", "stage": "flag resolution", "mode": "A",
+     "rule": "When a source stops being listed as retracted, the job attempts to resolve the CIViCBot retraction flags on its evidence items.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/lib/importer/retraction_watch.rb resolve_eid_flags (references undefined local 'text'; likely raises when open flags exist)"}},
+
+    {"id": "K25", "object_type": "flag", "stage": "flag raising", "mode": "A",
+     "rule": "A weekly job automatically flags (as CIViCBot) variants whose ClinGen Allele Registry ID is shared with another non-deprecated variant.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/jobs/flag_duplicate_allele_registry_ids.rb; server/config/scheduled_tasks.yml FlagDuplicateAlleleRegistryIds"}},
+
+    {"id": "K30", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "Only a signed-in user (acting for an organization they belong to, from S2) may suggest a revision.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:2 create?; app/controllers/moderations_controller.rb create", "S2": "app/policies/suggested_change_policy.rb:4 create?", "S3": "server/app/graphql/mutations/suggest_*_revision.rb ready?/authorized?", "S4": "server/app/graphql/mutations/suggest_*_revision.rb ready?/authorized?"}},
+
+    {"id": "K31", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "A suggested revision must change at least one field.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/models/concerns/moderated.rb:33 raise NoSuggestedChangesError", "S2": "app/models/concerns/moderated.rb:38", "S3": "server/app/models/actions/suggest_revision_set.rb ('You must change at least one field')", "S4": "server/app/models/actions/suggest_revision_set.rb"}},
+
+    {"id": "K32", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "Suggesting a revision requires a justification comment of at least 10 characters.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "comment optional (with_comment.rb attach_comment)", "S2": "comment optional", "S3": "server/app/graphql/mutations/suggest_evidence_item_revision.rb argument :comment required, min 10 (same in other suggest_* mutations)", "S4": "server/app/graphql/mutations/suggest_evidence_item_revision.rb argument :comment"}},
+
+    {"id": "K33", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "The object state proposed by a revision must itself pass model validation before the revision is stored.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/models/actions/suggest_revision_set.rb updated_obj.validate!", "S4": "server/app/models/actions/suggest_revision_set.rb updated_obj.validate!"}},
+
+    {"id": "K34", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "An identical pending revision for the same field is reused instead of duplicated; in S4 a suggestion is refused when every proposed revision already exists.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/models/actions/suggest_revision.rb execute (existing_revisions)", "S4": "server/app/models/actions/suggest_revision.rb; server/app/models/actions/suggest_revision_set.rb ('All proposed revisions already exist')"}},
+
+    {"id": "K35", "object_type": "revision", "stage": "intake", "mode": "G",
+     "rule": "A pending suggested change can be edited only by its suggester or by a moderator (S1) / editor with valid COI (S2).",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:6 update?; app/controllers/moderations_controller.rb update", "S2": "app/policies/suggested_change_policy.rb:8 update?", "S3": "no revision edit mutation", "S4": "no revision edit mutation"}},
+
+    {"id": "K36", "object_type": "revision", "stage": "decision", "mode": "G",
+     "rule": "Accepting a revision requires the moderator role (S1) or editor role with a conflict-of-interest statement less than one year old (S2-S4).",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:11 accept?", "S2": "app/policies/suggested_change_policy.rb:13 accept? (editor_without_coi?)", "S3": "server/app/graphql/mutations/accept_revisions.rb:67 authorized?", "S4": "server/app/graphql/mutations/accept_revisions.rb:67 authorized?"}},
+
+    {"id": "K37", "object_type": "revision", "stage": "decision", "mode": "G",
+     "rule": "A user cannot accept their own suggested revision unless they are an admin.",
+     "present": {"S1": true, "S2": false, "S3": false, "S4": false},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:11-17 accept?", "S2": "replaced by K38", "S3": "replaced by K38", "S4": "replaced by K38"}},
+
+    {"id": "K38", "object_type": "revision", "stage": "decision", "mode": "G",
+     "rule": "An editor cannot accept a revision they suggested themselves.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/suggested_change_policy.rb:14 (suggested_change.user != user)", "S3": "server/app/graphql/mutations/accept_revisions.rb authorized? ('User may not accept their own suggested revision')", "S4": "server/app/graphql/mutations/accept_revisions.rb authorized?"}},
+
+    {"id": "K39", "object_type": "revision", "stage": "decision", "mode": "P",
+     "rule": "The submitter of an evidence item or assertion that is still in submitted status may accept revisions to it without editor role or COI (even revisions suggested by others).",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/accept_revisions.rb authorized? user_editing_their_own_submission", "S4": "server/app/graphql/mutations/accept_revisions.rb authorized? user_editing_their_own_submission"}},
+
+    {"id": "K40", "object_type": "revision", "stage": "decision", "mode": "G",
+     "rule": "Rejecting someone else's revision requires the moderator role (S1) or editor role with valid COI (S2-S4).",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:19 reject?", "S2": "app/policies/suggested_change_policy.rb:17 reject?", "S3": "server/app/graphql/mutations/reject_revisions.rb:49 authorized?", "S4": "server/app/graphql/mutations/reject_revisions.rb:53 authorized?"}},
+
+    {"id": "K41", "object_type": "revision", "stage": "exit", "mode": "P",
+     "rule": "The suggester of a revision may reject (withdraw) their own revision without moderator/editor role.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/suggested_change_policy.rb:20 (suggested_change.user == user)", "S2": "app/policies/suggested_change_policy.rb:18", "S3": "server/app/graphql/mutations/reject_revisions.rb authorized? (revision.revisor == current_user)", "S4": "server/app/graphql/mutations/reject_revisions.rb authorized?"}},
+
+    {"id": "K42", "object_type": "revision", "stage": "decision", "mode": "G",
+     "rule": "Rejecting revisions requires a comment of at least 10 characters; an acceptance comment is optional but must be at least 10 characters if given.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "comment optional", "S2": "comment optional", "S3": "server/app/graphql/mutations/reject_revisions.rb argument :comment required; accept_revisions.rb argument :comment min 10", "S4": "server/app/graphql/mutations/reject_revisions.rb; accept_revisions.rb"}},
+
+    {"id": "K43", "object_type": "revision", "stage": "fit", "mode": "G",
+     "rule": "A revision that has already been applied/accepted cannot be accepted again (S3-S4: it must be in 'new' status).",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/models/actions/update_suggested_change_status.rb:29-30 ChangeAlreadyAppliedError", "S2": "app/models/actions/update_suggested_change_status.rb:32-33", "S3": "server/app/graphql/mutations/accept_revisions.rb:27 ready? (status != 'new')", "S4": "server/app/graphql/mutations/accept_revisions.rb:27 ready?"}},
+
+    {"id": "K44", "object_type": "revision", "stage": "fit", "mode": "G",
+     "rule": "Only revisions in 'new' status can be rejected.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "no status check on close (applied changes can be closed)", "S2": "no status check on close", "S3": "server/app/graphql/mutations/reject_revisions.rb:24 ready?", "S4": "server/app/graphql/mutations/reject_revisions.rb:24 ready?"}},
+
+    {"id": "K45", "object_type": "revision", "stage": "fit", "mode": "G",
+     "rule": "A revision is applied only if the object's current field values still equal the values the revision was based on (stale-change conflict check).",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/models/actions/update_suggested_change_status.rb validate_changeset / validate_additional_changeset (ChangeApplicationConflictError)", "S2": "app/models/actions/update_suggested_change_status.rb validate_changeset", "S3": "absent: server/app/models/actions/accept_revisions.rb assigns suggested_value without comparing current_value", "S4": "absent"}},
+
+    {"id": "K46", "object_type": "revision", "stage": "fit", "mode": "P",
+     "rule": "The accepting moderator/editor may pass a force flag to apply a revision despite a conflict with current values.",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/controllers/moderations_controller.rb accept (params[:force]); update_suggested_change_status.rb:35 unless force", "S2": "app/models/actions/update_suggested_change_status.rb:38 unless force", "S3": "-", "S4": "-"}},
+
+    {"id": "K47", "object_type": "revision", "stage": "fit", "mode": "G",
+     "rule": "Revisions accepted together must belong to a single subject and include at most one revision per field (S4 also requires a single subject for batch rejection).",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/accept_revisions.rb ready? ('Revisions span multiple subjects', 'Multiple revisions with the same field_name')", "S4": "server/app/graphql/mutations/accept_revisions.rb ready?; reject_revisions.rb ready?"}},
+
+    {"id": "K48", "object_type": "revision", "stage": "fit", "mode": "G",
+     "rule": "Accepting revisions fails if the resulting object does not pass model validation.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/models/actions/accept_revisions.rb subject.save!", "S4": "server/app/models/actions/accept_revisions.rb receiver.save!"}},
+
+    {"id": "K49", "object_type": "revision", "stage": "exit", "mode": "A",
+     "rule": "Accepting a revision automatically marks every other pending revision on the same field of the same object as superseded.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "'superseded' listed in SuggestedChange.valid_statuses but never written", "S2": "'superseded' listed in valid_statuses but never written", "S3": "server/app/models/actions/accept_revisions.rb supersede_conflicting_revisions", "S4": "server/app/models/actions/accept_revisions.rb supersede_conflicting_revisions"}},
+
+    {"id": "K50", "object_type": "revision", "stage": "exit", "mode": "A",
+     "rule": "When an admin merges two variants, pending suggested changes on the removed variant are deleted.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/jobs/merge_variants.rb:25 remove_suggested_changes; app/admin/utilities.rb merge_variants", "S3": "-", "S4": "-"}},
+
+    {"id": "K60", "object_type": "assertion", "stage": "intake", "mode": "G",
+     "rule": "Only a signed-in user acting for an organization they belong to may submit an assertion.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "assertions do not exist", "S2": "app/policies/assertion_policy.rb:8 propose?", "S3": "server/app/graphql/mutations/submit_assertion.rb ready?/authorized?", "S4": "server/app/graphql/mutations/submit_assertion.rb"}},
+
+    {"id": "K61", "object_type": "assertion", "stage": "intake", "mode": "G",
+     "rule": "A submitted assertion must pass type-specific validation (significance, direction, disease/drug, ACMG/AMP, NCCN, FDA rules) and reference existing entities.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/validators/assertion_validator.rb; server/app/models/input_adaptors/assertion_input_adaptor.rb check_input_for_errors", "S4": "server/app/validators/assertion_validator.rb; input_adaptors/assertion_input_adaptor.rb"}},
+
+    {"id": "K62", "object_type": "assertion", "stage": "intake", "mode": "G",
+     "rule": "An assertion must cite at least one evidence item unless its type and significance allow none.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/validators/assertion_validator.rb:10"}},
+
+    {"id": "K63", "object_type": "assertion", "stage": "decision", "mode": "G",
+     "rule": "Accepting or rejecting another user's assertion requires the editor role (with valid COI on the server in S2 only).",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/assertion_policy.rb:16 accept?, :20 reject?", "S3": "server/app/graphql/mutations/moderate_assertion.rb authorized?", "S4": "server/app/graphql/mutations/moderate_assertion.rb authorized?"}},
+
+    {"id": "K64", "object_type": "assertion", "stage": "decision", "mode": "C",
+     "rule": "The client shows assertion accept/reject/revert controls only to editors with a valid COI statement; the server checks only the editor role.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "server enforced COI (K63)", "S3": "client/src/app/views/assertions/assertions-detail/assertions-detail.view.html:77,114 (viewer.canModerate)", "S4": "client/src/app/views/assertions/assertions-detail/assertions-detail.view.html:60,127; moderate-entity-buttons.component.html:4"}},
+
+    {"id": "K65", "object_type": "assertion", "stage": "decision", "mode": "G",
+     "rule": "The submitter of an assertion cannot accept it.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/assertion_policy.rb:17", "S3": "server/app/graphql/mutations/moderate_assertion.rb authorized?", "S4": "server/app/graphql/mutations/moderate_assertion.rb authorized?"}},
+
+    {"id": "K66", "object_type": "assertion", "stage": "exit", "mode": "P",
+     "rule": "The submitter of an assertion may reject (withdraw) it without the editor role.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/assertion_policy.rb:21", "S3": "server/app/graphql/mutations/moderate_assertion.rb authorized?", "S4": "server/app/graphql/mutations/moderate_assertion.rb authorized?"}},
+
+    {"id": "K67", "object_type": "assertion", "stage": "fit", "mode": "G",
+     "rule": "A moderation action is refused if the assertion already has the requested status.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/models/actions/update_assertion_status.rb:29", "S3": "server/app/graphql/mutations/moderate_assertion.rb ready?; actions/moderate_assertion.rb", "S4": "server/app/graphql/mutations/moderate_assertion.rb ready?"}},
+
+    {"id": "K68", "object_type": "assertion", "stage": "decision", "mode": "G",
+     "rule": "Rejecting or reverting an assertion requires a comment, and accepting must not carry a comment.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/moderate_assertion.rb ready?"}},
+
+    {"id": "K69", "object_type": "assertion", "stage": "re-review", "mode": "A",
+     "rule": "Suggesting a revision to a rejected assertion automatically returns it to submitted status.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/assertion.rb:122 on_change_suggested", "S3": "-", "S4": "-"}},
+
+    {"id": "K70", "object_type": "assertion", "stage": "re-review", "mode": "A",
+     "rule": "Accepting a revision to a rejected assertion automatically returns it to submitted status.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/assertion.rb:115 after_change_accept", "S3": "-", "S4": "-"}},
+
+    {"id": "K71", "object_type": "assertion", "stage": "re-review", "mode": "G",
+     "rule": "Only an editor may reverse a decided assertion (change accepted/rejected status, or revert it to submitted).",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/controllers/assertions_controller.rb update_status + assertion_policy.rb (no pending precondition)", "S3": "server/app/graphql/mutations/moderate_assertion.rb (new_status SUBMITTED)", "S4": "server/app/graphql/mutations/moderate_assertion.rb"}},
+
+    {"id": "K72", "object_type": "assertion", "stage": "exit", "mode": "G",
+     "rule": "Deleting (soft-deleting) an assertion requires an editor with valid COI acting for a member organization.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/policies/assertion_policy.rb:12 destroy?; assertions_controller.rb destroy", "S3": "no deletion mutation", "S4": "no deletion mutation"}},
+
+    {"id": "K73", "object_type": "assertion", "stage": "decision", "mode": "G",
+     "rule": "Approving an assertion on behalf of an organization requires membership in an organization with approval privileges and a valid COI statement.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/approve_assertion.rb:40 authorized? (validate_user_approving_as_org, has_valid_coi_statement?); server/app/models/user.rb can_approve_for_org?"}},
+
+    {"id": "K74", "object_type": "assertion", "stage": "fit", "mode": "G",
+     "rule": "An assertion can be approved only if it is accepted, not currently flagged, and has no active approval from the same organization.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/approve_assertion.rb:12 ready?"}},
+
+    {"id": "K75", "object_type": "assertion", "stage": "re-review", "mode": "A",
+     "rule": "Flagging an assertion, or an evidence item it cites, moves the assertion's active approvals to 'requires_review'.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/models/activities/flag_entity.rb after_actions"}},
+
+    {"id": "K76", "object_type": "assertion", "stage": "re-review", "mode": "A",
+     "rule": "Rejecting an assertion, or an evidence item it cites, moves the assertion's active approvals to 'requires_review'.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/models/activities/moderate_assertion.rb after_actions; activities/moderate_evidence_item.rb after_actions"}},
+
+    {"id": "K77", "object_type": "assertion", "stage": "re-review", "mode": "A",
+     "rule": "Accepting revisions to an assertion, or to an evidence item it cites, moves the assertion's active approvals to 'requires_review'.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/models/activities/accept_revisions.rb after_actions"}},
+
+    {"id": "K78", "object_type": "assertion", "stage": "exit", "mode": "G",
+     "rule": "Revoking an organization's approval requires approval privileges in that organization, an existing live approval, and a comment of at least 10 characters.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/revoke_approval.rb ready?/authorized?"}},
+
+    {"id": "K79", "object_type": "assertion", "stage": "exit", "mode": "C",
+     "rule": "The client requires a valid COI statement before offering approval revocation; the server revoke mutation does not check COI.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "client/src/app/components/approvals/approval-pipes/approval.functions.ts canPerformApprovalActions/canRevokeApproval vs server/app/graphql/mutations/revoke_approval.rb"}},
+
+    {"id": "K80", "object_type": "flag", "stage": "flag raising", "mode": "G",
+     "rule": "Only a signed-in user (acting for a member organization) may raise a flag.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "flags do not exist", "S2": "app/policies/flag_policy.rb:4 create?", "S3": "server/app/graphql/mutations/flag_entity.rb ready?/authorized?", "S4": "server/app/graphql/mutations/flag_entity.rb"}},
+
+    {"id": "K81", "object_type": "flag", "stage": "flag raising", "mode": "G",
+     "rule": "Raising a flag requires a comment of at least 10 characters describing the problem.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "comment optional (flags_controller.rb create attach_comment)", "S3": "server/app/graphql/mutations/flag_entity.rb argument :comment required min 10", "S4": "server/app/graphql/mutations/flag_entity.rb"}},
+
+    {"id": "K82", "object_type": "flag", "stage": "flag raising", "mode": "G",
+     "rule": "A user can hold at most one open flag on the same entity; a repeat flag returns the existing open one.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/flag_entity.rb:27 first_or_create", "S3": "absent: Flag.create! in actions/flag_entity.rb", "S4": "absent: Flag.create!"}},
+
+    {"id": "K83", "object_type": "flag", "stage": "flag raising", "mode": "A",
+     "rule": "Raising a flag automatically marks the flagged entity as flagged.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "flag status derived on read only (concerns/flaggable.rb current_flag_status)", "S3": "server/app/models/actions/flag_entity.rb mark_as_flagged", "S4": "server/app/models/actions/flag_entity.rb mark_as_flagged"}},
+
+    {"id": "K84", "object_type": "flag", "stage": "flag resolution", "mode": "G",
+     "rule": "Resolving someone else's flag requires the editor role with a valid COI statement.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/flag_policy.rb:8 update?", "S3": "server/app/graphql/mutations/resolve_flag.rb:32 authorized?", "S4": "server/app/graphql/mutations/resolve_flag.rb:32 authorized?"}},
+
+    {"id": "K85", "object_type": "flag", "stage": "flag resolution", "mode": "P",
+     "rule": "The user who raised a flag may resolve it themselves without editor role or COI.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/flag_policy.rb:9 (flag.flagging_user == user)", "S3": "server/app/graphql/mutations/resolve_flag.rb authorized?", "S4": "server/app/graphql/mutations/resolve_flag.rb authorized?"}},
+
+    {"id": "K86", "object_type": "flag", "stage": "flag resolution", "mode": "G",
+     "rule": "Only an open flag can be resolved.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "no state check in app/models/actions/resolve_flag.rb", "S3": "server/app/graphql/mutations/resolve_flag.rb:17 ready?", "S4": "server/app/graphql/mutations/resolve_flag.rb:17 ready?"}},
+
+    {"id": "K87", "object_type": "flag", "stage": "flag resolution", "mode": "G",
+     "rule": "Resolving a flag requires a comment of at least 10 characters.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "comment optional", "S3": "server/app/graphql/mutations/resolve_flag.rb argument :comment", "S4": "server/app/graphql/mutations/resolve_flag.rb argument :comment"}},
+
+    {"id": "K88", "object_type": "flag", "stage": "flag resolution", "mode": "G",
+     "rule": "A flag update may only set the state to resolved (no reopening or other state changes).",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/controllers/flags_controller.rb:43 ('Can only resolve flags')", "S3": "no generic update mutation; only ResolveFlag exists", "S4": "no generic update mutation"}},
+
+    {"id": "K89", "object_type": "flag", "stage": "flag resolution", "mode": "A",
+     "rule": "When the last open flag on an entity is resolved, the entity's flagged marker is automatically cleared.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/models/actions/resolve_flag.rb update_flaggable_status", "S4": "server/app/models/actions/resolve_flag.rb update_flaggable_status"}},
+
+    {"id": "K90", "object_type": "comment", "stage": "intake", "mode": "G",
+     "rule": "Only a signed-in user (acting for a member organization, from S2) may post a comment.",
+     "present": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "app/policies/comment_policy.rb:2 create?", "S2": "app/policies/comment_policy.rb:4 create?", "S3": "server/app/graphql/mutations/add_comment.rb ready?/authorized?", "S4": "server/app/graphql/mutations/add_comment.rb"}},
+
+    {"id": "K91", "object_type": "comment", "stage": "intake", "mode": "G",
+     "rule": "A comment body must be at least 10 characters long.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/add_comment.rb argument :body min 10", "S4": "server/app/graphql/mutations/add_comment.rb argument :body"}},
+
+    {"id": "K92", "object_type": "comment", "stage": "intake", "mode": "G",
+     "rule": "A comment can be edited or deleted only by its author or by a moderator (S1) / editor with valid COI (S2).",
+     "present": {"S1": true, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "app/policies/comment_policy.rb:6 update?, :10 destroy?", "S2": "app/policies/comment_policy.rb:8-12", "S3": "no comment edit/delete mutation", "S4": "replaced by K93"}},
+
+    {"id": "K93", "object_type": "comment", "stage": "intake", "mode": "G",
+     "rule": "A user may delete (mark deleted) only their own comment, and only once.",
+     "present": {"S1": false, "S2": false, "S3": false, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "-", "S4": "server/app/graphql/mutations/delete_comment.rb ready?/authorized?"}},
+
+    {"id": "K100", "object_type": "source_suggestion", "stage": "intake", "mode": "G",
+     "rule": "Only a signed-in user acting for a member organization may suggest a source for curation.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "source suggestions do not exist", "S2": "app/policies/source_policy.rb:4 create?; sources_controller.rb create", "S3": "server/app/graphql/mutations/suggest_source.rb ready?/authorized?", "S4": "server/app/graphql/mutations/suggest_source.rb"}},
+
+    {"id": "K101", "object_type": "source_suggestion", "stage": "intake", "mode": "G",
+     "rule": "A source marked as exhausted cannot receive new suggestions.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/suggest_publication.rb:22", "S3": "-", "S4": "-"}},
+
+    {"id": "K102", "object_type": "source_suggestion", "stage": "intake", "mode": "G",
+     "rule": "A suggestion identical to an existing one for the same source (same gene/variant/disease) is refused.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/suggest_publication.rb:76-78", "S3": "absent (SourceSuggestion.create! without duplicate check)", "S4": "absent"}},
+
+    {"id": "K103", "object_type": "source_suggestion", "stage": "intake", "mode": "G",
+     "rule": "A source suggestion requires a comment of at least 10 characters and existing referenced entities (S4: molecular profile and therapies must not be deprecated; interaction type only with multiple therapies).",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/suggest_source.rb argument :comment, ready?", "S4": "server/app/graphql/mutations/suggest_source.rb ready?"}},
+
+    {"id": "K104", "object_type": "source_suggestion", "stage": "decision", "mode": "G",
+     "rule": "Changing a source suggestion's status (curated/rejected/new) requires only that the user be signed in; no editor role is needed.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/source_suggestion_policy.rb update_source_suggestion?; sources_controller.rb update_source_suggestion", "S3": "server/app/graphql/mutations/update_source_suggestion_status.rb ready? validate_user_logged_in", "S4": "server/app/graphql/mutations/update_source_suggestion_status.rb"}},
+
+    {"id": "K105", "object_type": "source_suggestion", "stage": "decision", "mode": "G",
+     "rule": "A user with editor role or higher who changes a source suggestion's status must have a valid COI statement.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "-", "S3": "server/app/graphql/mutations/update_source_suggestion_status.rb authorized?", "S4": "server/app/graphql/mutations/update_source_suggestion_status.rb authorized?"}},
+
+    {"id": "K106", "object_type": "source_suggestion", "stage": "decision", "mode": "G",
+     "rule": "A source suggestion's status must be one of new, curated or rejected.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/models/source_suggestion.rb validates :status inclusion", "S3": "server/app/models/source_suggestion.rb validates :status", "S4": "server/app/models/source_suggestion.rb validates :status"}},
+
+    {"id": "K107", "object_type": "source_suggestion", "stage": "re-review", "mode": "G",
+     "rule": "Status transitions are restricted: new may go to curated or rejected, and curated or rejected may only go back to new (re-queue).",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "no transition check (update_attributes)", "S3": "server/app/models/actions/update_source_suggestion_status.rb transition_valid?", "S4": "server/app/models/actions/update_source_suggestion_status.rb transition_valid?"}},
+
+    {"id": "K108", "object_type": "source_suggestion", "stage": "exit", "mode": "A",
+     "rule": "Submitting an evidence item from a source suggestion automatically marks that suggestion curated (and marks the source fully curated when no new suggestions remain).",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/propose_evidence_item.rb:96-103 process_source_suggestion", "S3": "-", "S4": "-"}},
+
+    {"id": "K109", "object_type": "source_suggestion", "stage": "re-review", "mode": "A",
+     "rule": "A new suggestion on a fully curated source automatically sets the source back to partially curated.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/suggest_publication.rb:27-28", "S3": "-", "S4": "-"}},
+
+    {"id": "K110", "object_type": "source_suggestion", "stage": "decision", "mode": "A",
+     "rule": "Accepting the first evidence item from a source in submitted status automatically marks the source partially curated.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/models/actions/update_evidence_item_status.rb:36-46 update_source_status", "S3": "-", "S4": "-"}},
+
+    {"id": "K111", "object_type": "source_suggestion", "stage": "decision", "mode": "G",
+     "rule": "Any signed-in user may change a source's curation status (for example to exhausted); no editor role is required.",
+     "present": {"S1": false, "S2": true, "S3": false, "S4": false},
+     "evidence": {"S1": "-", "S2": "app/policies/source_policy.rb:8 update? (user); sources_controller.rb update", "S3": "-", "S4": "-"}},
+
+    {"id": "K120", "object_type": "cross_cutting", "stage": "intake", "mode": "G",
+     "rule": "A contribution or moderation action credited to an organization is refused unless the user is a member of that organization.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/policies/policy_helpers.rb belongs_to_action_organization?; app/models/user_context.rb", "S3": "server/app/graphql/mutations/mutation_with_org.rb validate_user_acting_as_org; user.rb can_act_for_org?", "S4": "server/app/graphql/mutations/mutation_with_org.rb validate_user_acting_as_org"}},
+
+    {"id": "K121", "object_type": "cross_cutting", "stage": "intake", "mode": "G",
+     "rule": "A user who belongs to more than one organization must name the organization for each action, otherwise the action fails.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/models/actions/with_event.rb resolve_organization (raise)", "S3": "server/app/graphql/mutations/mutation_with_org.rb validate_user_org; actions/with_originating_organization.rb", "S4": "server/app/graphql/mutations/mutation_with_org.rb validate_user_org"}},
+
+    {"id": "K122", "object_type": "cross_cutting", "stage": "decision", "mode": "G",
+     "rule": "A conflict-of-interest statement counts as valid for editor actions only for one year after it is filed.",
+     "present": {"S1": false, "S2": true, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "app/models/conflict_of_interest_statement.rb expired?/expires_at (+1.year)", "S3": "server/app/models/conflict_of_interest_statement.rb; user.rb has_valid_coi_statement?", "S4": "server/app/models/conflict_of_interest_statement.rb; user.rb has_valid_coi_statement?"}},
+
+    {"id": "K123", "object_type": "cross_cutting", "stage": "intake", "mode": "G",
+     "rule": "A COI declaration that reports a conflict must include a statement of at least 10 characters, and one reporting no conflict must not include a statement.",
+     "present": {"S1": false, "S2": false, "S3": true, "S4": true},
+     "evidence": {"S1": "-", "S2": "no validation in conflict_of_interest_statements_controller.rb create", "S3": "server/app/graphql/mutations/update_coi.rb ready?", "S4": "server/app/graphql/mutations/update_coi.rb ready?"}}
+  ],
+  "absences": [
+    {"stage": "selection", "object_type": "evidence_item",
+     "any_control": {"S1": false, "S2": false, "S3": false, "S4": false},
+     "note": "No rule decides which pending evidence item is reviewed next at any snapshot. Checked: evidence item index/listing endpoints (S1-S2 evidence_items_controller index ordered by id with optional status filter; S2 curation_dashboard_controller evidence_items_requiring_action lists submitted items ordered by id asc, display only), v2 resolvers (top_level_evidence_items sort options chosen by the viewer), moderation mutations (accept any item in any order), schema (no priority/queue column). Ordering is presentational and not enforced."},
+    {"stage": "allocation", "object_type": "evidence_item",
+     "any_control": {"S1": false, "S2": false, "S3": false, "S4": false},
+     "note": "No assignment, reviewer, owner or due-date field on evidence_items in db/schema.rb / structure.sql at any snapshot; no assignment logic in policies, controllers, mutations or jobs. Any eligible moderator/editor may act on any item. Notifications to subscribers and @role mentions (S2+: NotifyMentioned / CaptureMentionsAndNotify notify all users with a mentioned role) are user-initiated notices, not assignment."},
+    {"stage": "exit", "object_type": "evidence_item",
+     "any_control": {"S1": true, "S2": true, "S3": true, "S4": true},
+     "note": "Human-initiated exits exist: S1 soft delete by moderator (K17); S2 soft delete by editor and submitter self-withdrawal via reject (K16, K17); S3-S4 submitter self-withdrawal (K16). No timer-based exit at any snapshot: no expiry field, no TTL, and no scheduled task or background job writes evidence-item status (checked S1 self-rescheduling jobs, S2 config/scheduled_tasks.yml, S3 empty scheduled_tasks.yml, S4 scheduled_tasks.yml incl. FindRetractedSources, which only adds/resolves flags, and FlagDuplicateAlleleRegistryIds, which flags variants). If only automatic exits count, the answer is false at all four snapshots."}
+  ],
+  "notes": "Scope: server layers read at each snapshot were routes, controllers/concerns, Pundit policies (S1-S2), GraphQL mutations ready?/authorized? (S3-S4), Actions/Activities, model validations and callbacks, validators, admin consoles (ActiveAdmin S1-S2, Trestle S3-S4), jobs and scheduled task config. Client (C) checks could only be assessed for S3-S4 because civic-server has no client code; C entries are marked false for S1-S2 for that reason. Uncertainties: (1) K24 auto-resolution of retraction flags references an undefined local variable 'text' in resolve_eid_flags, so it probably raises whenever an open flag exists; recorded as present code. (2) At S3, Mutations::RejectRevisions#ready? does not return true on the ids branch (it returns the revisions array), which with graphql-ruby's ready? semantics likely makes rejecting two or more revisions by id fail; fixed at S4. (3) At S2 the ActiveAdmin suggested-change approve/reject actions call apply/close with an outdated arity and would raise; not counted as separate controls. (4) S2 source-curation status (submitted/partially curated/fully curated/exhausted) is a status on Source, not on SourceSuggestion; I coded those side effects under source_suggestion because they drive the source suggestion queue. (5) Admin-console status edits (K21) are coded P because they enable admins to bypass API checks; the admin consoles are restricted to admins at all snapshots. (6) Deprecation guards in S4 (cannot deprecate variants/MPs/diseases/therapies/sources linked to submitted or accepted evidence items or open revisions) were judged entity-maintenance rules rather than review controls and are not coded. (7) In S3-S4 the server allows a submitter to withdraw (reject) their own evidence item, but the S3 client hides the reject button from non-editors; covered under K8. (8) Role names: S1 curator<moderator<editor<admin; S2-S4 curator<editor<admin."
+}

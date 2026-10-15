@@ -1,0 +1,98 @@
+{
+ "seeded_v2_extractor": {
+  "SEED1": [
+   [
+    "POLICY",
+    "evidence_item_policy",
+    "accept? :: Role.user_is_at_least_a?(user, :editor) && record.submitter",
+    "decision"
+   ]
+  ],
+  "SEED2": [
+   [
+    "GUARD",
+    "moderate_evidence_item",
+    "SEED2 Evidence Item has a pending revision.",
+    "decision"
+   ]
+  ],
+  "SEED3": [
+   [
+    "VALID",
+    "evidence_item",
+    "validate :seed3_no_acceptance_without_two_sources, if: -> { status == ",
+    "other"
+   ]
+  ],
+  "SEED4": [
+   [
+    "SCHED",
+    "scheduled_tasks",
+    "Seed4ExpireStaleEvidence->Seed4ExpireStaleEvidence",
+    "scheduled job"
+   ],
+   [
+    "AUTO",
+    "seed4_expire_stale_evidence",
+    "status->rejected",
+    "exit (automatic)"
+   ]
+  ],
+  "SEED5": [
+   [
+    "GUARD",
+    "moderate_evidence_item",
+    "SEED5 Evidence Item is flagged.",
+    "decision"
+   ]
+  ],
+  "DECOY1": [],
+  "DECOY2": [],
+  "DECOY3": [
+   [
+    "GUARD",
+    "update_notification_status",
+    "DECOY3 notification already read.",
+    "other"
+   ]
+  ]
+ },
+ "seeded_v2_other_new": [
+  [
+   "ROLE",
+   "evidence_item_policy",
+   "at_least:editor",
+   "decision"
+  ],
+  [
+   "JOB",
+   "seed4_expire_stale_evidence",
+   "writes_moderated_status",
+   "other"
+  ]
+ ],
+ "v1_fit_stale_guard": [
+  [
+   "GUARD",
+   "update_suggested_change_status",
+   "raise:ChangeApplicationConflictError",
+   "decision",
+   [
+    "v1@2016-06",
+    "v1@2020-06"
+   ]
+  ]
+ ],
+ "v1_reentry_auto": [
+  [
+   "AUTO",
+   "evidence_item",
+   "status->submitted",
+   "re-entry (automatic)",
+   [
+    "v1@2016-06",
+    "v1@2020-06"
+   ]
+  ]
+ ]
+}

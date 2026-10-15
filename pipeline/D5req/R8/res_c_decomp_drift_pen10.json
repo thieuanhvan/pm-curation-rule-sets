@@ -1,0 +1,301 @@
+{
+ "doc_from": {
+  "SA_rev": "2019-10-15",
+  "SA_ei": "2019-10-15",
+  "RSN_rev": "2019-10-09",
+  "RSN_ei": "2019-10-09",
+  "FIT1": null
+ },
+ "n_events": 57718,
+ "table3_decomposition": {
+  "documented_constant_incl_C3": {
+   "events_with_control_in_reference": 57718,
+   "flagged_by_reference": 2469,
+   "i_not_refused_by_code_in_force": 2461,
+   "i_by_category": {
+    "C3 inferred norm (never documented as a rule, never coded)": 888,
+    "self-acceptance of a revision on one's own pending submission (v2 permits)": 757,
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 399,
+    "self-acceptance before any guard (documented norm, not coded)": 228,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 117,
+    "self-acceptance 24 Feb-19 Jul 2016 (guard for non-administrators only; role not public)": 72
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 820,
+    "2022-24": 401,
+    "2025-26": 522,
+    "<=2016": 718
+   }
+  },
+  "documented_constant_excl_C3": {
+   "events_with_control_in_reference": 52722,
+   "flagged_by_reference": 1581,
+   "i_not_refused_by_code_in_force": 1573,
+   "i_by_category": {
+    "self-acceptance of a revision on one's own pending submission (v2 permits)": 757,
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 399,
+    "self-acceptance before any guard (documented norm, not coded)": 228,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 117,
+    "self-acceptance 24 Feb-19 Jul 2016 (guard for non-administrators only; role not public)": 72
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 298,
+    "2022-24": 329,
+    "2025-26": 466,
+    "<=2016": 480
+   }
+  },
+  "documented_dated_excl_C3": {
+   "events_with_control_in_reference": 25235,
+   "flagged_by_reference": 937,
+   "i_not_refused_by_code_in_force": 929,
+   "i_by_category": {
+    "self-acceptance of a revision on one's own pending submission (v2 permits)": 757,
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 132,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 40
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 134,
+    "2022-24": 329,
+    "2025-26": 466
+   }
+  },
+  "documented_dated_excl_C3_SA_rev_implicit_2015-12-17": {
+   "events_with_control_in_reference": 47235,
+   "flagged_by_reference": 1073,
+   "i_not_refused_by_code_in_force": 1065,
+   "i_by_category": {
+    "self-acceptance of a revision on one's own pending submission (v2 permits)": 757,
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 132,
+    "self-acceptance before any guard (documented norm, not coded)": 68,
+    "self-acceptance 24 Feb-19 Jul 2016 (guard for non-administrators only; role not public)": 68,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 40
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 134,
+    "2022-24": 329,
+    "2025-26": 466,
+    "<=2016": 136
+   }
+  },
+  "documented_from_SOP_2019_excl_C3": {
+   "events_with_control_in_reference": 25145,
+   "flagged_by_reference": 929,
+   "i_not_refused_by_code_in_force": 921,
+   "i_by_category": {
+    "self-acceptance of a revision on one's own pending submission (v2 permits)": 757,
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 124,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 40
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 126,
+    "2022-24": 329,
+    "2025-26": 466
+   }
+  },
+  "latest_code_v2.7.6": {
+   "events_with_control_in_reference": 51659,
+   "flagged_by_reference": 821,
+   "i_not_refused_by_code_in_force": 813,
+   "i_by_category": {
+    "revision rejection without reason before Apr 2022 (documented norm, not coded)": 399,
+    "self-acceptance before any guard (documented norm, not coded)": 225,
+    "evidence-item rejection without reason before Apr 2025 (documented norm, not coded)": 117,
+    "self-acceptance 24 Feb-19 Jul 2016 (guard for non-administrators only; role not public)": 72
+   },
+   "ii_violations_of_R_t_also_flagged": 8,
+   "R_t_violations_missed_by_reference": 0,
+   "flags_by_year_band": {
+    "2017-21": 298,
+    "2022-24": 38,
+    "<=2016": 477
+   }
+  },
+  "R_t_commit_tau": {
+   "events_with_control_in_force": 44074,
+   "violations": 8
+  },
+  "R_t_monthly_tau": {
+   "events_with_control_in_force": 44082,
+   "violations": 10
+  }
+ },
+ "f_c_documented_periods": {
+  "SA_rev": {
+   "all_pre_tau": [
+    0.9379,
+    0.9306,
+    0.9446,
+    4609
+   ],
+   "within_documented_period": null,
+   "within_SOP_period_from_2019-11-29": null,
+   "within_implicit_statement_2015-12-17_to_tau": [
+    0.961,
+    0.954,
+    0.9669,
+    3487
+   ]
+  },
+  "SA_ei": {
+   "all_pre_tau": [
+    0.9897,
+    0.9828,
+    0.9938,
+    1357
+   ],
+   "within_documented_period": null,
+   "within_SOP_period_from_2019-11-29": null,
+   "within_implicit_statement_2015-12-17_to_tau": [
+    0.9916,
+    0.9827,
+    0.9959,
+    829
+   ]
+  },
+  "RSN_rev": {
+   "all_pre_tau": [
+    0.7237,
+    0.7,
+    0.7461,
+    1444
+   ],
+   "within_documented_period": [
+    0.6923,
+    0.6471,
+    0.7341,
+    429
+   ],
+   "within_SOP_period_from_2019-11-29": [
+    0.7026,
+    0.6571,
+    0.7445,
+    417
+   ]
+  },
+  "RSN_ei": {
+   "all_pre_tau": [
+    0.5602,
+    0.5001,
+    0.6185,
+    266
+   ],
+   "within_documented_period": [
+    0.685,
+    0.5998,
+    0.7594,
+    127
+   ],
+   "within_SOP_period_from_2019-11-29": [
+    0.685,
+    0.5998,
+    0.7594,
+    127
+   ]
+  },
+  "FIT1_C3_inferred_norm_all_time": [
+   0.8223,
+   0.8114,
+   0.8326,
+   4996
+  ]
+ },
+ "change_points": {
+  "per_series": {
+   "self_acceptance_share_revision_acceptances": {
+    "months_used": 137,
+    "change_points": [
+     "2015-09",
+     "2015-12",
+     "2016-04",
+     "2016-08",
+     "2022-05",
+     "2022-10",
+     "2023-01",
+     "2023-04",
+     "2023-07",
+     "2023-10",
+     "2024-02",
+     "2024-05",
+     "2024-08",
+     "2024-11",
+     "2025-04",
+     "2025-09",
+     "2025-12",
+     "2026-04",
+     "2026-08"
+    ],
+    "within_1_month_of_tau": [
+     false,
+     false,
+     false,
+     true,
+     true,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     false,
+     true,
+     false,
+     false,
+     false,
+     false
+    ],
+    "null_share_of_months_within_1_month_of_tau": 0.11
+   },
+   "reason_present_share_revision_rejections": {
+    "months_used": 94,
+    "change_points": [
+     "2022-04"
+    ],
+    "within_1_month_of_tau": [
+     true
+    ],
+    "null_share_of_months_within_1_month_of_tau": 0.112
+   },
+   "self_acceptance_share_ei_acceptances": {
+    "months_used": 124,
+    "change_points": [
+     "2015-12",
+     "2016-06"
+    ],
+    "within_1_month_of_tau": [
+     false,
+     true
+    ],
+    "null_share_of_months_within_1_month_of_tau": 0.11
+   },
+   "reason_present_share_ei_rejections_others": {
+    "months_used": 21,
+    "change_points": [],
+    "within_1_month_of_tau": [],
+    "null_share_of_months_within_1_month_of_tau": 0.112
+   }
+  },
+  "n_change_points": 22,
+  "n_within_1_month_of_tau": 5,
+  "tau_set": [
+   "2016-02",
+   "2016-07",
+   "2019-01",
+   "2022-04",
+   "2025-04"
+  ],
+  "method": "ruptures PELT l2, jump 1, min_size 3 months, months with >= 5 events, pen = 20 log(n) sigma^2 (sigma from MAD of first differences)"
+ }
+}

@@ -1,0 +1,314 @@
+{
+ "item_counts": {
+  "evidence_item_ids_in_any_event": 12092,
+  "with_SUBMITTED_event": 12085,
+  "with_any_nonbot_event(case log scope)": 12092,
+  "ids_without_SUBMITTED_event": 7,
+  "meta_evidence_records": 12092,
+  "ids_only_bot_events": 0
+ },
+ "pending": {
+  "pending": 6687,
+  "items": 12085,
+  "share": 0.5533,
+  "share_of_12092": 0.553,
+  "since_2016_pending_share": 0.5827
+ },
+ "withdrawals": {
+  "first_decision_rejections_total": 448,
+  "by_others": 297,
+  "withdrawals_by_submitter": 151,
+  "withdrawal_share": 0.337,
+  "withdrawals_by_submitter_who_was_moderator_at_time(editor self-rejection)": 35,
+  "withdrawals_by_submitter_not_moderator_at_time(curator self-withdrawal)": 116,
+  "distinct_withdrawers_moderator": 13,
+  "distinct_withdrawers_curator": 43,
+  "roleNow_of_withdrawers(event rows)": {
+   "CURATOR": 92,
+   "EDITOR": 39,
+   "ADMIN": 20
+  }
+ },
+ "reasons_first_decision_rejections_by_others": {
+  "all": {
+   "n": 297,
+   "strict_before_any": [
+    0.293,
+    0.246,
+    0.35
+   ],
+   "strict_before_1d": [
+    0.273,
+    0.219,
+    0.32
+   ],
+   "to_1min_after_any": [
+    0.401,
+    0.347,
+    0.455
+   ]
+  },
+  "pre_enforcement": {
+   "n": 231,
+   "strict_before_any": [
+    0.364,
+    0.299,
+    0.429
+   ],
+   "strict_before_1d": [
+    0.342,
+    0.281,
+    0.403
+   ],
+   "to_1min_after_any": [
+    0.502,
+    0.442,
+    0.567
+   ]
+  },
+  "post_enforcement(comment only; reason field mandatory)": {
+   "n": 66,
+   "strict_before_any": [
+    0.045,
+    0.0,
+    0.091
+   ],
+   "strict_before_1d": [
+    0.03,
+    0.0,
+    0.076
+   ],
+   "to_1min_after_any": [
+    0.045,
+    0.0,
+    0.106
+   ]
+  },
+  "pre_by_period": {
+   "2015-18": {
+    "n": 123,
+    "strict_before_any": [
+     0.285,
+     0.203,
+     0.366
+    ],
+    "strict_before_1d": [
+     0.276,
+     0.195,
+     0.358
+    ],
+    "to_1min_after_any": [
+     0.382,
+     0.301,
+     0.472
+    ]
+   },
+   "2019-22": {
+    "n": 82,
+    "strict_before_any": [
+     0.573,
+     0.463,
+     0.683
+    ],
+    "strict_before_1d": [
+     0.549,
+     0.439,
+     0.647
+    ],
+    "to_1min_after_any": [
+     0.634,
+     0.524,
+     0.732
+    ]
+   },
+   "2023-26": {
+    "n": 26,
+    "strict_before_any": [
+     0.077,
+     0.0,
+     0.192
+    ],
+    "strict_before_1d": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "to_1min_after_any": [
+     0.654,
+     0.462,
+     0.846
+    ]
+   }
+  }
+ },
+ "same_org": {
+  "2015-18": {
+   "acceptances": 2959,
+   "with_both_orgs": 2824,
+   "missing_org_share": 0.046,
+   "same_org_share": 0.51,
+   "same_org_share_missing_as_cross": 0.487,
+   "null_permute_within_period": [
+    0.508,
+    0.504,
+    0.512
+   ],
+   "null_permute_within_year": [
+    0.509,
+    0.505,
+    0.513
+   ],
+   "n_decider_orgs": 2,
+   "n_submitter_orgs": 9
+  },
+  "2019-22": {
+   "acceptances": 1054,
+   "with_both_orgs": 1011,
+   "missing_org_share": 0.041,
+   "same_org_share": 0.367,
+   "same_org_share_missing_as_cross": 0.352,
+   "null_permute_within_period": [
+    0.227,
+    0.211,
+    0.244
+   ],
+   "null_permute_within_year": [
+    0.235,
+    0.219,
+    0.252
+   ],
+   "n_decider_orgs": 14,
+   "n_submitter_orgs": 14
+  },
+  "2023-26": {
+   "acceptances": 923,
+   "with_both_orgs": 850,
+   "missing_org_share": 0.079,
+   "same_org_share": 0.621,
+   "same_org_share_missing_as_cross": 0.572,
+   "null_permute_within_period": [
+    0.216,
+    0.192,
+    0.241
+   ],
+   "null_permute_within_year": [
+    0.224,
+    0.199,
+    0.248
+   ],
+   "n_decider_orgs": 13,
+   "n_submitter_orgs": 19
+  }
+ },
+ "org_missing_by_year": {
+  "2015": {
+   "events": 4864,
+   "missing_share": 0.007
+  },
+  "2016": {
+   "events": 16867,
+   "missing_share": 0.011
+  },
+  "2017": {
+   "events": 30913,
+   "missing_share": 0.015
+  },
+  "2018": {
+   "events": 14219,
+   "missing_share": 0.017
+  },
+  "2019": {
+   "events": 6181,
+   "missing_share": 0.032
+  },
+  "2020": {
+   "events": 15188,
+   "missing_share": 0.036
+  },
+  "2021": {
+   "events": 12421,
+   "missing_share": 0.04
+  },
+  "2022": {
+   "events": 10861,
+   "missing_share": 0.007
+  },
+  "2023": {
+   "events": 9020,
+   "missing_share": 0.025
+  },
+  "2024": {
+   "events": 8466,
+   "missing_share": 0.11
+  },
+  "2025": {
+   "events": 7201,
+   "missing_share": 0.044
+  },
+  "2026": {
+   "events": 8170,
+   "missing_share": 0.038
+  }
+ },
+ "org_first_recorded": "2015-06-21 16:49:38",
+ "org_count_first_seen_by_year": {
+  "2015": 4,
+  "2016": 1,
+  "2017": 4,
+  "2018": 2,
+  "2019": 1,
+  "2020": 2,
+  "2021": 2,
+  "2022": 2,
+  "2023": 1,
+  "2024": 1,
+  "2025": 1,
+  "2026": 1
+ },
+ "bot_flags": {
+  "by_month_top": {
+   "2021-08": 2279,
+   "2021-02": 109,
+   "2023-11": 109,
+   "2024-04": 41,
+   "2025-04": 40,
+   "2026-08": 27
+  },
+  "aug2021_by_subject_type": {
+   "EvidenceItem": 2273,
+   "Assertion": 6
+  },
+  "bot_actions_2023_01_by_action": {
+   "REVISION_SUGGESTED": 6967,
+   "REVISION_REJECTED": 2282,
+   "FLAGGED": 1
+  },
+  "bot_actions_2023_01_by_subject_type": {
+   "EvidenceItem": 9250
+  },
+  "bot_actions_by_month_top": {
+   "2026-02": 17475,
+   "2023-01": 9250,
+   "2021-08": 2279,
+   "2022-03": 627,
+   "2024-09": 236,
+   "2023-11": 109,
+   "2021-02": 109,
+   "2024-04": 41
+  }
+ },
+ "bot_flag_ids_aug2021_sample": [
+  630,
+  1178,
+  1396,
+  1655,
+  1810,
+  1948,
+  1953,
+  2012,
+  2064,
+  2219,
+  2258,
+  2293
+ ]
+}

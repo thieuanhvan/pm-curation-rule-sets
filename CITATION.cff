@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the article."
+title: "Curation rule sets: reproducibility package"
+authors:
+  - family-names: Thieu
+    given-names: Van
+    orcid: "https://orcid.org/0009-0003-9637-0195"
+    affiliation: "University of Information Technology, Vietnam National University, Ho Chi Minh City"
+  - family-names: Cao
+    given-names: Nhan T.
+    affiliation: "University of Information Technology, Vietnam National University, Ho Chi Minh City"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Which Stages Does the Code Control? Conformance Against Time-Indexed Rule Sets in Expert-Gated Knowledge Curation"
+  authors:
+    - family-names: Thieu
+      given-names: Van
+    - family-names: Cao
+      given-names: Nhan T.
+  status: submitted
+  year: 2026

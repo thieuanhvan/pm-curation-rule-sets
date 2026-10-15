@@ -1,0 +1,41 @@
+{
+  "note": "Mapping of blind coders' controls to the first coding's units (blind_ref.json), made by the first author's assistant on 14/10/2026 after both coders finished. Presence agreed in every listed cell; judgement cells listed separately.",
+  "map": {
+    "C1":  {"A": ["K1"], "B": ["K1"]},
+    "C2":  {"A": ["K32"], "B": ["R2"]},
+    "C4":  {"A": ["K6"], "B": ["E5"]},
+    "C5":  {"A": ["K9", "K10"], "B": ["E8"]},
+    "C6":  {"A": ["K36"], "B": ["R5"]},
+    "C7":  {"A": ["K37", "K38"], "B": ["R7"]},
+    "C8_evidence_item": {"A": ["K7"], "B": ["E6"]},
+    "C8_C9_revision":   {"A": ["K36 (COI part, S2-S4)"], "B": ["R6"]},
+    "C8_assertion":     {"A": ["K63 (COI on server in S2)"], "B": ["A4"]},
+    "client_only_COI":  {"A": ["K8", "K64"], "B": ["E7", "A5"]},
+    "C10": {"A": ["K42"], "B": ["R16"]},
+    "C11": {"A": ["K15", "K68"], "B": ["E11", "A8"]},
+    "C12": {"A": ["K120"], "B": ["K2"]},
+    "C13": {"A": ["K81"], "B": ["F1"]},
+    "C14": {"A": ["K25"], "B": ["F7"]},
+    "C15": {"A": ["K84", "K85"], "B": ["F3"]},
+    "U16 (C16+C17)": {"A": ["K49"], "B": ["R14"]},
+    "C18": {"A": ["K16"], "B": ["E10"]},
+    "C19": {"A": ["K75", "K76", "K77"], "B": ["A14"]},
+    "C20": {"A": ["K45", "K46"], "B": ["R13"]},
+    "C21": {"A": ["K18", "K19"], "B": ["E14", "E15"]},
+    "C22": {"A": ["K74"], "B": ["A13"]},
+    "C23": {"A": ["K63", "K65"], "B": ["A3", "A6"]},
+    "C24": {"A": ["K73"], "B": ["A12"]},
+    "C25": {"A": ["K80"], "B": ["K1 (aggregated; S1 scored as agreeing because flags did not exist)"]},
+    "C26": {"A": ["K108"], "B": ["S5x"]},
+    "N1":  {"A": ["absence selection"], "B": ["absence selection"]},
+    "N2":  {"A": ["absence allocation"], "B": ["absence allocation"]},
+    "N3":  {"A": ["absence exit (automatic exits: none)"], "B": ["absence exit (automatic exits: none)"]}
+  },
+  "added_C27_C31": {
+    "C27 deletion guard (v1)": {"A": ["K17"], "B": ["E18"]},
+    "C28 fit: deprecated/retracted linked entities block acceptance": {"A": ["K13", "K14"], "B": ["E13 (S4 part)"]},
+    "C29 retraction flags (automatic)": {"A": ["K23"], "B": ["E19"]},
+    "C30 re-evaluation flags on rejected items (automatic)": {"A": ["K22"], "B": ["E20"]},
+    "C31 intake: duplicates and deprecated/retracted entities refused": {"A": ["K4", "K3"], "B": ["E2", "E3"]}
+  }
+}

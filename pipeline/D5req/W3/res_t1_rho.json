@@ -1,0 +1,749 @@
+{
+ "windows": {
+  "cal2023_25": {
+   "window": "cal2023_25",
+   "months": 36.0,
+   "complete_365d_followup_for_all_arrivals": false,
+   "arrivals": 1720,
+   "arrivals_per_month": 47.8,
+   "live90_arrivals": 672,
+   "liveNS90_arrivals": 437,
+   "live365_arrivals": 829,
+   "liveNS365_arrivals": 588,
+   "decisions_all": 802,
+   "dec_per_month": 22.3,
+   "dec_ACC": 723,
+   "dec_REJ": 51,
+   "dec_WDR": 28,
+   "dec_on_items_arrived_in_window": 547,
+   "dec_on_items_arrived_before_window": 255,
+   "dec_on_live365_items": 593,
+   "rho_all = decisions/arrivals": [
+    0.466,
+    0.355,
+    0.612
+   ],
+   "rho_excl_withdrawals": [
+    0.45,
+    0.338,
+    0.597
+   ],
+   "rho_accept_only": [
+    0.42,
+    0.319,
+    0.546
+   ],
+   "rho_live365 = decisions/live arrivals": [
+    0.967,
+    0.81,
+    1.139
+   ],
+   "rho_live365_excl_withdrawals": [
+    0.934,
+    0.767,
+    1.111
+   ],
+   "rho_liveNS365 = decisions/arrivals touched by non-submitter in 365 d": [
+    1.364,
+    1.114,
+    1.641
+   ],
+   "load = arrivals/decisions": 2.14,
+   "cohort_share_decided_within_365d": [
+    0.292,
+    0.269,
+    0.315
+   ],
+   "cohort_n": 1498,
+   "cohort_live365_share_decided_within_365d": 0.607
+  },
+  "live_complete_2022-10-07..2025-10-06": {
+   "window": "live_complete_2022-10-07..2025-10-06",
+   "months": 36.0,
+   "complete_365d_followup_for_all_arrivals": true,
+   "arrivals": 1676,
+   "arrivals_per_month": 46.5,
+   "live90_arrivals": 631,
+   "liveNS90_arrivals": 422,
+   "live365_arrivals": 781,
+   "liveNS365_arrivals": 564,
+   "decisions_all": 672,
+   "dec_per_month": 18.7,
+   "dec_ACC": 596,
+   "dec_REJ": 49,
+   "dec_WDR": 27,
+   "dec_on_items_arrived_in_window": 448,
+   "dec_on_items_arrived_before_window": 224,
+   "dec_on_live365_items": 519,
+   "rho_all = decisions/arrivals": [
+    0.401,
+    0.299,
+    0.547
+   ],
+   "rho_excl_withdrawals": [
+    0.385,
+    0.286,
+    0.53
+   ],
+   "rho_accept_only": [
+    0.356,
+    0.271,
+    0.476
+   ],
+   "rho_live365 = decisions/live arrivals": [
+    0.86,
+    0.702,
+    1.036
+   ],
+   "rho_live365_excl_withdrawals": [
+    0.826,
+    0.666,
+    1.003
+   ],
+   "rho_liveNS365 = decisions/arrivals touched by non-submitter in 365 d": [
+    1.191,
+    0.927,
+    1.517
+   ],
+   "load = arrivals/decisions": 2.49,
+   "cohort_share_decided_within_365d": [
+    0.265,
+    0.245,
+    0.285
+   ],
+   "cohort_n": 1676,
+   "cohort_live365_share_decided_within_365d": 0.569
+  },
+  "sim_window_2023-01..2026-09": {
+   "window": "sim_window_2023-01..2026-09",
+   "months": 45.0,
+   "complete_365d_followup_for_all_arrivals": false,
+   "arrivals": 2313,
+   "arrivals_per_month": 51.4,
+   "live90_arrivals": 932,
+   "liveNS90_arrivals": 606,
+   "live365_arrivals": 1100,
+   "liveNS365_arrivals": 769,
+   "decisions_all": 1047,
+   "dec_per_month": 23.3,
+   "dec_ACC": 920,
+   "dec_REJ": 92,
+   "dec_WDR": 35,
+   "dec_on_items_arrived_in_window": 733,
+   "dec_on_items_arrived_before_window": 314,
+   "dec_on_live365_items": 781,
+   "rho_all = decisions/arrivals": [
+    0.453,
+    0.361,
+    0.562
+   ],
+   "rho_excl_withdrawals": [
+    0.438,
+    0.346,
+    0.546
+   ],
+   "rho_accept_only": [
+    0.398,
+    0.315,
+    0.498
+   ],
+   "rho_live365 = decisions/live arrivals": [
+    0.952,
+    0.823,
+    1.085
+   ],
+   "rho_live365_excl_withdrawals": [
+    0.92,
+    0.786,
+    1.056
+   ],
+   "rho_liveNS365 = decisions/arrivals touched by non-submitter in 365 d": [
+    1.362,
+    1.165,
+    1.569
+   ],
+   "load = arrivals/decisions": 2.21,
+   "cohort_share_decided_within_365d": [
+    0.292,
+    0.27,
+    0.316
+   ],
+   "cohort_n": 1498,
+   "cohort_live365_share_decided_within_365d": 0.607
+  },
+  "pre_2021_22": {
+   "window": "pre_2021_22",
+   "months": 24.0,
+   "complete_365d_followup_for_all_arrivals": true,
+   "arrivals": 2039,
+   "arrivals_per_month": 85.0,
+   "live90_arrivals": 472,
+   "liveNS90_arrivals": 340,
+   "live365_arrivals": 881,
+   "liveNS365_arrivals": 793,
+   "decisions_all": 468,
+   "dec_per_month": 19.5,
+   "dec_ACC": 377,
+   "dec_REJ": 40,
+   "dec_WDR": 51,
+   "dec_on_items_arrived_in_window": 281,
+   "dec_on_items_arrived_before_window": 187,
+   "dec_on_live365_items": 362,
+   "rho_all = decisions/arrivals": [
+    0.23,
+    0.152,
+    0.326
+   ],
+   "rho_excl_withdrawals": [
+    0.205,
+    0.127,
+    0.304
+   ],
+   "rho_accept_only": [
+    0.185,
+    0.114,
+    0.277
+   ],
+   "rho_live365 = decisions/live arrivals": [
+    0.531,
+    0.341,
+    0.822
+   ],
+   "rho_live365_excl_withdrawals": [
+    0.473,
+    0.282,
+    0.764
+   ],
+   "rho_liveNS365 = decisions/arrivals touched by non-submitter in 365 d": [
+    0.59,
+    0.362,
+    0.963
+   ],
+   "load = arrivals/decisions": 4.36,
+   "cohort_share_decided_within_365d": [
+    0.138,
+    0.123,
+    0.154
+   ],
+   "cohort_n": 2039,
+   "cohort_live365_share_decided_within_365d": 0.319
+  },
+  "early_2017_19": {
+   "window": "early_2017_19",
+   "months": 36.0,
+   "complete_365d_followup_for_all_arrivals": true,
+   "arrivals": 4804,
+   "arrivals_per_month": 133.5,
+   "live90_arrivals": 1358,
+   "liveNS90_arrivals": 1078,
+   "live365_arrivals": 2315,
+   "liveNS365_arrivals": 2195,
+   "decisions_all": 1819,
+   "dec_per_month": 50.6,
+   "dec_ACC": 1700,
+   "dec_REJ": 96,
+   "dec_WDR": 23,
+   "dec_on_items_arrived_in_window": 1704,
+   "dec_on_items_arrived_before_window": 115,
+   "dec_on_live365_items": 1604,
+   "rho_all = decisions/arrivals": [
+    0.379,
+    0.24,
+    0.704
+   ],
+   "rho_excl_withdrawals": [
+    0.374,
+    0.236,
+    0.698
+   ],
+   "rho_accept_only": [
+    0.354,
+    0.217,
+    0.674
+   ],
+   "rho_live365 = decisions/live arrivals": [
+    0.786,
+    0.5,
+    1.456
+   ],
+   "rho_live365_excl_withdrawals": [
+    0.776,
+    0.492,
+    1.43
+   ],
+   "rho_liveNS365 = decisions/arrivals touched by non-submitter in 365 d": [
+    0.829,
+    0.512,
+    1.642
+   ],
+   "load = arrivals/decisions": 2.64,
+   "cohort_share_decided_within_365d": [
+    0.308,
+    0.295,
+    0.322
+   ],
+   "cohort_n": 4804,
+   "cohort_live365_share_decided_within_365d": 0.64
+  }
+ },
+ "by_year_rho": {
+  "2015": {
+   "arr": 613,
+   "live365_share": 0.365,
+   "liveNS365_share": 0.346,
+   "dec": 603,
+   "dec_noWDR": 601,
+   "rho_all": 0.984,
+   "rho_live365": 2.692,
+   "followup_complete": true
+  },
+  "2016": {
+   "arr": 1112,
+   "live365_share": 1.0,
+   "liveNS365_share": 0.994,
+   "dec": 1002,
+   "dec_noWDR": 999,
+   "rho_all": 0.901,
+   "rho_live365": 0.901,
+   "followup_complete": true
+  },
+  "2017": {
+   "arr": 2932,
+   "live365_share": 0.521,
+   "liveNS365_share": 0.519,
+   "dec": 836,
+   "dec_noWDR": 836,
+   "rho_all": 0.285,
+   "rho_live365": 0.547,
+   "followup_complete": true
+  },
+  "2018": {
+   "arr": 1109,
+   "live365_share": 0.427,
+   "liveNS365_share": 0.384,
+   "dec": 661,
+   "dec_noWDR": 660,
+   "rho_all": 0.596,
+   "rho_live365": 1.397,
+   "followup_complete": true
+  },
+  "2019": {
+   "arr": 763,
+   "live365_share": 0.412,
+   "liveNS365_share": 0.325,
+   "dec": 322,
+   "dec_noWDR": 300,
+   "rho_all": 0.422,
+   "rho_live365": 1.025,
+   "followup_complete": true
+  },
+  "2020": {
+   "arr": 1189,
+   "live365_share": 0.394,
+   "liveNS365_share": 0.343,
+   "dec": 456,
+   "dec_noWDR": 419,
+   "rho_all": 0.384,
+   "rho_live365": 0.974,
+   "followup_complete": true
+  },
+  "2021": {
+   "arr": 1052,
+   "live365_share": 0.301,
+   "liveNS365_share": 0.244,
+   "dec": 259,
+   "dec_noWDR": 235,
+   "rho_all": 0.246,
+   "rho_live365": 0.817,
+   "followup_complete": true
+  },
+  "2022": {
+   "arr": 987,
+   "live365_share": 0.571,
+   "liveNS365_share": 0.543,
+   "dec": 209,
+   "dec_noWDR": 182,
+   "rho_all": 0.212,
+   "rho_live365": 0.371,
+   "followup_complete": true
+  },
+  "2023": {
+   "arr": 587,
+   "live365_share": 0.44,
+   "liveNS365_share": 0.32,
+   "dec": 237,
+   "dec_noWDR": 224,
+   "rho_all": 0.404,
+   "rho_live365": 0.919,
+   "followup_complete": true
+  },
+  "2024": {
+   "arr": 640,
+   "live365_share": 0.442,
+   "liveNS365_share": 0.317,
+   "dec": 232,
+   "dec_noWDR": 226,
+   "rho_all": 0.362,
+   "rho_live365": 0.82,
+   "followup_complete": true
+  },
+  "2025": {
+   "arr": 493,
+   "live365_share": 0.584,
+   "liveNS365_share": 0.4,
+   "dec": 333,
+   "dec_noWDR": 324,
+   "rho_all": 0.675,
+   "rho_live365": 1.156,
+   "followup_complete": false
+  },
+  "2026": {
+   "arr": 608,
+   "live365_share": 0.447,
+   "liveNS365_share": 0.298,
+   "dec": 248,
+   "dec_noWDR": 241,
+   "rho_all": 0.408,
+   "rho_live365": 0.912,
+   "followup_complete": false
+  }
+ },
+ "decider_effort_by_year": {
+  "2015": {
+   "active_moderators": 5,
+   "moderators_with_evidence_decision": 4,
+   "moderator_active_days": 120,
+   "moderator_decision_days": 39,
+   "evidence_decisions_on_others": 598,
+   "revision_moderations_of_others": 1319,
+   "ev_decisions_per_moderator_active_day": [
+    4.983,
+    1.141,
+    9.877
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.873,
+    10.474
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    15.975,
+    10.5,
+    22.761
+   ],
+   "ev_decisions_per_decision_day": [
+    15.33,
+    3.61,
+    30.13
+   ],
+   "share_active_days_with_ev_decision": 0.325
+  },
+  "2016": {
+   "active_moderators": 7,
+   "moderators_with_evidence_decision": 6,
+   "moderator_active_days": 534,
+   "moderator_decision_days": 213,
+   "evidence_decisions_on_others": 1007,
+   "revision_moderations_of_others": 5992,
+   "ev_decisions_per_moderator_active_day": [
+    1.886,
+    1.528,
+    2.279
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.713,
+    3.575
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    13.107,
+    10.854,
+    15.424
+   ],
+   "ev_decisions_per_decision_day": [
+    4.73,
+    3.93,
+    5.62
+   ],
+   "share_active_days_with_ev_decision": 0.399
+  },
+  "2017": {
+   "active_moderators": 10,
+   "moderators_with_evidence_decision": 9,
+   "moderator_active_days": 402,
+   "moderator_decision_days": 155,
+   "evidence_decisions_on_others": 844,
+   "revision_moderations_of_others": 8138,
+   "ev_decisions_per_moderator_active_day": [
+    2.1,
+    1.56,
+    2.734
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    1.023,
+    3.026
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    22.343,
+    17.214,
+    27.772
+   ],
+   "ev_decisions_per_decision_day": [
+    5.45,
+    4.2,
+    7.07
+   ],
+   "share_active_days_with_ev_decision": 0.386
+  },
+  "2018": {
+   "active_moderators": 10,
+   "moderators_with_evidence_decision": 9,
+   "moderator_active_days": 288,
+   "moderator_decision_days": 94,
+   "evidence_decisions_on_others": 671,
+   "revision_moderations_of_others": 5888,
+   "ev_decisions_per_moderator_active_day": [
+    2.33,
+    1.562,
+    3.209
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    1.108,
+    3.864
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    22.823,
+    14.649,
+    33.993
+   ],
+   "ev_decisions_per_decision_day": [
+    7.14,
+    5.35,
+    9.4
+   ],
+   "share_active_days_with_ev_decision": 0.326
+  },
+  "2019": {
+   "active_moderators": 15,
+   "moderators_with_evidence_decision": 12,
+   "moderator_active_days": 272,
+   "moderator_decision_days": 84,
+   "evidence_decisions_on_others": 302,
+   "revision_moderations_of_others": 2633,
+   "ev_decisions_per_moderator_active_day": [
+    1.11,
+    0.761,
+    1.518
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.427,
+    1.668
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    10.805,
+    6.366,
+    16.693
+   ],
+   "ev_decisions_per_decision_day": [
+    3.6,
+    2.63,
+    4.65
+   ],
+   "share_active_days_with_ev_decision": 0.309
+  },
+  "2020": {
+   "active_moderators": 14,
+   "moderators_with_evidence_decision": 12,
+   "moderator_active_days": 660,
+   "moderator_decision_days": 166,
+   "evidence_decisions_on_others": 432,
+   "revision_moderations_of_others": 4396,
+   "ev_decisions_per_moderator_active_day": [
+    0.655,
+    0.52,
+    0.808
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.331,
+    1.298
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    7.32,
+    6.216,
+    8.621
+   ],
+   "ev_decisions_per_decision_day": [
+    2.6,
+    2.16,
+    3.16
+   ],
+   "share_active_days_with_ev_decision": 0.252
+  },
+  "2021": {
+   "active_moderators": 15,
+   "moderators_with_evidence_decision": 10,
+   "moderator_active_days": 599,
+   "moderator_decision_days": 116,
+   "evidence_decisions_on_others": 249,
+   "revision_moderations_of_others": 3393,
+   "ev_decisions_per_moderator_active_day": [
+    0.416,
+    0.322,
+    0.523
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.189,
+    0.806
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    6.087,
+    4.855,
+    7.443
+   ],
+   "ev_decisions_per_decision_day": [
+    2.15,
+    1.8,
+    2.54
+   ],
+   "share_active_days_with_ev_decision": 0.194
+  },
+  "2022": {
+   "active_moderators": 13,
+   "moderators_with_evidence_decision": 10,
+   "moderator_active_days": 351,
+   "moderator_decision_days": 62,
+   "evidence_decisions_on_others": 186,
+   "revision_moderations_of_others": 3509,
+   "ev_decisions_per_moderator_active_day": [
+    0.53,
+    0.322,
+    0.752
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.143,
+    0.97
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    10.527,
+    7.581,
+    13.812
+   ],
+   "ev_decisions_per_decision_day": [
+    3.0,
+    2.0,
+    4.08
+   ],
+   "share_active_days_with_ev_decision": 0.177
+  },
+  "2023": {
+   "active_moderators": 12,
+   "moderators_with_evidence_decision": 8,
+   "moderator_active_days": 404,
+   "moderator_decision_days": 80,
+   "evidence_decisions_on_others": 226,
+   "revision_moderations_of_others": 4241,
+   "ev_decisions_per_moderator_active_day": [
+    0.559,
+    0.399,
+    0.733
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.37,
+    0.797
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    11.099,
+    8.641,
+    13.99
+   ],
+   "ev_decisions_per_decision_day": [
+    2.82,
+    2.24,
+    3.54
+   ],
+   "share_active_days_with_ev_decision": 0.198
+  },
+  "2024": {
+   "active_moderators": 13,
+   "moderators_with_evidence_decision": 8,
+   "moderator_active_days": 412,
+   "moderator_decision_days": 90,
+   "evidence_decisions_on_others": 230,
+   "revision_moderations_of_others": 1892,
+   "ev_decisions_per_moderator_active_day": [
+    0.558,
+    0.437,
+    0.697
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.225,
+    0.898
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    5.245,
+    4.429,
+    6.029
+   ],
+   "ev_decisions_per_decision_day": [
+    2.56,
+    2.16,
+    3.02
+   ],
+   "share_active_days_with_ev_decision": 0.218
+  },
+  "2025": {
+   "active_moderators": 14,
+   "moderators_with_evidence_decision": 11,
+   "moderator_active_days": 449,
+   "moderator_decision_days": 119,
+   "evidence_decisions_on_others": 334,
+   "revision_moderations_of_others": 2047,
+   "ev_decisions_per_moderator_active_day": [
+    0.744,
+    0.561,
+    0.938
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.365,
+    1.172
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    5.403,
+    4.169,
+    6.867
+   ],
+   "ev_decisions_per_decision_day": [
+    2.81,
+    2.28,
+    3.47
+   ],
+   "share_active_days_with_ev_decision": 0.265
+  },
+  "2026": {
+   "active_moderators": 16,
+   "moderators_with_evidence_decision": 11,
+   "moderator_active_days": 467,
+   "moderator_decision_days": 116,
+   "evidence_decisions_on_others": 243,
+   "revision_moderations_of_others": 2878,
+   "ev_decisions_per_moderator_active_day": [
+    0.52,
+    0.42,
+    0.63
+   ],
+   "ev_decisions_per_active_day_CI_cluster_moderator": [
+    0.346,
+    0.841
+   ],
+   "all_moderation_actions_per_moderator_active_day": [
+    6.752,
+    5.272,
+    8.443
+   ],
+   "ev_decisions_per_decision_day": [
+    2.09,
+    1.83,
+    2.36
+   ],
+   "share_active_days_with_ev_decision": 0.248
+  }
+ }
+}
