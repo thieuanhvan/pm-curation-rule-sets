@@ -1,0 +1,311 @@
+{
+ "protocol": "CODER_PROTOCOL.md (pre-registered 2026-10-15 16:23)",
+ "n_items": {
+  "A": 110,
+  "B": 115
+ },
+ "A": {
+  "recall_in_scope": {
+   "k": 23,
+   "n": 27,
+   "rate": 0.8518,
+   "ci95": [
+    0.6752,
+    0.9408
+   ]
+  },
+  "recall_other_layers": {
+   "k": 7,
+   "n": 14,
+   "rate": 0.5,
+   "ci95": [
+    0.2679,
+    0.732
+   ]
+  },
+  "recall_all": {
+   "k": 30,
+   "n": 41,
+   "rate": 0.7317,
+   "ci95": [
+    0.5806,
+    0.843
+   ]
+  },
+  "false_positive_decoys": {
+   "k": 3,
+   "n": 15,
+   "rate": 0.2,
+   "ci95": [
+    0.0704,
+    0.4518
+   ]
+  },
+  "recall_on_extractor_misses_preregistered": {
+   "k": 9,
+   "n": 12,
+   "rate": 0.75,
+   "ci95": [
+    0.4676,
+    0.911
+   ]
+  },
+  "recall_on_extractor_true_misses": {
+   "k": 4,
+   "n": 4,
+   "rate": 1.0,
+   "ci95": [
+    0.5101,
+    1.0
+   ]
+  },
+  "found_controls": [
+   "zq01",
+   "zq02",
+   "zq03",
+   "zq04",
+   "zq05",
+   "zq06",
+   "zq07",
+   "zq08",
+   "zq09",
+   "zq11",
+   "zq12",
+   "zq13",
+   "zq14",
+   "zq15",
+   "zq16",
+   "zq18",
+   "zq20",
+   "zq22",
+   "zq23",
+   "zq24",
+   "zq25",
+   "zq26",
+   "zq27",
+   "zq28",
+   "zq30",
+   "zq31",
+   "zq38",
+   "zq39",
+   "zq40",
+   "zq41"
+  ],
+  "decoys_flagged": [
+   "zq42",
+   "zq52",
+   "zq53"
+  ]
+ },
+ "B": {
+  "recall_in_scope": {
+   "k": 23,
+   "n": 27,
+   "rate": 0.8518,
+   "ci95": [
+    0.6752,
+    0.9408
+   ]
+  },
+  "recall_other_layers": {
+   "k": 8,
+   "n": 14,
+   "rate": 0.5714,
+   "ci95": [
+    0.3259,
+    0.7861
+   ]
+  },
+  "recall_all": {
+   "k": 31,
+   "n": 41,
+   "rate": 0.756,
+   "ci95": [
+    0.6065,
+    0.8617
+   ]
+  },
+  "false_positive_decoys": {
+   "k": 3,
+   "n": 15,
+   "rate": 0.2,
+   "ci95": [
+    0.0704,
+    0.4518
+   ]
+  },
+  "recall_on_extractor_misses_preregistered": {
+   "k": 9,
+   "n": 12,
+   "rate": 0.75,
+   "ci95": [
+    0.4676,
+    0.911
+   ]
+  },
+  "recall_on_extractor_true_misses": {
+   "k": 4,
+   "n": 4,
+   "rate": 1.0,
+   "ci95": [
+    0.5101,
+    1.0
+   ]
+  },
+  "found_controls": [
+   "zq01",
+   "zq02",
+   "zq03",
+   "zq04",
+   "zq05",
+   "zq06",
+   "zq07",
+   "zq08",
+   "zq09",
+   "zq11",
+   "zq12",
+   "zq13",
+   "zq14",
+   "zq15",
+   "zq16",
+   "zq18",
+   "zq20",
+   "zq22",
+   "zq23",
+   "zq24",
+   "zq25",
+   "zq26",
+   "zq27",
+   "zq28",
+   "zq30",
+   "zq31",
+   "zq32",
+   "zq37",
+   "zq38",
+   "zq40",
+   "zq41"
+  ],
+  "decoys_flagged": [
+   "zq42",
+   "zq52",
+   "zq53"
+  ]
+ },
+ "A+B": {
+  "recall_in_scope": {
+   "k": 23,
+   "n": 27,
+   "rate": 0.8518,
+   "ci95": [
+    0.6752,
+    0.9408
+   ]
+  },
+  "recall_other_layers": {
+   "k": 9,
+   "n": 14,
+   "rate": 0.6428,
+   "ci95": [
+    0.3876,
+    0.8365
+   ]
+  },
+  "recall_all": {
+   "k": 32,
+   "n": 41,
+   "rate": 0.7804,
+   "ci95": [
+    0.6329,
+    0.8799
+   ]
+  },
+  "false_positive_decoys": {
+   "k": 3,
+   "n": 15,
+   "rate": 0.2,
+   "ci95": [
+    0.0704,
+    0.4518
+   ]
+  },
+  "recall_on_extractor_misses_preregistered": {
+   "k": 9,
+   "n": 12,
+   "rate": 0.75,
+   "ci95": [
+    0.4676,
+    0.911
+   ]
+  },
+  "recall_on_extractor_true_misses": {
+   "k": 4,
+   "n": 4,
+   "rate": 1.0,
+   "ci95": [
+    0.5101,
+    1.0
+   ]
+  },
+  "found_controls": [
+   "zq01",
+   "zq02",
+   "zq03",
+   "zq04",
+   "zq05",
+   "zq06",
+   "zq07",
+   "zq08",
+   "zq09",
+   "zq11",
+   "zq12",
+   "zq13",
+   "zq14",
+   "zq15",
+   "zq16",
+   "zq18",
+   "zq20",
+   "zq22",
+   "zq23",
+   "zq24",
+   "zq25",
+   "zq26",
+   "zq27",
+   "zq28",
+   "zq30",
+   "zq31",
+   "zq32",
+   "zq37",
+   "zq38",
+   "zq39",
+   "zq40",
+   "zq41"
+  ],
+  "decoys_flagged": [
+   "zq42",
+   "zq52",
+   "zq53"
+  ]
+ },
+ "extractor_or_coders_in_scope": {
+  "k": 27,
+  "n": 27,
+  "rate": 1.0,
+  "ci95": [
+   0.8754,
+   0.9999
+  ]
+ },
+ "extractor_or_coders_all": {
+  "k": 36,
+  "n": 41,
+  "rate": 0.878,
+  "ci95": [
+   0.7445,
+   0.9467
+  ]
+ },
+ "unmatched_coder_items": {
+  "A": 71,
+  "B": 75
+ }
+}

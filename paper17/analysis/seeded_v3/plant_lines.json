@@ -1,0 +1,355 @@
+{
+ "zq01": {
+  "path": "server/app/graphql/mutations/flag_entity.rb",
+  "lines": [
+   27
+  ]
+ },
+ "zq02": {
+  "path": "server/app/graphql/mutations/moderate_evidence_item.rb",
+  "lines": [
+   39
+  ]
+ },
+ "zq03": {
+  "path": "server/app/graphql/mutations/resolve_flag.rb",
+  "lines": [
+   41
+  ]
+ },
+ "zq04": {
+  "path": "server/app/graphql/mutations/suggest_evidence_item_revision.rb",
+  "lines": [
+   41,
+   52
+  ]
+ },
+ "zq05": {
+  "path": "server/app/graphql/mutations/moderate_assertion.rb",
+  "lines": [
+   65
+  ]
+ },
+ "zq06": {
+  "path": "server/app/policies/evidence_item_policy.rb",
+  "lines": [
+   6
+  ]
+ },
+ "zq07": {
+  "path": "server/app/policies/evidence_item_policy.rb",
+  "lines": [
+   21
+  ]
+ },
+ "zq08": {
+  "path": "server/app/policies/flag_policy.rb",
+  "lines": [
+   11,
+   18
+  ]
+ },
+ "zq09": {
+  "path": "server/app/models/activities/moderate_evidence_item.rb",
+  "lines": [
+   47,
+   52
+  ]
+ },
+ "zq10": {
+  "path": "server/app/models/activities/suggest_source.rb",
+  "lines": [
+   4
+  ]
+ },
+ "zq11": {
+  "path": "server/app/models/activities/resolve_flag.rb",
+  "lines": [
+   38,
+   43
+  ]
+ },
+ "zq12": {
+  "path": "server/app/models/actions/accept_revisions.rb",
+  "lines": [
+   36,
+   44
+  ]
+ },
+ "zq13": {
+  "path": "server/app/models/actions/submit_evidence_item.rb",
+  "lines": [
+   15,
+   23
+  ]
+ },
+ "zq14": {
+  "path": "server/app/models/actions/flag_entity.rb",
+  "lines": [
+   31,
+   35
+  ]
+ },
+ "zq15": {
+  "path": "server/app/models/actions/update_source_suggestion_status.rb",
+  "lines": [
+   17
+  ]
+ },
+ "zq16": {
+  "path": "server/app/jobs/expire_stale_source_suggestions.rb",
+  "lines": [
+   12,
+   19
+  ]
+ },
+ "zq17": {
+  "path": "server/config/scheduled_tasks.yml",
+  "lines": [
+   145
+  ]
+ },
+ "zq18": {
+  "path": "server/app/jobs/escalate_overdue_evidence_reviews.rb",
+  "lines": [
+   12,
+   17
+  ]
+ },
+ "zq19": {
+  "path": "server/config/scheduled_tasks.yml",
+  "lines": [
+   151
+  ]
+ },
+ "zq20": {
+  "path": "server/app/jobs/close_abandoned_revisions.rb",
+  "lines": [
+   10
+  ]
+ },
+ "zq21": {
+  "path": "server/config/scheduled_tasks.yml",
+  "lines": [
+   157
+  ]
+ },
+ "zq22": {
+  "path": "server/app/models/evidence_item.rb",
+  "lines": [
+   65
+  ]
+ },
+ "zq23": {
+  "path": "server/app/models/evidence_item.rb",
+  "lines": [
+   59
+  ]
+ },
+ "zq24": {
+  "path": "server/app/models/revision.rb",
+  "lines": [
+   30
+  ]
+ },
+ "zq25": {
+  "path": "server/app/models/flag.rb",
+  "lines": [
+   14
+  ]
+ },
+ "zq26": {
+  "path": "server/app/models/source_suggestion.rb",
+  "lines": [
+   18,
+   24
+  ]
+ },
+ "zq27": {
+  "path": "server/app/models/assertion.rb",
+  "lines": [
+   56,
+   89
+  ]
+ },
+ "zq28": {
+  "path": "server/app/controllers/moderation_queue_controller.rb",
+  "lines": [
+   7,
+   16
+  ]
+ },
+ "zq29": {
+  "path": "server/app/controllers/concerns/requires_moderator.rb",
+  "lines": [
+   9
+  ]
+ },
+ "zq30": {
+  "path": "server/app/services/evidence_review_assigner.rb",
+  "lines": [
+   12
+  ]
+ },
+ "zq31": {
+  "path": "server/app/lib/moderation/withdrawal.rb",
+  "lines": [
+   16,
+   20
+  ]
+ },
+ "zq32": {
+  "path": "server/app/models/concerns/moderated.rb",
+  "lines": [
+   38
+  ]
+ },
+ "zq33": {
+  "path": "server/app/models/concerns/flaggable.rb",
+  "lines": [
+   11,
+   23
+  ]
+ },
+ "zq34": {
+  "path": "server/db/migrate/20260905091500_add_flag_resolution_constraint.rb",
+  "lines": [
+   5
+  ]
+ },
+ "zq35": {
+  "path": "server/db/migrate/20260905090000_add_moderation_assignment_fields.rb",
+  "lines": [
+   5
+  ]
+ },
+ "zq36": {
+  "path": "server/db/migrate/20260905093000_resolve_flags_on_evidence_rejection.rb",
+  "lines": [
+   4,
+   23,
+   30
+  ]
+ },
+ "zq37": {
+  "path": "server/app/validators/assertion_validator.rb",
+  "lines": [
+   91
+  ]
+ },
+ "zq38": {
+  "path": "server/app/validators/source_suggestion_scope_validator.rb",
+  "lines": [
+   4
+  ]
+ },
+ "zq39": {
+  "path": "server/lib/tasks/moderation.rake",
+  "lines": [
+   15
+  ]
+ },
+ "zq40": {
+  "path": "server/app/graphql/resolvers/top_level_evidence_items.rb",
+  "lines": [
+   31
+  ]
+ },
+ "zq41": {
+  "path": "server/app/models/user.rb",
+  "lines": [
+   169
+  ]
+ },
+ "zq42": {
+  "path": "server/app/graphql/mutations/moderate_evidence_item.rb",
+  "lines": [
+   42
+  ]
+ },
+ "zq43": {
+  "path": "server/app/jobs/expire_stale_source_suggestions.rb",
+  "lines": [
+   15
+  ]
+ },
+ "zq44": {
+  "path": "server/spec/models/evidence_item_moderation_spec.rb",
+  "lines": [
+   4
+  ]
+ },
+ "zq45": {
+  "path": "server/test/models/flag_resolution_test.rb",
+  "lines": [
+   4
+  ]
+ },
+ "zq46": {
+  "path": "server/app/reports/pending_moderation_backlog.rb",
+  "lines": [
+   7
+  ]
+ },
+ "zq47": {
+  "path": "server/app/graphql/mutations/update_notification_status.rb",
+  "lines": [
+   19
+  ]
+ },
+ "zq48": {
+  "path": "server/app/models/user.rb",
+  "lines": [
+   47
+  ]
+ },
+ "zq49": {
+  "path": "server/app/models/actions/resolve_flag.rb",
+  "lines": [
+   33
+  ]
+ },
+ "zq50": {
+  "path": "server/app/graphql/mutations/approve_assertion.rb",
+  "lines": [
+   6
+  ]
+ },
+ "zq51": {
+  "path": "server/app/lib/moderation/status_labels.rb",
+  "lines": [
+   3
+  ]
+ },
+ "zq52": {
+  "path": "server/app/models/flag.rb",
+  "lines": [
+   16
+  ]
+ },
+ "zq53": {
+  "path": "server/app/graphql/mutations/add_comment.rb",
+  "lines": [
+   26
+  ]
+ },
+ "zq54": {
+  "path": "server/app/models/actions/accept_revisions.rb",
+  "lines": [
+   58,
+   65
+  ]
+ },
+ "zq55": {
+  "path": "server/db/migrate/20260905094500_add_status_index_to_evidence_items.rb",
+  "lines": [
+   6
+  ]
+ },
+ "zq56": {
+  "path": "server/app/models/concerns/flaggable.rb",
+  "lines": [
+   16
+  ]
+ }
+}
