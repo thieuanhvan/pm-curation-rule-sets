@@ -14,7 +14,7 @@ PAIRS = [
     ("Moderate revision;", "Decide on revision;"),
     ("Reject; reason not" + NL + "required until 2025", "Reject; reason not" + NL + "coded until 2025"),
     ("newest-first service (u = 0.18); same-organisation" + NL + "acceptances 37 % to 62 % (random 22-23 %)",
-     "newest-first service: u = 0.18" + NL + "(all pending items, h = infinite)"),
+     "newest-first service: ū = 0.18" + NL + "(all pending items, h = infinite)"),
     ("68.6 % of pending:" + NL + "submitter-inactive)", "68.6 % of pending items:" + NL + "no activity, submitter inactive)"),
     ("inferred norm, never" + NL + "in code (17.8 %)", "inferred norm, never" + NL + "in code (violated in 17.7 %)"),
     ("10.7 %", "10.6 %"),
