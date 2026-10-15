@@ -48,12 +48,36 @@ On Windows, civic-v2 contains a client path that cannot be checked out; the scan
   - `GITHUB_TOKEN` (optional): raises the GitHub API rate limit.
 - Scripts that call literature APIs expect a contact address; replace `you@example.org`.
 
-## Rerunning the core
+## Rule catalogue
+
+`rule_catalogue.csv` lists the 31 controls (C1–C31) and 5 absence records (N1–N5) of CIViC with stage, object, mode, predicate, whether the rule is documented (`in_C_doc`) and coded (`in_C_code`), the date it entered the code (`tau`) and left it (`rho`). It is Supplementary Table S3 in machine-readable form; the same list drives the coverage scripts (`paper17/analysis/d_graded_coverage_blind.py`).
+
+## Rerunning
+
+From stored results (no data needed): every table can be checked against the files named in `TABLE_MAP.md`.
+
+From public sources, in this order:
 
 ```
+# 1. harvest CIViC (writes pipeline/D5b/cache and meta files; about 175,000 events)
+cd pipeline/D5b && node pull_events.mjs && node pull_meta.mjs && cd ../..
+cd pipeline/D5req/A6 && node pull_notes.mjs && cd ../../..
+# 2. code scan (Algorithm 1) and revised extractors
 python pipeline/D5req/R6_formal/t1_code_scan.py <civic-v2 bare clone> <civic-server bare clone>
+python pipeline/D5req/R6_formal/t1_controls.py
+# 3. Table 3 (static references against R(t)) and Table 4 (enactment)
+python pipeline/D5req/R8/c_decomp_drift.py
+python paper17/analysis/enactment_cluster.py
+# 4. Table 5 (GO and HPO content gates; GITHUB_TOKEN recommended)
+python pipeline/D5req/R6_formal/t4_gh_fetch.py && python pipeline/D5req/R6_formal/t4_analyse.py
+python pipeline/D5req/R7/t5_gh_fetch.py && python pipeline/D5req/R7/t5_analyse.py
+# 5. coverage (Tables S5, S6, Fig. 3) and the held-out seeded test
+python paper17/analysis/d_graded_coverage_blind.py
 python paper17/analysis/seeded_v3/plant_and_score.py <civic-v2 bare clone> paper17/analysis/seeded_v3/plants <work dir>
+python paper17/analysis/seeded_v3/posthoc_attribution.py
 ```
+
+A fresh harvest reflects the platforms on the day it is run, so counts after October 2026 will differ; the stored results are those of the article. The seeded test is fully reproducible: it checks the SHA-256 of the frozen extractor files before running, and the plants with their answer key are included.
 
 The seeded test checks the SHA-256 of the frozen extractor files before running; its protocol, registered before the plants were written, is `paper17/analysis/seeded_v3/PROTOCOL.md`. The planted files are modified copies of civic-v2 (MIT licence, `plants/LICENSE-civic-v2.txt`).
 

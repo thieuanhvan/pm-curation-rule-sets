@@ -1,7 +1,7 @@
 # R8 analysis C (+ B recomputation): Table 3 as a decomposition; dated C_doc; f_c only within documented periods;
 # change points (PELT, ruptures) on monthly behaviour series vs tau_c. Aggregates only.
 import os, sys, json, numpy as np, pandas as pd
-H = (__import__("os").environ.get("P17_PIPELINE", str(__import__("pathlib").Path(__file__).resolve().parents[2] / "pipeline")) + "/D5req/R8"); R0 = os.path.join(H, '..')
+H = (__import__("os").environ.get("P17_PIPELINE", str(next(p for p in __import__("pathlib").Path(__file__).resolve().parents if (p / "pipeline").is_dir()) / "pipeline")) + "/D5req/R8"); R0 = os.path.join(H, '..')
 OUTD = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(R0, 'R7'))
 from t_common import load, BOT

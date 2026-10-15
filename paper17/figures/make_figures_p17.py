@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-NI = (__import__("os").environ.get("P17_PIPELINE", str(__import__("pathlib").Path(__file__).resolve().parents[2] / "pipeline")) + "/D5req")
+NI = (__import__("os").environ.get("P17_PIPELINE", str(next(p for p in __import__("pathlib").Path(__file__).resolve().parents if (p / "pipeline").is_dir()) / "pipeline")) + "/D5req")
 DPI = 400
 # as-is legacy share 0.043 [0.032, 0.056]: W4/outcomes_log.txt, section EAimp_legacyAcceptedShare, ASIS_logit
 ASIS_LEGACY = 0.043

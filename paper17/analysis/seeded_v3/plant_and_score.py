@@ -8,7 +8,7 @@ from pathlib import Path
 
 H = Path(__file__).resolve().parent
 BARE, PLANTS, WORK = Path(sys.argv[1]), Path(sys.argv[2]), Path(sys.argv[3])
-D5 = Path((__import__("os").environ.get("P17_PIPELINE", str(__import__("pathlib").Path(__file__).resolve().parents[2] / "pipeline")) + "/D5req"))
+D5 = Path((__import__("os").environ.get("P17_PIPELINE", str(next(p for p in __import__("pathlib").Path(__file__).resolve().parents if (p / "pipeline").is_dir()) / "pipeline")) + "/D5req"))
 FROZEN = {D5 / "R6_formal/t1_code_scan.py": "1515bc5eff59d6748bcfccf3dae0053e5fcbb28ed25f156a50fc4e44637b9677",
           D5 / "R7/t1d_extractor_v2.py": "57ffd16fafd764839c15286b93d2b9c78683a700be0194a51db2d8201ab058d7"}
 for f, h in FROZEN.items():

@@ -9,7 +9,7 @@ import make_figures_p17 as m
 import make_figs_r7 as r7
 
 C_MAIN, C_ALT, C_GREY, C_ACC = m.C_MAIN, m.C_ALT, m.C_GREY, m.C_ACC
-R7 = (__import__("os").environ.get("P17_PIPELINE", str(__import__("pathlib").Path(__file__).resolve().parents[2] / "pipeline")) + "/D5req/R7/res_t4_graded_kappa.json")
+R7 = (__import__("os").environ.get("P17_PIPELINE", str(next(p for p in __import__("pathlib").Path(__file__).resolve().parents if (p / "pipeline").is_dir()) / "pipeline")) + "/D5req/R7/res_t4_graded_kappa.json")
 
 
 def qx(q):

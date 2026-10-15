@@ -7,7 +7,7 @@ import collections
 import json
 import os
 
-B = (__import__("os").environ.get("P17_PIPELINE", str(__import__("pathlib").Path(__file__).resolve().parents[2] / "pipeline")) + "/D5b/")
+B = (__import__("os").environ.get("P17_PIPELINE", str(next(p for p in __import__("pathlib").Path(__file__).resolve().parents if (p / "pipeline").is_dir()) / "pipeline")) + "/D5b/")
 OUT = os.path.dirname(os.path.abspath(__file__))
 sub = {}
 for f in os.listdir(B + "cache"):
